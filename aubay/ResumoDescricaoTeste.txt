@@ -1,0 +1,7 @@
+O teste não está funcionando, porque o método run() da classe Engine está usando uma interface que não está implementada, conforme o relatório no diretório cucumber-reports.
+
+Mensagem de Erro:
+flow.EmptyFlowException
+	at flow.Engine.run(Engine.java:20)
+	at challenges.stepDefinition.TestSteps.a_User_sends_an_menssageFirst_message(TestSteps.java:32)
+	at ✽.Given a User sends an <menssageFirst> message(SendMessageToMessageServer.feature:9)
