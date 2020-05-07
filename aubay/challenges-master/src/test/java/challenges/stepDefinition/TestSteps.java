@@ -22,7 +22,7 @@ import flow.samples.TextApp;
 
 public class TestSteps {
 
-	//protected static MessageServer server;
+
 	private Engine engine;
 	 
 	@Given("^a User sends an <menssageFirst> message$")
