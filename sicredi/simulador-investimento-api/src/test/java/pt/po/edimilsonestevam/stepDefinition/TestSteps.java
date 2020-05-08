@@ -17,7 +17,6 @@ public class TestSteps {
 	protected static String uri;
 	
 	@Before
-	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
 	@Dado("^eu tenho acesso ao Simulador de Investimento$")
 	public void eu_tenho_acesso_ao_Simulador_de_Investimento() throws Throwable {
 		

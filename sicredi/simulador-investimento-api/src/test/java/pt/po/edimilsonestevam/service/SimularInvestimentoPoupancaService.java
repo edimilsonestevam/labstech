@@ -80,10 +80,10 @@ public class SimularInvestimentoPoupancaService {
 			.then()
 				.log().all()
 				.statusCode(200)
-				.body("meses", Matchers.is("112"))
-				.body("meses", Matchers.is("114"))
-				.body("meses", Matchers.is("136"))
-				.body("meses", Matchers.is("148"))
+				.body("meses", Matchers.is(mesInvestimento))
+				.body("meses", Matchers.is(mesInvestimento))
+				.body("meses", Matchers.is(mesInvestimento))
+				.body("meses", Matchers.is(mesInvestimento))
 			;
 		
 		System.out.println( "\n" + "----------------------------------------------------" + "\n");
@@ -100,10 +100,10 @@ public class SimularInvestimentoPoupancaService {
 			.then()
 				.log().all()
 				.statusCode(200)
-				.body("valor", Matchers.is("2.802"))
-				.body("valor", Matchers.is("3.174"))
-				.body("valor", Matchers.is("3.564"))
-				.body("valor", Matchers.is("3.971"))
+				.body("valor", Matchers.is(valorInvestimento))
+				.body("valor", Matchers.is(valorInvestimento))
+				.body("valor", Matchers.is(valorInvestimento))
+				.body("valor", Matchers.is(valorInvestimento))
 			;
 		
 		System.out.println( "\n" + "----------------------------------------------------" + "\n");
