@@ -14,13 +14,13 @@ import pt.po.edimilsonestevam.service.SimularInvestimentoPoupancaService;
 
 public class TestSteps {
 	
-	protected static String uri;
+	protected static String uri = "http://5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador";
 	
 	@Before
 	@Dado("^eu tenho acesso ao Simulador de Investimento$")
 	public void eu_tenho_acesso_ao_Simulador_de_Investimento() throws Throwable {
 		
-		new SimularInvestimentoPoupancaService().acessarSimuladorInvestimento();
+		new SimularInvestimentoPoupancaService().acessarSimuladorInvestimento(uri);
 		
 	}
 
