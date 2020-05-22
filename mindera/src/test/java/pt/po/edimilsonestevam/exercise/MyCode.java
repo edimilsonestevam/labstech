@@ -11,16 +11,16 @@ class MyCode {
 
 	static class FizzBuzz {
 
-		public void PlayFizzBuzz(int numeroFizzBuzz) {
+		public void PlayFizzBuzz(int FizzBuzzNumber) {
 
-			if (((numeroFizzBuzz % 5) == 0) && ((numeroFizzBuzz % 7) == 0)) {
+			if (((FizzBuzzNumber % 5) == 0) && ((FizzBuzzNumber % 7) == 0)) {
 				System.out.println("FizzBuzz");
-			} else if ((numeroFizzBuzz % 7) == 0) {
+			} else if ((FizzBuzzNumber % 7) == 0) {
 				System.out.println("Buzz");
-			} else if ((numeroFizzBuzz % 5) == 0) {
+			} else if ((FizzBuzzNumber % 5) == 0) {
 				System.out.println("Fizz");
 			} else {
-				System.out.println(numeroFizzBuzz);
+				System.out.println(FizzBuzzNumber);
 			}
 		}
 	}
