@@ -287,8 +287,9 @@ formatter.match({
   "location": "TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(String)"
 });
 formatter.result({
-  "duration": 6328696758,
-  "status": "passed"
+  "duration": 501507600,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\home\\edimilson\\Drivers\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat pt.po.edimilsonestevam.setup.Configuracao.AbrirNavegador(Configuracao.java:35)\r\n\tat pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(TestSteps.java:27)\r\n\tat ✽.Dado eu estou na pagina do Simulador de Investimento \"www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/\"(SimularInvestimentoPoupancaWeb.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -300,8 +301,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_perfil(int)"
 });
 formatter.result({
-  "duration": 166459511,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -325,8 +325,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_valor_a_ser_aplicado_o_valor_a_ser_poupado_a_quantidade_de_meses_ou_anos_o_tipo_do_prazo1(int,int,int,int)"
 });
 formatter.result({
-  "duration": 580457369,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -338,9 +337,7 @@ formatter.match({
   "location": "TestSteps.eu_confirmo_a_operacao()"
 });
 formatter.result({
-  "duration": 771764,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_confirmo_a_operacao() in file:/home/edimilson/Repositorio/Bitbucket/dbc/simulador-investimento-web/target/test-classes/\u0027 with pattern [^eu confirmo a operacao \"([^\"]*)\"$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Valor mínimo de 20.00]. \nStep: E eu confirmo a operacao \"Valor mínimo de 20.00\"\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)\n\tat java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)\n\tat org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)\n\tat org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)\n\tat org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)\n\tat org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)\n\tat org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.o_sistema_apresenta_uma_mensagem()"
@@ -419,8 +416,9 @@ formatter.match({
   "location": "TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(String)"
 });
 formatter.result({
-  "duration": 2058373937,
-  "status": "passed"
+  "duration": 3745700,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\home\\edimilson\\Drivers\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat pt.po.edimilsonestevam.setup.Configuracao.AbrirNavegador(Configuracao.java:35)\r\n\tat pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(TestSteps.java:27)\r\n\tat ✽.Dado eu estou na pagina do Simulador de Investimento \"www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/\"(SimularInvestimentoPoupancaWeb.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -432,8 +430,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_perfil(int)"
 });
 formatter.result({
-  "duration": 75602595,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -457,8 +454,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_valor_a_ser_aplicado_o_valor_a_ser_poupado_a_quantidade_de_meses_ou_anos_o_tipo_do_prazo1(int,int,int,int)"
 });
 formatter.result({
-  "duration": 657150413,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -470,9 +466,7 @@ formatter.match({
   "location": "TestSteps.eu_confirmo_a_operacao()"
 });
 formatter.result({
-  "duration": 291931,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_confirmo_a_operacao() in file:/home/edimilson/Repositorio/Bitbucket/dbc/simulador-investimento-web/target/test-classes/\u0027 with pattern [^eu confirmo a operacao \"([^\"]*)\"$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Valor mínimo de 20.00]. \nStep: E eu confirmo a operacao \"Valor mínimo de 20.00\"\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)\n\tat java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)\n\tat org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)\n\tat org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)\n\tat org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)\n\tat org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)\n\tat org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.o_sistema_apresenta_uma_mensagem()"
@@ -551,8 +545,9 @@ formatter.match({
   "location": "TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(String)"
 });
 formatter.result({
-  "duration": 2506379193,
-  "status": "passed"
+  "duration": 3620000,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\home\\edimilson\\Drivers\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat pt.po.edimilsonestevam.setup.Configuracao.AbrirNavegador(Configuracao.java:35)\r\n\tat pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(TestSteps.java:27)\r\n\tat ✽.Dado eu estou na pagina do Simulador de Investimento \"www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/\"(SimularInvestimentoPoupancaWeb.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -564,8 +559,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_perfil(int)"
 });
 formatter.result({
-  "duration": 170236052,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -589,8 +583,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_valor_a_ser_aplicado_o_valor_a_ser_poupado_a_quantidade_de_meses_ou_anos_o_tipo_do_prazo1(int,int,int,int)"
 });
 formatter.result({
-  "duration": 652267563,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -602,9 +595,7 @@ formatter.match({
   "location": "TestSteps.eu_confirmo_a_operacao()"
 });
 formatter.result({
-  "duration": 210575,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_confirmo_a_operacao() in file:/home/edimilson/Repositorio/Bitbucket/dbc/simulador-investimento-web/target/test-classes/\u0027 with pattern [^eu confirmo a operacao \"([^\"]*)\"$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Valor mínimo de 20.00]. \nStep: E eu confirmo a operacao \"Valor mínimo de 20.00\"\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)\n\tat java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)\n\tat org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)\n\tat org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)\n\tat org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)\n\tat org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)\n\tat org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.o_sistema_apresenta_uma_mensagem()"
@@ -683,8 +674,9 @@ formatter.match({
   "location": "TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(String)"
 });
 formatter.result({
-  "duration": 2055026709,
-  "status": "passed"
+  "duration": 9160800,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\home\\edimilson\\Drivers\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat pt.po.edimilsonestevam.setup.Configuracao.AbrirNavegador(Configuracao.java:35)\r\n\tat pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(TestSteps.java:27)\r\n\tat ✽.Dado eu estou na pagina do Simulador de Investimento \"www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/\"(SimularInvestimentoPoupancaWeb.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -696,8 +688,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_perfil(int)"
 });
 formatter.result({
-  "duration": 82587205,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -721,16 +712,13 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_valor_a_ser_aplicado_o_valor_a_ser_poupado_a_quantidade_de_meses_ou_anos_o_tipo_do_prazo1(int,int,int,int)"
 });
 formatter.result({
-  "duration": 720289606,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.eu_confirmo_a_operacao(String)"
 });
 formatter.result({
-  "duration": 872620,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_confirmo_a_operacao(String) in file:/home/edimilson/Repositorio/Bitbucket/dbc/simulador-investimento-web/target/test-classes/\u0027 with pattern [^eu confirmo a operacao $] is declared with 1 parameters. However, the gherkin step has 0 arguments []. \nStep: E eu confirmo a operacao \n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)\n\tat java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)\n\tat org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)\n\tat org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)\n\tat org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)\n\tat org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)\n\tat org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -815,8 +803,9 @@ formatter.match({
   "location": "TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(String)"
 });
 formatter.result({
-  "duration": 2115938695,
-  "status": "passed"
+  "duration": 4397100,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\home\\edimilson\\Drivers\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat pt.po.edimilsonestevam.setup.Configuracao.AbrirNavegador(Configuracao.java:35)\r\n\tat pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(TestSteps.java:27)\r\n\tat ✽.Dado eu estou na pagina do Simulador de Investimento \"www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/\"(SimularInvestimentoPoupancaWeb.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -828,8 +817,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_perfil(int)"
 });
 formatter.result({
-  "duration": 86830288,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -853,16 +841,13 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_valor_a_ser_aplicado_o_valor_a_ser_poupado_a_quantidade_de_meses_ou_anos_o_tipo_do_prazo1(int,int,int,int)"
 });
 formatter.result({
-  "duration": 583031725,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.eu_confirmo_a_operacao(String)"
 });
 formatter.result({
-  "duration": 585930,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_confirmo_a_operacao(String) in file:/home/edimilson/Repositorio/Bitbucket/dbc/simulador-investimento-web/target/test-classes/\u0027 with pattern [^eu confirmo a operacao $] is declared with 1 parameters. However, the gherkin step has 0 arguments []. \nStep: E eu confirmo a operacao \n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)\n\tat java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)\n\tat org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)\n\tat org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)\n\tat org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)\n\tat org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)\n\tat org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -947,8 +932,9 @@ formatter.match({
   "location": "TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(String)"
 });
 formatter.result({
-  "duration": 2011505935,
-  "status": "passed"
+  "duration": 2858700,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\home\\edimilson\\Drivers\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat pt.po.edimilsonestevam.setup.Configuracao.AbrirNavegador(Configuracao.java:35)\r\n\tat pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(TestSteps.java:27)\r\n\tat ✽.Dado eu estou na pagina do Simulador de Investimento \"www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/\"(SimularInvestimentoPoupancaWeb.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -960,8 +946,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_perfil(int)"
 });
 formatter.result({
-  "duration": 83369606,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -981,8 +966,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_valor_a_ser_aplicado_o_valor_a_ser_poupado_a_quantidade_de_meses_ou_anos_o_tipo_do_prazo(int,int,int)"
 });
 formatter.result({
-  "duration": 567288222,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -994,9 +978,7 @@ formatter.match({
   "location": "TestSteps.eu_confirmo_a_operacao()"
 });
 formatter.result({
-  "duration": 349658,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_confirmo_a_operacao() in file:/home/edimilson/Repositorio/Bitbucket/dbc/simulador-investimento-web/target/test-classes/\u0027 with pattern [^eu confirmo a operacao \"([^\"]*)\"$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Obrigatório]. \nStep: E eu confirmo a operacao \"Obrigatório\"\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)\n\tat java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)\n\tat org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)\n\tat org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)\n\tat org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)\n\tat org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)\n\tat org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.o_sistema_apresenta_uma_mensagem()"
@@ -1075,8 +1057,9 @@ formatter.match({
   "location": "TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(String)"
 });
 formatter.result({
-  "duration": 2795015013,
-  "status": "passed"
+  "duration": 2051900,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\home\\edimilson\\Drivers\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat pt.po.edimilsonestevam.setup.Configuracao.AbrirNavegador(Configuracao.java:35)\r\n\tat pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(TestSteps.java:27)\r\n\tat ✽.Dado eu estou na pagina do Simulador de Investimento \"www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/\"(SimularInvestimentoPoupancaWeb.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -1088,8 +1071,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_perfil(int)"
 });
 formatter.result({
-  "duration": 98624786,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1113,8 +1095,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_valor_a_ser_aplicado_o_valor_a_ser_poupado_a_quantidade_de_meses_ou_anos_o_tipo_do_prazo1(int,int,int,int)"
 });
 formatter.result({
-  "duration": 569577299,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1126,9 +1107,7 @@ formatter.match({
   "location": "TestSteps.eu_confirmo_a_operacao()"
 });
 formatter.result({
-  "duration": 383606,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_confirmo_a_operacao() in file:/home/edimilson/Repositorio/Bitbucket/dbc/simulador-investimento-web/target/test-classes/\u0027 with pattern [^eu confirmo a operacao \"([^\"]*)\"$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Valor esperado não confere]. \nStep: E eu confirmo a operacao \"Valor esperado não confere\"\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)\n\tat java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)\n\tat org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)\n\tat org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)\n\tat org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)\n\tat org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)\n\tat org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.o_sistema_apresenta_uma_mensagem()"
@@ -1207,8 +1186,9 @@ formatter.match({
   "location": "TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(String)"
 });
 formatter.result({
-  "duration": 2218241527,
-  "status": "passed"
+  "duration": 2754100,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\home\\edimilson\\Drivers\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat pt.po.edimilsonestevam.setup.Configuracao.AbrirNavegador(Configuracao.java:35)\r\n\tat pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(TestSteps.java:27)\r\n\tat ✽.Dado eu estou na pagina do Simulador de Investimento \"www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/\"(SimularInvestimentoPoupancaWeb.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -1220,8 +1200,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_perfil(int)"
 });
 formatter.result({
-  "duration": 92470252,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1245,8 +1224,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_valor_a_ser_aplicado_o_valor_a_ser_poupado_a_quantidade_de_meses_ou_anos_o_tipo_do_prazo(int,int,int,int)"
 });
 formatter.result({
-  "duration": 611462295,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1258,9 +1236,7 @@ formatter.match({
   "location": "TestSteps.eu_confirmo_a_operacao()"
 });
 formatter.result({
-  "duration": 253195,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_confirmo_a_operacao() in file:/home/edimilson/Repositorio/Bitbucket/dbc/simulador-investimento-web/target/test-classes/\u0027 with pattern [^eu confirmo a operacao \"([^\"]*)\"$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Valor esperado não confere]. \nStep: E eu confirmo a operacao \"Valor esperado não confere\"\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)\n\tat java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)\n\tat org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)\n\tat org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)\n\tat org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)\n\tat org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)\n\tat org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.o_sistema_apresenta_uma_mensagem()"
@@ -1339,8 +1315,9 @@ formatter.match({
   "location": "TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(String)"
 });
 formatter.result({
-  "duration": 2168461486,
-  "status": "passed"
+  "duration": 2936200,
+  "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\home\\edimilson\\Drivers\\chromedriver\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:585)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat pt.po.edimilsonestevam.setup.Configuracao.AbrirNavegador(Configuracao.java:35)\r\n\tat pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Simulador_de_Investimento(TestSteps.java:27)\r\n\tat ✽.Dado eu estou na pagina do Simulador de Investimento \"www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/\"(SimularInvestimentoPoupancaWeb.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -1352,8 +1329,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_perfil(int)"
 });
 formatter.result({
-  "duration": 86791539,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1377,8 +1353,7 @@ formatter.match({
   "location": "TestSteps.eu_informo_o_valor_a_ser_aplicado_o_valor_a_ser_poupado_a_quantidade_de_meses_ou_anos_o_tipo_do_prazo1(int,int,int,int)"
 });
 formatter.result({
-  "duration": 679658213,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1390,9 +1365,7 @@ formatter.match({
   "location": "TestSteps.eu_confirmo_a_operacao()"
 });
 formatter.result({
-  "duration": 302503,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_confirmo_a_operacao() in file:/home/edimilson/Repositorio/Bitbucket/dbc/simulador-investimento-web/target/test-classes/\u0027 with pattern [^eu confirmo a operacao \"([^\"]*)\"$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Valor esperado não confere]. \nStep: E eu confirmo a operacao \"Valor esperado não confere\"\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\n\tat org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)\n\tat java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)\n\tat org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)\n\tat org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)\n\tat org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)\n\tat org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)\n\tat org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TestSteps.o_sistema_apresenta_uma_mensagem()"

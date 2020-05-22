@@ -1,34 +1,16 @@
 package pt.po.edimilsonestevam.service;
 
 import static io.restassured.RestAssured.given;
-
 import org.hamcrest.Matchers;
 
-
 public class SimularInvestimentoPoupancaService {
-	
-	
-	public void acessarSimuladorInvestimento() {
-		
-		System.out.println("Verificando o acesso...");
-		
-			given()
-			.when()
-				.get("http://5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador")
-			.then()
-				.log().status()
-				.statusCode(200)
-			;
-			
-		System.out.println( "\n" + "----------------------------------------------------" + "\n");
-		
-	}
 	
 	public void acessarSimuladorInvestimento(String uri) {
 		
 		System.out.println("Verificando o acesso...");
 		
 			given()
+				.contentType("application/json")
 			.when()
 				.get(uri)
 			.then()
@@ -40,26 +22,12 @@ public class SimularInvestimentoPoupancaService {
 		
 	}
 	
-	public void verificarConteudoRequisicao() {
-		
-		System.out.println("Verificando o conteúdo da requisição...");
-		
-			given()
-			.when()
-				.get("http://5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador")
-			.then()
-				.log().body()
-			;
-		
-		System.out.println( "\n" + "----------------------------------------------------" + "\n");
-			
-	}
-	
 	public void verificarConteudoRequisicao(String uri) {
 		
 		System.out.println("Verificando o conteúdo da requisição...");
 		
 			given()
+				.contentType("application/json")
 			.when()
 				.get(uri)
 			.then()
@@ -75,15 +43,14 @@ public class SimularInvestimentoPoupancaService {
 		System.out.println("Validando os meses de simulação...");
 		
 			given()
+				.contentType("application/json")
 			.when()
 				.get(uri)
 			.then()
 				.log().all()
-				.statusCode(200)
-				.body("meses", Matchers.is(mesInvestimento))
-				.body("meses", Matchers.is(mesInvestimento))
-				.body("meses", Matchers.is(mesInvestimento))
-				.body("meses", Matchers.is(mesInvestimento))
+				.statusCode(200).assertThat()
+				.body("meses", Matchers.hasItems("112", "124", "136", "148"))
+				
 			;
 		
 		System.out.println( "\n" + "----------------------------------------------------" + "\n");
@@ -95,15 +62,13 @@ public class SimularInvestimentoPoupancaService {
 		System.out.println("Validando os valores de simulação...");
 		
 			given()
+				.contentType("application/json")
 			.when()
 				.get(uri)
 			.then()
 				.log().all()
-				.statusCode(200)
-				.body("valor", Matchers.is(valorInvestimento))
-				.body("valor", Matchers.is(valorInvestimento))
-				.body("valor", Matchers.is(valorInvestimento))
-				.body("valor", Matchers.is(valorInvestimento))
+				.statusCode(200).assertThat()
+				.body("valor", Matchers.hasItems("2.802", "3.174", "3.564", "3.971"))
 			;
 		
 		System.out.println( "\n" + "----------------------------------------------------" + "\n");

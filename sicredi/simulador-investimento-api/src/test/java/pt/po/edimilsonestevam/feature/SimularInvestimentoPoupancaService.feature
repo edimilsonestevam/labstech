@@ -6,7 +6,7 @@ Funcionalidade: Simulador Investimento Poupanca
 
   @cenario-simulador-investimento-poupanca
   Esquema do Cenario: 
-    Dado eu tenho acesso ao Simulador de Investimento
+    Dado eu tenho acesso ao Simulador de Investimento <uri>
     Quando eu executo o servico de consulta <uri>
     Entao o sistema apresenta o identificador da simulacao <identificador>, mes de investimento <mesInvestimento> e valor de investimento <valorInvestimento>   
 
