@@ -1,8 +1,13 @@
 package pt.po.edimilsonestevam.page;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
@@ -17,10 +22,10 @@ public class PesquisaProduto extends Base {
 		
 		System.out.println("• Clicando no Icone Lupa Busca...");
 		
-		String xpathIoneLupaBusca = "//div[@class='c-mobile-header-item__content icon icon-pesquisa']";
+		String idIconeLupaBusca = "search-trigger";
 		
-		navegador.findElement(By.xpath(xpathIoneLupaBusca)).click();
-		
+		navegador.findElement(By.id(idIconeLupaBusca)).click();
+
 	}
 	
 	public void informarCampoBusca(String conteudoBusca) {
