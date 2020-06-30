@@ -1,4 +1,4 @@
-package br.sp.edimilsonestevam.setup;
+package pt.po.edimilsonestevam.setup;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

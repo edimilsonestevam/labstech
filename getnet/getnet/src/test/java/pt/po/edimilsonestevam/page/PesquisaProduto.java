@@ -1,10 +1,10 @@
-package br.sp.edimilsonestevam.page;
+package pt.po.edimilsonestevam.page;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import br.sp.edimilsonestevam.setup.Base;
+import pt.po.edimilsonestevam.setup.Base;
 
 public class PesquisaProduto extends Base {
 
