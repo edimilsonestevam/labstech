@@ -53,7 +53,7 @@ public class PesquisaProduto extends Base {
 		
 		System.out.println("• Clicando no Link Portabilidade...");
 		
-		String idLinkPortabilidade = "";
+		String idLinkPortabilidade = ""; //Elemento ainda não está pronto
 		
 		navegador.findElement(By.id(idLinkPortabilidade)).click();
 		
@@ -63,7 +63,7 @@ public class PesquisaProduto extends Base {
 		
 		System.out.println("• Verificando a Mensagem de Portabilidade...");
 		
-		String xPathMensagemPortabilidadeAtual = "";	
+		String xPathMensagemPortabilidadeAtual = "";  //Elemento ainda não está pronto	
 		String mensagemPortabilidadeAtual = navegador.findElement(By.xpath(xPathMensagemPortabilidadeAtual)).getText();
 		
 		Assert.assertEquals("Validando a Mensagem de Portabilidade", mensagemPortabilidadeEsperada, mensagemPortabilidadeAtual);
