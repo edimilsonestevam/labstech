@@ -1,8 +1,3 @@
 INDEX VERSION 1.131+C:\Users\edimi\Repositories\GitHub\labstech\petz\.metadata\.plugins\org.eclipse.jdt.core
-3001910639.index
-3542918665.index
-2628809991.index
-2174876156.index
 1608742377.index
-1532137049.index
-3240057714.index
+2628809991.index

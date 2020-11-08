@@ -7,7 +7,7 @@ Funcionalidade: Consultar Notícias
   @cenario-consultar-noticia
   Esquema do Cenario: 
     Dado eu estou na pagina do Blog Petz <url>
-    Quando eu informo o título a notícia <tituloNoticia> no campo Pesquisa
+    Quando eu informo o título da notícia <tituloNoticia> no campo Pesquisa
     E eu confirmo a operacao
     Entao o sistema apresenta a notícia pesquisada <corpoNoticia>
 

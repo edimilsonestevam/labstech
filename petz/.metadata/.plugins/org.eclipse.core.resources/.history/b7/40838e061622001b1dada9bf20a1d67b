@@ -1,0 +1,20 @@
+package pt.po.edimilsonestevam.page;
+
+import org.openqa.selenium.WebDriver;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class Home extends Base{
+
+	public Home(WebDriver navegador) {
+		super(navegador);
+
+	}
+
+	public void consultarNoticiaTitulo() {
+		
+		System.out.println("Informando o Título da Notícia...");
+		
+		
+	}
+}

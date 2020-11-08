@@ -1,0 +1,34 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.es.Dado;
+import cucumber.api.java.it.Quando;
+import cucumber.api.java.pt.Entao;
+import pt.po.edimilsonestevam.setup.Configuracao;
+
+public class TestSteps {
+
+	protected static WebDriver navegador;
+
+	@Dado("^eu estou na pagina do Blog Petz \"([^\"]*)\"$")
+	public void eu_estou_na_pagina_do_Blog_Petz(String arg1) throws Throwable {
+		navegador = new Configuracao().AbrirNavegador("chrome", "https://www.petz.com.br/blog");
+	}
+
+	@Quando("^eu informo o título da notícia \"([^\"]*)\" no campo Pesquisa$")
+	public void eu_informo_o_título_da_notícia_no_campo_Pesquisa(String arg1) throws Throwable {
+
+	}
+
+	@Quando("^eu confirmo a operacao$")
+	public void eu_confirmo_a_operacao() throws Throwable {
+
+	}
+
+	@Entao("^o sistema apresenta a notícia pesquisada \"([^\"]*)\"$")
+	public void o_sistema_apresenta_a_notícia_pesquisada(String arg1) throws Throwable {
+
+		
+	}
+}
