@@ -35,9 +35,9 @@ public class Home extends Base{
 		
 		System.out.println("Clicando no botão Busca...");
 		
-		String classNameBotaoBusca = "btn";
+		String botaoBusca = "btn";
 		
-		navegador.findElement(By.className(classNameBotaoBusca)).click();
+		navegador.findElement(By.className(botaoBusca)).click();
 		navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 	}

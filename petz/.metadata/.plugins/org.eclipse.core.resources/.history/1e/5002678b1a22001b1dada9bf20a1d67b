@@ -25,7 +25,7 @@ public class TestSteps {
 	@Dado("^eu estou na pagina do Blog Petz \"([^\"]*)\"$")
 	public void eu_estou_na_pagina_do_Blog_Petz(String url) throws Throwable {
 		
-		navegador = new Configuracao().abrirNavegador("chrome", url);
+		navegador = new Configuracao().AbrirNavegador("chrome", url);
 		
 	}
 
