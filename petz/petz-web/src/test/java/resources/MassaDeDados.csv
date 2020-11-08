@@ -1,10 +1,4 @@
-url,perfil,valorAplicado,valorPoupado,quantidadeMeses,tipoPrazo,valorFinal,mensagemAdvertencia,mensagemSucessoInvestimento
-www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/,1,1900,2000,12,2,,Valor mÃ­nimo de 20.00,
-www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/,1,1900,1900,12,2,,Valor mÃ­nimo de 20.00,
-www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/,1,2000,1900,12,2,,Valor mÃ­nimo de 20.00,
-www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/,1,2000,2000,12,2,3402,,Em 144 meses vocÃª terÃ¡ guardado
-www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/,1,2100,2100,12,2,3572,,Em 144 meses vocÃª terÃ¡ guardado
-www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/,1,2000,2000,,2,,ObrigatÃ³rio,
-www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/,1,2000,2000,0,2,,Valor esperado nÃ£o confere,
-www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/,1,2000,2000,-1,2,,Valor esperado nÃ£o confere,
-www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/,1,2000,2000,999,2,,Valor esperado nÃ£o confere,
+url,tituloNoticia,corpoNoticia
+www.petz.com.br/blog,Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!,Para a alegria de alguns e desespero de outros
+www.petz.com.br/blog,Cachorro gosta de música? Saiba mais sobre o assunto,A importância da música para nós
+www.petz.com.br/blog,Cachorro filhote pode comer ração de cachorro grande?,Será que cachorro filhote pode comer ração de cachorro
