@@ -761,3 +761,9 @@ java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
 
 !ENTRY org.eclipse.jface.text 2 0 2020-11-08 22:35:20.344
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jdt.launching 4 150 2020-11-08 23:51:07.229
+!MESSAGE The archive: C:/Users/edimi/Downloads/cucumber-junit-1.1.1.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2020-11-08 23:51:57.561
+!MESSAGE The archive: C:/Users/edimi/Downloads/cucumber-junit-1.1.1.jar which is referenced by the classpath, does not exist.
