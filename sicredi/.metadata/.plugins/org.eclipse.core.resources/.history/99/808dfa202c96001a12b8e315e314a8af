@@ -1,0 +1,16 @@
+package pt.po.edimilsonestevam.service;
+
+import org.junit.Test;
+
+public class TestarAPI {
+
+	@Test
+	//public static void main(String[] args) {
+	public void main() {
+		
+		validations driver = new validations();
+		driver.data("www.5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador");
+		
+	}
+
+}

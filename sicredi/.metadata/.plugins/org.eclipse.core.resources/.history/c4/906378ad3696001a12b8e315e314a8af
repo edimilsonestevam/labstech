@@ -1,0 +1,28 @@
+package pt.po.edimilsonestevam.service;
+
+import static io.restassured.RestAssured.given;
+
+import java.util.ArrayList;
+
+import org.hamcrest.Matchers;
+
+public class validations {
+
+	public void data(String uri) {
+	
+	given()
+		.contentType("application/json")
+	.when()
+		.get(uri)
+	.then()
+		.log().all()
+		.statusCode(200)
+
+		//.body(Matchers.hasItemInArray("112"))
+		
+		
+		
+	;
+		
+	}
+}

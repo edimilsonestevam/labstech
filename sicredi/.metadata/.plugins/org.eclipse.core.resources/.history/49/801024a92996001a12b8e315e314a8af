@@ -1,0 +1,11 @@
+package pt.po.edimilsonestevam.service;
+
+public class TestarAPI {
+
+	public static void main(String[] args) {
+		
+		validations driver = new validations();
+		
+	}
+
+}

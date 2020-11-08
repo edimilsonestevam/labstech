@@ -1,0 +1,19 @@
+package pt.po.edimilsonestevam.service;
+
+import org.junit.Test;
+
+import junitparams.FileParameters;
+
+public class TestarAPI {
+
+	@Test
+	//public static void main(String[] args) {
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	public void main(String uri, ArrayList<String> mesInvestimento) {
+		
+		validations driver = new validations();
+		driver.data("http://5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador", mesInvestimento);
+		
+	}
+
+}

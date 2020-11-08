@@ -1,0 +1,43 @@
+package br.sp.edimilsonestevam.page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import br.sp.edimilsonestevam.setup.Base;
+
+public class PesquisarProduto extends Base {
+
+	public PesquisarProduto(WebDriver navegador) {
+		super(navegador);
+
+	}
+
+	public void informarCampoBusca(String conteudoBusca) {
+		
+		String idCampoBusca = "";
+		
+		navegador.findElement(By.id(idCampoBusca)).sendKeys(conteudoBusca);
+		
+	}
+	
+	public void clicarIconeLupaBusca() {
+		
+		String idIconeLupaBusca = "";
+		
+		navegador.findElement(By.id(idIconeLupaBusca)).click();
+		
+	}
+	
+	public void clicarLinkPortabilidade() {
+		
+		String idLinkPortabilidade = "";
+		
+		navegador.findElement(By.id(idLinkPortabilidade)).click();
+		
+	}
+	
+	public void verificarMensagemPortabilidade() {
+		
+		
+	}
+}

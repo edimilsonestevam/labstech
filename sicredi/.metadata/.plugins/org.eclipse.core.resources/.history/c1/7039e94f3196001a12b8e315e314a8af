@@ -1,0 +1,24 @@
+package pt.po.edimilsonestevam.service;
+
+import static io.restassured.RestAssured.given;
+import org.hamcrest.Matchers;
+
+public class validations {
+
+	public void data(String uri) {
+		
+	given()
+		.contentType("application/json")
+	.when()
+		.get(uri)
+	.then()
+		.log().all()
+		.statusCode(200)
+		//.body("id", Matchers.contains(1))
+		//.body("meses", Matchers.contains("112"))
+		//.body("valor", Matchers.contains("2.802"))
+		.assertThat(new String[] {"meses", "valor"}, Matchers.arrayWithSize(8))
+	;
+		
+	}
+}

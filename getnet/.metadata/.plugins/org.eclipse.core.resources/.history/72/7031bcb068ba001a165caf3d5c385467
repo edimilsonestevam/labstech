@@ -1,0 +1,27 @@
+# language: pt
+
+@Produto
+Funcionalidade: Pesquisar um produto no site GetNet
+  Eu quero pesquisar um produto antes de comprá-lo
+
+  @pesquisarProduto
+  Esquema do Cenario: Pesquisar um produto
+    Dado eu estou na pagina para pesquisar um produto no GetNet <url>
+    Quando eu informo o campo de busca <informarBusca> 
+    E eu informo title <formaTratamento>, first name <nome>, last name <sobrenome>, password <senha>, date of birth <dataNascimento>, opcao assinar <opcaoAssinatura>, company <empresa>, address <endereco>, city <cidade>, state <estado>, zip code <cep>, country <pais>, mobile phone <celular>, address alias <apelidoEndereco>
+    Entao o sistema apresenta a pagina principal do site
+
+    Exemplos: 
+      | url                      | informarBusca | link                                            | mensagem                                         |
+      | "www.site.getnet.com.br" | superget      | "como faço a portabilidade da minha maquininha" | "Como faço a portabilidade da minha maquininha?" | 
+      
+      
+      
+      
+      1 - Acessar o site: https://site.getnet.com.br/
+
+2 - No campo de busca(LUPA), pesquisar por "superget"
+
+3 - No resultado da busca, clicar no link " como faço a portabilidade da minha maquininha"
+
+4 – Verificar se a modal foi aberta com a mensagem “Como faço a portabilidade da minha maquininha?"

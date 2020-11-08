@@ -1,0 +1,70 @@
+package pt.po.edimilsonestevam.page;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class PesquisaProduto extends Base {
+
+	public PesquisaProduto(WebDriver navegador) {
+		super(navegador);
+
+	}
+	
+	public void clicarIconeLupaBusca() {
+		
+		System.out.println("• Clicando no Icone Lupa Busca...");
+		
+		String xpathIoneLupaBusca = "//div[@class='c-mobile-header-item__content icon icon-pesquisa']";
+		
+		navegador.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		navegador.findElement(By.xpath(xpathIoneLupaBusca)).click();
+		
+	}
+	
+	public void informarCampoBusca(String conteudoBusca) {
+		
+		System.out.println("• Informando o Campo da Busca...");
+		
+		String idCampoBusca = "global-search-input";
+		
+		navegador.findElement(By.id(idCampoBusca)).clear();
+		navegador.findElement(By.id(idCampoBusca)).sendKeys(conteudoBusca);
+		
+	}
+	
+	public void clicarBotaoProcurar() {
+		
+		System.out.println("• Clicando no Botão Procurar...");
+		
+		String xpathBotaoProcurar = "//button[@class='o-btn o-btn--cor-roxo-borda c-search-box__button']";
+		
+		navegador.findElement(By.xpath(xpathBotaoProcurar)).click();
+		
+	}
+	
+	public void clicarLinkPortabilidade() {
+		
+		System.out.println("• Clicando no Link Portabilidade...");
+		
+		String idLinkPortabilidade = "";
+		
+		navegador.findElement(By.id(idLinkPortabilidade)).click();
+		
+	}
+	
+	public void verificarMensagemPortabilidade(String mensagemPortabilidadeEsperada) {
+		
+		System.out.println("• Verificando a Mensagem de Portabilidade...");
+		
+		String xPathMensagemPortabilidadeAtual = "";	
+		String mensagemPortabilidadeAtual = navegador.findElement(By.xpath(xPathMensagemPortabilidadeAtual)).getText();
+		
+		Assert.assertEquals("Validando a Mensagem de Portabilidade", mensagemPortabilidadeEsperada, mensagemPortabilidadeAtual);
+
+	}
+}
