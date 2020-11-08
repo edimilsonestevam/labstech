@@ -5,7 +5,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/java/web/pt/po/edimilsonestevam/feature"}
+@CucumberOptions(features = {"src/test/java/pt/po/edimilsonestevam/feature"}
                 , glue = { "pt/po/edimilsonestevam/stepDefinition" }
 				, plugin = {"html:target/cucumber-reports"}
 				, dryRun = false

@@ -11,3 +11,6 @@
 1604865830793	Move packages
 1604865835800	Delete element
 1604865842031	Delete element
+1604873396171	Rename resource 'ConsultarNoticia.feature'
+1604873417723	Rename resource 'UsarFiltroNoticia.feature'
+1604873656241	Rename resource 'ConsultarCategorias.feature'

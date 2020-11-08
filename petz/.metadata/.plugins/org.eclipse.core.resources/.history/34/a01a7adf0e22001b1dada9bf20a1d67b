@@ -1,0 +1,16 @@
+#language: pt
+
+@cenario
+Funcionalidade: Acessar Últimos Vídeos
+  Eu quero acessar os últimos vídeos
+
+  @cenario-acessar-ultimos-videos
+  Esquema do Cenario: 
+    Dado eu estou na pagina do Blog Petz <url>
+    Quando eu clico na seta para direita
+    Entao o sistema apresenta os dois penúltimos vídeos <penultimosVideos>
+
+    Exemplos: 
+      | url                     | penultimosVideos                                         | 
+      | "www.petz.com.br/blog/" | "Pet-Commerce: saiba como funciona essa nova ferramenta" | 
+      | "www.petz.com.br/blog/" | "Amor pelo seu pet não se explica. Mas se entende."      |

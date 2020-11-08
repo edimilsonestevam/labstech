@@ -1,0 +1,19 @@
+#language: pt
+
+@cenario
+Funcionalidade: Consultar Notícia
+  Eu quero consultar uma notícia
+
+  @cenario-consultar-noticia
+  Esquema do Cenario: 
+    Dado eu estou na pagina do Simulador de Investimento <url>
+    Quando eu informo o perfil <perfil>
+    E eu informo o valor a ser aplicado <valorAplicado>, o valor a ser poupado <valorPoupado>, a quantidade de meses ou anos <quantidadeMesesOuAnos>, o tipo do prazo <tipoPrazo>
+    E eu confirmo a operacao <mensagemAdvertencia>
+    Entao o sistema apresenta uma mensagem <mensagemSucessoInvestimento>
+
+    Exemplos: 
+      | url                             | tituloDaNoticia                                                       |
+      | "https://www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | 
+      | "https://www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto"                |
+      | "https://www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?"               |

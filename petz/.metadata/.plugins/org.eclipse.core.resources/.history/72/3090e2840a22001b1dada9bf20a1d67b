@@ -1,0 +1,18 @@
+#language: pt
+
+@cenario
+Funcionalidade: Consultar Notícia
+  Eu quero consultar uma notícia
+
+  @cenario-consultar-noticia
+  Esquema do Cenario: 
+    Dado eu estou na pagina do Blog Petz <url>
+    Quando eu informo o título a notícia <tituloNoticia> no campo Pesquisar
+    E eu confirmo a operacao
+    Entao o sistema apresenta a notícia pesquisada <noticia>
+
+    Exemplos: 
+      | url                             | tituloNoticia                                                         |  noticia |
+      | "https://www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | 
+      | "https://www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto"                | "A importância da música para nós"                       |
+      | "https://www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?"               | "Será que cachorro filhote pode comer ração de cachorro" |
