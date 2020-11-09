@@ -23,10 +23,10 @@ public class TestSteps {
 	@Test
 	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
 	@Dado("^eu estou na pagina do Blog Petz \"([^\"]*)\"$")
-	public void eu_estou_na_pagina_do_Blog_Petz(String url) throws Throwable {
+	public void eu_estou_na_pagina_do_Blog_Petz(String url, String urlEsperada) throws Throwable {
 		
 		navegador = new Configuracao().abrirNavegador("chrome", url);
-		new Home(navegador).verificarPaginaAtual(url);
+		new Home(navegador).verificarPaginaAtual(urlEsperada);
 		
 	}
 

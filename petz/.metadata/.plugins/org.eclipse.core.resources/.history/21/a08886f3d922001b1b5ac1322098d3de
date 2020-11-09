@@ -23,10 +23,10 @@ public class TestSteps {
 	@Test
 	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
 	@Dado("^eu estou na pagina do Blog Petz \"([^\"]*)\"$")
-	public void eu_estou_na_pagina_do_Blog_Petz(String url) throws Throwable {
+	public void eu_estou_na_pagina_do_Blog_Petz(String url, String urlEsperada) throws Throwable {
 		
 		navegador = new Configuracao().abrirNavegador("chrome", url);
-		new Home(navegador).verificarPaginaAtual(url);
+		new Home(navegador).verificarPaginaAtual(urlEsperada);
 		
 	}
 
@@ -57,4 +57,51 @@ public class TestSteps {
 		
 	}
 	
+	@Test
+	@Quando("^eu clico no filtro de notícias \"([^\"]*)\"$")
+	public void eu_clico_no_filtro_de_notícias(String arg1) throws Throwable {
+
+	}
+
+	@Test
+	@Entao("^o sistema apresenta a notícia filtrada \"([^\"]*)\"$")
+	public void o_sistema_apresenta_a_notícia_filtrada(String arg1) throws Throwable {
+
+	}
+
+	@Test
+	@Quando("^eu clico em avançar$")
+	public void eu_clico_em_avançar() throws Throwable {
+
+	}
+
+	@Test
+	@Entao("^o sistema apresenta os vídeos antigos <antigosVideos>$")
+	public void o_sistema_apresenta_os_vídeos_antigos_antigosVideos() throws Throwable {
+
+	}
+
+	@Test
+	@Quando("^eu clico em voltar$")
+	public void eu_clico_em_voltar() throws Throwable {
+
+	}
+
+	@Test
+	@Entao("^o sistema apresenta os dois últimos vídeos \"([^\"]*)\"$")
+	public void o_sistema_apresenta_os_dois_últimos_vídeos(String arg1) throws Throwable {
+
+	}
+
+	@Test
+	@Quando("^eu coloco o mouse sobre a categoria Cães$")
+	public void eu_coloco_o_mouse_sobre_a_categoria_Cães() throws Throwable {
+
+	}
+
+	@Test
+	@Entao("^o sistema apresenta as quatro últimas notícias sobre Cães \"([^\"]*)\"$")
+	public void o_sistema_apresenta_as_quatro_últimas_notícias_sobre_Cães(String arg1) throws Throwable {
+
+	}
 }
