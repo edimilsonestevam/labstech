@@ -2,6 +2,7 @@ package pt.po.edimilsonestevam.page;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,13 +18,18 @@ public class Home extends Base{
 
 	}
 
-	public void verificarPaginaAtual(String paginaEsperada) {
+	public void verificarPaginaAtual(String urlEsperada) {
 		
+		System.out.println("• Validando Página Corrente...");
+		
+		String urlAtual = (String) navegador.getCurrentUrl();
+		Assert.assertEquals("Validando se está na Página Blog Petz", urlEsperada, urlAtual);
+
 	}
 	
 	public void consultarNoticiaTitulo(String tituloNoticia) {
 		
-		System.out.println("Informando o Título da Notícia...");
+		System.out.println("• Informando Título da Notícia...");
 		
 		String iconeLupa = "button[class=\"btn btn-search\"]"; //ELEMENTO TRATADO
 		String campoPesquisa = "//body/div[3]/form[1]/div[1]/div[2]/input[1]";
@@ -39,7 +45,7 @@ public class Home extends Base{
 	
 	public void confirmarOperacaoPesquisa() {
 		
-		System.out.println("Clicando no botão Busca...");
+		System.out.println("• Clicando no botão Busca...");
 		
 		String botaoBusca = "button[type=\"submit\"]"; //ELEMENTO TRATADO
 		

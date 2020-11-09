@@ -1,0 +1,31 @@
+package pt.po.edimilsonestevam.page;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class Noticias extends Base{
+
+	public Noticias(WebDriver navegador) {
+		super(navegador);
+
+	}
+
+	public void verificarNoticiaPesquisada(String corpoNoticia) {
+		
+		System.out.println("• Validando Notícia Pesquisada...");
+		
+		String xPathNoticia1 = "//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]";
+		String xPathNoticia2 = "//p[contains(text(),'A importância da música para nós, seres humanos, é')]";
+		String xPathNoticia3 = "";
+		
+		String nomeCliente = navegador.findElement(By.xpath(xPathNomeCliente)).getText();
+		String enderecoCliente = navegador.findElement(By.xpath(xPathEnderecoCliente)).getText();
+		
+		Assert.assertEquals("Validando o nome do cliente", nomeClienteEsperado, nomeCliente);
+		Assert.assertEquals("Validando o endereço do cliente", enderecoClienteEsperado, enderecoCliente);
+		
+	}
+}

@@ -1,5 +1,7 @@
 package pt.po.edimilsonestevam.page;
 
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import pt.po.edimilsonestevam.setup.Base;
@@ -11,7 +13,34 @@ public class Noticias extends Base{
 
 	}
 
-	public void verificarNoticiaPesquisada(String noticiaPesquisada) {
+	public void verificarNoticiaPesquisada(String corpoNoticia) {
 		
+		System.out.println("• Validando Notícia Pesquisada...");
+		
+		String noticia1 = "Para a alegria de alguns e desespero de outros";
+		String noticia2 = "A importância da música para nós";
+		String noticia3 = "Será que cachorro filhote pode comer ração de cachorro";
+		
+		String xPathNoticia1 = "//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]";
+		String xPathNoticia2 = "//p[contains(text(),'A importância da música para nós, seres humanos, é')]";
+		String xPathNoticia3 = "//p[contains(text(),'Será que cachorro filhote pode comer ração de cach')]";
+		
+		String corpoNoticia1 = navegador.findElement(By.xpath(xPathNoticia1)).getText();
+		String corpoNoticia2 = navegador.findElement(By.xpath(xPathNoticia2)).getText();
+		String corpoNoticia3 = navegador.findElement(By.xpath(xPathNoticia3)).getText();
+		
+		
+		if(corpoNoticia.equalsIgnoreCase(noticia1)) {
+			Assert.assertEquals("Validando Corpo da Notícia", corpoNoticia, corpoNoticia1);
+		}
+		else if(corpoNoticia.equalsIgnoreCase(noticia2)) {
+			Assert.assertEquals("Validando Corpo da Notícia", corpoNoticia, corpoNoticia2);
+		}
+		else if(corpoNoticia.equalsIgnoreCase(noticia3)) {
+			Assert.assertEquals("Validando Corpo da Notícia", corpoNoticia, corpoNoticia3);
+		}
+		else {
+			System.out.println("Dados informados estão errados!");
+		}
 	}
 }

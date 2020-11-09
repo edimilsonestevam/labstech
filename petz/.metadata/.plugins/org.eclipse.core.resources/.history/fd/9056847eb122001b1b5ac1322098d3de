@@ -1,0 +1,22 @@
+package pt.po.edimilsonestevam.page;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class Noticias extends Base{
+
+	public Noticias(WebDriver navegador) {
+		super(navegador);
+
+	}
+
+	public void verificarNoticiaPesquisada(String noticiaPesquisada) {
+		
+		System.out.println("• Validando Notícia Pesquisada...");
+		
+
+		
+	}
+}
