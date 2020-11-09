@@ -1,0 +1,60 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import junitparams.mappers.CsvWithHeaderMapper;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import pt.po.edimilsonestevam.page.Home;
+import pt.po.edimilsonestevam.page.Noticias;
+import pt.po.edimilsonestevam.setup.Configuracao;
+
+@RunWith(JUnitParamsRunner.class)
+public class TestSteps {
+
+	protected static WebDriver navegador;
+
+	@Before
+	//@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Dado("^eu estou na pagina do Blog Petz \"([^\"]*)\"$")
+	public void eu_estou_na_pagina_do_Blog_Petz(String url) throws Throwable {
+		
+		navegador = new Configuracao().abrirNavegador("chrome", url);
+		
+	}
+
+	@Test
+	//@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Quando("^eu informo o título da notícia \"([^\"]*)\" no campo Pesquisa$")
+	public void eu_informo_o_título_da_notícia_no_campo_Pesquisa(String tituloNoticia) throws Throwable {
+
+		new Home(navegador).consultarNoticiaTitulo(tituloNoticia);
+		
+	}
+
+	@Test
+	@Quando("^eu confirmo a operacao$")
+	public void eu_confirmo_a_operacao() throws Throwable {
+
+		new Home(navegador).confirmarOperacaoPesquisa();
+		
+	}
+
+	@After
+	//@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Entao("^o sistema apresenta a notícia pesquisada \"([^\"]*)\"$")
+	public void o_sistema_apresenta_a_notícia_pesquisada(String corpoNoticia) throws Throwable {
+
+		new Noticias(navegador).verificarNoticiaPesquisada(corpoNoticia);
+		new Configuracao().fecharNavegador(navegador);
+		
+	}
+}

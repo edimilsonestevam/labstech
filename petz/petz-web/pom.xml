@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pt.po.edimilsonestevam</groupId>
-	<artifactId>simulador-investimento</artifactId>
+	<artifactId>petz-web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>simulador-investimento</name>
+	<name>petz-web</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

@@ -22,12 +22,16 @@ public class Home extends Base{
 		
 		System.out.println("Informando o Título da Notícia...");
 		
-		String iconeLupa = "btn btn-search";
-		String idCampoPesquisa = "searchAddon1";
-	
+		String iconeLupa = "fa fa-search";
+		String campoPesquisa = "searchAddon1";
+			
+		
+		navegador.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
+		
+		
 		navegador.findElement(By.className(iconeLupa)).click();
 		navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		navegador.findElement(By.id(idCampoPesquisa)).sendKeys(tituloNoticia);
+		navegador.findElement(By.id(campoPesquisa)).sendKeys(tituloNoticia);
 	
 	}
 	
@@ -35,9 +39,9 @@ public class Home extends Base{
 		
 		System.out.println("Clicando no botão Busca...");
 		
-		String classNameBotaoBusca = "btn";
+		String botaoBusca = "btn";
 		
-		navegador.findElement(By.className(classNameBotaoBusca)).click();
+		navegador.findElement(By.className(botaoBusca)).click();
 		navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 	}
