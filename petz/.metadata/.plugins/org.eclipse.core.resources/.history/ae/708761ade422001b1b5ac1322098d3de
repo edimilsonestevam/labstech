@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Configuracao {
 
-	protected WebDriver navegador;
+	protected WebDriver navegador = null;
 
 	public WebDriver getDriver() {
 		
@@ -14,7 +14,7 @@ public class Configuracao {
 		
 	}
 
-	public void setDriver (WebDriver navegador) {
+	public void setDriver(WebDriver navegador) {
 		
 		this.navegador = navegador;
 		
