@@ -12,7 +12,7 @@ Funcionalidade: Consultar Notícias
     Entao o sistema apresenta a notícia pesquisada <corpoNoticia>
 
     Exemplos: 
-      | url                     | tituloNoticia                                                         | corpoNoticia                                             |
-      | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros"         |
-			| "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto"                | "A importância da música para nós"                       |
-			| "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?"               | "Será que cachorro filhote pode comer ração de cachorro" |
+      | url                             | tituloNoticia                                                         | corpoNoticia                                             |
+      | "https://www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros"         |
+			| "https://www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto"                | "A importância da música para nós"                       |
+			| "https://www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?"               | "Será que cachorro filhote pode comer ração de cachorro" |
