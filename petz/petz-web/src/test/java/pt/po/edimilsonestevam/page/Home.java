@@ -4,6 +4,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
@@ -22,16 +25,15 @@ public class Home extends Base{
 		
 		System.out.println("Informando o Título da Notícia...");
 		
-		String iconeLupa = "fa fa-search";
-		String campoPesquisa = "searchAddon1";
-			
+		String iconeLupa = "button[class=\"btn btn-search\"]"; //ELEMENTO TRATADO
+		String campoPesquisa = "//body/div[3]/form[1]/div[1]/div[2]/input[1]";
 		
-		navegador.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
+		WebElement element;
+		WebDriverWait wait = new WebDriverWait(navegador, 12);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(iconeLupa)));
+		element.click();
 		
-		
-		navegador.findElement(By.className(iconeLupa)).click();
-		navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		navegador.findElement(By.id(campoPesquisa)).sendKeys(tituloNoticia);
+		element.findElement(By.xpath(campoPesquisa)).sendKeys(tituloNoticia);
 	
 	}
 	
@@ -39,9 +41,9 @@ public class Home extends Base{
 		
 		System.out.println("Clicando no botão Busca...");
 		
-		String botaoBusca = "btn";
+		String botaoBusca = "button[type=\"submit\"]"; //ELEMENTO TRATADO
 		
-		navegador.findElement(By.className(botaoBusca)).click();
+		navegador.findElement(By.cssSelector(botaoBusca)).click();
 		navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 	}

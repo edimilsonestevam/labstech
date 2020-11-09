@@ -1,0 +1,55 @@
+package pt.po.edimilsonestevam.page;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class Home extends Base{
+
+	public Home(WebDriver navegador) {
+		super(navegador);
+
+	}
+
+	public void verificarPaginaAtual(String paginaEsperada) {
+		
+	}
+	
+	public void consultarNoticiaTitulo(String tituloNoticia) {
+		
+		System.out.println("Informando o Título da Notícia...");
+		
+		String iconeLupa = "btn btn-search";
+		String campoPesquisa = "searchAddon1";
+		
+		
+		WebElement element;
+		WebDriverWait wait = new WebDriverWait(navegador, 12);
+		element= wait.until(ExpectedConditions.elementToBeClickable(By.className(iconeLupa)));
+		element.click();
+		
+		
+		//navegador.findElement(By.className(iconeLupa)).click();
+		//navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		navegador.findElement(By.id(campoPesquisa)).sendKeys(tituloNoticia);
+	
+	}
+	
+	public void confirmarOperacaoPesquisa() {
+		
+		System.out.println("Clicando no botão Busca...");
+		
+		String botaoBusca = "btn";
+		
+		navegador.findElement(By.className(botaoBusca)).click();
+		navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+	}
+	
+}
