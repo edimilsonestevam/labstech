@@ -24,7 +24,7 @@ public class TestSteps {
 	@Dado("^eu estou na pagina do Simulador de Investimento \"([^\"]*)\"$")
 	public void eu_estou_na_pagina_do_Simulador_de_Investimento(String url) throws Throwable {
 
-		navegador = new Configuracao().abrirNavegador("chrome", url);
+		navegador = new Configuracao().AbrirNavegador("chrome", url);
 		
 	}
 
@@ -106,7 +106,6 @@ public class TestSteps {
 		new SimularInvestimentoPoupancaWeb(navegador).informarValorPoupado(valorPoupado);
 		new SimularInvestimentoPoupancaWeb(navegador).informarQuantidadeMesesOuAnos(quantidadeMesesOuAnos);
 		new SimularInvestimentoPoupancaWeb(navegador).clicarBotaoMesAno(tipoPrazo);
-		new Configuracao().fecharNavegador(navegador);
 		
 	}
 
