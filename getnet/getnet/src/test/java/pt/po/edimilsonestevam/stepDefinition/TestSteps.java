@@ -15,7 +15,7 @@ public class TestSteps {
 	@Dado("^eu estou na pagina da GetNet \"([^\"]*)\" para pesquisar um produto$")
 	public void eu_estou_na_pagina_da_GetNet_para_pesquisar_um_produto(String arg1) throws Throwable {
 
-		navegador = new Configuracao().AbrirNavegador("chrome", "//site.getnet.com.br/");
+		navegador = new Configuracao().abrirNavegador("chrome", "//site.getnet.com.br/");
 		
 	}
 	
@@ -45,6 +45,7 @@ public class TestSteps {
 	public void o_sistema_apresenta_uma_mensagem(String arg1) throws Throwable {
 
 		new PesquisaProduto(navegador).verificarMensagemPortabilidade("Como faço a portabilidade da minha maquininha?");
+		new Configuracao().fecharNavegador(navegador);
 		
 	}
 }

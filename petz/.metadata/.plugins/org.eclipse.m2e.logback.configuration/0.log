@@ -2086,3 +2086,62 @@ org.eclipse.core.runtime.CoreException: Launch configuration TestSuite (1) refer
 2020-11-09 23:03:32,091 [Worker-261: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\main\resources
 2020-11-09 23:03:32,091 [Worker-261: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-11-09 23:03:32,091 [Worker-261: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\test\resources
+2020-11-09 23:09:30,725 [Worker-256: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:09:30,725 [Worker-256: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\petz\petz-web\src\main\resources
+2020-11-09 23:09:30,726 [Worker-256: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:09:30,726 [Worker-256: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\petz\petz-web\src\test\resources
+2020-11-09 23:12:46,636 [Worker-267: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.sp.edimilsonestevam:e-commerce:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\pom.xml.
+2020-11-09 23:12:47,302 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:12:47,302 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\main\resources
+2020-11-09 23:12:47,303 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:12:47,303 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\test\resources
+2020-11-09 23:12:47,645 [Worker-269: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:12:47,645 [Worker-269: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\main\resources
+2020-11-09 23:12:47,645 [Worker-269: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:12:47,646 [Worker-269: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\test\resources
+2020-11-09 23:12:48,031 [Worker-269: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.sp.edimilsonestevam:e-commerce:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\pom.xml.
+2020-11-09 23:12:48,834 [Worker-270: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:12:48,835 [Worker-270: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\main\resources
+2020-11-09 23:12:48,835 [Worker-270: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:12:48,836 [Worker-270: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\test\resources
+2020-11-09 23:15:28,506 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:15:28,506 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\main\resources
+2020-11-09 23:15:28,506 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:15:28,506 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\test\resources
+2020-11-09 23:15:52,345 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:15:52,345 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\main\resources
+2020-11-09 23:15:52,345 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:15:52,345 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\test\resources
+2020-11-09 23:16:28,066 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:16:28,066 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\main\resources
+2020-11-09 23:16:28,066 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:16:28,066 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\e-commerce\src\test\resources
+2020-11-09 23:17:16,019 [Worker-266: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.sp.edimilsonestevam:to-do:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labsweb\to-do\pom.xml.
+2020-11-09 23:17:16,562 [Worker-266: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /to-do/src/main/java
+2020-11-09 23:17:16,562 [Worker-266: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /to-do/src/test/java
+2020-11-09 23:17:16,734 [Worker-266: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2020-11-09 23:17:17,376 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:17:17,376 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\to-do\src\main\resources
+2020-11-09 23:17:17,376 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:17:17,376 [Worker-267: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\to-do\src\test\resources
+2020-11-09 23:18:48,465 [Worker-266: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:18:48,465 [Worker-266: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\to-do\src\main\resources
+2020-11-09 23:18:48,465 [Worker-266: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:18:48,465 [Worker-266: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\to-do\src\test\resources
+2020-11-09 23:19:23,423 [Worker-272: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:19:23,423 [Worker-272: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\to-do\src\main\resources
+2020-11-09 23:19:23,423 [Worker-272: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:19:23,423 [Worker-272: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labsweb\to-do\src\test\resources
+2020-11-09 23:30:51,547 [Worker-277: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pt.po.edimilsonestevam:getnet:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labstech\getnet\getnet\pom.xml.
+2020-11-09 23:30:52,599 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:30:52,600 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\getnet\getnet\src\main\resources
+2020-11-09 23:30:52,601 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:30:52,601 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\getnet\getnet\src\test\resources
+2020-11-09 23:31:08,472 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:31:08,472 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\getnet\getnet\src\main\resources
+2020-11-09 23:31:08,473 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:31:08,473 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\getnet\getnet\src\test\resources
+2020-11-09 23:31:52,924 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:31:52,924 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\getnet\getnet\src\main\resources
+2020-11-09 23:31:52,925 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-09 23:31:52,925 [Worker-277: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\getnet\getnet\src\test\resources
