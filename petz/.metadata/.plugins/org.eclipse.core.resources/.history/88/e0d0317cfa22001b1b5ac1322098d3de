@@ -50,9 +50,9 @@ public class TestSteps {
 	@Test
 	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
 	@Entao("^o sistema apresenta a notícia pesquisada \"([^\"]*)\"$")
-	public void o_sistema_apresenta_a_notícia_pesquisada(String tituloNoticia) throws Throwable {
+	public void o_sistema_apresenta_a_notícia_pesquisada(String corpoNoticia) throws Throwable {
 
-		new Noticias(navegador).verificarNoticiaPesquisada(tituloNoticia);
+		new Noticias(navegador).verificarNoticiaPesquisada(corpoNoticia);
 		new Configuracao().fecharNavegador(navegador);
 		
 	}

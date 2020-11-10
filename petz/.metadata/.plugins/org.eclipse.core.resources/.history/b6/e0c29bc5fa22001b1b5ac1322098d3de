@@ -17,27 +17,27 @@ public class Noticias extends Base{
 		
 		System.out.println("• Validando Notícia Pesquisada...");
 		
-		String noticia1 = "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!";
-		String noticia2 = "Cachorro gosta de música? Saiba mais sobre o assunto";
-		String noticia3 = "Cachorro filhote pode comer ração de cachorro grande?";
+		String noticia1 = "Para a alegria de alguns e desespero de outros";
+		String noticia2 = "A importância da música para nós";
+		String noticia3 = "Será que cachorro filhote pode comer ração de cachorro";
 		
 		String xPathTituloNoticia1 = "//a[contains(text(),'Por que o cachorro lambe o dono? Isso faz mal? É h')]";
 		String xPathTituloNoticia2 = "//a[contains(text(),'Cachorro gosta de música? Saiba mais sobre o assunto')]";
 		String xPathTituloNoticia3 = "//a[contains(text(),'Cachorro filhote pode comer ração de cachorro grande?')]";
 		
-		String tituloNoticiaPesquisada1 = navegador.findElement(By.xpath(xPathTituloNoticia1)).getText();
-		String tituloNoticiaPesquisada2 = navegador.findElement(By.xpath(xPathTituloNoticia2)).getText();
-		String tituloNoticiaPesquisada3 = navegador.findElement(By.xpath(xPathTituloNoticia3)).getText();
+		String corpoNoticia1 = navegador.findElement(By.xpath(xPathTituloNoticia1)).getText();
+		String corpoNoticia2 = navegador.findElement(By.xpath(xPathTituloNoticia2)).getText();
+		String corpoNoticia3 = navegador.findElement(By.xpath(xPathTituloNoticia3)).getText();
 
 		
 		if(tituloNoticia.equalsIgnoreCase(noticia1)) {
-			Assert.assertEquals("Validando Corpo da Notícia", tituloNoticia, tituloNoticiaPesquisada1);
+			Assert.assertEquals("Validando Corpo da Notícia", tituloNoticia, corpoNoticia1);
 		}
 		else if(tituloNoticia.equalsIgnoreCase(noticia2)) {
-			Assert.assertEquals("Validando Corpo da Notícia", tituloNoticia, tituloNoticiaPesquisada2);
+			Assert.assertEquals("Validando Corpo da Notícia", tituloNoticia, corpoNoticia2);
 		}
 		else if(tituloNoticia.equalsIgnoreCase(noticia3)) {
-			Assert.assertEquals("Validando Corpo da Notícia", tituloNoticia, tituloNoticiaPesquisada3);
+			Assert.assertEquals("Validando Corpo da Notícia", tituloNoticia, corpoNoticia3);
 		}
 		else {
 			System.out.println("Dados informados estão errados!");

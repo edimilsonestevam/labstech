@@ -458,3 +458,1188 @@ java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "
 	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
 	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
 	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:09:48.582
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:10:00.686
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Completed - Failure (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:10:00.726
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:10:15.436
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:10:15.445
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:10:30.301
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:10:30.310
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:10:37.958
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:10:37.992
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:10:38.004
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '27': TestSuite: | "www.petz.com.br/blog/" | "Mais Comentados" | "Quer um pet diferente? O Safári Petz é o seu lugar!" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:12:40.871
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:12:53.411
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Completed - Failure (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:12:53.424
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:13:08.532
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:13:08.539
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:13:23.015
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:13:23.022
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:17:00.690
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:17:14.001
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Completed - Failure (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:17:14.024
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:17:28.922
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:17:28.931
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:17:42.994
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:17:43.002
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:19:48.279
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:01.575
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Completed - OK (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:01.585
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:16.513
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:16.521
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:31.438
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:31.447
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:40.211
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:40.227
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:40.238
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '27': TestSuite: | "www.petz.com.br/blog/" | "Mais Comentados" | "Quer um pet diferente? O Safári Petz é o seu lugar!" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:48.749
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '27': TestSuite: | "www.petz.com.br/blog/" | "Mais Comentados" | "Quer um pet diferente? O Safári Petz é o seu lugar!" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:48.771
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '27': TestSuite: | "www.petz.com.br/blog/" | "Mais Comentados" | "Quer um pet diferente? O Safári Petz é o seu lugar!" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:48.785
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '31': TestSuite: | "www.petz.com.br/blog/" | "Populares" | "Caroço em cachorro: o que este sintoma significa?" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:59.430
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '31': TestSuite: | "www.petz.com.br/blog/" | "Populares" | "Caroço em cachorro: o que este sintoma significa?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:59.444
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '31': TestSuite: | "www.petz.com.br/blog/" | "Populares" | "Caroço em cachorro: o que este sintoma significa?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:20:59.455
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '38': TestSuite: | "www.petz.com.br/blog/" | "Amor pelo seu pet não se explica. Mas se entende." | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:26:49.700
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:04.842
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '5': TestSuite: | "www.petz.com.br/blog/" | "Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!" | "Para a alegria de alguns e desespero de outros" | : Completed - OK (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:04.850
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:20.389
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '10': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | "A importância da música para nós" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:20.398
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Not Started - Undefined (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:35.484
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '15': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | "Será que cachorro filhote pode comer ração de cachorro" | : Completed - Error (4)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:35.494
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:44.021
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:44.036
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '23': TestSuite: | "www.petz.com.br/blog/" | "Recentes" | "Cachorro filhote pode comer ração de cachorro grande?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:44.084
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '27': TestSuite: | "www.petz.com.br/blog/" | "Mais Comentados" | "Quer um pet diferente? O Safári Petz é o seu lugar!" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:52.712
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '27': TestSuite: | "www.petz.com.br/blog/" | "Mais Comentados" | "Quer um pet diferente? O Safári Petz é o seu lugar!" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:52.726
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '27': TestSuite: | "www.petz.com.br/blog/" | "Mais Comentados" | "Quer um pet diferente? O Safári Petz é o seu lugar!" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:27:52.738
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '31': TestSuite: | "www.petz.com.br/blog/" | "Populares" | "Caroço em cachorro: o que este sintoma significa?" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:02.297
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '31': TestSuite: | "www.petz.com.br/blog/" | "Populares" | "Caroço em cachorro: o que este sintoma significa?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:02.481
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '31': TestSuite: | "www.petz.com.br/blog/" | "Populares" | "Caroço em cachorro: o que este sintoma significa?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:02.489
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '38': TestSuite: | "www.petz.com.br/blog/" | "Amor pelo seu pet não se explica. Mas se entende." | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:11.586
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '38': TestSuite: | "www.petz.com.br/blog/" | "Amor pelo seu pet não se explica. Mas se entende." | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:11.767
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '38': TestSuite: | "www.petz.com.br/blog/" | "Amor pelo seu pet não se explica. Mas se entende." | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:11.781
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '42': TestSuite: | "www.petz.com.br/blog/" | "Adestrar gatos: guia completo de como treiná-los" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:21.459
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '42': TestSuite: | "www.petz.com.br/blog/" | "Adestrar gatos: guia completo de como treiná-los" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:21.815
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '42': TestSuite: | "www.petz.com.br/blog/" | "Adestrar gatos: guia completo de como treiná-los" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:21.895
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '48': TestSuite: | "www.petz.com.br/blog/" | "6 dicas de vídeos de calopsita na internet" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:50.399
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '48': TestSuite: | "www.petz.com.br/blog/" | "6 dicas de vídeos de calopsita na internet" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:51.365
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '48': TestSuite: | "www.petz.com.br/blog/" | "6 dicas de vídeos de calopsita na internet" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:28:51.429
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '52': TestSuite: | "www.petz.com.br/blog/" | "Pet-Commerce: saiba como funciona essa nova ferramenta" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:29:51.309
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '52': TestSuite: | "www.petz.com.br/blog/" | "Pet-Commerce: saiba como funciona essa nova ferramenta" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:29:52.472
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '52': TestSuite: | "www.petz.com.br/blog/" | "Pet-Commerce: saiba como funciona essa nova ferramenta" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:29:52.480
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '59': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:30:30.146
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '59': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:30:30.558
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '59': TestSuite: | "www.petz.com.br/blog/" | "Cachorro gosta de música? Saiba mais sobre o assunto" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:30:30.563
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '63': TestSuite: | "www.petz.com.br/blog/" | "Cachorro roncando: o que pode ser e quando se preocupar" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:31:07.268
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '63': TestSuite: | "www.petz.com.br/blog/" | "Cachorro roncando: o que pode ser e quando se preocupar" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:31:11.315
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '63': TestSuite: | "www.petz.com.br/blog/" | "Cachorro roncando: o que pode ser e quando se preocupar" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:31:11.668
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '67': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:31:53.030
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '67': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:31:53.313
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '67': TestSuite: | "www.petz.com.br/blog/" | "Cachorro filhote pode comer ração de cachorro grande?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:31:53.319
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '71': TestSuite: | "www.petz.com.br/blog/" | "Leishmaniose canina: o que é e como tratar?" | : Not Started - Undefined (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:32:36.388
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '71': TestSuite: | "www.petz.com.br/blog/" | "Leishmaniose canina: o que é e como tratar?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testStarted(TestRunSession.java:714)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$5.run(RemoteTestRunnerClient.java:541)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestStarted(RemoteTestRunnerClient.java:537)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$6(RemoteTestRunnerClient.java:532)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:92)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)
+
+!ENTRY org.eclipse.jdt.junit.core 4 4 2020-11-10 02:32:38.412
+!MESSAGE Error
+!STACK 0
+java.lang.Exception: Unexpected TestElement type for testId '71': TestSuite: | "www.petz.com.br/blog/" | "Leishmaniose canina: o que é e como tratar?" | : Completed - OK (3)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.logUnexpectedTest(TestRunSession.java:807)
+	at org.eclipse.jdt.internal.junit.model.TestRunSession$TestSessionNotifier.testEnded(TestRunSession.java:744)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$4.run(RemoteTestRunnerClient.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.notifyTestEnded(RemoteTestRunnerClient.java:522)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$7(RemoteTestRunnerClient.java:517)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$DefaultProcessingState.readMessage(RemoteTestRunnerClient.java:96)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.receiveMessage(RemoteTestRunnerClient.java:376)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient.access$27(RemoteTestRunnerClient.java:375)
+	at org.eclipse.jdt.internal.junit.model.RemoteTestRunnerClient$ServerConnection.run(RemoteTestRunnerClient.java:273)

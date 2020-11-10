@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestSuite" project="petz-web" tests="45" started="4" failures="0" errors="2" ignored="0">
+  <testsuite name="pt.po.edimilsonestevam.cucumberTest.TestSuite" incomplete="true">
+    <testsuite name="Funcionalidade: Consultar Notícias" incomplete="true">
+      <testsuite name="Esquema do Cenario:" incomplete="true">
+        <testsuite name="Exemplos:" incomplete="true">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="8.119" incomplete="true">
+            <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'A importância da música para nós, seres humanos, é')]"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\edimi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1e0941c9ff0832911a69c88fd642e8f6
+*** Element info: {Using=xpath, value=//p[contains(text(),'A importância da música para nós, seres humanos, é')]}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pt.po.edimilsonestevam.page.Noticias.verificarNoticiaPesquisada(Noticias.java:36)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.o_sistema_apresenta_a_notícia_pesquisada(TestSteps.java:55)&#13;
+	at ✽.Entao o sistema apresenta a notícia pesquisada "Para a alegria de alguns e desespero de outros"(CT0001ConsultarNoticias.feature:12)&#13;
+&#13;
+</error>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="0.601"/>
+            <testcase name="Quando eu informo o título da notícia &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; no campo Pesquisa" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="0.072"/>
+            <testcase name="E eu confirmo a operacao" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="7.441"/>
+            <testcase name="Entao o sistema apresenta a notícia pesquisada &quot;Para a alegria de alguns e desespero de outros&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="0.005">
+              <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'A importância da música para nós, seres humanos, é')]"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\edimi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1e0941c9ff0832911a69c88fd642e8f6
+*** Element info: {Using=xpath, value=//p[contains(text(),'A importância da música para nós, seres humanos, é')]}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pt.po.edimilsonestevam.page.Noticias.verificarNoticiaPesquisada(Noticias.java:36)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.o_sistema_apresenta_a_notícia_pesquisada(TestSteps.java:55)&#13;
+	at ✽.Entao o sistema apresenta a notícia pesquisada "Para a alegria de alguns e desespero de outros"(CT0001ConsultarNoticias.feature:12)&#13;
+&#13;
+</error>
+            </testcase>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" incomplete="true"/>
+            <testcase name="Quando eu informo o título da notícia &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; no campo Pesquisa" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" incomplete="true"/>
+            <testcase name="E eu confirmo a operacao" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta a notícia pesquisada &quot;A importância da música para nós&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" incomplete="true"/>
+            <testcase name="Quando eu informo o título da notícia &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; no campo Pesquisa" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" incomplete="true"/>
+            <testcase name="E eu confirmo a operacao" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta a notícia pesquisada &quot;Será que cachorro filhote pode comer ração de cachorro&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Funcionalidade: Usar Filtro de Notícias" incomplete="true">
+      <testsuite name="Esquema do Cenario:" incomplete="true">
+        <testsuite name="Exemplos:" incomplete="true">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Recentes&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Recentes&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true"/>
+            <testcase name="Quando eu clico no filtro de notícias &quot;Recentes&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Recentes&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta a notícia filtrada &quot;Cachorro filhote pode comer ração de cachorro grande?&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Recentes&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Mais Comentados&quot; | &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Mais Comentados&quot; | &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot; |" incomplete="true"/>
+            <testcase name="Quando eu clico no filtro de notícias &quot;Mais Comentados&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Mais Comentados&quot; | &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta a notícia filtrada &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Mais Comentados&quot; | &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot; |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Populares&quot; | &quot;Caroço em cachorro: o que este sintoma significa?&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Populares&quot; | &quot;Caroço em cachorro: o que este sintoma significa?&quot; |" incomplete="true"/>
+            <testcase name="Quando eu clico no filtro de notícias &quot;Populares&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Populares&quot; | &quot;Caroço em cachorro: o que este sintoma significa?&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta a notícia filtrada &quot;Caroço em cachorro: o que este sintoma significa?&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Populares&quot; | &quot;Caroço em cachorro: o que este sintoma significa?&quot; |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Funcionalidade: Acessar Últimos Vídeos" incomplete="true">
+      <testsuite name="Esquema do Cenario:" incomplete="true">
+        <testsuite name="Exemplos:" incomplete="true">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Amor pelo seu pet não se explica. Mas se entende.&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Amor pelo seu pet não se explica. Mas se entende.&quot; |" incomplete="true"/>
+            <testcase name="Quando eu clico em avançar" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Amor pelo seu pet não se explica. Mas se entende.&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta os vídeos antigos &lt;antigosVideos&gt;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Amor pelo seu pet não se explica. Mas se entende.&quot; |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Adestrar gatos: guia completo de como treiná-los&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Adestrar gatos: guia completo de como treiná-los&quot; |" incomplete="true"/>
+            <testcase name="Quando eu clico em avançar" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Adestrar gatos: guia completo de como treiná-los&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta os vídeos antigos &lt;antigosVideos&gt;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Adestrar gatos: guia completo de como treiná-los&quot; |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Esquema do Cenario:" incomplete="true">
+        <testsuite name="Exemplos:" incomplete="true">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;6 dicas de vídeos de calopsita na internet&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;6 dicas de vídeos de calopsita na internet&quot; |" incomplete="true"/>
+            <testcase name="Quando eu clico em voltar" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;6 dicas de vídeos de calopsita na internet&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta os dois últimos vídeos &quot;6 dicas de vídeos de calopsita na internet&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;6 dicas de vídeos de calopsita na internet&quot; |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot; |" incomplete="true"/>
+            <testcase name="Quando eu clico em voltar" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta os dois últimos vídeos &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot; |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Funcionalidade: Acessar Categorias" incomplete="true">
+      <testsuite name="Esquema do Cenario:" incomplete="true">
+        <testsuite name="Exemplos:" incomplete="true">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; |" incomplete="true"/>
+            <testcase name="Quando eu coloco o mouse sobre a categoria Cães" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta as quatro últimas notícias sobre Cães &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot; |" incomplete="true"/>
+            <testcase name="Quando eu coloco o mouse sobre a categoria Cães" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta as quatro últimas notícias sobre Cães &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot; |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true"/>
+            <testcase name="Quando eu coloco o mouse sobre a categoria Cães" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta as quatro últimas notícias sobre Cães &quot;Cachorro filhote pode comer ração de cachorro grande?&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Leishmaniose canina: o que é e como tratar?&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Leishmaniose canina: o que é e como tratar?&quot; |" incomplete="true"/>
+            <testcase name="Quando eu coloco o mouse sobre a categoria Cães" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Leishmaniose canina: o que é e como tratar?&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta as quatro últimas notícias sobre Cães &quot;Leishmaniose canina: o que é e como tratar?&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Leishmaniose canina: o que é e como tratar?&quot; |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
