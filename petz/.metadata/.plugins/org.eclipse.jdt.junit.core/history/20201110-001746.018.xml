@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestSuite" project="petz-web" tests="45" started="39" failures="0" errors="8" ignored="18">
+  <testsuite name="pt.po.edimilsonestevam.cucumberTest.TestSuite" incomplete="true">
+    <testsuite name="Funcionalidade: Consultar Notícias" time="38.773">
+      <testsuite name="Esquema do Cenario:" time="38.773">
+        <testsuite name="Exemplos:" time="38.773">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="8.143" incomplete="true">
+            <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'A importância da música para nós, seres humanos, é')]"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\edimi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 38a34a24194fa4b7b6c82660f2b844f0
+*** Element info: {Using=xpath, value=//p[contains(text(),'A importância da música para nós, seres humanos, é')]}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pt.po.edimilsonestevam.page.Noticias.verificarNoticiaPesquisada(Noticias.java:29)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.o_sistema_apresenta_a_notícia_pesquisada(TestSteps.java:55)&#13;
+	at ✽.Entao o sistema apresenta a notícia pesquisada "Para a alegria de alguns e desespero de outros"(CT0001ConsultarNoticias.feature:12)&#13;
+&#13;
+</error>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="0.763"/>
+            <testcase name="Quando eu informo o título da notícia &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; no campo Pesquisa" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="0.096"/>
+            <testcase name="E eu confirmo a operacao" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="7.276"/>
+            <testcase name="Entao o sistema apresenta a notícia pesquisada &quot;Para a alegria de alguns e desespero de outros&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Por que o cachorro lambe o dono? Isso faz mal? É hora de descobrir!&quot; | &quot;Para a alegria de alguns e desespero de outros&quot; |" time="0.008">
+              <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'A importância da música para nós, seres humanos, é')]"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\edimi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 38a34a24194fa4b7b6c82660f2b844f0
+*** Element info: {Using=xpath, value=//p[contains(text(),'A importância da música para nós, seres humanos, é')]}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pt.po.edimilsonestevam.page.Noticias.verificarNoticiaPesquisada(Noticias.java:29)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.o_sistema_apresenta_a_notícia_pesquisada(TestSteps.java:55)&#13;
+	at ✽.Entao o sistema apresenta a notícia pesquisada "Para a alegria de alguns e desespero de outros"(CT0001ConsultarNoticias.feature:12)&#13;
+&#13;
+</error>
+            </testcase>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" time="7.24" incomplete="true">
+            <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\edimi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0a563f766f3671f1a908a47cf82c8469
+*** Element info: {Using=xpath, value=//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pt.po.edimilsonestevam.page.Noticias.verificarNoticiaPesquisada(Noticias.java:28)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.o_sistema_apresenta_a_notícia_pesquisada(TestSteps.java:55)&#13;
+	at ✽.Entao o sistema apresenta a notícia pesquisada "A importância da música para nós"(CT0001ConsultarNoticias.feature:12)&#13;
+&#13;
+</error>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" time="0.656"/>
+            <testcase name="Quando eu informo o título da notícia &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; no campo Pesquisa" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" time="1.491"/>
+            <testcase name="E eu confirmo a operacao" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" time="5.093"/>
+            <testcase name="Entao o sistema apresenta a notícia pesquisada &quot;A importância da música para nós&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; | &quot;A importância da música para nós&quot; |" time="0.0">
+              <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\edimi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0a563f766f3671f1a908a47cf82c8469
+*** Element info: {Using=xpath, value=//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pt.po.edimilsonestevam.page.Noticias.verificarNoticiaPesquisada(Noticias.java:28)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.o_sistema_apresenta_a_notícia_pesquisada(TestSteps.java:55)&#13;
+	at ✽.Entao o sistema apresenta a notícia pesquisada "A importância da música para nós"(CT0001ConsultarNoticias.feature:12)&#13;
+&#13;
+</error>
+            </testcase>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" time="7.411" incomplete="true">
+            <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\edimi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4d635ea469d3e756b05a910a95f0f156
+*** Element info: {Using=xpath, value=//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pt.po.edimilsonestevam.page.Noticias.verificarNoticiaPesquisada(Noticias.java:28)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.o_sistema_apresenta_a_notícia_pesquisada(TestSteps.java:55)&#13;
+	at ✽.Entao o sistema apresenta a notícia pesquisada "Será que cachorro filhote pode comer ração de cachorro"(CT0001ConsultarNoticias.feature:12)&#13;
+&#13;
+</error>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" time="0.922"/>
+            <testcase name="Quando eu informo o título da notícia &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; no campo Pesquisa" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" time="0.096"/>
+            <testcase name="E eu confirmo a operacao" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" time="6.393"/>
+            <testcase name="Entao o sistema apresenta a notícia pesquisada &quot;Será que cachorro filhote pode comer ração de cachorro&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; | &quot;Será que cachorro filhote pode comer ração de cachorro&quot; |" time="0.0">
+              <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]"}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\edimi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4d635ea469d3e756b05a910a95f0f156
+*** Element info: {Using=xpath, value=//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pt.po.edimilsonestevam.page.Noticias.verificarNoticiaPesquisada(Noticias.java:28)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.o_sistema_apresenta_a_notícia_pesquisada(TestSteps.java:55)&#13;
+	at ✽.Entao o sistema apresenta a notícia pesquisada "Será que cachorro filhote pode comer ração de cachorro"(CT0001ConsultarNoticias.feature:12)&#13;
+&#13;
+</error>
+            </testcase>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Funcionalidade: Usar Filtro de Notícias" time="20.605">
+      <testsuite name="Esquema do Cenario:" time="20.605">
+        <testsuite name="Exemplos:" time="20.605">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Recentes&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Recentes&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" time="0.0"/>
+            <testcase name="Quando eu clico no filtro de notícias &quot;Recentes&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Recentes&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" time="0.0" ignored="true"/>
+            <testcase name="Entao o sistema apresenta a notícia filtrada &quot;Cachorro filhote pode comer ração de cachorro grande?&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Recentes&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Mais Comentados&quot; | &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot; |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Mais Comentados&quot; | &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot; |" time="0.0"/>
+            <testcase name="Quando eu clico no filtro de notícias &quot;Mais Comentados&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Mais Comentados&quot; | &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot; |" time="0.0" ignored="true"/>
+            <testcase name="Entao o sistema apresenta a notícia filtrada &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Mais Comentados&quot; | &quot;Quer um pet diferente? O Safári Petz é o seu lugar!&quot; |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Populares&quot; | &quot;Caroço em cachorro: o que este sintoma significa?&quot; |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Populares&quot; | &quot;Caroço em cachorro: o que este sintoma significa?&quot; |" time="0.0"/>
+            <testcase name="Quando eu clico no filtro de notícias &quot;Populares&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Populares&quot; | &quot;Caroço em cachorro: o que este sintoma significa?&quot; |" time="0.0" ignored="true"/>
+            <testcase name="Entao o sistema apresenta a notícia filtrada &quot;Caroço em cachorro: o que este sintoma significa?&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Populares&quot; | &quot;Caroço em cachorro: o que este sintoma significa?&quot; |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Funcionalidade: Acessar Últimos Vídeos" time="94.614">
+      <testsuite name="Esquema do Cenario:" time="17.95">
+        <testsuite name="Exemplos:" time="17.95">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Amor pelo seu pet não se explica. Mas se entende.&quot; |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Amor pelo seu pet não se explica. Mas se entende.&quot; |" time="0.0"/>
+            <testcase name="Quando eu clico em avançar" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Amor pelo seu pet não se explica. Mas se entende.&quot; |" time="0.0" ignored="true"/>
+            <testcase name="Entao o sistema apresenta os vídeos antigos &lt;antigosVideos&gt;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Amor pelo seu pet não se explica. Mas se entende.&quot; |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Adestrar gatos: guia completo de como treiná-los&quot; |" time="0.004" incomplete="true">
+            <error>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0093C013+3194899]
+	Ordinal0 [0x00826021+2056225]
+	Ordinal0 [0x006BF4B0+586928]
+	Ordinal0 [0x006B5894+546964]
+	Ordinal0 [0x006AC50C+509196]
+	Ordinal0 [0x00661FA0+204704]
+	Ordinal0 [0x00661D0D+204045]
+	Ordinal0 [0x0065FC1B+195611]
+	Ordinal0 [0x00643B7F+80767]
+	Ordinal0 [0x00644B4E+84814]
+	Ordinal0 [0x00644AD9+84697]
+	Ordinal0 [0x0083CE64+2149988]
+	GetHandleVerifier [0x00AABE95+1400773]
+	GetHandleVerifier [0x00AABB61+1399953]
+	GetHandleVerifier [0x00AB31FA+1430314]
+	GetHandleVerifier [0x00AAC69F+1402831]
+	Ordinal0 [0x00833D61+2112865]
+	Ordinal0 [0x0083E5CB+2155979]
+	Ordinal0 [0x0083E6F5+2156277]
+	Ordinal0 [0x0084F26E+2224750]
+	BaseThreadInitThunk [0x76996359+25]
+	RtlGetAppContainerNamedObjectPath [0x76F97C24+228]
+	RtlGetAppContainerNamedObjectPath [0x76F97BF4+180]
+&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)&#13;
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)&#13;
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)&#13;
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at pt.po.edimilsonestevam.setup.Configuracao.abrirNavegador(Configuracao.java:35)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Blog_Petz(TestSteps.java:28)&#13;
+	at ✽.Dado eu estou na pagina do Blog Petz "www.petz.com.br/blog/"(CT0003AcessarUltimosVideos.feature:9)&#13;
+&#13;
+</error>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Adestrar gatos: guia completo de como treiná-los&quot; |" time="0.003">
+              <error>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9ND223U5', ip: '192.168.1.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0093C013+3194899]
+	Ordinal0 [0x00826021+2056225]
+	Ordinal0 [0x006BF4B0+586928]
+	Ordinal0 [0x006B5894+546964]
+	Ordinal0 [0x006AC50C+509196]
+	Ordinal0 [0x00661FA0+204704]
+	Ordinal0 [0x00661D0D+204045]
+	Ordinal0 [0x0065FC1B+195611]
+	Ordinal0 [0x00643B7F+80767]
+	Ordinal0 [0x00644B4E+84814]
+	Ordinal0 [0x00644AD9+84697]
+	Ordinal0 [0x0083CE64+2149988]
+	GetHandleVerifier [0x00AABE95+1400773]
+	GetHandleVerifier [0x00AABB61+1399953]
+	GetHandleVerifier [0x00AB31FA+1430314]
+	GetHandleVerifier [0x00AAC69F+1402831]
+	Ordinal0 [0x00833D61+2112865]
+	Ordinal0 [0x0083E5CB+2155979]
+	Ordinal0 [0x0083E6F5+2156277]
+	Ordinal0 [0x0084F26E+2224750]
+	BaseThreadInitThunk [0x76996359+25]
+	RtlGetAppContainerNamedObjectPath [0x76F97C24+228]
+	RtlGetAppContainerNamedObjectPath [0x76F97BF4+180]
+&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)&#13;
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)&#13;
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)&#13;
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at pt.po.edimilsonestevam.setup.Configuracao.abrirNavegador(Configuracao.java:35)&#13;
+	at pt.po.edimilsonestevam.stepDefinition.TestSteps.eu_estou_na_pagina_do_Blog_Petz(TestSteps.java:28)&#13;
+	at ✽.Dado eu estou na pagina do Blog Petz "www.petz.com.br/blog/"(CT0003AcessarUltimosVideos.feature:9)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="Quando eu clico em avançar" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Adestrar gatos: guia completo de como treiná-los&quot; |" time="0.001" ignored="true"/>
+            <testcase name="Entao o sistema apresenta os vídeos antigos &lt;antigosVideos&gt;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Adestrar gatos: guia completo de como treiná-los&quot; |" time="0.007" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+      <testsuite name="Esquema do Cenario:" time="28.403">
+        <testsuite name="Exemplos:" time="28.403">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;6 dicas de vídeos de calopsita na internet&quot; |" time="0.001" incomplete="true">
+            <skipped/>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;6 dicas de vídeos de calopsita na internet&quot; |" time="0.0"/>
+            <testcase name="Quando eu clico em voltar" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;6 dicas de vídeos de calopsita na internet&quot; |" time="0.001" ignored="true"/>
+            <testcase name="Entao o sistema apresenta os dois últimos vídeos &quot;6 dicas de vídeos de calopsita na internet&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;6 dicas de vídeos de calopsita na internet&quot; |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot; |" time="0.008" incomplete="true">
+            <skipped/>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot; |" time="0.005"/>
+            <testcase name="Quando eu clico em voltar" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot; |" time="0.002" ignored="true"/>
+            <testcase name="Entao o sistema apresenta os dois últimos vídeos &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Pet-Commerce: saiba como funciona essa nova ferramenta&quot; |" time="0.001" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Funcionalidade: Acessar Categorias" incomplete="true">
+      <testsuite name="Esquema do Cenario:" incomplete="true">
+        <testsuite name="Exemplos:" incomplete="true">
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; |" time="0.067" incomplete="true">
+            <skipped/>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; |" time="0.067"/>
+            <testcase name="Quando eu coloco o mouse sobre a categoria Cães" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; |" time="0.0" ignored="true"/>
+            <testcase name="Entao o sistema apresenta as quatro últimas notícias sobre Cães &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro gosta de música? Saiba mais sobre o assunto&quot; |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot; |" time="0.035" incomplete="true">
+            <skipped/>
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot; |" time="0.033"/>
+            <testcase name="Quando eu coloco o mouse sobre a categoria Cães" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot; |" time="0.002" ignored="true"/>
+            <testcase name="Entao o sistema apresenta as quatro últimas notícias sobre Cães &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro roncando: o que pode ser e quando se preocupar&quot; |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true"/>
+            <testcase name="Quando eu coloco o mouse sobre a categoria Cães" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta as quatro últimas notícias sobre Cães &quot;Cachorro filhote pode comer ração de cachorro grande?&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Cachorro filhote pode comer ração de cachorro grande?&quot; |" incomplete="true"/>
+          </testsuite>
+          <testsuite name="| &quot;www.petz.com.br/blog/&quot; | &quot;Leishmaniose canina: o que é e como tratar?&quot; |" incomplete="true">
+            <testcase name="Dado eu estou na pagina do Blog Petz &quot;www.petz.com.br/blog/&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Leishmaniose canina: o que é e como tratar?&quot; |" incomplete="true"/>
+            <testcase name="Quando eu coloco o mouse sobre a categoria Cães" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Leishmaniose canina: o que é e como tratar?&quot; |" incomplete="true"/>
+            <testcase name="Entao o sistema apresenta as quatro últimas notícias sobre Cães &quot;Leishmaniose canina: o que é e como tratar?&quot;" classname="| &quot;www.petz.com.br/blog/&quot; | &quot;Leishmaniose canina: o que é e como tratar?&quot; |" incomplete="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

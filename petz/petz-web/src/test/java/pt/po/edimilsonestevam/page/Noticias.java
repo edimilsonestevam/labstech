@@ -21,23 +21,23 @@ public class Noticias extends Base{
 		String noticia2 = "A importância da música para nós";
 		String noticia3 = "Será que cachorro filhote pode comer ração de cachorro";
 		
-		String xPathNoticia1 = "//p[contains(text(),'Para a alegria de alguns e desespero de outros, al')]";
-		String xPathNoticia2 = "//p[contains(text(),'A importância da música para nós, seres humanos, é')]";
-		String xPathNoticia3 = "//p[contains(text(),'Será que cachorro filhote pode comer ração de cach')]";
+		String xPathTituloNoticia1 = "//a[contains(text(),'Por que o cachorro lambe o dono? Isso faz mal? É h')]";
+		String xPathTituloNoticia2 = "//a[contains(text(),'Cachorro gosta de música? Saiba mais sobre o assunto')]";
+		String xPathTituloNoticia3 = "//a[contains(text(),'Cachorro filhote pode comer ração de cachorro grande?')]";
 		
-		String corpoNoticia1 = navegador.findElement(By.xpath(xPathNoticia1)).getText();
-		String corpoNoticia2 = navegador.findElement(By.xpath(xPathNoticia2)).getText();
-		String corpoNoticia3 = navegador.findElement(By.xpath(xPathNoticia3)).getText();
-		
+		String corpoNoticia1 = navegador.findElement(By.xpath(xPathTituloNoticia1)).getText();
+		String corpoNoticia2 = navegador.findElement(By.xpath(xPathTituloNoticia2)).getText();
+		String corpoNoticia3 = navegador.findElement(By.xpath(xPathTituloNoticia3)).getText();
+
 		
 		if(corpoNoticia.equalsIgnoreCase(noticia1)) {
-			Assert.assertEquals("Validando Corpo da Notícia", corpoNoticia, corpoNoticia1);
+			Assert.assertEquals("Validando Corpo da Notícia", corpoNoticia, corpoNoticia1.substring(46));
 		}
 		else if(corpoNoticia.equalsIgnoreCase(noticia2)) {
-			Assert.assertEquals("Validando Corpo da Notícia", corpoNoticia, corpoNoticia2);
+			Assert.assertEquals("Validando Corpo da Notícia", corpoNoticia, corpoNoticia2.substring(32));
 		}
 		else if(corpoNoticia.equalsIgnoreCase(noticia3)) {
-			Assert.assertEquals("Validando Corpo da Notícia", corpoNoticia, corpoNoticia3);
+			Assert.assertEquals("Validando Corpo da Notícia", corpoNoticia, corpoNoticia3.substring(54));
 		}
 		else {
 			System.out.println("Dados informados estão errados!");

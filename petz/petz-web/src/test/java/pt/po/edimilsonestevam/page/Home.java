@@ -23,7 +23,7 @@ public class Home extends Base{
 		System.out.println("• Validando Página Corrente...");
 		
 		String urlAtual = (String) navegador.getCurrentUrl();
-		Assert.assertEquals("Validando se está na Página Blog Petz", urlEsperada, urlAtual);
+		Assert.assertEquals("Validando se está na Página Blog Petz", urlEsperada, urlAtual.substring(8));
 
 	}
 	
