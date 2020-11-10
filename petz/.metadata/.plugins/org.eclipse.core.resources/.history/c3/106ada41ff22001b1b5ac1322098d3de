@@ -22,8 +22,8 @@ public class Noticias extends Base{
 		String noticia3 = "Cachorro filhote pode comer ração de cachorro grande?";
 		
 		String xPathTituloNoticia1 = "//a[contains(text(),'Por que o cachorro lambe o dono? Isso faz mal? É h')]";
-		String xPathTituloNoticia2 = "//a[contains(text(),'Cachorro gosta de música? Saiba mais sobre o assunto')]";  //EXISTEM DOIS ELEMENTOS COM O MESMO XPATH E SEM ID
-		String xPathTituloNoticia3 = "//a[contains(text(),'Cachorro filhote pode comer ração de cachorro grande?')]"; //EXISTEM DOIS ELEMENTOS COM O MESMO XPATH E SEM ID
+		String xPathTituloNoticia2 = "//a[contains(text(),'Cachorro gosta de música? Saiba mais sobre o assunto')]";
+		String xPathTituloNoticia3 = "//a[contains(text(),'Cachorro filhote pode comer ração de cachorro grande?')]";
 		
 		String tituloNoticiaPesquisada1 = navegador.findElement(By.xpath(xPathTituloNoticia1)).getText();
 		String tituloNoticiaPesquisada2 = navegador.findElement(By.xpath(xPathTituloNoticia2)).getText();
