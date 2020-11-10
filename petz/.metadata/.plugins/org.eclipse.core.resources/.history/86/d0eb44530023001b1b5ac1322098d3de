@@ -31,13 +31,13 @@ public class Noticias extends Base{
 
 		
 		if(tituloNoticia.equalsIgnoreCase(noticia1)) {
-			Assert.assertEquals("Validando Título da Notícia 1", tituloNoticia, tituloNoticiaPesquisada1);
+			Assert.assertEquals("Validando Título da Notícia", tituloNoticia, tituloNoticiaPesquisada1);
 		}
 		else if(tituloNoticia.equalsIgnoreCase(noticia2)) {
-			Assert.assertEquals("Validando Título da Notícia 2", tituloNoticia, tituloNoticiaPesquisada2);
+			Assert.assertEquals("Validando Título da Notícia", tituloNoticia, tituloNoticiaPesquisada2);
 		}
 		else if(tituloNoticia.equalsIgnoreCase(noticia3)) {
-			Assert.assertEquals("Validando Título da Notícia 3", tituloNoticia, tituloNoticiaPesquisada3);
+			Assert.assertEquals("Validando Título da Notícia", tituloNoticia, tituloNoticiaPesquisada3);
 		}
 		else {
 			System.out.println("Dados informados estão errados!");
