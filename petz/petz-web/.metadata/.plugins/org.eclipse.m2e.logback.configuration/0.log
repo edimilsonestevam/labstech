@@ -1,1 +1,29 @@
 2020-11-10 20:32:35,209 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-11-10 20:36:55,113 [Worker-14: Importing Maven projects] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Project flow already exists
+2020-11-10 20:37:07,780 [Worker-14: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: challenges:flow:1.0-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labstech\aubay\challenges-master\pom.xml.
+2020-11-10 20:37:08,457 [Worker-14: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pt.po.edimilsonestevam:getnet:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labstech\getnet\getnet\pom.xml.
+2020-11-10 20:37:10,481 [Worker-14: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pt.po.edimilsonestevam:challenges:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labstech\mindera\pom.xml.
+2020-11-10 20:37:10,749 [Worker-14: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pt.po.edimilsonestevam:petz-api:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labstech\petz\petz-api\pom.xml.
+2020-11-10 20:37:13,119 [Worker-14: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pt.po.edimilsonestevam:simulador-investimento-api:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labstech\sicredi\simulador-investimento-api\pom.xml.
+2020-11-10 20:37:13,310 [Worker-14: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pt.po.edimilsonestevam:simulador-investimento:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\GitHub\labstech\sicredi\simulador-investimento-web\pom.xml.
+2020-11-10 20:37:27,624 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /getnet/src/main/java
+2020-11-10 20:37:27,625 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /getnet/src/test/java
+2020-11-10 20:37:28,340 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /simulador-investimento-api/src/main/java
+2020-11-10 20:37:28,341 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /simulador-investimento-api/src/test/java
+2020-11-10 20:37:28,579 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /challenges/src/main/java
+2020-11-10 20:37:28,580 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /challenges/src/test/java
+2020-11-10 20:37:28,659 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /simulador-investimento/src/main/java
+2020-11-10 20:37:28,659 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /simulador-investimento/src/test/java
+2020-11-10 20:37:28,925 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /petz-api/src/main/java
+2020-11-10 20:37:28,927 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /petz-api/src/test/java
+2020-11-10 20:37:29,182 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /flow/src/main/java
+2020-11-10 20:37:29,183 [Worker-14: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /flow/src/test/java
+2020-11-10 20:37:29,249 [Worker-14: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 7 project(s) in 35 sec
+2020-11-10 20:37:33,099 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-10 20:37:33,099 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\mindera\src\main\resources
+2020-11-10 20:37:33,101 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-10 20:37:33,102 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\mindera\src\test\resources
+2020-11-10 20:37:35,060 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-10 20:37:35,070 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\aubay\challenges-master\src\main\resources
+2020-11-10 20:37:35,072 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-11-10 20:37:35,080 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\GitHub\labstech\aubay\challenges-master\src\test\resources
