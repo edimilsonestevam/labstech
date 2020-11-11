@@ -7,7 +7,7 @@ public class MapaCidade {
 
 	protected String myAppid = "&appid=1657f46b179509c93448fae18c78680d";
 	
-	public void consultarCidade(String nomeCidade, String uri) {
+	public void consultarCidade(String uri, String nomeCidade) {
 		
 		System.out.println("• Consultando Cidade...");
 		
