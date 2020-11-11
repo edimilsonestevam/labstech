@@ -1,0 +1,2 @@
+uri,siglaPais,nomeCidade,numeroCodigoCidade
+"api.openweathermap.org/data/2.5/weather?q=","porto","200"

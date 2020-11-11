@@ -6,13 +6,12 @@ import org.hamcrest.Matchers;
 public class MapaCidade {
 
 	
-	public void consultarPais(String uri, String siglaPais) {
+	public void consultarPais(String siglaPais) {
 		
 		System.out.println("• Consultando País informado...");
 		
 		given()
 		.when()
-			.get(uri)
 		.then()
 			.log().all()
 			.statusCode(200)
@@ -21,13 +20,12 @@ public class MapaCidade {
 		
 	}
 	
-	public void consultarCidade(String uri, String nomeCidade) {
+	public void consultarCidade(String nomeCidade) {
 		
 		System.out.println("• Consultando Cidade informada...");
 		
 		given()
 		.when()
-			.get(uri)
 		.then()
 			.log().all()
 			.statusCode(200)
@@ -36,13 +34,12 @@ public class MapaCidade {
 		
 	}
 	
-	public void consultarCodigoCidade(String uri, String numeroCodigoCidade) {
+	public void consultarCodigoCidade(String numeroCodigoCidade) {
 		
 		System.out.println("• Consultando Codigo da Cidade informada...");
 		
 		given()
 		.when()
-			.get(uri)
 		.then()
 			.log().all()
 			.statusCode(200)
