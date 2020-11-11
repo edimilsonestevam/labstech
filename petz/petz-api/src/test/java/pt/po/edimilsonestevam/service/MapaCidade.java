@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 import org.hamcrest.Matchers;
 
 public class MapaCidade {
+
 	
 	public void consultarPais(String siglaPais) {
 		
