@@ -1,0 +1,18 @@
+package pt.po.edimilsonestevam.service;
+
+public class MapaCidade {
+
+	
+	public void consultarPais() {
+		
+	}
+	
+	public void consultarCidade() {
+		
+	}
+	
+	public void consultarCodigoCidade() {
+		
+	}
+	
+}

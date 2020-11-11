@@ -1,0 +1,21 @@
+package pt.po.edimilsonestevam.service;
+
+public class MapaCidade {
+
+	
+	public void consultarPais() {
+		
+		System.out.println("• Consultando o País informado...");
+	}
+	
+	public void consultarCidade() {
+		
+		System.out.println("• Consultando a Cidade informada...");
+	}
+	
+	public void consultarCodigoCidade() {
+		
+		System.out.println("• Consultando o Codigo da Cidade informada...");
+	}
+	
+}

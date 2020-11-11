@@ -1,0 +1,51 @@
+package pt.po.edimilsonestevam.service;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.*;
+
+public class MapaCidade {
+
+	
+	public void consultarPais(String informePais) {
+		
+		System.out.println("• Consultando o País informado...");
+		
+		given()
+		.when()
+		.then()
+			.log().all()
+			.statusCode(200)
+			.body("country", hasItem("PT"))
+		;
+		
+	}
+	
+	public void consultarCidade(String informeCidade) {
+		
+		System.out.println("• Consultando a Cidade informada...");
+		
+		given()
+		.when()
+		.then()
+			.log().all()
+			.statusCode(200)
+			.body("name", hasItem("Porto"))
+		;
+		
+	}
+	
+	public void consultarCodigoCidade(String informeCodigoCidade) {
+		
+		System.out.println("• Consultando o Codigo da Cidade informada...");
+		
+		given()
+		.when()
+		.then()
+			.log().all()
+			.statusCode(200)
+			.body("cod", hasItem("200"))
+		;
+		
+	}
+	
+}

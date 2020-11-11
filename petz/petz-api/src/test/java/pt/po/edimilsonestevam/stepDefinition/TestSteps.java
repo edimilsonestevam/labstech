@@ -1,17 +1,12 @@
 package pt.po.edimilsonestevam.stepDefinition;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Entao;
-import cucumber.api.java.pt.Quando;
-
+import cucumber.api.DataTable;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 public class TestSteps {
-	
-	protected static String url = "";
-	
 
+	protected String url = "";
+	
 }

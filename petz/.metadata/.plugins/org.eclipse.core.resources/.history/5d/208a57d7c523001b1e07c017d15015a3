@@ -1,0 +1,38 @@
+package pt.po.edimilsonestevam.service;
+
+import static io.restassured.RestAssured.given;
+
+public class MapaCidade {
+
+	
+	public void consultarPais() {
+		
+		System.out.println("• Consultando o País informado...");
+		given()
+		.when()
+		.then()
+		;
+		
+	}
+	
+	public void consultarCidade() {
+		
+		System.out.println("• Consultando a Cidade informada...");
+		given()
+		.when()
+		.then()
+		;
+		
+	}
+	
+	public void consultarCodigoCidade() {
+		
+		System.out.println("• Consultando o Codigo da Cidade informada...");
+		given()
+		.when()
+		.then()
+		;
+		
+	}
+	
+}
