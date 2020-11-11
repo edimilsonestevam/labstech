@@ -67,6 +67,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\edimi\Repositories\GitHub\labsapi"/>
 			<item value="C:\Users\edimi\Repositories\GitHub\labsweb"/>
 			<item value="C:\Users\edimi\Repositories\GitHub\labstech\sicredi"/>
 			<item value="C:\Users\edimi\Repositories\GitHub\labstech\getnet"/>

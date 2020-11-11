@@ -1,0 +1,41 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import static io.restassured.RestAssured.given;
+
+import org.junit.Test;
+
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+import junitparams.FileParameters;
+import junitparams.mappers.CsvWithHeaderMapper;
+import pt.po.edimilsonestevam.service.MapaCidade;
+
+import static io.restassured.RestAssured.given;
+import org.hamcrest.Matchers;
+public class TestSteps {
+	
+	@Test
+	//@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	public void teste(String uri, String nomeCidade, int codigoPais, String siglaPais) {
+		
+		MapaCidade usuario = new MapaCidade();
+		usuario.consultarCidade("api.openweathermap.org/data/2.5/weather?q=", "porto");
+		/*usuario.validarCodigoPais(uri, nomeCidade, codigoPais);
+		usuario.validarSiglaPais(uri, nomeCidade, siglaPais);
+		usuario.validarNomeCidade(uri, nomeCidade);*/
+		
+		given()
+		.header("Accept", "application/json")
+		.queryParam("q", nomeCidade)
+		.queryParam("appid", myAppid)
+	.when()
+		.get(uri+nomeCidade)
+	.then()
+		.log().all()
+		.statusCode(200)
+	;
+		
+	}
+	
+}

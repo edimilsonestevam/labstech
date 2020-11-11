@@ -5,14 +5,51 @@ import org.hamcrest.Matchers;
 
 public class MapaCidade {
 
+	protected String myAppid = "&appid=1657f46b179509c93448fae18c78680d";
 	
-	public void consultarPais(String uri, String siglaPais) {
+	public void consultarCidade(String nomeCidade, String uri) {
 		
-		System.out.println("• Consultando País informado...");
+		System.out.println("• Consultando Cidade...");
 		
 		given()
 		.when()
-			.get(uri)
+			.get(uri+nomeCidade+myAppid)
+		.then()
+			.log().all()
+			.statusCode(200)
+		;
+		
+	}
+	
+	public void validarAcessoUri(String uri) {
+		
+		System.out.println("• Validando Acesso URI...");
+		
+		
+	}
+	
+	public void validarCodigoPais(String uri, String nomeCidade, int codigoPais) {
+		
+		System.out.println("• Validando Codigo do País...");
+		
+		given()
+		.when()
+			.get(uri+nomeCidade+myAppid)
+		.then()
+			.log().all()
+			.statusCode(200)
+			.body("id", Matchers.is(codigoPais))
+		;
+		
+	}
+	
+	public void validarSiglaPais(String uri, String nomeCidade, String siglaPais) {
+		
+		System.out.println("• Validando Sigla do País...");
+		
+		given()
+		.when()
+			.get(uri+nomeCidade+myAppid)
 		.then()
 			.log().all()
 			.statusCode(200)
@@ -21,13 +58,13 @@ public class MapaCidade {
 		
 	}
 	
-	public void consultarCidade(String uri, String nomeCidade) {
+	public void validarNomeCidade(String uri, String nomeCidade) {
 		
-		System.out.println("• Consultando Cidade informada...");
+		System.out.println("• Validando Cidade...");
 		
 		given()
 		.when()
-			.get(uri)
+			.get(uri+nomeCidade+myAppid)
 		.then()
 			.log().all()
 			.statusCode(200)
@@ -35,20 +72,5 @@ public class MapaCidade {
 		;
 		
 	}
-	
-	public void consultarCodigoCidade(String uri, String numeroCodigoCidade) {
 		
-		System.out.println("• Consultando Codigo da Cidade informada...");
-		
-		given()
-		.when()
-			.get(uri)
-		.then()
-			.log().all()
-			.statusCode(200)
-			.body("cod", Matchers.is(numeroCodigoCidade))
-		;
-		
-	}
-	
 }

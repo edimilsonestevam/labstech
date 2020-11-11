@@ -1,0 +1,55 @@
+package pt.po.edimilsonestevam.service;
+
+import static io.restassured.RestAssured.given;
+import org.hamcrest.Matchers;
+
+public class MapaCidade {
+
+	protected String appid = "&appid=1657f46b179509c93448fae18c78680d";
+	
+	public void consultarPais(String uri, String nomeCidade, String siglaPais) {
+		
+		System.out.println("• Consultando País informado...");
+		
+		given()
+		.when()
+			.get(uri+nomeCidade+appid)
+		.then()
+			.log().all()
+			.statusCode(200)
+			.body("country", Matchers.is(siglaPais))
+		;
+		
+	}
+	
+	public void consultarCidade(String uri, String nomeCidade) {
+		
+		System.out.println("• Consultando Cidade informada...");
+		
+		given()
+		.when()
+			.get(uri+nomeCidade+appid)
+		.then()
+			.log().all()
+			.statusCode(200)
+			.body("name", Matchers.is(nomeCidade))
+		;
+		
+	}
+	
+	public void consultarCodigoCidade(String uri, String nomeCidade, String numeroCodigoCidade) {
+		
+		System.out.println("• Consultando Codigo da Cidade informada...");
+		
+		given()
+		.when()
+			.get(uri+nomeCidade+appid)
+		.then()
+			.log().all()
+			.statusCode(200)
+			.body("cod", Matchers.is(numeroCodigoCidade))
+		;
+		
+	}
+	
+}

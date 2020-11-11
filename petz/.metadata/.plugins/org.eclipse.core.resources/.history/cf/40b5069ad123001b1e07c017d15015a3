@@ -1,0 +1,17 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import org.junit.Test;
+
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+import junitparams.FileParameters;
+import junitparams.mappers.CsvWithHeaderMapper;
+
+public class TestSteps {
+	
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+
+	
+}

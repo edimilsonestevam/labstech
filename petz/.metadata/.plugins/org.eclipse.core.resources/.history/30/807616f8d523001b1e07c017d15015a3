@@ -1,0 +1,27 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import org.junit.Test;
+
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+import junitparams.FileParameters;
+import junitparams.mappers.CsvWithHeaderMapper;
+import pt.po.edimilsonestevam.service.MapaCidade;
+
+public class TestSteps {
+	
+	//MapaCidade usuario = new MapaCidade();
+	
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	public void xpto1(String uri, int codigoPais, String siglaPais, String nomeCidade, String nomePais) {
+		
+		MapaCidade usuario = new MapaCidade();
+		usuario.validarCodigoPais(uri, nomeCidade, codigoPais);
+		usuario.validarSiglaPais(uri, nomeCidade, siglaPais);
+		usuario.validarCidade(uri, nomeCidade);
+		
+	}
+	
+}

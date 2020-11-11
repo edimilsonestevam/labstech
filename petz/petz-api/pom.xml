@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.sp.edimilsonestevam</groupId>
-	<artifactId>books</artifactId>
+	<artifactId>petz-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>books</name>
+	<name>petz-api</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -69,5 +69,12 @@
 			<type>pom</type>
 		</dependency>
 
+		<dependency>
+			<groupId>pl.pragmatists</groupId>
+			<artifactId>JUnitParams</artifactId>
+			<version>1.0.4</version>
+			<scope>test</scope>
+		</dependency>
+		
 	</dependencies>
 </project>

@@ -1,0 +1,18 @@
+#language: pt
+
+@cenario
+Funcionalidade: Consultar Mapa da Cidade
+  Eu quero consultar uma cidade
+
+  @cenario-consultar-cidade
+  Esquema do Cenario: 
+    Dado eu estou no serviço Open Weather Map <uri>
+    Quando eu informo o nome da cidade <nomeCidade>
+    E eu confirmo a operacao
+    Entao o sistema apresenta a Sigla do Pais <siglaPais>, o Nome da Cidade <nomeCidade> e o Numero do Codigo da Cidade <numeroCodigoCidade>
+
+    Exemplos: 
+      | uri                                          | siglaPais | nomeCidade | numeroCodigoCidade |
+      | "api.openweathermap.org/data/2.5/weather?q=" | "PT"      | "Porto"    | 6900               |
+			| "api.openweathermap.org/data/2.5/weather?q=" | "GB"      | "London"   | 1414               |
+			| "api.openweathermap.org/data/2.5/weather?q=" | "ES"      | "Madrid"   | 6443               |

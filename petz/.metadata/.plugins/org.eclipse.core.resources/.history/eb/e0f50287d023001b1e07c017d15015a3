@@ -1,0 +1,4 @@
+uri,siglaPais,nomeCidade,numeroCodigoCidade
+"api.openweathermap.org/data/2.5/weather?q=","PT","Porto","6900"
+"api.openweathermap.org/data/2.5/weather?q=","GB","London","1414"
+"api.openweathermap.org/data/2.5/weather?q=","ES","Madrid","6443"

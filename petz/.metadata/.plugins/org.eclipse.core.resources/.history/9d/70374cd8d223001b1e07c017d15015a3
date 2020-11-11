@@ -1,0 +1,34 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import org.junit.Test;
+
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+import junitparams.FileParameters;
+import junitparams.mappers.CsvWithHeaderMapper;
+
+public class TestSteps {
+	
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Dado("^eu estou acessando o serviço Open Weather Map \"([^\"]*)\"$")
+	public void eu_estou_acessando_o_serviço_Open_Weather_Map(String arg1) throws Throwable {
+
+	}
+
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Quando("^eu informo o nome da cidade <cidade>$")
+	public void eu_informo_o_nome_da_cidade_cidade() throws Throwable {
+
+	}
+
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Entao("^o sistema apresenta Codigo do Pais (\\d+), Sigla do Pais \"([^\"]*)\" e Nome da Cidade \"([^\"]*)\"$")
+	public void o_sistema_apresenta_Codigo_do_Pais_Sigla_do_Pais_e_Nome_da_Cidade(int arg1, String arg2, String arg3) throws Throwable {
+
+	}
+	
+}

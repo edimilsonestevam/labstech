@@ -1,0 +1,41 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import org.junit.Test;
+
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+import junitparams.FileParameters;
+import junitparams.mappers.CsvWithHeaderMapper;
+import pt.po.edimilsonestevam.service.MapaCidade;
+
+public class TestSteps {
+	
+	MapaCidade usuario = new MapaCidade();
+	
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+		
+	@Dado("^eu estou acessando o serviço Open Weather Map através da URI \"([^\"]*)\"$")
+	public void eu_estou_acessando_o_serviço_Open_Weather_Map_através_da_URI(String uri) throws Throwable {
+
+		usuario.consultarCidade(uri);
+	}
+
+	@Quando("^eu informo o nome da cidade \"([^\"]*)\", \"([^\"]*)\"$")
+	public void eu_informo_o_nome_da_cidade(String uri, String nomeCidade) throws Throwable {
+
+		usuario.consultarCidade(uri, nomeCidade);
+		
+	}
+
+	@Entao("^o sistema apresenta Codigo do Pais (\\d+), Sigla do Pais \"([^\"]*)\", Nome da Cidade \"([^\"]*)\", \"([^\"]*)\"$")
+	public void o_sistema_apresenta_Codigo_do_Pais_Sigla_do_Pais_Nome_da_Cidade(int codigoPais, String siglaPais, String nomeCidade, String uri) throws Throwable {
+
+		usuario.validarCodigoPais(uri, nomeCidade, codigoPais);
+		usuario.validarSiglaPais(uri, nomeCidade, siglaPais);
+		usuario.validarNomeCidade(uri, nomeCidade);
+		
+	}
+	
+}

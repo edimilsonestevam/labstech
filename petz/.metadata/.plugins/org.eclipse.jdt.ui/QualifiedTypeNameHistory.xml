@@ -12,4 +12,11 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
     <fullyQualifiedTypeName name="junitparams.Parameters"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="br.sp.edimilsonestevam.setup.Base"/>
+    <fullyQualifiedTypeName name="org.hamcrest.Matchers"/>
+    <fullyQualifiedTypeName name="cucumber.api.java.pt.Dado"/>
+    <fullyQualifiedTypeName name="cucumber.api.java.pt.Quando"/>
+    <fullyQualifiedTypeName name="cucumber.api.java.pt.Entao"/>
+    <fullyQualifiedTypeName name="pt.po.edimilsonestevam.service.MapaCidade"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
 </qualifiedTypeNameHistroy>

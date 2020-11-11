@@ -1,0 +1,48 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import org.junit.Test;
+
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+import junitparams.FileParameters;
+import junitparams.mappers.CsvWithHeaderMapper;
+import pt.po.edimilsonestevam.service.MapaCidade;
+
+public class TestSteps {
+	
+	MapaCidade usuario = new MapaCidade();
+	
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	public void xpto1(String uri, int codigoPais, String siglaPais, String nomeCidade, String nomePais) {
+		
+		
+	}
+	
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Dado("^eu estou acessando o serviço Open Weather Map atraves da URI \"([^\"]*)\"$")
+	public void eu_estou_acessando_o_serviço_Open_Weather_Map_atraves_da_URI(String arg1) throws Throwable {
+
+	}
+
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Quando("^eu informo o nome da cidade <cidade>$")
+	public void eu_informo_o_nome_da_cidade_cidade() throws Throwable {
+
+	}
+
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Entao("^o sistema apresenta Serviço \"([^\"]*)\", Codigo do Pais (\\d+), Sigla do Pais \"([^\"]*)\", Nome da Cidade \"([^\"]*)\"$")
+	public void o_sistema_apresenta_Serviço_Codigo_do_Pais_Sigla_do_Pais_Nome_da_Cidade(String uri, int codigoPais, String siglaPais, String nomeCidade) throws Throwable {
+
+		usuario.validarCodigoPais(uri, nomeCidade, codigoPais);
+		usuario.validarSiglaPais(uri, nomeCidade, siglaPais);
+		usuario.validarCidade(uri, nomeCidade);
+		
+	}
+	
+}
