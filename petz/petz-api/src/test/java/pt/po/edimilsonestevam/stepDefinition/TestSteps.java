@@ -11,14 +11,14 @@ import pt.po.edimilsonestevam.service.MapaCidade;
 
 public class TestSteps {
 	
-	MapaCidade usuario = new MapaCidade();
+	MapaCidade usuario = new MapaCidade(null);
 	
 	@Test
 	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)		
 	@Dado("^eu tenho acesso ao servivo Open Weather Map através da URI \"([^\"]*)\"$")
-	public void eu_tenho_acesso_ao_servivo_Open_Weather_Map_através_da_URI(String uri) throws Throwable {
+	public void eu_tenho_acesso_ao_servivo_Open_Weather_Map_através_da_URI(String uri, String nomeCidade) throws Throwable {
 
-		usuario.validarAcessoUri(uri);
+		usuario.validarAcessoUri(nomeCidade);
 		
 	}
 
@@ -27,7 +27,7 @@ public class TestSteps {
 	@Quando("^eu pesquiso por uma cidade \"([^\"]*)\" no serviço Open Weather Map através da URI \"([^\"]*)\"$")
 	public void eu_pesquiso_por_uma_cidade_no_serviço_Open_Weather_Map_através_da_URI(String nomeCidade, String uri) throws Throwable {
 
-		usuario.consultarCidade(uri, nomeCidade);
+		usuario.consultarCidade(nomeCidade);
 		
 	}
 
@@ -36,9 +36,9 @@ public class TestSteps {
 	@Entao("^o sistema apresenta Codigo do Pais (\\d+), Sigla do Pais \"([^\"]*)\", Nome da Cidade \"([^\"]*)\" conforme o serviço Open Weather Map através da URI \"([^\"]*)\"$")
 	public void o_sistema_apresenta_Codigo_do_Pais_Sigla_do_Pais_Nome_da_Cidade_conforme_o_serviço_Open_Weather_Map_através_da_URI(int codigoPais, String siglaPais, String nomeCidade, String uri) throws Throwable {
 
-		usuario.validarCodigoPais(uri, nomeCidade, codigoPais);
-		usuario.validarSiglaPais(uri, nomeCidade, siglaPais);
-		usuario.validarNomeCidade(uri, nomeCidade);
+		usuario.validarCodigoPais(nomeCidade, codigoPais);
+		usuario.validarSiglaPais(nomeCidade, siglaPais);
+		usuario.validarNomeCidade(nomeCidade);
 		
 	}
 	
