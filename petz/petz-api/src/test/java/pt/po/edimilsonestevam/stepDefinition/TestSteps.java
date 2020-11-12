@@ -11,34 +11,35 @@ import pt.po.edimilsonestevam.service.MapaCidade;
 
 public class TestSteps {
 	
-	MapaCidade usuario = new MapaCidade(null);
+	protected String uri = "http://api.openweathermap.org/data/2.5/weather?q=porto&appid=1657f46b179509c93448fae18c78680d";
+			
+	MapaCidade usuario = new MapaCidade();
 	
 	@Test
-	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)		
-	@Dado("^eu tenho acesso ao servivo Open Weather Map através da URI \"([^\"]*)\"$")
-	public void eu_tenho_acesso_ao_servivo_Open_Weather_Map_através_da_URI(String uri, String nomeCidade) throws Throwable {
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)	
+	@Dado("^eu tenho acesso ao servico Open Weather Map \"([^\"]*)\"$")
+	public void eu_tenho_acesso_ao_servico_Open_Weather_Map(String uri) throws Throwable {
 
-		usuario.validarAcessoUri(nomeCidade);
+		usuario.validarAcessoUri(uri);
 		
 	}
 
 	@Test
-	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)	
-	@Quando("^eu pesquiso por uma cidade \"([^\"]*)\" no serviço Open Weather Map através da URI \"([^\"]*)\"$")
-	public void eu_pesquiso_por_uma_cidade_no_serviço_Open_Weather_Map_através_da_URI(String nomeCidade, String uri) throws Throwable {
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Quando("^eu informo o nome da cidade para consulta \"([^\"]*)\"$")
+	public void eu_informo_o_nome_da_cidade_para_consulta(String cidade) throws Throwable {
 
-		usuario.consultarCidade(nomeCidade);
+		usuario.validarCidade(uri, cidade);
 		
 	}
 
 	@Test
-	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)	
-	@Entao("^o sistema apresenta Codigo do Pais (\\d+), Sigla do Pais \"([^\"]*)\", Nome da Cidade \"([^\"]*)\" conforme o serviço Open Weather Map através da URI \"([^\"]*)\"$")
-	public void o_sistema_apresenta_Codigo_do_Pais_Sigla_do_Pais_Nome_da_Cidade_conforme_o_serviço_Open_Weather_Map_através_da_URI(int codigoPais, String siglaPais, String nomeCidade, String uri) throws Throwable {
-
-		usuario.validarCodigoPais(nomeCidade, codigoPais);
-		usuario.validarSiglaPais(nomeCidade, siglaPais);
-		usuario.validarNomeCidade(nomeCidade);
+	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
+	@Entao("^o serviço apresenta o codigo do pais (\\d+), sigla do pais \"([^\"]*)\"$")
+	public void o_serviço_apresenta_o_codigo_do_pais_sigla_do_pais(int codigoPais, String siglaPais) throws Throwable {
+		
+		usuario.validarCodigoPais(uri, codigoPais);
+		usuario.validarSiglaPais(uri, siglaPais);
 		
 	}
 	

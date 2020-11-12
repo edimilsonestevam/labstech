@@ -3,53 +3,44 @@ package pt.po.edimilsonestevam.service;
 import static io.restassured.RestAssured.given;
 import org.hamcrest.Matchers;
 
-import pt.po.edimilsonestevam.setup.Base;
+public class MapaCidade {
 
-public class MapaCidade extends Base{
-
-	protected String appid = "&appid=1657f46b179509c93448fae18c78680d";
-	
-	public MapaCidade(String uri) {
-		super(uri);
-		
-	}
-	
-	public void consultarCidade(String nomeCidade) {
+	public void consultarCidade(String uri, String cidade) {
 		
 		System.out.println("• Consultando Cidade...");
 		
 		given()
 		.when()
-			.get(uri+nomeCidade+appid)
+			.get(uri)
 		.then()
 			.log().all()
 			.statusCode(200)
+			.body("name", Matchers.is(cidade))
 		;
 		System.out.println("------------------------------------------------------------------------------------------------------------------");
 		
 	}
 	
-	public void validarAcessoUri(String nomeCidade) {
+	public void validarAcessoUri(String uri) {
 		
 		System.out.println("• Validando Acesso URI...");
 		
 		given()
-			.get(uri+nomeCidade+appid)
+			.get(uri)
 		.then()
 			.statusCode(200)
-					  .log()
-					  .status();
+					  .log().status();
 		System.out.println("------------------------------------------------------------------------------------------------------------------");
 		
 	}
 	
-	public void validarCodigoPais(String nomeCidade, int codigoPais) {
+	public void validarCodigoPais(String uri, int codigoPais) {
 		
 		System.out.println("• Validando Codigo do País...");
 		
 		given()
 		.when()
-			.get(uri+nomeCidade+appid)
+			.get(uri)
 		.then()
 			.log().all()
 			.statusCode(200)
@@ -59,13 +50,13 @@ public class MapaCidade extends Base{
 		
 	}
 	
-	public void validarSiglaPais(String nomeCidade, String siglaPais) {
+	public void validarSiglaPais(String uri, String siglaPais) {
 		
 		System.out.println("• Validando Sigla do País...");
 		
 		given()
 		.when()
-			.get(uri+nomeCidade+appid)
+			.get(uri)
 		.then()
 			.log().all()
 			.statusCode(200)
@@ -75,17 +66,17 @@ public class MapaCidade extends Base{
 		
 	}
 	
-	public void validarNomeCidade(String nomeCidade) {
+	public void validarCidade(String uri, String cidade) {
 		
 		System.out.println("• Validando Cidade...");
 		
 		given()
 		.when()
-			.get(uri+nomeCidade+appid)
+			.get(uri)
 		.then()
 			.log().all()
 			.statusCode(200)
-			.body("name", Matchers.is(nomeCidade))
+			.body("name", Matchers.is(cidade))
 		;
 		System.out.println("------------------------------------------------------------------------------------------------------------------");
 		
