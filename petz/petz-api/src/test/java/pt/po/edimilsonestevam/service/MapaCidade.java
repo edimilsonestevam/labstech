@@ -8,12 +8,15 @@ public class MapaCidade {
 	public void validarAcessoUri(String uri) {
 		
 		System.out.println("• Validando Acesso URI...");
-		
+				
 		given()
+		.when()
 			.get(uri)
 		.then()
 			.statusCode(200)
-					  .log().status();
+					  .log().status()
+		;
+		
 		System.out.println("------------------------------------------------------------------------------------------------------------------");
 		
 	}
@@ -30,6 +33,7 @@ public class MapaCidade {
 			.statusCode(200)
 			.body("id", Matchers.is(codigoPais))
 		;
+		
 		System.out.println("------------------------------------------------------------------------------------------------------------------");
 		
 	}
@@ -46,6 +50,7 @@ public class MapaCidade {
 			.statusCode(200)
 			.body("country", Matchers.is(siglaPais))
 		;
+		
 		System.out.println("------------------------------------------------------------------------------------------------------------------");
 		
 	}
@@ -62,6 +67,7 @@ public class MapaCidade {
 			.statusCode(200)
 			.body("name", Matchers.is(cidade))
 		;
+		
 		System.out.println("------------------------------------------------------------------------------------------------------------------");
 		
 	}
