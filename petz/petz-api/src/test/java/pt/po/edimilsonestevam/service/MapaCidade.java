@@ -4,22 +4,7 @@ import static io.restassured.RestAssured.given;
 import org.hamcrest.Matchers;
 
 public class MapaCidade {
-
-	public void consultarCidade(String uri, String cidade) {
-		
-		System.out.println("• Consultando Cidade...");
-		
-		given()
-		.when()
-			.get(uri)
-		.then()
-			.log().all()
-			.statusCode(200)
-			.body("name", Matchers.is(cidade))
-		;
-		System.out.println("------------------------------------------------------------------------------------------------------------------");
-		
-	}
+	
 	
 	public void validarAcessoUri(String uri) {
 		
