@@ -24,13 +24,13 @@ public class TestSteps {
 
 	@Test
 	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
-	@Quando("^eu informo o nome da cidade para consulta \"([^\"]*)\"$")
-	public void eu_informo_o_nome_da_cidade_para_consulta(String uri, String cidade) throws Throwable {
+	@Quando("^eu informo o nome da cidade para consulta \"([^\"]*)\" no servico Open Weather Map \"([^\"]*)\"$")
+	public void eu_informo_o_nome_da_cidade_para_consulta_no_servico_Open_Weather_Map(String uri, String cidade) throws Throwable {
 
 		usuario.validarCidade(uri, cidade);
 		
 	}
-
+	
 	@Test
 	@FileParameters(value = "src/test/java/resources/MassaDeDados.csv", mapper = CsvWithHeaderMapper.class)
 	@Entao("^o serviço apresenta o codigo do pais (\\d+), sigla do pais \"([^\"]*)\"$")

@@ -7,7 +7,7 @@ Funcionalidade: Consultar Mapa da Cidade
   @cenario-consultar-cidade
   Esquema do Cenario: 
     Dado eu tenho acesso ao servico Open Weather Map <uri>
-    Quando eu informo o nome da cidade para consulta <cidade>
+    Quando eu informo o nome da cidade para consulta <cidade> no servico Open Weather Map <uri>
     Entao o serviço apresenta o codigo do pais <codigoPais>, sigla do pais <siglaPais>
 
     Exemplos: 
