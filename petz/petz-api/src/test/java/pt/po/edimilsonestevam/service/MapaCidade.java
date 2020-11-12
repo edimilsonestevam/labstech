@@ -5,7 +5,6 @@ import org.hamcrest.Matchers;
 
 public class MapaCidade {
 	
-	
 	public void validarAcessoUri(String uri) {
 		
 		System.out.println("• Validando Acesso URI...");
