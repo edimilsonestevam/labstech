@@ -34,8 +34,8 @@ public class TestSteps {
 	public void google_Maps_will_show_city_wanted(String cityWanted) throws Throwable {
 	    
 		new Search(browser).verifyCityName(cityWanted);
-		new Maps(browser).clickZoomIn();
-		new Maps(browser).clickZoomOut();
+		new Maps(browser).clickDirections();
+		new Maps(browser).verifyNameCity(cityWanted);
 		new Configuration().browserClose(browser);
 		
 	}

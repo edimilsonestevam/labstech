@@ -1,8 +1,11 @@
 package pt.po.edimilsonestevam.page;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
@@ -19,10 +22,13 @@ public class Maps extends Base {
 		
 		System.out.println("• Clicking Zoom In...");
 		
-		String clickZoomIn = "//button[@id='widget-zoom-in']";
+		String iconZoomIn = "//button[@id='widget-zoom-in']";
+		
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(iconZoomIn)));
 		
 		for(int i = 0; i <= 2; i++) {
-			element.findElement(By.xpath(clickZoomIn)).click();
+			element.findElement(By.xpath(iconZoomIn)).click();
 		}
 		
 	}
@@ -31,12 +37,40 @@ public class Maps extends Base {
 		
 		System.out.println("• Clicking Zoom Out...");
 		
-		String clickZoomOut = "//button[@id='widget-zoom-out']";
+		String iconZoomOut = "//button[@id='widget-zoom-out']";
+		
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(iconZoomOut)));
 		
 		for(int i = 0; i <= 2; i++) {
-			element.findElement(By.xpath(clickZoomOut)).click();
+			element.findElement(By.xpath(iconZoomOut)).click();
 		}
 		
 	}
 	
+	public void clickDirections() {
+		
+		System.out.println("• Clicking Directions...");
+		
+		String iconDirections = "//body/div[@id='app-container']/div[@id='content-container']/div[@id='pane']/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/button[1]/span[1]/img[1]";
+		
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(iconDirections)));
+		element.findElement(By.xpath(iconDirections)).click();
+		
+	}
+	
+	public void verifyNameCity(String expectedCity) {
+		
+		System.out.println("• Verifying Name City...");
+		
+		String fieldDestionationDirection = "//body/div[@id='app-container']/div[@id='content-container']/div[@id='omnibox-container']/div[@id='omnibox']/div[@id='omnibox-directions']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]";
+		
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(fieldDestionationDirection)));
+		element.findElement(By.xpath(fieldDestionationDirection)).click();
+		String actualCityOriginDirection = element.findElement(By.xpath(fieldDestionationDirection)).getText();
+		Assert.assertEquals("Verify if it is the same City", expectedCity, actualCityOriginDirection);
+		
+	}
 }

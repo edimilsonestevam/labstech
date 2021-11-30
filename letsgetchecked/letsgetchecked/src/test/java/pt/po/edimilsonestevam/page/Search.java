@@ -32,12 +32,12 @@ public class Search extends Base {
 		
 		System.out.println("• Typing City...");
 		
-		String searchType = "//input[@id='searchboxinput']";
+		String fieldSearchType = "//input[@id='searchboxinput']";
 		
 		WebDriverWait wait = new WebDriverWait(browser, 5);
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(searchType)));		
-		element.findElement(By.xpath(searchType)).sendKeys(cityName);
-		element.findElement(By.xpath(searchType)).sendKeys(Keys.ENTER);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(fieldSearchType)));		
+		element.findElement(By.xpath(fieldSearchType)).sendKeys(cityName);
+		element.findElement(By.xpath(fieldSearchType)).sendKeys(Keys.ENTER);
 	
 	}
 	
@@ -45,11 +45,11 @@ public class Search extends Base {
 		
 		System.out.println("• Verifying City Name ...");
 		
-		String nameCity = "//body/div[@id='app-container']/div[@id='content-container']/div[@id='pane']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/h1[1]/span[1]";
+		String titleNameCity = "//body/div[@id='app-container']/div[@id='content-container']/div[@id='pane']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/h1[1]/span[1]";
 				
 		WebDriverWait wait = new WebDriverWait(browser, 5);
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(nameCity)));
-		String actualCity = element.findElement(By.xpath(nameCity)).getText();
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(titleNameCity)));
+		String actualCity = element.findElement(By.xpath(titleNameCity)).getText();
 		Assert.assertEquals("Verify if it is correct", cityWanted, actualCity);
 		
 	}

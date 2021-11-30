@@ -17,12 +17,12 @@ public class Consent extends Base {
 	
 	public void consentGoogleConfirm () {
 		
-		String accept = "//span[contains(text(),'Aceito')]";
+		String buttonAccept = "//span[contains(text(),'Aceito')]";
 		
 		WebElement element = null;
 
 		WebDriverWait wait = new WebDriverWait(browser, 5);
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(accept)));
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(buttonAccept)));
 		element.click();
 		
 	}
