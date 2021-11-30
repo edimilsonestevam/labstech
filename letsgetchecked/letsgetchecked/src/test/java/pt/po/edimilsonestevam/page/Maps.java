@@ -17,24 +17,24 @@ public class Maps extends Base {
 	
 	public void clickZoomIn() {
 		
-		System.out.println("• Typing Zoom In...");
+		System.out.println("• Clicking Zoom In...");
 		
 		String clickZoomIn = "//button[@id='widget-zoom-in']";
 		
 		for(int i = 0; i <= 2; i++) {
-			element.findElement(By.id(clickZoomIn)).click();
+			element.findElement(By.xpath(clickZoomIn)).click();
 		}
 		
 	}
 	
 	public void clickZoomOut( ) {
 		
-		System.out.println("• Typing Zoom Out...");
+		System.out.println("• Clicking Zoom Out...");
 		
 		String clickZoomOut = "//button[@id='widget-zoom-out']";
 		
 		for(int i = 0; i <= 2; i++) {
-			element.findElement(By.id(clickZoomOut)).click();
+			element.findElement(By.xpath(clickZoomOut)).click();
 		}
 		
 	}
