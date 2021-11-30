@@ -748,3 +748,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration TestSteps reference
 2021-11-30 02:43:42,991 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\letsgetchecked\letsgetchecked\src\main\resources
 2021-11-30 02:43:42,993 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-11-30 02:43:42,993 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\letsgetchecked\letsgetchecked\src\test\resources
+2021-11-30 02:48:15,362 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 02:48:15,363 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\letsgetchecked\letsgetchecked\src\main\resources
+2021-11-30 02:48:15,364 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-11-30 02:48:15,365 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\letsgetchecked\letsgetchecked\src\test\resources
