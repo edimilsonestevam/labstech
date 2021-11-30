@@ -1,0 +1,39 @@
+package pt.po.edimilsonestevam.page;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class Search extends Base{
+
+	public Search(WebDriver browser) {
+		super(browser);
+		
+	}
+
+	public void VerifyActualPage(String expectedUrl) {
+		
+		System.out.println("• Verifying Actual Page...");
+		
+		String actualUrl = (String) browser.getCurrentUrl();
+		Assert.assertEquals("Verify if you are in Google Maps", expectedUrl, actualUrl.substring(8));
+
+	}
+	
+	public void SearchCity(String cityName) {
+		
+		System.out.println("• Typing City...");
+		
+		String searchType = "//input[@id='searchboxinput']";
+		
+		WebElement element = null;
+		element.findElement(By.xpath(searchType)).sendKeys(cityName);
+		element.findElement(By.xpath(searchType)).sendKeys(Keys.ENTER);
+	
+	}
+	
+}

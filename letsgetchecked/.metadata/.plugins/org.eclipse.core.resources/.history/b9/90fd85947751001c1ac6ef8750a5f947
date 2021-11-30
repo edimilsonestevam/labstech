@@ -1,0 +1,24 @@
+package pt.po.edimilsonestevam.page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class ConsentGoogle extends Base{
+
+	public ConsentGoogle(WebDriver browser) {
+		super(browser);
+	
+	}
+	
+	public void ConsentGoogleConfirm () {
+		
+		String btnAccept = "VfPpkd-vQzf8d";
+		
+		WebElement element = null;
+		element.findElement(By.className(btnAccept)).click();
+		
+	}
+}

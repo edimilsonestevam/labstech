@@ -1,0 +1,44 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import junitparams.FileParameters;
+import junitparams.JUnitParamsRunner;
+import junitparams.mappers.CsvWithHeaderMapper;
+import pt.po.edimilsonestevam.setup.Configuration;
+
+@RunWith(JUnitParamsRunner.class)
+public class TestSteps {
+
+	protected static WebDriver browser;
+	
+	@Before
+	@FileParameters(value = "src/test/java/resources/MassOfDatas.csv", mapper = CsvWithHeaderMapper.class)
+	@Given("^i am Google Maps page$")
+	public void i_am_Google_Maps_page() throws Throwable {
+
+		browser = new Configuration().abrirNavegador("chrome", url);
+		
+	}
+
+	@Test
+	@FileParameters(value = "src/test/java/resources/MassOfDatas.csv", mapper = CsvWithHeaderMapper.class)
+	@When("^i type name city in the search field$")
+	public void i_type_name_city_in_the_search_field() throws Throwable {
+
+	}
+
+	@After
+	@Then("^Google Maps will show city wanted$")
+	public void google_Maps_will_show_city_wanted() throws Throwable {
+	    
+	}
+
+}

@@ -1,0 +1,13 @@
+@Scenario
+Feature: Search City
+  I want to search a city in the Google Maps
+
+  @scenario-search-city
+  Background: 
+    Given 
+    When
+    Then
+
+    Examples: 
+      | url                   | cityName |
+      | "www.google.com/maps" | "Dublin" |
