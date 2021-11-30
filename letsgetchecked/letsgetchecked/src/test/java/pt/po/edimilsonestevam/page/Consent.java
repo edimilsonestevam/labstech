@@ -8,9 +8,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
-public class ConsentGoogle extends Base {
+public class Consent extends Base {
 
-	public ConsentGoogle(WebDriver browser) {
+	public Consent(WebDriver browser) {
 		super(browser);
 	
 	}

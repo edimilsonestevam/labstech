@@ -4,9 +4,9 @@ import org.openqa.selenium.WebDriver;
 
 import pt.po.edimilsonestevam.setup.Base;
 
-public class GoogleMaps extends Base {
+public class Maps extends Base {
 
-	public GoogleMaps(WebDriver browser) {
+	public Maps(WebDriver browser) {
 		super(browser);
 
 	}
