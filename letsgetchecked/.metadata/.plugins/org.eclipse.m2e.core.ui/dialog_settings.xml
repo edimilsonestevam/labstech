@@ -71,6 +71,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\edimi\Repositories\labstech\letsgetchecked\letsgetchecked"/>
 			<item value="C:\Users\edimi\Repositories\labstraining\letsgetchecked\letsgetchecked\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">

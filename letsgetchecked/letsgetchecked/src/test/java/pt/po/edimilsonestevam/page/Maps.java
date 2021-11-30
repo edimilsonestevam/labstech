@@ -64,11 +64,11 @@ public class Maps extends Base {
 		
 		System.out.println("• Verifying Destionation Direction...");
 		
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		
 		String fieldDestionationDirection = "//body/div[@id='app-container']/div[@id='content-container']/div[@id='omnibox-container']/div[@id='omnibox']/div[@id='omnibox-directions']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]";
 		
-		WebDriverWait wait = new WebDriverWait(browser, 5);
 		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(fieldDestionationDirection)));
-		element.findElement(By.xpath(fieldDestionationDirection)).click();
 		String actualCityOriginDirection = element.findElement(By.xpath(fieldDestionationDirection)).getText();
 		Assert.assertEquals("Verify if it is the same City", expectedCity, actualCityOriginDirection);
 		
