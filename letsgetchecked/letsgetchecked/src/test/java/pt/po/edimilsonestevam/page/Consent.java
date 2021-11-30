@@ -17,6 +17,8 @@ public class Consent extends Base {
 	
 	public void consentGoogleConfirm () {
 		
+		System.out.println("• Accepting the Term...");
+		
 		String buttonAccept = "//span[contains(text(),'Aceito')]";
 		
 		WebElement element = null;

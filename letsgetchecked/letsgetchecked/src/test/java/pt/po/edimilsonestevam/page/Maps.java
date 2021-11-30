@@ -62,7 +62,7 @@ public class Maps extends Base {
 	
 	public void verifyDestionationDirection(String expectedCity) {
 		
-		System.out.println("• Verifying Name City...");
+		System.out.println("• Verifying Destionation Direction...");
 		
 		String fieldDestionationDirection = "//body/div[@id='app-container']/div[@id='content-container']/div[@id='omnibox-container']/div[@id='omnibox']/div[@id='omnibox-directions']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]";
 		
