@@ -60,7 +60,7 @@ public class Maps extends Base {
 		
 	}
 	
-	public void verifyNameCity(String expectedCity) {
+	public void verifyDestionationDirection(String expectedCity) {
 		
 		System.out.println("• Verifying Name City...");
 		

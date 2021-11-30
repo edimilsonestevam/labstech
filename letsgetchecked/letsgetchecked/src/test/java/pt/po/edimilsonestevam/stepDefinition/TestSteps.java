@@ -35,7 +35,7 @@ public class TestSteps {
 	    
 		new Search(browser).verifyNameCity(wantedCity);
 		new Maps(browser).clickDirections();
-		new Maps(browser).verifyNameCity(wantedCity);
+		new Maps(browser).verifyDestionationDirection(wantedCity);
 		new Configuration().browserClose(browser);
 		
 	}
