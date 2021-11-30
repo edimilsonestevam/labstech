@@ -10,14 +10,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
-public class Search extends Base{
+public class Search extends Base {
 
 	public Search(WebDriver browser) {
 		super(browser);
 		
 	}
 
-	public void VerifyActualPage(String expectedUrl) {
+	public void verifyActualPage(String expectedUrl) {
 		
 		System.out.println("• Verifying Actual Page...");
 		
@@ -26,7 +26,7 @@ public class Search extends Base{
 
 	}
 	
-	public void SearchCity(String cityName) {
+	public void searchCity(String cityName) {
 		
 		System.out.println("• Typing City...");
 		
@@ -41,7 +41,7 @@ public class Search extends Base{
 	
 	}
 	
-	public void VerifyCityName(String cityWanted) {
+	public void verifyCityName(String cityWanted) {
 		
 		System.out.println("• Verifying City Name ...");
 		

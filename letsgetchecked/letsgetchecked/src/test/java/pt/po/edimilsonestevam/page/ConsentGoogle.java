@@ -8,14 +8,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
-public class ConsentGoogle extends Base{
+public class ConsentGoogle extends Base {
 
 	public ConsentGoogle(WebDriver browser) {
 		super(browser);
 	
 	}
 	
-	public void ConsentGoogleConfirm () {
+	public void consentGoogleConfirm () {
 		
 		String btnAccept = "//span[contains(text(),'Aceito')]";
 		

@@ -19,7 +19,7 @@ public class Configuration {
 		
 	}
 
-	public WebDriver BrowserOpen(String browserName, String url) {
+	public WebDriver browserOpen(String browserName, String url) {
 
 		System.out.println("-----------------------------------Testing Started-----------------------------------");
 		
@@ -47,7 +47,7 @@ public class Configuration {
 		return null;
 	}
 	
-	public void BrowserClose(WebDriver browser) {
+	public void browserClose(WebDriver browser) {
 		
 		System.out.println("-----------------------------------Testing Finished----------------------------------");
 		
