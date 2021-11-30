@@ -41,7 +41,7 @@ public class Search extends Base {
 	
 	}
 	
-	public void verifyCityName(String cityWanted) {
+	public void verifyNameCity(String wantedCity) {
 		
 		System.out.println("• Verifying City Name ...");
 		
@@ -50,7 +50,7 @@ public class Search extends Base {
 		WebDriverWait wait = new WebDriverWait(browser, 5);
 		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(titleNameCity)));
 		String actualCity = element.findElement(By.xpath(titleNameCity)).getText();
-		Assert.assertEquals("Verify if it is correct", cityWanted, actualCity);
+		Assert.assertEquals("Verify if it is correct", wantedCity, actualCity);
 		
 	}
 }

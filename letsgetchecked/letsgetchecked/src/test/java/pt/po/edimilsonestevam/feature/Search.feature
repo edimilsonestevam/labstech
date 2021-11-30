@@ -5,8 +5,8 @@ Feature: Search City
   Scenario Outline: User wants to search a city
     Given i am Google Maps page <url>
     When i type name city <cityName> in the search field
-    Then Google Maps will show city wanted <cityWanted>
+    Then Google Maps will show city wanted <wantedCity>
 
     Examples: 
-      | url                   | cityName | cityWanted |
+      | url                   | cityName | wantedCity |
       | "www.google.com/maps" | "Dublin" | "Dublin"   |

@@ -31,11 +31,11 @@ public class TestSteps {
 	}
 
 	@Then("^Google Maps will show city wanted \"([^\"]*)\"$")
-	public void google_Maps_will_show_city_wanted(String cityWanted) throws Throwable {
+	public void google_Maps_will_show_city_wanted(String wantedCity) throws Throwable {
 	    
-		new Search(browser).verifyCityName(cityWanted);
+		new Search(browser).verifyNameCity(wantedCity);
 		new Maps(browser).clickDirections();
-		new Maps(browser).verifyNameCity(cityWanted);
+		new Maps(browser).verifyNameCity(wantedCity);
 		new Configuration().browserClose(browser);
 		
 	}
