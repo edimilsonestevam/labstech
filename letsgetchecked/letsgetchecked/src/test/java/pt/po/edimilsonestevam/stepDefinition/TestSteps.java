@@ -6,6 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pt.po.edimilsonestevam.page.Consent;
+import pt.po.edimilsonestevam.page.Maps;
 import pt.po.edimilsonestevam.page.Search;
 import pt.po.edimilsonestevam.setup.Configuration;
 
@@ -33,6 +34,8 @@ public class TestSteps {
 	public void google_Maps_will_show_city_wanted(String cityWanted) throws Throwable {
 	    
 		new Search(browser).verifyCityName(cityWanted);
+		new Maps(browser).clickZoomIn();
+		new Maps(browser).clickZoomOut();
 		new Configuration().browserClose(browser);
 		
 	}

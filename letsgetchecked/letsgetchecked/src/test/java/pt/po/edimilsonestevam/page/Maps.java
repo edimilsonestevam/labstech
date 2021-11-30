@@ -15,9 +15,11 @@ public class Maps extends Base {
 
 	public WebElement element = null;
 	
-	public void zoomIn() {
+	public void clickZoomIn() {
 		
-		String clickZoomIn = "widget-zoom-in";
+		System.out.println("• Typing Zoom In...");
+		
+		String clickZoomIn = "//button[@id='widget-zoom-in']";
 		
 		for(int i = 0; i <= 2; i++) {
 			element.findElement(By.id(clickZoomIn)).click();
@@ -25,9 +27,11 @@ public class Maps extends Base {
 		
 	}
 	
-	public void zoomOut( ) {
+	public void clickZoomOut( ) {
 		
-		String clickZoomOut = "widget-zoom-out";
+		System.out.println("• Typing Zoom Out...");
+		
+		String clickZoomOut = "//button[@id='widget-zoom-out']";
 		
 		for(int i = 0; i <= 2; i++) {
 			element.findElement(By.id(clickZoomOut)).click();
