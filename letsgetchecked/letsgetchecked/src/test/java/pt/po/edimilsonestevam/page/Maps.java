@@ -2,6 +2,7 @@ package pt.po.edimilsonestevam.page;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -64,12 +65,11 @@ public class Maps extends Base {
 		
 		System.out.println("• Verifying Destionation Direction...");
 		
+		String fieldOrigin = "//body/div[@id='app-container']/div[@id='content-container']/div[@id='omnibox-container']/div[@id='omnibox']/div[@id='omnibox-directions']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]";
+		
 		WebDriverWait wait = new WebDriverWait(browser, 5);
-		
-		String fieldDestionationDirection = "//body/div[@id='app-container']/div[@id='content-container']/div[@id='omnibox-container']/div[@id='omnibox']/div[@id='omnibox-directions']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]";
-		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(fieldDestionationDirection)));
-		String actualCityOriginDirection = element.findElement(By.xpath(fieldDestionationDirection)).getText();
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(fieldOrigin)));
+		String actualCityOriginDirection = element.findElement(By.xpath(fieldOrigin)).getText();
 		Assert.assertEquals("Verify if it is the same City", expectedCity, actualCityOriginDirection);
 		
 	}
