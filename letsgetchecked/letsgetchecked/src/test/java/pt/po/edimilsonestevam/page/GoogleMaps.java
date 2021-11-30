@@ -13,6 +13,7 @@ public class GoogleMaps extends Base {
 
 	public void zoomIn() {
 		
+		String clickZoomIn = "widget-zoom-in";
 	}
 	
 	public void zoomOut( ) {

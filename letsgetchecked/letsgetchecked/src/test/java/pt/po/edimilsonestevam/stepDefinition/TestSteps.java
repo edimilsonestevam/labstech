@@ -1,17 +1,14 @@
 package pt.po.edimilsonestevam.stepDefinition;
 
-import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junitparams.JUnitParamsRunner;
 import pt.po.edimilsonestevam.page.ConsentGoogle;
 import pt.po.edimilsonestevam.page.Search;
 import pt.po.edimilsonestevam.setup.Configuration;
 
-@RunWith(JUnitParamsRunner.class)
 public class TestSteps {
 
 	protected static WebDriver browser;
