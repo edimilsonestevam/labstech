@@ -5,12 +5,10 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.junit.Assert"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
     <fullyQualifiedTypeName name="cucumber.api.java.en.Given"/>
     <fullyQualifiedTypeName name="cucumber.api.java.en.When"/>
     <fullyQualifiedTypeName name="cucumber.api.java.en.Then"/>
     <fullyQualifiedTypeName name="junitparams.FileParameters"/>
-    <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="junitparams.mappers.CsvWithHeaderMapper"/>
     <fullyQualifiedTypeName name="org.junit.Before"/>
     <fullyQualifiedTypeName name="org.junit.After"/>
@@ -22,4 +20,12 @@
     <fullyQualifiedTypeName name="pt.po.edimilsonestevam.setup.Base"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="pt.po.edimilsonestevam.page.Maps"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By.ByCssSelector"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
+    <fullyQualifiedTypeName name="pt.po.edimilsonestevam.setup.Core"/>
+    <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
+    <fullyQualifiedTypeName name="java.awt.Robot"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
 </qualifiedTypeNameHistroy>

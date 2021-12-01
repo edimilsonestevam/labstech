@@ -28,7 +28,7 @@ public class Search extends Base {
 
 	}
 	
-	public void searchCityName(String cityName) {
+	public void searchCity(String cityName) {
 		
 		System.out.println("• Typing City...");
 		
@@ -41,7 +41,7 @@ public class Search extends Base {
 	
 	}
 	
-	public void verifyCityName(String wantedCity) {
+	public void verifyNameCity(String wantedCity) {
 		
 		System.out.println("• Verifying City Name ...");
 		

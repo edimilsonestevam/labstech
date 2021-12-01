@@ -26,14 +26,14 @@ public class TestSteps {
 	@When("^i type name city \"([^\"]*)\" in the search field$")
 	public void i_type_name_city_in_the_search_field(String cityName) throws Throwable {
 
-		new Search(browser).searchCityName(cityName);
+		new Search(browser).searchCity(cityName);
 		
 	}
 
 	@Then("^Google Maps will show city wanted \"([^\"]*)\"$")
 	public void google_Maps_will_show_city_wanted(String wantedCity) throws Throwable {
 	    
-		new Search(browser).verifyCityName(wantedCity);
+		new Search(browser).verifyNameCity(wantedCity);
 		new Maps(browser).clickDirections();
 		new Maps(browser).verifyDestionationDirection(wantedCity);
 		new Configuration().browserClose(browser);
