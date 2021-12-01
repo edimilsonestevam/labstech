@@ -1,5 +1,9 @@
 package pt.po.edimilsonestevam.page;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -69,8 +73,8 @@ public class Maps extends Base {
 		
 		WebDriverWait wait = new WebDriverWait(browser, 5);
 		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(fieldOrigin)));
-		String actualCityOriginDirection = element.findElement(By.xpath(fieldOrigin)).getText();
+		String actualCityOriginDirection = element.findElement(By.xpath(fieldOrigin)).getAttribute("value").substring(0,6);
 		Assert.assertEquals("Verify if it is the same City", expectedCity, actualCityOriginDirection);
-		
+
 	}
 }
