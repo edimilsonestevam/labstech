@@ -1,0 +1,16 @@
+package pt.po.edimilsonestevam.setup;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+public class Core {
+
+	public void clickForce() throws AWTException {
+		
+		Robot robot = new Robot();
+		robot.mouseMove(264, 24);
+		robot.keyPress(KeyEvent.VK_INSERT);
+		
+	}
+}

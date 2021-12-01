@@ -1,0 +1,78 @@
+package pt.po.edimilsonestevam.page;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class Maps extends Base {
+
+	public Maps(WebDriver browser) {
+		super(browser);
+
+	}
+
+	public WebElement element = null;
+	
+	public void clickZoomIn() {
+		
+		System.out.println("• Clicking Zoom In...");
+		
+		String iconZoomIn = "//button[@id='widget-zoom-in']";
+		
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(iconZoomIn)));
+		
+		for(int i = 0; i <= 2; i++) {
+			element.findElement(By.xpath(iconZoomIn)).click();
+		}
+		
+	}
+	
+	public void clickZoomOut( ) {
+		
+		System.out.println("• Clicking Zoom Out...");
+		
+		String iconZoomOut = "//button[@id='widget-zoom-out']";
+		
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(iconZoomOut)));
+		
+		for(int i = 0; i <= 2; i++) {
+			element.findElement(By.xpath(iconZoomOut)).click();
+		}
+		
+	}
+	
+	public void clickDirections() {
+		
+		System.out.println("• Clicking Directions...");
+		
+		String iconDirections = "//body/div[@id='app-container']/div[@id='content-container']/div[@id='pane']/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/button[1]/span[1]/img[1]";
+		
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(iconDirections)));
+		element.findElement(By.xpath(iconDirections)).click();
+		
+	}
+	
+	public void verifyDestionationDirection(String expectedCity) {
+		
+		System.out.println("• Verifying Destionation Direction...");
+		
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		String fieldDestionationDirection = "body.keynav-mode-off.screen-mode:nth-child(2) div.vasquette.id-app-container.pane-open-mode:nth-child(7) div.id-content-container:nth-child(9) div.not-in-planetary.id-omnibox-container:nth-child(3) div.vasquette-margin-enabled.noprint.id-omnibox:nth-child(1) div.widget-directions:nth-child(2) div.Zvyb8e-T3iPGc-omnibox.white-foreground div.Zvyb8e-T3iPGc-sns9hd div.Zvyb8e-T3iPGc-LvRyEf:nth-child(1) div.Zvyb8e-T3iPGc-searchbox-haAclf:nth-child(2) div.nhb85d div.gstl_51.sbib_a:nth-child(1) div.sbib_b > input.tactile-searchbox-input";
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(fieldDestionationDirection)));
+		//element.findElement(By.xpath(fieldDestionationDirection)).click();
+		String actualCityOriginDirection = element.findElement(By.cssSelector(fieldDestionationDirection)).getText();
+		
+		System.out.println("Passei aqui"+actualCityOriginDirection);
+		
+		Assert.assertEquals("Verify if it is the same City", expectedCity, actualCityOriginDirection);
+		
+	}
+}
