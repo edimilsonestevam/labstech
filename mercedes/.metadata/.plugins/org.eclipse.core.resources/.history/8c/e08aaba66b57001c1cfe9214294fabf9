@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pt.po.edimilsonestevam.page.Consent;
 import pt.po.edimilsonestevam.page.SearchCarModels;
 import pt.po.edimilsonestevam.setup.Configuration;
 import pt.po.edimilsonestevam.setup.Core;
@@ -18,7 +17,6 @@ public class TestSteps {
 	public void i_want_to_search_a_car_model_in_the_Mercedes_Benz_site(String url) throws Throwable {
 
 		browser = new Configuration().browserOpen("chrome", url);
-		new Consent(browser).consentConfirm();
 		
 	}
 

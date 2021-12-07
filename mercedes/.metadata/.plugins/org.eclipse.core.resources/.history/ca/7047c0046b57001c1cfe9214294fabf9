@@ -24,7 +24,7 @@ public class SearchCarModels extends Base {
 		String expectedTitleOurModelsOption = "Our models";
 		
 		String titleOurModelsOption = element.findElement(By.className(ourModelsOption)).getText();
-		Assert.assertEquals("Verify if it is the same Our Model", expectedTitleOurModelsOption, titleOurModelsOption);
+		Assert.assertEquals("Verify if it is the same Model", expectedTitleOurModelsOption, titleOurModelsOption);
 		
 	}
 	

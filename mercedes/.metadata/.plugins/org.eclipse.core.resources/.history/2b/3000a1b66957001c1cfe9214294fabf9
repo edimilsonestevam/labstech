@@ -24,7 +24,7 @@ public class SearchCarModels extends Base {
 		String expectedTitleOurModelsOption = "Our models";
 		
 		String titleOurModelsOption = element.findElement(By.className(ourModelsOption)).getText();
-		Assert.assertEquals("Verify if it is the same Our Model", expectedTitleOurModelsOption, titleOurModelsOption);
+		Assert.assertEquals("Verify if it is the same Model", expectedTitleOurModelsOption, titleOurModelsOption);
 		
 	}
 	
@@ -91,7 +91,7 @@ public class SearchCarModels extends Base {
 		
 	}
 	
-	public void chooseBudget (int minimumValue, int maximumValue) {
+	public void chooseBudget (String minimumValue, String maximumValue) {
 		
 		System.out.println("• Choosing Budget...");
 		
@@ -101,9 +101,9 @@ public class SearchCarModels extends Base {
 		
 		element.findElement(By.xpath(choosedBudget)).click();
 		element.findElement(By.id(minimumPrice)).clear();
-		element.findElement(By.id(minimumPrice)).sendKeys("minimumValue");
+		element.findElement(By.id(minimumPrice)).sendKeys(minimumValue);
 		element.findElement(By.id(maximumPrice)).clear();
-		element.findElement(By.id(maximumPrice)).sendKeys("maximumValue");
+		element.findElement(By.id(maximumPrice)).sendKeys(maximumValue);
 		
 	}
 	

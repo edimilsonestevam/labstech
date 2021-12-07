@@ -1,0 +1,38 @@
+package pt.po.edimilsonestevam.setup;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
+public class Core extends Base {
+
+	public Core(WebDriver browser) {
+		super(browser);
+
+	}
+
+	public void printScreen (WebDriver browser, String filePath) {
+		
+		System.out.println("• Doing Print Screen...");
+		
+		String iconFuel = "//body/div[@id='__nuxt']/div[@id='__layout']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[1]/div[3]";
+		
+		browser.findElement(By.xpath(iconFuel)).isDisplayed();
+		
+		File scrFile = ((TakesScreenshot)browser).getScreenshotAs(OutputType.FILE);
+		
+		try {
+			FileUtils.copyFile(scrFile, new File(filePath+"PrintScreenFuel.jpg"));
+		} 
+		catch (IOException e) {
+
+			e.printStackTrace();
+		}
+		
+	}
+}
