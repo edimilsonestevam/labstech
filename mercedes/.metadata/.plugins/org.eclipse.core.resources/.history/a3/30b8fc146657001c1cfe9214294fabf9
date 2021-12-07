@@ -1,0 +1,103 @@
+package pt.po.edimilsonestevam.page;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class SearchCarModels extends Base {
+
+	public WebElement element = null;
+	
+	public SearchCarModels(WebDriver browser) {
+		super(browser);
+	
+	}
+
+	public void accessOurModel () {
+		
+		System.out.println("• Accessing Our Models...");
+		
+		String ourModelsOption = "dh-io-vmos_3zIAO";
+		String expectedTitleOurModelsOption = "Our models";
+		
+		String titleOurModelsOption = element.findElement(By.className(ourModelsOption)).getText();
+		Assert.assertEquals("Verify if it is the same Model", expectedTitleOurModelsOption, titleOurModelsOption);
+		
+	}
+	
+	public void chooseModels () {
+		
+		System.out.println("• Accessing  Type of Models...");
+		
+		String HatchbacksTypeModels = "dh-io-vmos_1nZ_z";
+		
+		element.findElement(By.className(HatchbacksTypeModels)).click();
+		
+	}
+	
+	public void verifyModels (String expectedTitleModel) {
+		
+		System.out.println("• Verifying Model...");
+		
+		String typeModel = "dh-io-vmos_1PW4e";
+		
+		String titleModel = element.findElement(By.className(typeModel)).getText();
+		Assert.assertEquals("Verify if it is the same Title", expectedTitleModel, titleModel);
+		
+	}
+	
+	public void buyCar () {
+		
+		System.out.println("• Buying Car...");
+		
+		String imageCar = "dh-io-vmos_2p2ii dh-io-vmos_1qzBt ";
+		String iconBuyOnline = "dh-io-vmos_3jogZ hydrated";
+		
+		element.findElement(By.className(imageCar)).click();
+		element.findElement(By.className(iconBuyOnline)).click();
+		
+	}
+	
+	public void clickFilters () {
+		
+		System.out.println("• Accessing Filters...");
+		
+		String iconFilters = "//header/div[1]/button[1]/span[1]";
+		
+		element.findElement(By.xpath(iconFilters)).click();
+		
+	}
+	
+	public void clickFuel () {
+		
+		System.out.println("• Accessing Fuel...");
+		
+		String iconFuel = "//body/div[@id='__nuxt']/div[@id='__layout']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]";
+		
+		element.findElement(By.xpath(iconFuel)).click();
+		
+	}
+	
+	public void chooseFuel () {
+		
+		System.out.println("• Accessing Fuel...");
+		
+		String iconChoosedFuel = "//body/div[@id='__nuxt']/div[@id='__layout']/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[1]/div[3]";
+		
+		element.findElement(By.xpath(iconChoosedFuel)).click();
+		
+	}
+	
+	public void clickUpdateResults () {
+		
+		System.out.println("• Confirming Update Results...");
+		
+		String buttonUpdateResults = "//button[contains(text(),'Update results')]";
+		
+		element.findElement(By.xpath(buttonUpdateResults)).click();
+		
+	}
+}

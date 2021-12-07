@@ -1,0 +1,12 @@
+Feature: Search Car Models
+  I want to search a class models
+
+  @scenario-search-car-models
+  Scenario Outline: Validate A class models price are between £ 15,000.00 and £ 60,000.00
+    Given 
+    When 
+    Then 
+
+    Examples: 
+      | url                       | minimumPrice | maximumPrice |
+      | "www.mercedes-benz.co.uk" | "15000"      | "60000"      |

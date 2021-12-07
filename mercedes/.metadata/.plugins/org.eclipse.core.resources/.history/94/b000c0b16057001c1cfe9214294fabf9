@@ -1,0 +1,29 @@
+package pt.po.edimilsonestevam.page;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import pt.po.edimilsonestevam.setup.Base;
+
+public class SearchCarModels extends Base {
+
+	public SearchCarModels(WebDriver browser) {
+		super(browser);
+	
+	}
+
+	public void accessOurModel () {
+		
+		System.out.println("• Accessing Our Models...");
+		
+		String ourModelsOption = "dh-io-vmos_3zIAO";
+		String expectedTitleOurModelsOption = "Our models";
+		
+		WebElement element = null;
+		String titleOurModelsOption = element.findElement(By.className(ourModelsOption)).getText();
+		Assert.assertEquals("Verify if it is the same City", expectedTitleOurModelsOption, titleOurModelsOption);
+		
+	}
+}
