@@ -1,0 +1,43 @@
+package pt.po.edimilsonestevam.stepDefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import pt.po.edimilsonestevam.setup.Configuration;
+
+public class TestSteps {
+
+	protected static WebDriver browser;
+
+	@Given("^i want to search a car model in the Mercedes-Benz site \"([^\"]*)\"$")
+	public void i_want_to_search_a_car_model_in_the_Mercedes_Benz_site(String url) throws Throwable {
+
+	}
+
+	@When("^i access to Our Models option$")
+	public void i_access_to_Our_Models_option() throws Throwable {
+
+	}
+
+	@When("^i inform type of model \"([^\"]*)\"$")
+	public void i_inform_type_of_model(String typeModel) throws Throwable {
+
+	}
+
+	@When("^i filter by fuel type \"([^\"]*)\"$")
+	public void i_filter_by_fuel_type(String fuel) throws Throwable {
+
+	}
+
+	@When("^i choose a price of range, as minimum \"([^\"]*)\" and maximum \"([^\"]*)\"$")
+	public void i_choose_a_price_of_range_as_minimum_and_maximum(String minimumPrice, String maximumPrice) throws Throwable {
+
+	}
+	
+	@Then("^system will show me a list of cars$")
+	public void system_will_show_me_a_list_of_cars() throws Throwable {
+
+	}
+}
