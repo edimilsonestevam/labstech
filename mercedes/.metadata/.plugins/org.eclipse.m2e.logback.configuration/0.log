@@ -380,3 +380,128 @@ Caused by: java.lang.Exception: Project 'letsgetchecked' is not open.
 2021-12-07 14:40:41,299 [Worker-104: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
 2021-12-07 14:40:41,300 [Worker-104: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-12-07 14:40:41,300 [Worker-104: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 14:51:10,088 [Worker-107: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 14:51:10,089 [Worker-107: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 14:51:10,090 [Worker-107: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 14:51:10,090 [Worker-107: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 15:07:27,615 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 15:07:27,644 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 15:07:27,645 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 15:07:27,645 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 15:08:43,731 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 15:08:43,731 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 15:08:43,732 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 15:08:43,733 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 15:12:53,729 [Worker-118: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 15:12:53,729 [Worker-118: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 15:12:53,731 [Worker-118: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 15:12:53,731 [Worker-118: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 15:13:36,082 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 15:13:36,082 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 15:13:36,083 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 15:13:36,083 [Worker-115: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 16:19:41,100 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 16:19:41,346 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 16:19:41,780 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 16:19:41,780 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 16:22:02,393 [Worker-128: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 16:22:02,393 [Worker-128: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 16:22:02,394 [Worker-128: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 16:22:02,394 [Worker-128: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 16:27:50,689 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 16:27:50,690 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 16:27:50,691 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 16:27:50,691 [Worker-130: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 16:54:23,384 [Worker-136: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 16:54:23,384 [Worker-136: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 16:54:23,407 [Worker-136: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 16:54:23,408 [Worker-136: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 17:08:24,155 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:08:24,156 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 17:08:24,185 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:08:24,246 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 17:10:24,549 [Worker-144: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:10:24,549 [Worker-144: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 17:10:24,564 [Worker-144: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:10:24,564 [Worker-144: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 17:17:42,591 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:17:42,600 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 17:17:42,601 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:17:42,602 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 17:23:42,594 [Worker-145: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:23:42,595 [Worker-145: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 17:23:42,658 [Worker-145: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:23:42,659 [Worker-145: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 17:24:00,545 [Worker-153: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:24:00,546 [Worker-153: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 17:24:00,549 [Worker-153: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:24:00,550 [Worker-153: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 17:55:04,151 [Worker-163: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:55:04,154 [Worker-163: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 17:55:04,159 [Worker-163: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 17:55:04,160 [Worker-163: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 18:01:34,003 [Worker-167: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:01:34,016 [Worker-167: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 18:01:34,016 [Worker-167: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:01:34,021 [Worker-167: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 18:18:14,498 [Worker-173: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:18:14,522 [Worker-173: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 18:18:14,528 [Worker-173: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:18:14,530 [Worker-173: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 18:18:46,082 [Worker-177: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:18:46,082 [Worker-177: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 18:18:46,082 [Worker-177: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:18:46,082 [Worker-177: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 18:46:46,556 [Worker-187: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:46:46,629 [Worker-187: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 18:46:46,631 [Worker-187: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:46:46,631 [Worker-187: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 18:50:54,281 [Worker-183: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pt.po:letsgetchecked:0.0.1-SNAPSHOT @ C:\Users\edimi\Repositories\labstech\letsgetchecked\letsgetchecked\pom.xml.
+2021-12-07 18:51:12,698 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:51:12,699 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\letsgetchecked\letsgetchecked\src\main\resources
+2021-12-07 18:51:12,702 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:51:12,703 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\letsgetchecked\letsgetchecked\src\test\resources
+2021-12-07 18:55:54,520 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:55:54,520 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 18:55:54,542 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:55:54,542 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 18:57:57,685 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:57:57,685 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 18:57:57,685 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 18:57:57,685 [Worker-193: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 19:05:33,695 [Worker-199: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 19:05:33,710 [Worker-199: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 19:05:33,713 [Worker-199: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 19:05:33,714 [Worker-199: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 21:41:50,958 [Worker-246: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 21:41:50,977 [Worker-246: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 21:41:50,980 [Worker-246: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 21:41:50,980 [Worker-246: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 21:41:59,269 [Worker-245: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 21:41:59,270 [Worker-245: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 21:41:59,270 [Worker-245: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 21:41:59,271 [Worker-245: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 21:42:59,565 [Worker-243: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 21:42:59,566 [Worker-243: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 21:42:59,568 [Worker-243: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 21:42:59,569 [Worker-243: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 21:46:01,088 [Worker-244: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 21:46:01,105 [Worker-244: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 21:46:01,105 [Worker-244: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 21:46:01,105 [Worker-244: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 22:01:27,502 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 22:01:27,504 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 22:01:27,508 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 22:01:27,509 [Worker-258: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 22:04:29,101 [Worker-259: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 22:04:29,103 [Worker-259: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 22:04:29,104 [Worker-259: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 22:04:29,104 [Worker-259: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 22:08:12,671 [Worker-262: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 22:08:12,671 [Worker-262: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 22:08:12,671 [Worker-262: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 22:08:12,671 [Worker-262: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources
+2021-12-07 22:21:39,907 [Worker-266: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 22:21:39,907 [Worker-266: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\main\resources
+2021-12-07 22:21:39,928 [Worker-266: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-07 22:21:39,928 [Worker-266: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\mercedes\mercedes\src\test\resources

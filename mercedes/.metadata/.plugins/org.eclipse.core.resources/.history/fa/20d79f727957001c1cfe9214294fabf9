@@ -19,11 +19,11 @@ public class Consent extends Base {
 		
 		System.out.println("• Accepting the Agree to all...");
 		
-		String buttonAccept = "//button[contains(text(),'Agree to all')]";
+		String buttonAccept = "//input[@type='button'][@name='Agree to all']";
 		
 		WebElement element = null;
 
-		WebDriverWait wait = new WebDriverWait(browser,5);
+		WebDriverWait wait = new WebDriverWait(browser, 5);
 		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(buttonAccept)));
 		element.click();
 		

@@ -19,7 +19,7 @@ public class Consent extends Base {
 		
 		System.out.println("• Accepting the Agree to all...");
 		
-		String buttonAccept = "//button[contains(text(),'Agree to all')]";
+		String buttonAccept = "//cmm-cookie-banner";
 		
 		WebElement element = null;
 
