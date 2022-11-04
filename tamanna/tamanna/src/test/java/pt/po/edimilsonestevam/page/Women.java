@@ -26,6 +26,9 @@ public class Women extends Base {
 		
 		System.out.println("• Choosing Shoes...");
 		
+		String shoes = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[3]/div[2]/div[2]/div[2]/div[2]/div[1]/a[1]/div[1]/span[1]/img[1]";
+		
+		browser.findElement(By.xpath(shoes)).click();
 	}
 	
 	public void selectShoesSize(String shoesSize) {
