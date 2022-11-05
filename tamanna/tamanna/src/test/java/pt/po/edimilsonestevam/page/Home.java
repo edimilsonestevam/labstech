@@ -2,6 +2,9 @@ package pt.po.edimilsonestevam.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
@@ -12,6 +15,35 @@ public class Home extends Base {
 
 	}
 
+	public void acceptNotifications (String notificationType) {
+		
+		System.out.println("• Accept Notification...");
+		
+		String allowNotifications = "//button[@id='optInText']";
+		String laterNotifications = "//button[contains(text(),'Later')]";
+		
+		String yesOption = "Yes";
+		String noOption = "No";
+		
+		WebElement allowElement = null;
+		WebElement laterElement = null;
+		
+		if (notificationType.equalsIgnoreCase(yesOption)) {
+			WebDriverWait wait = new WebDriverWait(browser, 5);
+			allowElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(allowNotifications)));
+			allowElement.click();
+		}
+		else if (notificationType.equalsIgnoreCase(noOption)) {
+			WebDriverWait wait = new WebDriverWait(browser, 5);
+			laterElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(laterNotifications)));
+			laterElement.click();
+		}
+		else {
+			System.out.println("You should inform: Yes or No");
+		}
+		
+	}
+	
 	public void chooseCategory(String category) {
 		
 		System.out.println("• Choosing Category...");
