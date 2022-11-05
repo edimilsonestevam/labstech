@@ -101,5 +101,17 @@ public class Buy extends Base {
 		browser.findElement(By.xpath(addButton)).click();
 
 	}
+	
+	public void goShoppingBag () {
+		
+		System.out.println("• Going Shopping Bag...");
+		
+		String bagIcon = "//header/div[1]/nav[1]/div[1]/div[3]/div[2]/div[2]";
+		String shoppingBagButton = "//button[contains(text(),'GO TO SHOPPING BAG')]";
+		
+		browser.findElement(By.xpath(bagIcon)).click();
+		browser.findElement(By.xpath(shoppingBagButton)).click();
+		
+	}
 
 }
