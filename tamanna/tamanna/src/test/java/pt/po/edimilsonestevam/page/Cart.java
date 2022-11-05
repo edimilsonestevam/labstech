@@ -23,14 +23,14 @@ public class Cart extends Base {
 
 	}
 	
-	public void checkItemsTotal (String expecteditemsTotal) {
+	public void checkItemsTotal (String expectedItemsTotal) {
 		
 		System.out.println("• Checking Items Total...");
 		
-		String itemsTotal = "//h3[contains(text(),'" + expecteditemsTotal + " items')]";	
-		String currentitemsTotal = browser.findElement(By.xpath(itemsTotal)).getText();
+		String itemsTotal = "//h3[contains(text(),'" + expectedItemsTotal + " items')]";	
+		String currentItemsTotal = browser.findElement(By.xpath(itemsTotal)).getText();
 		
-		Assert.assertEquals("Checking Items Total", expecteditemsTotal, currentitemsTotal);
+		Assert.assertEquals("Checking Items Total", expectedItemsTotal, currentItemsTotal);
 		
 	}
 	
