@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import junit.framework.Assert;
 import pt.po.edimilsonestevam.setup.Base;
 
 public class Home extends Base {
@@ -55,23 +56,38 @@ public class Home extends Base {
 		String homeCategory = "Home";
 		String harveyNicholsCategory = "Harvey Nichols";
 		
+		String currentUrl = browser.getCurrentUrl();
+		
+		String expectedWomenUrl = "www.tamanna.com/women/overview";
+		String expectedMenUrl = "www.tamanna.com/men/overview";
+		String expectedKidsUrl = "www.tamanna.com/kids/overview";
+		String expectedBeautyUrl = "www.tamanna.com/beauty/overview";
+		String expectedHomeUrl = "www.tamanna.com/home/overview";
+		String expectedHarveyNicholsUrl = "www.tamanna.com/harvey-nichols-women/overview";
+		
 		if (category.equalsIgnoreCase(womenCategory)) {
 			browser.findElement(By.linkText(womenCategory)).click();
+			Assert.assertEquals("Women Category", expectedWomenUrl, currentUrl);
 		}
 		else if (category.equalsIgnoreCase(menCategory)) {
 			browser.findElement(By.linkText(menCategory)).click();
+			Assert.assertEquals("Men Category", expectedMenUrl, currentUrl);
 		}
 		else if (category.equalsIgnoreCase(kidsCategory)) {
 			browser.findElement(By.linkText(kidsCategory)).click();
+			Assert.assertEquals("Kids Category", expectedKidsUrl, currentUrl);
 		}
 		else if (category.equalsIgnoreCase(beautyCategory)) {
 			browser.findElement(By.linkText(beautyCategory)).click();
+			Assert.assertEquals("Beauty Category", expectedBeautyUrl, currentUrl);
 		}
 		else if (category.equalsIgnoreCase(homeCategory)) {
 			browser.findElement(By.linkText(homeCategory)).click();
+			Assert.assertEquals("Home Category", expectedHomeUrl, currentUrl);
 		}
 		else if (category.equalsIgnoreCase(harveyNicholsCategory)) {
 			browser.findElement(By.linkText(harveyNicholsCategory)).click();
+			Assert.assertEquals("Harvey Nichols Category", expectedHarveyNicholsUrl, currentUrl);
 		}
 		else {
 			System.out.println("You should inform: Women, Men, Kids, Beauty, Home or Harvey Nichols");
