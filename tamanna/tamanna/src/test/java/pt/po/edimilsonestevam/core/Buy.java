@@ -51,6 +51,45 @@ public class Buy extends Base {
 		}
 	}
 
+	public void selectShirtSize (String shirtSize) {
+
+		System.out.println("• Selecting Shirt Size...");
+
+		String shirtSizeFirst = "S";
+		String shirtSizeSecond = "XXXL";
+		String shirtSizeThird = "XL";
+		String shirtSizeFour = "XXL";
+		String shirtSizeFifth = "4XL";
+		String shirtSizeSixth = "M";
+		String shirtSizeSeventh = "L";
+
+		String shirtSizeFirstPath = "//button[contains(text(),'S')]";
+		String shirtSizeSecondPath = "//button[contains(text(),'XXXL')]";
+		String shirtSizeThirdPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[3]";
+		String shirtSizeFourPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[4]";
+		String shirtSizeFifthPath = "//button[contains(text(),'4XL')]";
+		String shirtSizeSixthPath = "//button[contains(text(),'M')]";
+		String shirtSizeSeventhPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[7]";
+
+		if (shirtSize.contentEquals(shirtSizeFirst)) {
+			browser.findElement(By.xpath(shirtSizeFirstPath)).click();
+		} else if (shirtSize.contentEquals(shirtSizeSecond)) {
+			browser.findElement(By.xpath(shirtSizeSecondPath)).click();
+		} else if (shirtSize.contentEquals(shirtSizeThird)) {
+			browser.findElement(By.xpath(shirtSizeThirdPath)).click();
+		} else if (shirtSize.contentEquals(shirtSizeFour)) {
+			browser.findElement(By.xpath(shirtSizeFourPath)).click();
+		} else if (shirtSize.contentEquals(shirtSizeFifth)) {
+			browser.findElement(By.xpath(shirtSizeFifthPath)).click();
+		} else if (shirtSize.contentEquals(shirtSizeSixth)) {
+			browser.findElement(By.xpath(shirtSizeSixthPath)).click();
+		} else if (shirtSize.contentEquals(shirtSizeSeventh)) {
+			browser.findElement(By.xpath(shirtSizeSeventhPath)).click();
+		} else {
+			System.out.println("You should inform: S, L, M, XL, XXL, XXXL or 4XL");
+		}	
+	}
+	
 	public void selectItemsQuantity(String itemsQuantity) {
 
 		System.out.println("• Selecting Items Quantity...");
