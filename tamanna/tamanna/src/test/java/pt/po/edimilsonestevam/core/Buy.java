@@ -51,40 +51,40 @@ public class Buy extends Base {
 		}
 	}
 
-	public void selectShirtSize (String shirtSize) {
+	public void selectClothingSize (String clothingSize) {
 
-		System.out.println("• Selecting Shirt Size...");
+		System.out.println("• Selecting Clothing Size...");
 
-		String shirtSizeFirst = "S";
-		String shirtSizeSecond = "XXXL";
-		String shirtSizeThird = "XL";
-		String shirtSizeFour = "XXL";
-		String shirtSizeFifth = "4XL";
-		String shirtSizeSixth = "M";
-		String shirtSizeSeventh = "L";
+		String clothingSizeFirst = "S";
+		String clothingSizeSecond = "XXXL";
+		String clothingSizeThird = "XL";
+		String clothingSizeFour = "XXL";
+		String clothingSizeFifth = "4XL";
+		String clothingSizeSixth = "M";
+		String clothingSizeSeventh = "L";
 
-		String shirtSizeFirstPath = "//button[contains(text(),'S')]";
-		String shirtSizeSecondPath = "//button[contains(text(),'XXXL')]";
-		String shirtSizeThirdPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[3]";
-		String shirtSizeFourPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[4]";
-		String shirtSizeFifthPath = "//button[contains(text(),'4XL')]";
-		String shirtSizeSixthPath = "//button[contains(text(),'M')]";
-		String shirtSizeSeventhPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[7]";
+		String clothingSizeFirstPath = "//button[contains(text(),'S')]";
+		String clothingSizeSecondPath = "//button[contains(text(),'XXXL')]";
+		String clothingSizeThirdPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[3]";
+		String clothingSizeFourPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[4]";
+		String clothingSizeFifthPath = "//button[contains(text(),'4XL')]";
+		String clothingSizeSixthPath = "//button[contains(text(),'M')]";
+		String clothingSizeSeventhPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[7]";
 
-		if (shirtSize.contentEquals(shirtSizeFirst)) {
-			browser.findElement(By.xpath(shirtSizeFirstPath)).click();
-		} else if (shirtSize.contentEquals(shirtSizeSecond)) {
-			browser.findElement(By.xpath(shirtSizeSecondPath)).click();
-		} else if (shirtSize.contentEquals(shirtSizeThird)) {
-			browser.findElement(By.xpath(shirtSizeThirdPath)).click();
-		} else if (shirtSize.contentEquals(shirtSizeFour)) {
-			browser.findElement(By.xpath(shirtSizeFourPath)).click();
-		} else if (shirtSize.contentEquals(shirtSizeFifth)) {
-			browser.findElement(By.xpath(shirtSizeFifthPath)).click();
-		} else if (shirtSize.contentEquals(shirtSizeSixth)) {
-			browser.findElement(By.xpath(shirtSizeSixthPath)).click();
-		} else if (shirtSize.contentEquals(shirtSizeSeventh)) {
-			browser.findElement(By.xpath(shirtSizeSeventhPath)).click();
+		if (clothingSize.contentEquals(clothingSizeFirst)) {
+			browser.findElement(By.xpath(clothingSizeFirstPath)).click();
+		} else if (clothingSize.contentEquals(clothingSizeSecond)) {
+			browser.findElement(By.xpath(clothingSizeSecondPath)).click();
+		} else if (clothingSize.contentEquals(clothingSizeThird)) {
+			browser.findElement(By.xpath(clothingSizeThirdPath)).click();
+		} else if (clothingSize.contentEquals(clothingSizeFour)) {
+			browser.findElement(By.xpath(clothingSizeFourPath)).click();
+		} else if (clothingSize.contentEquals(clothingSizeFifth)) {
+			browser.findElement(By.xpath(clothingSizeFifthPath)).click();
+		} else if (clothingSize.contentEquals(clothingSizeSixth)) {
+			browser.findElement(By.xpath(clothingSizeSixthPath)).click();
+		} else if (clothingSize.contentEquals(clothingSizeSeventh)) {
+			browser.findElement(By.xpath(clothingSizeSeventhPath)).click();
 		} else {
 			System.out.println("You should inform: S, L, M, XL, XXL, XXXL or 4XL");
 		}	
