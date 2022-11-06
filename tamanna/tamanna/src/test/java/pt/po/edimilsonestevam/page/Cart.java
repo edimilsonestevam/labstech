@@ -23,7 +23,7 @@ public class Cart extends Base {
 
 	}
 	
-	public void checkItemsTotal (String expectedItemsTotal) {
+	public void checkItemsTotal(String expectedItemsTotal) {
 		
 		System.out.println("• Checking Items Total...");
 		
@@ -34,7 +34,7 @@ public class Cart extends Base {
 		
 	}
 	
-	public void checkItemsPrice () {
+	public void checkItemsPrice() {
 		
 		System.out.println("• Checking Items Price...");
 		

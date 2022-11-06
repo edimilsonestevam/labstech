@@ -12,7 +12,7 @@ public class Men extends Base {
 
 	}
 
-	public void chooseClothingCategory () {
+	public void chooseClothingCategory() {
 		
 		System.out.println("• Choosing Clothing Category...");
 		
@@ -22,7 +22,7 @@ public class Men extends Base {
 		
 	}
 	
-	public void chooseClothing () {
+	public void chooseClothing() {
 		
 		System.out.println("• Choosing Clothing...");
 		

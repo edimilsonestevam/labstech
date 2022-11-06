@@ -16,7 +16,7 @@ public class Home extends Base {
 
 	}
 
-	public void acceptNotifications (String notificationType) {
+	public void acceptNotifications(String notificationType) {
 		
 		System.out.println("• Accept Notification...");
 		

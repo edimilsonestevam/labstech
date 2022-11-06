@@ -51,7 +51,7 @@ public class Buy extends Base {
 		}
 	}
 
-	public void selectClothingSize (String clothingSize) {
+	public void selectClothingSize(String clothingSize) {
 
 		System.out.println("• Selecting Clothing Size...");
 
@@ -141,7 +141,7 @@ public class Buy extends Base {
 
 	}
 	
-	public void goShoppingBag () {
+	public void goShoppingBag() {
 		
 		System.out.println("• Going Shopping Bag...");
 		

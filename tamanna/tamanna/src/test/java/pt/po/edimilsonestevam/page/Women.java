@@ -22,7 +22,7 @@ public class Women extends Base {
 		
 	}
 	
-	public void chooseShoes () {
+	public void chooseShoes() {
 		
 		System.out.println("• Choosing Shoes...");
 		
