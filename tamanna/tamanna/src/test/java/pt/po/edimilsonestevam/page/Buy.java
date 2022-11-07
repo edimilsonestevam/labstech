@@ -1,4 +1,4 @@
-package pt.po.edimilsonestevam.core;
+package pt.po.edimilsonestevam.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
