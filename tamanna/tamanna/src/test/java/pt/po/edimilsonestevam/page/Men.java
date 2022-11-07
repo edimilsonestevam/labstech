@@ -64,55 +64,55 @@ public class Men extends Base {
 		
 	}
 	
-	public void chooseMenClothing(String imageNumber) {
+	public void chooseMenClothing(String menClothingImageNumber) {
 		
 		System.out.println("• Choosing Clothing...");
 		
-		String imageMenFirst = "1";
-		String imageMenSecond = "2";
-		String imageMenThird = "3";
-		String imageMenFour = "4";
-		String imageMenFifth = "5";
-		String imageMenSixth = "6";
-		String imageMenSeventh = "7";
+		String menClothingImageFirst = "1";
+		String menClothingImageSecond = "2";
+		String menClothingImageThird = "3";
+		String menClothingImageFour = "4";
+		String menClothingImageFifth = "5";
+		String menClothingImageSixth = "6";
+		String menClothingImageSeventh = "7";
 		
-		String imageMenFirstPath = "//img[@alt='AE 10\" Classic Board Short']";
-		String imageMenSecondPath = "//img[@alt='AE Super Soft Icon V-Neck T-Shirt']";
-		String imageMenThirdPath = "//img[@alt='Achilles Organic Cotton Oversized Unisex Sweatshirt']";
-		String imageMenFourPath = "//img[@alt='Anthony Bamboo Viscose Oversized Short Sleeve T-Shirt With Arabic Printed Hem']";
-		String imageMenFifthPath = "//img[@alt='Aryan Organic Cotton Oversized Unisex Short Sleeve Hoodie']";
-		String imageMenSixthPath = "//img[@alt='Ace Recycled Crinkle Nylon Reversible Bomber Jacket']";
-		String imageMenSeventhPath = "//img[@alt='Fleece Jogger']";
+		String menClothingImageFirstPath = "//img[@alt='AE 10\" Classic Board Short']";
+		String menClothingImageSecondPath = "//img[@alt='AE Super Soft Icon V-Neck T-Shirt']";
+		String menClothingImageThirdPath = "//img[@alt='Achilles Organic Cotton Oversized Unisex Sweatshirt']";
+		String menClothingImageFourPath = "//img[@alt='Anthony Bamboo Viscose Oversized Short Sleeve T-Shirt With Arabic Printed Hem']";
+		String menClothingImageFifthPath = "//img[@alt='Aryan Organic Cotton Oversized Unisex Short Sleeve Hoodie']";
+		String menClothingImageSixthPath = "//img[@alt='Ace Recycled Crinkle Nylon Reversible Bomber Jacket']";
+		String menClothingImageSeventhPath = "//img[@alt='Fleece Jogger']";
 		
 		WebElement image = null;
 		WebDriverWait wait = new WebDriverWait(browser, 10);
 		
-		if (imageNumber.equalsIgnoreCase(imageMenFirst)) {
-			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(imageMenFirstPath)));
+		if (menClothingImageNumber.equalsIgnoreCase(menClothingImageFirst)) {
+			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(menClothingImageFirstPath)));
 			image.click();
 		}
-		else if (imageNumber.equalsIgnoreCase(imageMenSecond)) {	
-			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(imageMenSecondPath)));
+		else if (menClothingImageNumber.equalsIgnoreCase(menClothingImageSecond)) {	
+			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(menClothingImageSecondPath)));
 			image.click();
 		}
-		else if (imageNumber.equalsIgnoreCase(imageMenThird)) {
-			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(imageMenThirdPath)));
+		else if (menClothingImageNumber.equalsIgnoreCase(menClothingImageThird)) {
+			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(menClothingImageThirdPath)));
 			image.click();
 		}
-		else if (imageNumber.equalsIgnoreCase(imageMenFour)) {
-			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(imageMenFourPath)));
+		else if (menClothingImageNumber.equalsIgnoreCase(menClothingImageFour)) {
+			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(menClothingImageFourPath)));
 			image.click();
 		}
-		else if (imageNumber.equalsIgnoreCase(imageMenFifth)) {
-			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(imageMenFifthPath)));
+		else if (menClothingImageNumber.equalsIgnoreCase(menClothingImageFifth)) {
+			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(menClothingImageFifthPath)));
 			image.click();
 		}
-		else if (imageNumber.equalsIgnoreCase(imageMenSixth)) {
-			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(imageMenSixthPath)));
+		else if (menClothingImageNumber.equalsIgnoreCase(menClothingImageSixth)) {
+			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(menClothingImageSixthPath)));
 			image.click();
 		}
-		else if (imageNumber.equalsIgnoreCase(imageMenSeventh)) {
-			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(imageMenSeventhPath)));
+		else if (menClothingImageNumber.equalsIgnoreCase(menClothingImageSeventh)) {
+			image = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(menClothingImageSeventhPath)));
 			image.click();
 		}
 		else {
