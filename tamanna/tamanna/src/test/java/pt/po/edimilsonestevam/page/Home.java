@@ -17,7 +17,7 @@ public class Home extends Base {
 
 	public void acceptNotifications(String notificationType) {
 		
-		System.out.println("• Accept Notification...");
+		System.out.println("• Accepting Notification...");
 		
 		String allowNotifications = "//button[@id='optInText']";
 		String laterNotifications = "//button[contains(text(),'Later')]";
