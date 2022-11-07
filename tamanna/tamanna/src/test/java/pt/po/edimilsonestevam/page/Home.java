@@ -26,14 +26,13 @@ public class Home extends Base {
 		String noOption = "No";
 		
 		WebElement allowLaterNotifications = null;
+		WebDriverWait wait = new WebDriverWait(browser, 34);
 		
-		if (notificationType.equalsIgnoreCase(yesOption)) {
-			WebDriverWait wait = new WebDriverWait(browser, 34);
+		if (notificationType.equalsIgnoreCase(yesOption)) {	
 			allowLaterNotifications = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(allowNotifications)));
 			allowLaterNotifications.click();
 		}
 		else if (notificationType.equalsIgnoreCase(noOption)) {
-			WebDriverWait wait = new WebDriverWait(browser, 34);
 			allowLaterNotifications = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(laterNotifications)));
 			allowLaterNotifications.click();
 		}
