@@ -28,39 +28,33 @@ public class Men extends Base {
 		String saleSubcategory = "Sale";
 	
 		WebElement subMenu = null;
+		WebDriverWait wait = new WebDriverWait(browser, 5);
 		
 		if (subcategory.equalsIgnoreCase(newArrivalsSubcategory)) {
-			WebDriverWait wait = new WebDriverWait(browser, 5);
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(newArrivalsSubcategory)));
 			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(clothingSubcategory)) {	
-			WebDriverWait wait = new WebDriverWait(browser, 5);
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(clothingSubcategory)));
 			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(shoesSubcategory)) {
-			WebDriverWait wait = new WebDriverWait(browser, 5);
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(shoesSubcategory)));
 			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(accessoriesSubcategory)) {
-			WebDriverWait wait = new WebDriverWait(browser, 5);
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(accessoriesSubcategory)));
 			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(careSubcategory)) {
-			WebDriverWait wait = new WebDriverWait(browser, 5);
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(careSubcategory)));
 			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(brandsSubcategory)) {
-			WebDriverWait wait = new WebDriverWait(browser, 5);
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(brandsSubcategory)));
 			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(saleSubcategory)) {
-			WebDriverWait wait = new WebDriverWait(browser, 5);
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(saleSubcategory)));
 			subMenu.click();
 		}
