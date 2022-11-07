@@ -25,18 +25,17 @@ public class Home extends Base {
 		String yesOption = "Yes";
 		String noOption = "No";
 		
-		WebElement allowElement = null;
-		WebElement laterElement = null;
+		WebElement allowLaterElement = null;
 		
 		if (notificationType.equalsIgnoreCase(yesOption)) {
 			WebDriverWait wait = new WebDriverWait(browser, 34);
-			allowElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(allowNotifications)));
-			allowElement.click();
+			allowLaterElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(allowNotifications)));
+			allowLaterElement.click();
 		}
 		else if (notificationType.equalsIgnoreCase(noOption)) {
 			WebDriverWait wait = new WebDriverWait(browser, 34);
-			laterElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(laterNotifications)));
-			laterElement.click();
+			allowLaterElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(laterNotifications)));
+			allowLaterElement.click();
 		}
 		else {
 			System.out.println("You should inform: Yes or No");
