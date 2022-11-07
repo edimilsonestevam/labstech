@@ -15,9 +15,9 @@ public class Men extends Base {
 
 	}
 	
-	public void chooseSubcategory(String subcategory) {
+	public void chooseMenSubcategory(String menSubcategory) {
 		
-		System.out.println("• Choosing Subcategory...");
+		System.out.println("• Choosing Men Subcategory...");
 		
 		String newArrivalsSubcategory = "New Arrivals";
 		String clothingSubcategory = "Clothing";
@@ -30,31 +30,31 @@ public class Men extends Base {
 		WebElement subMenu = null;
 		WebDriverWait wait = new WebDriverWait(browser, 5);
 		
-		if (subcategory.equalsIgnoreCase(newArrivalsSubcategory)) {
+		if (menSubcategory.equalsIgnoreCase(newArrivalsSubcategory)) {
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(newArrivalsSubcategory)));
 			subMenu.click();
 		}
-		else if (subcategory.equalsIgnoreCase(clothingSubcategory)) {	
+		else if (menSubcategory.equalsIgnoreCase(clothingSubcategory)) {	
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(clothingSubcategory)));
 			subMenu.click();
 		}
-		else if (subcategory.equalsIgnoreCase(shoesSubcategory)) {
+		else if (menSubcategory.equalsIgnoreCase(shoesSubcategory)) {
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(shoesSubcategory)));
 			subMenu.click();
 		}
-		else if (subcategory.equalsIgnoreCase(accessoriesSubcategory)) {
+		else if (menSubcategory.equalsIgnoreCase(accessoriesSubcategory)) {
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(accessoriesSubcategory)));
 			subMenu.click();
 		}
-		else if (subcategory.equalsIgnoreCase(careSubcategory)) {
+		else if (menSubcategory.equalsIgnoreCase(careSubcategory)) {
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(careSubcategory)));
 			subMenu.click();
 		}
-		else if (subcategory.equalsIgnoreCase(brandsSubcategory)) {
+		else if (menSubcategory.equalsIgnoreCase(brandsSubcategory)) {
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(brandsSubcategory)));
 			subMenu.click();
 		}
-		else if (subcategory.equalsIgnoreCase(saleSubcategory)) {
+		else if (menSubcategory.equalsIgnoreCase(saleSubcategory)) {
 			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(saleSubcategory)));
 			subMenu.click();
 		}
