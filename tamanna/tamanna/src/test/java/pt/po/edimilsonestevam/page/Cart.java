@@ -22,28 +22,28 @@ public class Cart extends Base {
 		browser.findElement(By.xpath(removeButton)).click();
 
 	}
-	
+
 	public void checkItemsTotal(String expectedItemsTotal) {
-		
+
 		System.out.println("• Checking Items Total...");
-		
-		String itemsTotal = "//h3[contains(text(),'" + expectedItemsTotal + " items')]";	
+
+		String itemsTotal = "//h3[contains(text(),'" + expectedItemsTotal + " items')]";
 		String currentItemsTotal = browser.findElement(By.xpath(itemsTotal)).getText();
-		
+
 		Assert.assertEquals("Checking Items Total", expectedItemsTotal, currentItemsTotal);
-		
+
 	}
-	
+
 	public void checkItemsPrice() {
-		
+
 		System.out.println("• Checking Items Price...");
-		
-		String price = "total-value";	
+
+		String price = "total-value";
 		String currentPriceValue = browser.findElement(By.id(price)).getText();
 		String expectedPriceValue = "KWD 0.000";
-		
+
 		Assert.assertEquals("Checking Items Price", expectedPriceValue, currentPriceValue);
-		
+
 	}
-	
+
 }

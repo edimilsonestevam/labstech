@@ -8,7 +8,7 @@ public class Beauty extends Base {
 
 	public Beauty(WebDriver browser) {
 		super(browser);
-		
+
 	}
 
 }

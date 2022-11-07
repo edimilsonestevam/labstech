@@ -31,21 +31,31 @@ public class Configuration {
 		String https = "https://";
 
 		if (browserName.equalsIgnoreCase("chrome")) {
+			
 			System.setProperty(chromeProperty, chromePropertyPath);
 			WebDriver browser = new ChromeDriver();
 			browser.manage().window().maximize();
 			browser.get(https + url);
+			
 			return browser;
+			
 		} else if (browserName.equalsIgnoreCase("firefox")) {
+			
 			System.setProperty(firefoxProperty, firefoxPropertyPath);
 			WebDriver browser = new FirefoxDriver();
 			browser.manage().window().maximize();
 			browser.get(https + url);
+			
 			return browser;
+			
 		} else {
+			
 			System.out.println("Still to implement this browser, " + browserName);
+			
 		}
+		
 		return null;
+		
 	}
 
 	public void browserClose(WebDriver browser) {
