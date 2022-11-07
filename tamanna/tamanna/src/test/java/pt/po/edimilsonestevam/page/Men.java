@@ -2,8 +2,10 @@ package pt.po.edimilsonestevam.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import junit.framework.Assert;
 import pt.po.edimilsonestevam.setup.Base;
 
 public class Men extends Base {
@@ -24,44 +26,43 @@ public class Men extends Base {
 		String careSubcategory = "Care";
 		String brandsSubcategory = "Brands";
 		String saleSubcategory = "Sale";
-		
-		String currentUrl = browser.getCurrentUrl();
-		
-		String expectedNewArrivalsUrl = "www.tamanna.com/shop/men";
-		String expectedMenClothingUrl = "www.tamanna.com/shop/men-clothing";
-		String expectedMenShoesUrl = "www.tamanna.com/shop/men-shoes";
-		String expectedMenAccessoriesUrl = "www.tamanna.com/shop/men-accessories";
-		String expectedMenCareUrl = "www.tamanna.com/shop/men-care";
-		String expectedMenBrandsUrl = "www.tamanna.com/men/brands";
-		String expectedMenSaleUrl = "www.tamanna.com/shop/men?onSale=true";
+	
+		WebElement subMenu = null;
 		
 		if (subcategory.equalsIgnoreCase(newArrivalsSubcategory)) {
-			browser.findElement(By.linkText(newArrivalsSubcategory)).click();
-			Assert.assertEquals("New Arrivals Subcategory", expectedNewArrivalsUrl, currentUrl);
+			WebDriverWait wait = new WebDriverWait(browser, 5);
+			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(newArrivalsSubcategory)));
+			subMenu.click();
 		}
-		else if (subcategory.equalsIgnoreCase(clothingSubcategory)) {
-			browser.findElement(By.linkText(clothingSubcategory)).click();
-			Assert.assertEquals("Clothing Subcategory", expectedMenClothingUrl, currentUrl);
+		else if (subcategory.equalsIgnoreCase(clothingSubcategory)) {	
+			WebDriverWait wait = new WebDriverWait(browser, 5);
+			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(clothingSubcategory)));
+			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(shoesSubcategory)) {
-			browser.findElement(By.linkText(shoesSubcategory)).click();
-			Assert.assertEquals("Shoes Subcategory", expectedMenShoesUrl, currentUrl);
+			WebDriverWait wait = new WebDriverWait(browser, 5);
+			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(shoesSubcategory)));
+			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(accessoriesSubcategory)) {
-			browser.findElement(By.linkText(accessoriesSubcategory)).click();
-			Assert.assertEquals("Accessories Subcategory", expectedMenAccessoriesUrl, currentUrl);
+			WebDriverWait wait = new WebDriverWait(browser, 5);
+			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(accessoriesSubcategory)));
+			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(careSubcategory)) {
-			browser.findElement(By.linkText(careSubcategory)).click();
-			Assert.assertEquals("Care Subcategory", expectedMenCareUrl, currentUrl);
+			WebDriverWait wait = new WebDriverWait(browser, 5);
+			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(careSubcategory)));
+			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(brandsSubcategory)) {
-			browser.findElement(By.linkText(brandsSubcategory)).click();
-			Assert.assertEquals("Brands Subcategory", expectedMenBrandsUrl, currentUrl);
+			WebDriverWait wait = new WebDriverWait(browser, 5);
+			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(brandsSubcategory)));
+			subMenu.click();
 		}
 		else if (subcategory.equalsIgnoreCase(saleSubcategory)) {
-			browser.findElement(By.linkText(saleSubcategory)).click();
-			Assert.assertEquals("Sale Subcategory", expectedMenSaleUrl, currentUrl);
+			WebDriverWait wait = new WebDriverWait(browser, 5);
+			subMenu = wait.until(ExpectedConditions.elementToBeClickable(By.linkText(saleSubcategory)));
+			subMenu.click();
 		}
 		else {
 			System.out.println("You should inform: New Arrivals, Clothing, Shoes, Accessories, Care, Brands or Sale");
