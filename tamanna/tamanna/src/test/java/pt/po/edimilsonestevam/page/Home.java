@@ -30,12 +30,12 @@ public class Home extends Base {
 		WebElement laterElement = null;
 		
 		if (notificationType.equalsIgnoreCase(yesOption)) {
-			WebDriverWait wait = new WebDriverWait(browser, 5);
+			WebDriverWait wait = new WebDriverWait(browser, 34);
 			allowElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(allowNotifications)));
 			allowElement.click();
 		}
 		else if (notificationType.equalsIgnoreCase(noOption)) {
-			WebDriverWait wait = new WebDriverWait(browser, 5);
+			WebDriverWait wait = new WebDriverWait(browser, 34);
 			laterElement = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(laterNotifications)));
 			laterElement.click();
 		}
@@ -94,4 +94,5 @@ public class Home extends Base {
 		}
 		
 	}
+	
 }
