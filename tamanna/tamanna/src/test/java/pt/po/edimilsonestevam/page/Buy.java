@@ -35,33 +35,43 @@ public class Buy extends Base {
 		String shoesSizeSixthPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/button[6]";
 		String shoesSizeSeventhPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/button[7]";
 
+		WebElement selectShoesSize = null;
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		
 		if (shoesSize.contentEquals(shoesSizeFirst)) {
 
-			browser.findElement(By.xpath(shoesSizeFirstPath)).click();
+			selectShoesSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoesSizeFirstPath)));
+			selectShoesSize.click();
 
 		} else if (shoesSize.contentEquals(shoesSizeSecond)) {
 
-			browser.findElement(By.xpath(shoesSizeSecondPath)).click();
+			selectShoesSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoesSizeSecondPath)));
+			selectShoesSize.click();
 
 		} else if (shoesSize.contentEquals(shoesSizeThird)) {
 
-			browser.findElement(By.xpath(shoesSizeThirdPath)).click();
+			selectShoesSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoesSizeThirdPath)));
+			selectShoesSize.click();
 
 		} else if (shoesSize.contentEquals(shoesSizeFour)) {
 
-			browser.findElement(By.xpath(shoesSizeFourPath)).click();
+			selectShoesSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoesSizeFourPath)));
+			selectShoesSize.click();
 
 		} else if (shoesSize.contentEquals(shoesSizeFifth)) {
 
-			browser.findElement(By.xpath(shoesSizeFifthPath)).click();
+			selectShoesSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoesSizeFifthPath)));
+			selectShoesSize.click();
 
 		} else if (shoesSize.contentEquals(shoesSizeSixth)) {
 
-			browser.findElement(By.xpath(shoesSizeSixthPath)).click();
+			selectShoesSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoesSizeSixthPath)));
+			selectShoesSize.click();
 
 		} else if (shoesSize.contentEquals(shoesSizeSeventh)) {
 
-			browser.findElement(By.xpath(shoesSizeSeventhPath)).click();
+			selectShoesSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoesSizeSeventhPath)));
+			selectShoesSize.click();
 
 		} else {
 
