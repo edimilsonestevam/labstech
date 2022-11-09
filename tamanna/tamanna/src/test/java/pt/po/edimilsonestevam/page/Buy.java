@@ -214,8 +214,6 @@ public class Buy extends Base {
 		goShoppingBag = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoppingBagButton)));
 		goShoppingBag.click();
 		
-		
-
 	}
 
 }
