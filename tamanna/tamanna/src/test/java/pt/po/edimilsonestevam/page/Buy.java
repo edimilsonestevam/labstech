@@ -36,37 +36,37 @@ public class Buy extends Base {
 		String shoesSizeSeventhPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/button[7]";
 
 		if (shoesSize.contentEquals(shoesSizeFirst)) {
-			
+
 			browser.findElement(By.xpath(shoesSizeFirstPath)).click();
-			
+
 		} else if (shoesSize.contentEquals(shoesSizeSecond)) {
-			
+
 			browser.findElement(By.xpath(shoesSizeSecondPath)).click();
-			
+
 		} else if (shoesSize.contentEquals(shoesSizeThird)) {
-			
+
 			browser.findElement(By.xpath(shoesSizeThirdPath)).click();
-			
+
 		} else if (shoesSize.contentEquals(shoesSizeFour)) {
-			
+
 			browser.findElement(By.xpath(shoesSizeFourPath)).click();
-			
+
 		} else if (shoesSize.contentEquals(shoesSizeFifth)) {
-			
+
 			browser.findElement(By.xpath(shoesSizeFifthPath)).click();
-			
+
 		} else if (shoesSize.contentEquals(shoesSizeSixth)) {
-			
+
 			browser.findElement(By.xpath(shoesSizeSixthPath)).click();
-			
+
 		} else if (shoesSize.contentEquals(shoesSizeSeventh)) {
-			
+
 			browser.findElement(By.xpath(shoesSizeSeventhPath)).click();
-			
+
 		} else {
-			
+
 			System.out.println("You should inform: 37.5, 36.5, 38, 38.5, 39, 40 or 40.5");
-			
+
 		}
 	}
 
@@ -90,38 +90,48 @@ public class Buy extends Base {
 		String clothingSizeSixthPath = "//button[contains(text(),'M')]";
 		String clothingSizeSeventhPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[7]";
 
+		WebElement selectSize = null;
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+
 		if (clothingSize.contentEquals(clothingSizeFirst)) {
-			
-			browser.findElement(By.xpath(clothingSizeFirstPath)).click();
-			
+
+			selectSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clothingSizeFirstPath)));
+			selectSize.click();
+
 		} else if (clothingSize.contentEquals(clothingSizeSecond)) {
-			
-			browser.findElement(By.xpath(clothingSizeSecondPath)).click();
-			
+
+			selectSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clothingSizeSecondPath)));
+			selectSize.click();
+
 		} else if (clothingSize.contentEquals(clothingSizeThird)) {
-			
-			browser.findElement(By.xpath(clothingSizeThirdPath)).click();
-			
+
+			selectSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clothingSizeThirdPath)));
+			selectSize.click();
+
 		} else if (clothingSize.contentEquals(clothingSizeFour)) {
-			
-			browser.findElement(By.xpath(clothingSizeFourPath)).click();
-			
+
+			selectSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clothingSizeFourPath)));
+			selectSize.click();
+
 		} else if (clothingSize.contentEquals(clothingSizeFifth)) {
-			
-			browser.findElement(By.xpath(clothingSizeFifthPath)).click();
-			
+
+			selectSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clothingSizeFifthPath)));
+			selectSize.click();
+
 		} else if (clothingSize.contentEquals(clothingSizeSixth)) {
-			
-			browser.findElement(By.xpath(clothingSizeSixthPath)).click();
-			
+
+			selectSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clothingSizeSixthPath)));
+			selectSize.click();
+
 		} else if (clothingSize.contentEquals(clothingSizeSeventh)) {
-			
-			browser.findElement(By.xpath(clothingSizeSeventhPath)).click();
-			
+
+			selectSize = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(clothingSizeSeventhPath)));
+			selectSize.click();
+
 		} else {
-			
+
 			System.out.println("You should inform: S, L, M, XL, XXL, XXXL or 4XL");
-			
+
 		}
 	}
 
@@ -129,7 +139,7 @@ public class Buy extends Base {
 
 		System.out.println("• Selecting Items Quantity...");
 
-		String idItemsQuantity = "quantity-selector";
+		String itemsQuantityCombox = "//div[@id='__next']/div/div[2]/main/div/div[2]/div/div[2]/div/div[2]/div/div[4]/div/div/div/div/select";
 		String oneItemsQuantity = "//label[contains(text(),'1')]";
 		String twoItemsQuantity = "//label[contains(text(),'2')]";
 		String threeItemsQuantity = "//label[contains(text(),'3')]";
@@ -140,48 +150,48 @@ public class Buy extends Base {
 		String eightItemsQuantity = "//label[contains(text(),'8')]";
 		String nineItemsQuantity = "//label[contains(text(),'9')]";
 
-		browser.findElement(By.id(idItemsQuantity)).click();
+		browser.findElement(By.id(itemsQuantityCombox)).click();
 
 		if (itemsQuantity.contentEquals("1")) {
-			
+
 			browser.findElement(By.xpath(oneItemsQuantity)).click();
-			
+
 		} else if (itemsQuantity.contentEquals("2")) {
-			
+
 			browser.findElement(By.xpath(twoItemsQuantity)).click();
-			
+
 		} else if (itemsQuantity.contentEquals("3")) {
-			
+
 			browser.findElement(By.xpath(threeItemsQuantity)).click();
-			
+
 		} else if (itemsQuantity.contentEquals("4")) {
-			
+
 			browser.findElement(By.xpath(forItemsQuantity)).click();
-			
+
 		} else if (itemsQuantity.contentEquals("5")) {
-			
+
 			browser.findElement(By.xpath(fiveItemsQuantity)).click();
-			
+
 		} else if (itemsQuantity.contentEquals("6")) {
-			
+
 			browser.findElement(By.xpath(sixItemsQuantity)).click();
-			
+
 		} else if (itemsQuantity.contentEquals("7")) {
-			
+
 			browser.findElement(By.xpath(sevenItemsQuantity)).click();
-			
+
 		} else if (itemsQuantity.contentEquals("8")) {
-			
+
 			browser.findElement(By.xpath(eightItemsQuantity)).click();
-			
+
 		} else if (itemsQuantity.contentEquals("9")) {
-			
+
 			browser.findElement(By.xpath(nineItemsQuantity)).click();
-			
+
 		} else {
-			
+
 			System.out.println("You should inform: 1, 2, 3, 4, 5, 6, 7, 8 or 9");
-			
+
 		}
 
 	}
@@ -202,18 +212,18 @@ public class Buy extends Base {
 
 		String bagIcon = "//header/div[1]/nav[1]/div[1]/div[3]/div[2]/div[2]";
 		String shoppingBagButton = "//button[contains(text(),'GO TO SHOPPING BAG')]";
-	
+
 		WebElement bag = null;
 		WebElement goShoppingBag = null;
-		
+
 		WebDriverWait wait = new WebDriverWait(browser, 10);
-		
+
 		bag = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(bagIcon)));
 		bag.click();
-		
+
 		goShoppingBag = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoppingBagButton)));
 		goShoppingBag.click();
-		
+
 	}
 
 }
