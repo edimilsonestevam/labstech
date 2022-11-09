@@ -80,7 +80,7 @@ public class Cart extends Base {
 
 		try {
 
-			Thread.sleep(5);
+			Thread.sleep(10);
 			String currentUrl = browser.getCurrentUrl();
 
 			Assert.assertEquals("Checking Current URL", expectedUrl, currentUrl);
