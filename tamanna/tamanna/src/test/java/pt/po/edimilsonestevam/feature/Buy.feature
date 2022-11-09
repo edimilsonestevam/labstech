@@ -7,7 +7,7 @@ Feature: Remove Products
   @buy-remove-products-cart
   Scenario Outline: Remove Products from Cart
 		Given I have a visitor profile <profile> on Tamanna's website <mainUrl>
-		When I choose a category <category> to choose a subcategory <subcategory> to buy two products
+		When I choose a category <category> to choose a subcategory <subcategory> to buy two products from different categories
 		And I choose the sizes of the products <size> to make the purchase
 		And I check the product price <productPrice> and quantity of products <quantityProducts> in the purchase
 		And I remove both products from the cart
