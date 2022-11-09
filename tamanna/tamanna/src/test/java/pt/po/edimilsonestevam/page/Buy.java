@@ -140,7 +140,7 @@ public class Buy extends Base {
 
 		System.out.println("• Selecting Items Quantity...");
 
-		String itemsQuantityCombox = "quantity";
+		String selectItemsQuantity = "quantity";
 		String oneItemsQuantity = "//label[contains(text(),'1')]";
 		String twoItemsQuantity = "//label[contains(text(),'2')]";
 		String threeItemsQuantity = "//label[contains(text(),'3')]";
@@ -151,7 +151,7 @@ public class Buy extends Base {
 		String eightItemsQuantity = "//label[contains(text(),'8')]";
 		String nineItemsQuantity = "//label[contains(text(),'9')]";
 
-		browser.findElement(By.name(itemsQuantityCombox)).click();
+		browser.findElement(By.name(selectItemsQuantity)).click();
 
 		if (itemsQuantity.contentEquals("1")) {
 
