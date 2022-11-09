@@ -15,5 +15,5 @@ Feature: Remove Products
 		And I navigate to the Home of Tamanna's website <homeUrl>
     
     Examples: 
-      | profile | mainUrl                   | category | subcategory | size  | productPrice  | quantityProducts | homeUrl                |
-      | "Guest" | "https://www.tamanna.com" | "Men"    | "Clothing"  | "L"   | "KWD 50.600"  | "2"              | "www.tamanna.com/home" |
+      | profile | mainUrl           | category | subcategory | size  | productPrice  | quantityProducts | homeUrl                |
+      | "Guest" | "www.tamanna.com" | "Men"    | "Clothing"  | "L"   | "KWD 50.600"  | "2"              | "www.tamanna.com/home" |
