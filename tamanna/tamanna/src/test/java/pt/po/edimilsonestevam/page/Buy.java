@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
@@ -139,7 +140,7 @@ public class Buy extends Base {
 
 		System.out.println("• Selecting Items Quantity...");
 
-		String itemsQuantityCombox = "//div[@id='__next']/div/div[2]/main/div/div[2]/div/div[2]/div/div[2]/div/div[4]/div/div/div/div/select";
+		String itemsQuantityCombox = "quantity";
 		String oneItemsQuantity = "//label[contains(text(),'1')]";
 		String twoItemsQuantity = "//label[contains(text(),'2')]";
 		String threeItemsQuantity = "//label[contains(text(),'3')]";
@@ -150,7 +151,7 @@ public class Buy extends Base {
 		String eightItemsQuantity = "//label[contains(text(),'8')]";
 		String nineItemsQuantity = "//label[contains(text(),'9')]";
 
-		browser.findElement(By.id(itemsQuantityCombox)).click();
+		browser.findElement(By.name(itemsQuantityCombox)).click();
 
 		if (itemsQuantity.contentEquals("1")) {
 
