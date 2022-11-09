@@ -16,5 +16,4 @@ Feature: Remove Products
     
     Examples: 
       | profile | url               | category | subcategory | size  | productPrice | quantityProducts |
-      | "Guest" | "www.tamanna.com" | "Men"    | "Clothing"  | "XXL" | "KWD 7.000"  | "1"              |
-      | "Guest" | "www.tamanna.com" | "Women"  | "Shoes"     | "36"  | "KWD 45.000" | "1"              |
+      | "Guest" | "www.tamanna.com" | "Men"    | "Clothing"  | "L"   | "KWD 3.600"  | "1"              |
