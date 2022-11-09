@@ -65,12 +65,6 @@ public class TestSteps {
 		
 	}
 
-	@Then("^the system displays the zeroed total price$")
-	public void the_system_displays_the_zeroed_total_price() throws Throwable {
-
-		
-		
-	}
 	@Then("^the system displays the zeroed total price \"([^\"]*)\"$")
 	public void the_system_displays_the_zeroed_total_price(String totalPrice) throws Throwable {
 
