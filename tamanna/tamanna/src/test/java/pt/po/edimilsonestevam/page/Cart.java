@@ -84,7 +84,7 @@ public class Cart extends Base {
 			browser.findElement(By.linkText(homePage)).click();
 			String currentUrl = browser.getCurrentUrl();
 			
-			Assert.assertEquals("Checking Current URL", expectedUrl, currentUrl);
+			Assert.assertEquals("Checking Current URL", "https://" + expectedUrl, currentUrl);
 
 		} catch (InterruptedException e) {
 
