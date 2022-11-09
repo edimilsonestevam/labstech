@@ -74,21 +74,21 @@ public class Buy extends Base {
 
 		System.out.println("• Selecting Clothing Size...");
 
-		String clothingSizeFirst = "S";
-		String clothingSizeSecond = "XXXL";
-		String clothingSizeThird = "XL";
-		String clothingSizeFour = "XXL";
-		String clothingSizeFifth = "4XL";
-		String clothingSizeSixth = "M";
-		String clothingSizeSeventh = "L";
+		String clothingSizeFirst = "XS";
+		String clothingSizeSecond = "S";
+		String clothingSizeThird = "M";
+		String clothingSizeFour = "L";
+		String clothingSizeFifth = "XL";
+		String clothingSizeSixth = "XXL";
+		String clothingSizeSeventh = "XXXL";
 
-		String clothingSizeFirstPath = "//button[contains(text(),'S')]";
-		String clothingSizeSecondPath = "//button[contains(text(),'XXXL')]";
-		String clothingSizeThirdPath = "//div[@id='__next']/div/div[2]/main/div/div[2]/div/div[2]/div/div[2]/div/div[3]/div/div/div[2]/button[5]";
+		String clothingSizeFirstPath = "//button[contains(text(),'XS')]";
+		String clothingSizeSecondPath = "///body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[2]";
+		String clothingSizeThirdPath = "//button[contains(text(),'M')]";
 		String clothingSizeFourPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[4]";
-		String clothingSizeFifthPath = "//button[contains(text(),'4XL')]";
-		String clothingSizeSixthPath = "//button[contains(text(),'M')]";
-		String clothingSizeSeventhPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[7]";
+		String clothingSizeFifthPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[5]";
+		String clothingSizeSixthPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[6]";
+		String clothingSizeSeventhPath = "//button[contains(text(),'XXXL')]";
 
 		WebElement selectSize = null;
 		WebDriverWait wait = new WebDriverWait(browser, 5);
