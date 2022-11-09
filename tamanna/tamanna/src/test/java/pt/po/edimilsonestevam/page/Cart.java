@@ -80,9 +80,10 @@ public class Cart extends Base {
 
 		try {
 
-			Thread.sleep(10);
+			Thread.sleep(5);
+			browser.findElement(By.linkText(homePage)).click();
 			String currentUrl = browser.getCurrentUrl();
-
+			
 			Assert.assertEquals("Checking Current URL", expectedUrl, currentUrl);
 
 		} catch (InterruptedException e) {
