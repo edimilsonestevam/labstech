@@ -23,17 +23,6 @@ public class Cart extends Base {
 
 	}
 
-	public void checkItemsTotal(String expectedItemsTotal) {
-
-		System.out.println("• Checking Items Total...");
-
-		String itemsTotal = "//h3[contains(text(),'" + expectedItemsTotal + " items')]";
-		String currentItemsTotal = browser.findElement(By.xpath(itemsTotal)).getText();
-
-		Assert.assertEquals("Checking Items Total", expectedItemsTotal, currentItemsTotal);
-
-	}
-
 	public void checkItemsPrice() {
 
 		System.out.println("• Checking Items Price...");
@@ -45,5 +34,26 @@ public class Cart extends Base {
 		Assert.assertEquals("Checking Items Price", expectedPriceValue, currentPriceValue);
 
 	}
+	
+	public void checkItemsTotal(String expectedItemsTotal) {
 
+		System.out.println("• Checking Items Total...");
+
+		String itemsTotal = "//h3[contains(text(),'" + expectedItemsTotal + " items')]";
+		String currentItemsTotal = browser.findElement(By.xpath(itemsTotal)).getText();
+
+		Assert.assertEquals("Checking Items Total", expectedItemsTotal, currentItemsTotal);
+
+	}
+
+	public void checkTotalPrice(String expectedTotalPrice) {
+		
+		System.out.println("• Checking Total Price...");
+		
+		String totalPrice = "//body/div[@id='__next']/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[3]/p[2]";
+		String currentTotalPrice = browser.findElement(By.xpath(totalPrice)).getText();
+
+		Assert.assertEquals("Checking Total Price", expectedTotalPrice, currentTotalPrice);
+		
+	}
 }
