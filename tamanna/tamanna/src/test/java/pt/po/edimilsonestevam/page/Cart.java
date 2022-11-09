@@ -49,8 +49,8 @@ public class Cart extends Base {
 
 		String itemsTotal = "//h3[contains(text(),'" + expectedItemsTotal + " items')]";
 		String currentItemsTotal = browser.findElement(By.xpath(itemsTotal)).getText();
-
-		Assert.assertEquals("Checking Items Total", expectedItemsTotal, currentItemsTotal);
+		
+		Assert.assertEquals("Checking Items Total", expectedItemsTotal + " items", currentItemsTotal);
 
 	}
 
