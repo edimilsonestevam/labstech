@@ -68,10 +68,16 @@ public class TestSteps {
 	@Then("^the system displays the zeroed total price$")
 	public void the_system_displays_the_zeroed_total_price() throws Throwable {
 
-		new Cart(browser).checkTotalPrice("KWD 0.000");
+		
 		
 	}
+	@Then("^the system displays the zeroed total price \"([^\"]*)\"$")
+	public void the_system_displays_the_zeroed_total_price(String totalPrice) throws Throwable {
 
+		new Cart(browser).checkTotalPrice(totalPrice);
+		
+	}
+	
 	@Then("^I navigate to the Home of Tamanna's website \"([^\"]*)\"$")
 	public void i_navigate_to_the_Home_of_Tamanna_s_website(String homeUrl) throws Throwable {
 

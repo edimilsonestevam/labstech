@@ -11,9 +11,9 @@ Feature: Remove Products
 		And I choose the sizes of the products <size> to make the purchase
 		And I check the product price <productPrice> and quantity of products <quantityProducts> in the purchase
 		And I remove both products from the cart
-		Then the system displays the zeroed total price
+		Then the system displays the zeroed total price <totalPrice>
 		And I navigate to the Home of Tamanna's website <homeUrl>
     
     Examples: 
-      | profile | mainUrl           | category | subcategory | size  | productPrice  | quantityProducts | homeUrl                |
-      | "Guest" | "www.tamanna.com" | "Men"    | "Clothing"  | "L"   | "KWD 50.600"  | "2"              | "www.tamanna.com/home" |
+      | profile | mainUrl           | category | subcategory | size  | productPrice  | quantityProducts | totalPrice  | homeUrl                |
+      | "Guest" | "www.tamanna.com" | "Men"    | "Clothing"  | "L"   | "KWD 50.600"  | "2"              | "KWD 0.000" | "www.tamanna.com/home" |
