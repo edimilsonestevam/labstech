@@ -58,7 +58,7 @@ public class Cart extends Base {
 
 		System.out.println("• Checking Total Price...");
 
-		String totalPricePath = "//body/div[@id='__next']/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[3]/p[2]";
+		String totalPricePath = "//p[contains(text(),'" + expectedTotalPrice + "')]";
 
 		WebElement totalPrice = null;
 		WebDriverWait wait = new WebDriverWait(browser, 10);
