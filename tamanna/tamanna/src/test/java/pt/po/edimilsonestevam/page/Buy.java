@@ -2,6 +2,9 @@ package pt.po.edimilsonestevam.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
@@ -81,7 +84,7 @@ public class Buy extends Base {
 
 		String clothingSizeFirstPath = "//button[contains(text(),'S')]";
 		String clothingSizeSecondPath = "//button[contains(text(),'XXXL')]";
-		String clothingSizeThirdPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[3]";
+		String clothingSizeThirdPath = "//div[@id='__next']/div/div[2]/main/div/div[2]/div/div[2]/div/div[2]/div/div[3]/div/div/div[2]/button[5]";
 		String clothingSizeFourPath = "//body/div[@id='__next']/div[1]/div[2]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/button[4]";
 		String clothingSizeFifthPath = "//button[contains(text(),'4XL')]";
 		String clothingSizeSixthPath = "//button[contains(text(),'M')]";
@@ -199,9 +202,19 @@ public class Buy extends Base {
 
 		String bagIcon = "//header/div[1]/nav[1]/div[1]/div[3]/div[2]/div[2]";
 		String shoppingBagButton = "//button[contains(text(),'GO TO SHOPPING BAG')]";
-
-		browser.findElement(By.xpath(bagIcon)).click();
-		browser.findElement(By.xpath(shoppingBagButton)).click();
+	
+		WebElement bag = null;
+		WebElement goShoppingBag = null;
+		
+		WebDriverWait wait = new WebDriverWait(browser, 10);
+		
+		bag = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(bagIcon)));
+		bag.click();
+		
+		goShoppingBag = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(shoppingBagButton)));
+		goShoppingBag.click();
+		
+		
 
 	}
 
