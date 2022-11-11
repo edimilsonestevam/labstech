@@ -2,9 +2,9 @@ package pt.po.edimilsonestevam.core;
 
 import java.util.ArrayList;
 
-public class NumberDivision {
+public class Division {
 
-	public void numberDivisionThree() {
+	public void numbersDividedThree() {
 
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
 		numbers.add(1);
