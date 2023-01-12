@@ -9,5 +9,5 @@ Feature: Successfully Login
     Then the system will show me the Trakx Homepage <homepage>
 
     Examples: 
-      | url                    | user                 | password     | homepage               |
-      | "dev.trakx.io/landing" | "joao+1912@trakx.io" | "Trakx@1912" | "dev.trakx.io/wallets" |
+      | url                    | user                 | password     | homepage                       |
+      | "dev.trakx.io/landing" | "joao+1912@trakx.io" | "Trakx@1912" | "https://dev.trakx.io/wallets" |

@@ -74,14 +74,14 @@ public class Login extends Base{
 
 	}
 
-	public void verifyCurrentPage () {
+	public void verifyCurrentPage (String homepage) {
 		
 		System.out.println("• Verifying Current Page...");
 		
-		String ExpectedPage = "https://dev.trakx.io/wallets";
+		String ExpectedPage = homepage;
 		String currentPage = browser.getCurrentUrl();
 		
 		Assert.assertEquals("Checking Current Page", ExpectedPage, currentPage);
-		
+			
 	}
 }

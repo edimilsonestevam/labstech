@@ -32,7 +32,8 @@ public class TestSteps {
 	public void the_system_will_show_me_the_Trakx_Homepage(String homepage) throws Throwable {
 
 		new Login(browser).clickEnterButton();
-		new Login(browser).verifyCurrentPage();
+		new Login(browser).verifyCurrentPage(homepage);
+		new Configuration().browserClose(browser);
 		
 	}
 }
