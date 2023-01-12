@@ -29,9 +29,10 @@ public class TestSteps {
 	}
 
 	@Then("^the system will show me the Trakx Homepage \"([^\"]*)\"$")
-	public void the_system_will_show_me_the_Trakx_Homepage(String arg1) throws Throwable {
+	public void the_system_will_show_me_the_Trakx_Homepage(String homepage) throws Throwable {
 
 		new Login(browser).clickEnterButton();
+		new Login(browser).verifyCurrentPage();
 		
 	}
 }

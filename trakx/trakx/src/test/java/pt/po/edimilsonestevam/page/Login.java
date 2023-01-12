@@ -2,6 +2,8 @@ package pt.po.edimilsonestevam.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import junit.framework.Assert;
 import pt.po.edimilsonestevam.setup.Base;
 
 public class Login extends Base{
@@ -52,7 +54,7 @@ public class Login extends Base{
 		
 	}
 
-	public void clickSignIn() {
+	public void clickSignIn () {
 		
 		System.out.println("• Clicking Sign In...");
 				
@@ -62,4 +64,14 @@ public class Login extends Base{
 
 	}
 
+	public void verifyCurrentPage () {
+		
+		System.out.println("• Verifying Current Page...");
+		
+		String ExpectedPage = "https://dev.trakx.io/wallets";
+		String currentPage = browser.getCurrentUrl();
+		
+		Assert.assertEquals("Checking Current Page", ExpectedPage, currentPage);
+		
+	}
 }
