@@ -74,14 +74,13 @@ public class Login extends Base{
 
 	}
 
-	public void verifyCurrentPage (String homepage) {
+	public void verifyCurrentPage (String expectedHomepage) {
 		
 		System.out.println("• Verifying Current Page...");
 		
-		String ExpectedPage = homepage;
 		String currentPage = browser.getCurrentUrl();
 		
-		Assert.assertEquals("Checking Current Page", ExpectedPage, currentPage);
+		Assert.assertEquals("Checking Current Page", expectedHomepage, currentPage);
 			
 	}
 }
