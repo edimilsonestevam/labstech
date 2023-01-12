@@ -2,6 +2,9 @@ package pt.po.edimilsonestevam.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import junit.framework.Assert;
 import pt.po.edimilsonestevam.setup.Base;
@@ -12,6 +15,8 @@ public class Login extends Base{
 		super(browser);
 
 	}
+	
+	public WebElement element = null;
 	
 	public void clickProfile () {
 		
@@ -27,10 +32,12 @@ public class Login extends Base{
 		
 		System.out.println("• Informing User...");
 		
-		String userFieldId = "username";
+		String userFieldXpath = "//input[@id='username']";
 		
-		browser.findElement(By.id(userFieldId)).click();
-		browser.findElement(By.id(userFieldId)).sendKeys(user);
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(userFieldXpath)));
+		element.findElement(By.xpath(userFieldXpath)).click();
+		element.findElement(By.xpath(userFieldXpath)).sendKeys(user);
 		
 	}
 	
@@ -38,10 +45,13 @@ public class Login extends Base{
 		
 		System.out.println("• Informing Password...");
 		
-		String passwordField = "password";
+		String passwordFieldXpath = "//input[@id='password']";
 		
-		browser.findElement(By.id(passwordField)).click();
-		browser.findElement(By.id(passwordField)).sendKeys(password);
+		WebDriverWait wait = new WebDriverWait(browser, 5);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(passwordFieldXpath)));	
+		element.findElement(By.xpath(passwordFieldXpath)).click();
+		element.findElement(By.xpath(passwordFieldXpath)).sendKeys(password);
+		
 	}
 	
 	public void clickEnterButton () {
