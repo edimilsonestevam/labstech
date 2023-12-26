@@ -1,7 +1,6 @@
 package pt.po.edimilsonestevam.stepDefinition;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.UnreachableBrowserException;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

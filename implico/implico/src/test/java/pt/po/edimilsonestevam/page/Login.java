@@ -12,7 +12,7 @@ public class Login extends Base {
 
 	}
 
-	protected String idLoginButton = "login-button";
+	protected static String idLoginButton = "login-button";
 	
 	
 	public void DoLogin (String username, String password) {
