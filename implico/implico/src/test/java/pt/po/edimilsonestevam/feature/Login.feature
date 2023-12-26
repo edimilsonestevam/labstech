@@ -4,8 +4,7 @@ Feature: Login
   @scenario-success-login
   Scenario Outline: User success login
     Given I am Sauce Demo page <url>
-    When I inform username <username> in the Username field
-    And I inform password <password> in the Password field
+    When I inform username <username> in the Username field, password <password> in the Password field
     And I confirm action
     Then Sauce Demo will show products list <product_first>, <product_second>, <product_third>, <product_fourth>, <product_fifth>, <poduct_sixth>
 

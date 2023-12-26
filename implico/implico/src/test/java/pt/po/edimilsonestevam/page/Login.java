@@ -12,13 +12,15 @@ public class Login extends Base {
 
 	}
 
+	protected String idLoginButton = "login-button";
+	
+	
 	public void DoLogin (String username, String password) {
 		
 		System.out.println("• Doing Login...");
 		
 		String idUsername = "user-name";
 		String idLoginPassword = "password";
-		String idLoginButton = "login-button";
 		String txtStandardUser = "standard_user";
 		String txtLockedOutUser = "locked_out_user";
 		String txtProblemUser = "problem_user";
@@ -76,11 +78,17 @@ public class Login extends Base {
 		else if(password.equalsIgnoreCase(txtLoginPassword)){
 			
 			browser.findElement(By.id(idLoginPassword)).sendKeys(password);
-			browser.findElement(By.id(idLoginButton)).click();
 
 		}
 		else {
 			System.out.println("You did not inform your correct Password!");
 		}
 	}
+	
+	public void ConfirmLogin () {
+		
+		browser.findElement(By.id(idLoginButton)).click();
+		
+	}
+	
 }
