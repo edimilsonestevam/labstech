@@ -13,17 +13,25 @@ public class Inventory extends Base {
 
 	public void addProductCart () {
 		
+		System.out.println("• Adding Product Cart...");
+		
 	}
 	
 	public void removeProductCart () {
+		
+		System.out.println("• Removing Product Cart...");
 		
 	}
 	
 	public void totalProductCart () {
 		
+		System.out.println("• Verifying Total Product Cart...");
+		
 	}
 	
-	public void verifyProductCart () {
+	public void verifyProductList () {
+		
+		System.out.println("• Verifying Product List...");
 		
 	}
 	

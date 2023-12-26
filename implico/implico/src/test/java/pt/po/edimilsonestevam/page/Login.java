@@ -87,6 +87,8 @@ public class Login extends Base {
 	
 	public void confirmLogin () {
 		
+		System.out.println("• Confirming Login...");
+		
 		browser.findElement(By.id(idLoginButton)).click();
 		
 	}
