@@ -22,14 +22,14 @@ public class TestSteps {
 	@When("^I inform username \"([^\"]*)\" in the Username field, password \"([^\"]*)\" in the Password field$")
 	public void i_inform_username_in_the_Username_field_password_in_the_Password_field(String username, String password) throws Throwable {
 
-		new Login(browser).DoLogin(username, password);
+		new Login(browser).doLogin(username, password);
 		
 	}
 
 	@When("^I confirm action$")
 	public void i_confirm_action() throws Throwable {
 
-		new Login(browser).ConfirmLogin();
+		new Login(browser).confirmLogin();
 		
 	}
 

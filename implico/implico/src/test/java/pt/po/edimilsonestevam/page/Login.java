@@ -15,7 +15,7 @@ public class Login extends Base {
 	protected static String idLoginButton = "login-button";
 	
 	
-	public void DoLogin (String username, String password) {
+	public void doLogin (String username, String password) {
 		
 		System.out.println("• Doing Login...");
 		
@@ -85,7 +85,7 @@ public class Login extends Base {
 		}
 	}
 	
-	public void ConfirmLogin () {
+	public void confirmLogin () {
 		
 		browser.findElement(By.id(idLoginButton)).click();
 		
