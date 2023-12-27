@@ -32,32 +32,32 @@ public class Login extends Base {
 			System.out.println("You should inform your Username!");
 			
 		}
-		else if(username.equalsIgnoreCase(txtStandardUser)){
+		else if(txtStandardUser.equalsIgnoreCase(username)){
 			
 			browser.findElement(By.id(idUsername)).sendKeys(username);
 
 		}
-		else if(username.equalsIgnoreCase(txtLockedOutUser)) {
+		else if(txtLockedOutUser.equalsIgnoreCase(username)) {
 			
 			browser.findElement(By.id(idUsername)).sendKeys(username);
 			
 		}
-		else if(username.equalsIgnoreCase(txtProblemUser)) {
+		else if(txtProblemUser.equalsIgnoreCase(username)) {
 			
 			browser.findElement(By.id(idUsername)).sendKeys(username);
 			
 		}
-		else if(username.equalsIgnoreCase(txtPerformanceGlitchUser)) {
+		else if(txtPerformanceGlitchUser.equalsIgnoreCase(username)) {
 			
 			browser.findElement(By.id(idUsername)).sendKeys(username);
 			
 		}
-		else if(username.equalsIgnoreCase(txtErrorUser)) {
+		else if(txtErrorUser.equalsIgnoreCase(username)) {
 			
 			browser.findElement(By.id(idUsername)).sendKeys(username);
 			
 		}
-		else if(username.equalsIgnoreCase(txtVisualUser)) {
+		else if(txtVisualUser.equalsIgnoreCase(username)) {
 			
 			browser.findElement(By.id(idUsername)).sendKeys(username);
 			
@@ -69,12 +69,12 @@ public class Login extends Base {
 		}
 		
 		
-		if (password.isEmpty()) {
+		if (txtLoginPassword.isEmpty()) {
 			
 			System.out.println("You should inform your Password!");
 			
 		}
-		else if(password.equalsIgnoreCase(txtLoginPassword)){
+		else if(txtLoginPassword.equalsIgnoreCase(password)){
 			
 			browser.findElement(By.id(idLoginPassword)).sendKeys(password);
 
