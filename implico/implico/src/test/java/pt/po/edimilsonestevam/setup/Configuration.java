@@ -3,6 +3,7 @@ package pt.po.edimilsonestevam.setup;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class Configuration {
 
@@ -42,7 +43,12 @@ public class Configuration {
 			browser.manage().window().maximize();
 			browser.get(https + url);
 			return browser;
-		} else {
+		} else if (browserName.equalsIgnoreCase("safari")) {
+			WebDriver browser = new SafariDriver();
+			browser.manage().window().maximize();
+			browser.get(https + url);
+			return browser;
+		}else {
 			System.out.println("Still to implement this browser, " + browserName);
 		}
 		return null;
