@@ -34,7 +34,7 @@ public class TestSteps {
 	}
 
 	@Then("^Sauce Demo will show products list \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
-	public void sauce_Demo_will_show_products_list(String product_first, String product_second, String product_third, String product_fourth, String product_fifth, String poduct_sixth) throws Throwable {
+	public void sauce_Demo_will_show_products_list(String productFirst, String productSecond, String productThird, String productFourth, String productFifth, String poductSixth) throws Throwable {
 
 	}
 
