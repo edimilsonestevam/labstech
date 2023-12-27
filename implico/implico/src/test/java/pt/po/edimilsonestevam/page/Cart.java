@@ -89,7 +89,7 @@ public class Cart extends Base {
 			
 		}else {
 			
-			System.out.println("You did not inform your correct the Fields");
+			System.out.println("You did not inform correct the Fields");
 			
 		}
 		
