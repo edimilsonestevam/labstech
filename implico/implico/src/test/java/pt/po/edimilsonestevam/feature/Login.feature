@@ -1,5 +1,5 @@
 Feature: Login
-  I would like to access Sauce Demo to login
+  I want to access Sauce Demo to login
 
   @scenario-success-login
   Scenario Outline: User success login
