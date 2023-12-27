@@ -63,7 +63,9 @@ public class Login extends Base {
 			
 		}
 		else {
+			
 			System.out.println("You did not inform your correct Username!");
+			
 		}
 		
 		
@@ -78,7 +80,9 @@ public class Login extends Base {
 
 		}
 		else {
+			
 			System.out.println("You did not inform your correct Password!");
+			
 		}
 	}
 	
