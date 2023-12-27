@@ -51,37 +51,37 @@ public class Cart extends Base {
 			
 			System.out.println("You should inform: 1, 2, 3, 4, 5 or 6!");
 			
-		}else if (productFirst.equalsIgnoreCase(productFirst)) {
+		}else if (productFirst.equalsIgnoreCase(productFirstAdded)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFirstAdded)));
 			String actualProductFirstAdded = element.findElement(By.xpath(xpathProductFirstAdded)).getText();
 			Assert.assertEquals("1 Product Added", productFirstAdded, actualProductFirstAdded);
 			
-		}else if (productSecond.equalsIgnoreCase(productSecond)) {
+		}else if (productSecond.equalsIgnoreCase(productSecondAdded)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductSecondAdded)));
 			String actualProductSecondAdded = element.findElement(By.xpath(xpathProductSecondAdded)).getText();
 			Assert.assertEquals("2 Products Added", productSecondAdded, actualProductSecondAdded);
 			
-		}else if (productThird.equalsIgnoreCase(productThird)) {
+		}else if (productThird.equalsIgnoreCase(productThirdAdded)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductThirdAdded)));
 			String actualProductThirdAdded = element.findElement(By.xpath(xpathProductThirdAdded)).getText();
 			Assert.assertEquals("3 Products Added", productThirdAdded, actualProductThirdAdded);
 			
-		}else if (productFourth.equalsIgnoreCase(productFourth)) {
+		}else if (productFourth.equalsIgnoreCase(productFourthAdded)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFourthAdded)));
 			String actualProductFourthAdded = element.findElement(By.xpath(xpathProductFourthAdded)).getText();
 			Assert.assertEquals("4 Products Added", productFourthAdded, actualProductFourthAdded);
 			
-		}else if (productFifth.equalsIgnoreCase(productFifth)) {
+		}else if (productFifth.equalsIgnoreCase(productFifthAdded)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFifthAdded)));
 			String actualProductFifthAdded = element.findElement(By.xpath(xpathProductFifthAdded)).getText();
 			Assert.assertEquals("5 Products Added", productFifthAdded, actualProductFifthAdded);
 			
-		}else if (poductSixth.equalsIgnoreCase(poductSixth)) {
+		}else if (poductSixth.equalsIgnoreCase(poductSixthAdded)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductSixthAdded)));
 			String actualProductSixthAdded = element.findElement(By.xpath(xpathProductSixthAdded)).getText();
