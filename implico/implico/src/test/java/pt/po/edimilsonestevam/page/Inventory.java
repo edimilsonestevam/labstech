@@ -26,8 +26,7 @@ public class Inventory extends Base {
 		
 		switch (informProductNumber) {
 		case 1:
-			browser.findElement(By.id(idAddProductFirst)).click();
-			
+			browser.findElement(By.id(idAddProductFirst)).click();	
 			break;
 		
 		case 2:
