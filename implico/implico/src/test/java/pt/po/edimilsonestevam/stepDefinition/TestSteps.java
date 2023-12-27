@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pt.po.edimilsonestevam.page.Inventory;
 import pt.po.edimilsonestevam.page.Login;
 import pt.po.edimilsonestevam.setup.Configuration;
 
@@ -36,6 +37,8 @@ public class TestSteps {
 	@Then("^Sauce Demo will show products list \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
 	public void sauce_Demo_will_show_products_list(String productFirst, String productSecond, String productThird, String productFourth, String productFifth, String poductSixth) throws Throwable {
 
+		new Inventory(browser).verifyProductList(productFirst, productSecond, productThird, productFourth, productFifth, poductSixth);
+		
 	}
 
 }
