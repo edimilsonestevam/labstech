@@ -2,7 +2,11 @@ package pt.po.edimilsonestevam.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import junit.framework.Assert;
 import pt.po.edimilsonestevam.setup.Base;
 
 public class Inventory extends Base {
@@ -104,9 +108,43 @@ public class Inventory extends Base {
 		
 	}
 	
-	public void verifyProductList () {
+	public void verifyProductList (String productFirst, String productSecond, String productThird, String productFourth, String productFifth, String poductSixth) {
 		
 		System.out.println("• Verifying Product List...");
+		
+		String cssSelectorProductFirst = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(1) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
+		String cssSelectorProductSecond = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(2) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
+		String cssSelectorProductThird = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(3) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
+		String cssSelectorProductFourth = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(4) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
+		String cssSelectorProductFifth = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(5) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
+		String cssSelectorPoductSixth = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(6) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
+		
+		WebElement element = null;
+		
+		WebDriverWait wait = new WebDriverWait(browser, 3);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductFirst)));
+		String actualProductFirst = element.findElement(By.cssSelector(cssSelectorProductFirst)).getText();
+		Assert.assertEquals("Verify if it is the same Product First", productFirst, actualProductFirst);
+		
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductSecond)));
+		String actualProductSecond = element.findElement(By.cssSelector(cssSelectorProductSecond)).getText();
+		Assert.assertEquals("Verify if it is the same Product Second", productSecond, actualProductSecond);
+		
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductThird)));
+		String actualProductThird = element.findElement(By.cssSelector(cssSelectorProductThird)).getText();
+		Assert.assertEquals("Verify if it is the same Product Third", productThird, actualProductThird);
+		
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductFourth)));
+		String actualProductFourth = element.findElement(By.cssSelector(cssSelectorProductFourth)).getText();
+		Assert.assertEquals("Verify if it is the same Product Fourth", productFourth, actualProductFourth);
+		
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductFifth)));
+		String actualProductFifth = element.findElement(By.cssSelector(cssSelectorProductFifth)).getText();
+		Assert.assertEquals("Verify if it is the same Product Fifth", productFifth, actualProductFifth);
+		
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorPoductSixth)));
+		String actualProductSixth = element.findElement(By.cssSelector(cssSelectorPoductSixth)).getText();
+		Assert.assertEquals("Verify if it is the same Product Sixth", poductSixth, actualProductSixth);
 		
 	}
 	
