@@ -14,18 +14,24 @@ public class Cart extends Base {
 
 	public void clickCart () {
 		
+		System.out.println("• Clicking Cart...");
+		
 		String xpathCartIcon = "//body/div[@id='root']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='header_container']/div[1]/div[3]/a[1]";
 		
 		browser.findElement(By.xpath(xpathCartIcon)).click();
 		
 	}
 	
-	public void checkProductsAddedCart () {
+	public void checkTotalProductsAddedCart () {
+		
+		System.out.println("• Verifying Total Product Cart...");
 		
 		
 	}
 	
 	public void clickContinueShopping () {
+		
+		System.out.println("• Clicking Continue Shopping...");
 		
 		String idContinueShoppingButton = "continue-shopping";
 		
@@ -34,6 +40,8 @@ public class Cart extends Base {
 	}
 	
 	public void clickCheckout () {
+		
+		System.out.println("• Clicking Checkout...");
 		
 		String idCheckoutButton = "checkout";
 		

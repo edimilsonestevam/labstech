@@ -102,12 +102,6 @@ public class Inventory extends Base {
 		
 	}
 	
-	public void totalProductCart () {
-		
-		System.out.println("• Verifying Total Product Cart...");
-		
-	}
-	
 	public void verifyProductList (String productFirst, String productSecond, String productThird, String productFourth, String productFifth, String poductSixth) {
 		
 		System.out.println("• Verifying Product List...");
