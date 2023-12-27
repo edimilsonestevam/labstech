@@ -10,10 +10,7 @@ public class Login extends Base {
 	public Login(WebDriver browser) {
 		super(browser);
 
-	}
-
-	public static String idLoginButton = "login-button";
-	
+	}	
 	
 	public void doLogin (String username, String password) {
 		
@@ -88,6 +85,8 @@ public class Login extends Base {
 	public void confirmLogin () {
 		
 		System.out.println("• Confirming Login...");
+		
+		String idLoginButton = "login-button";
 		
 		browser.findElement(By.id(idLoginButton)).click();
 		
