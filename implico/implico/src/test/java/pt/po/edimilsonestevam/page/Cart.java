@@ -87,6 +87,10 @@ public class Cart extends Base {
 			String actualProductSixthAdded = element.findElement(By.xpath(xpathProductSixthAdded)).getText();
 			Assert.assertEquals("6 Products Added", poductSixthAdded, actualProductSixthAdded);
 			
+		}else {
+			
+			System.out.println("You did not inform your correct the Fields");
+			
 		}
 		
 	}
