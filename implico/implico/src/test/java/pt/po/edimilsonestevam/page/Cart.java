@@ -47,7 +47,9 @@ public class Cart extends Base {
 		WebElement element = null;	
 		WebDriverWait wait = new WebDriverWait(browser, 3);
 	
-		if () {
+		if (productFirstAdded.isEmpty() || productSecondAdded.isEmpty() || productThirdAdded.isEmpty() || productFourthAdded.isEmpty() || productFifthAdded.isEmpty() || poductSixthAdded.isEmpty()) {
+			
+			System.out.println("You should inform: 1, 2, 3, 4, 5 or 6!");
 			
 		}else if (productFirst.equalsIgnoreCase(productFirst)) {
 			
