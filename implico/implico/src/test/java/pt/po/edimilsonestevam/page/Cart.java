@@ -37,40 +37,59 @@ public class Cart extends Base {
 		String xpathProductFifthAdded = "//span[contains(text(),'5')]";
 		String xpathProductSixthAdded = "//span[contains(text(),'6')]";
 		
-		int productFirst = 1;
-		int productSecond = 2;
-		int productThird = 3;
-		int productFourth = 4;
-		int productFifth = 5;
-		int poductSixth = 6;
+		String productFirst = "1";
+		String productSecond = "2";
+		String productThird = "3";
+		String productFourth = "4";
+		String productFifth = "5";
+		String poductSixth = "6";
 		
-		WebElement element = null;
-		
+		WebElement element = null;	
 		WebDriverWait wait = new WebDriverWait(browser, 3);
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFirstAdded)));
-		String actualProductFirstAdded = element.findElement(By.xpath(xpathProductFirstAdded)).getText();
-		Assert.assertEquals("1 Product Added", productFirstAdded, actualProductFirstAdded);
-		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductSecondAdded)));
-		String actualProductSecondAdded = element.findElement(By.xpath(xpathProductSecondAdded)).getText();
-		Assert.assertEquals("2 Products Added", productSecondAdded, actualProductSecondAdded);
-		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductThirdAdded)));
-		String actualProductThirdAdded = element.findElement(By.xpath(xpathProductThirdAdded)).getText();
-		Assert.assertEquals("3 Products Added", productThirdAdded, actualProductThirdAdded);
-		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFourthAdded)));
-		String actualProductFourthAdded = element.findElement(By.xpath(xpathProductFourthAdded)).getText();
-		Assert.assertEquals("4 Products Added", productFourthAdded, actualProductFourthAdded);
-		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFifthAdded)));
-		String actualProductFifthAdded = element.findElement(By.xpath(xpathProductFifthAdded)).getText();
-		Assert.assertEquals("5 Products Added", productFifthAdded, actualProductFifthAdded);
-		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductSixthAdded)));
-		String actualProductSixthAdded = element.findElement(By.xpath(xpathProductSixthAdded)).getText();
-		Assert.assertEquals("6 Products Added", poductSixthAdded, actualProductSixthAdded);
-		
+	
+		if () {
+			
+		}else if (productFirst.equalsIgnoreCase(productFirst)) {
+			
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFirstAdded)));
+			String actualProductFirstAdded = element.findElement(By.xpath(xpathProductFirstAdded)).getText();
+			Assert.assertEquals("1 Product Added", productFirstAdded, actualProductFirstAdded);
+			
+		}else if (productSecond.equalsIgnoreCase(productSecond)) {
+			
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductSecondAdded)));
+			String actualProductSecondAdded = element.findElement(By.xpath(xpathProductSecondAdded)).getText();
+			Assert.assertEquals("2 Products Added", productSecondAdded, actualProductSecondAdded);
+			
+		}else if (productThird.equalsIgnoreCase(productThird)) {
+			
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductThirdAdded)));
+			String actualProductThirdAdded = element.findElement(By.xpath(xpathProductThirdAdded)).getText();
+			Assert.assertEquals("3 Products Added", productThirdAdded, actualProductThirdAdded);
+			
+		}else if (productFourth.equalsIgnoreCase(productFourth)) {
+			
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFourthAdded)));
+			String actualProductFourthAdded = element.findElement(By.xpath(xpathProductFourthAdded)).getText();
+			Assert.assertEquals("4 Products Added", productFourthAdded, actualProductFourthAdded);
+			
+		}else if (productFifth.equalsIgnoreCase(productFifth)) {
+			
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFifthAdded)));
+			String actualProductFifthAdded = element.findElement(By.xpath(xpathProductFifthAdded)).getText();
+			Assert.assertEquals("5 Products Added", productFifthAdded, actualProductFifthAdded);
+			
+		}else if (poductSixth.equalsIgnoreCase(poductSixth)) {
+			
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductSixthAdded)));
+			String actualProductSixthAdded = element.findElement(By.xpath(xpathProductSixthAdded)).getText();
+			Assert.assertEquals("6 Products Added", poductSixthAdded, actualProductSixthAdded);
+			
+		}else {
+			
+			System.out.println("You should inform: 1, 2, 3, 4, 5 or 6!");
+			
+		}
 		
 	}
 	
