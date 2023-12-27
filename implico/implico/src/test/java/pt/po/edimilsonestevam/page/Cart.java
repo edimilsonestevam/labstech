@@ -87,10 +87,6 @@ public class Cart extends Base {
 			String actualProductSixthAdded = element.findElement(By.xpath(xpathProductSixthAdded)).getText();
 			Assert.assertEquals("6 Products Added", poductSixthAdded, actualProductSixthAdded);
 			
-		}else {
-			
-			System.out.println("You should inform: 1, 2, 3, 4, 5 or 6!");
-			
 		}
 		
 	}
