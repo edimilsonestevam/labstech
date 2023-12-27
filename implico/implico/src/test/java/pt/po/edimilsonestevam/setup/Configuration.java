@@ -29,6 +29,8 @@ public class Configuration {
 		String chromePropertyPath = "C:\\Drivers\\chromedriver.exe";
 		String firefoxProperty = "webdriver.gecko.driver";
 		String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
+		String safariProperty = "webdriver.safari.driver";
+		String safariPropertyPath = "C:\\Drivers\\safaridriver.exe";
 		String https = "https://";
 
 		if (browserName.equalsIgnoreCase("chrome")) {
@@ -44,6 +46,7 @@ public class Configuration {
 			browser.get(https + url);
 			return browser;
 		} else if (browserName.equalsIgnoreCase("safari")) {
+			System.setProperty(safariProperty, safariPropertyPath);
 			WebDriver browser = new SafariDriver();
 			browser.manage().window().maximize();
 			browser.get(https + url);
