@@ -113,10 +113,9 @@ public class Inventory extends Base {
 		String xpathProductFifth = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/a[1]/div[1]";
 		String xpathPoductSixth = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/a[1]/div[1]";
 		
-		WebElement element = null;
 		WebDriverWait wait = new WebDriverWait(browser, 6);
 		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFirst)));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFirst)));
 		String actualProductFirst = element.findElement(By.xpath(xpathProductFirst)).getText();
 		Assert.assertEquals("Verify if it is the same Product First", productFirst, actualProductFirst);
 		
@@ -145,7 +144,7 @@ public class Inventory extends Base {
 	public void verifyCurrentPage(String expectedUrl) {
 		
 		System.out.println("• Verifying Current Page...");
-		
+
 			String currentUrl = browser.getCurrentUrl();			
 			Assert.assertEquals("Checking Current URL", "https://" + expectedUrl, currentUrl);
 
