@@ -106,38 +106,38 @@ public class Inventory extends Base {
 		
 		System.out.println("• Verifying Product List...");
 		
-		String cssSelectorProductFirst = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(1) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
-		String cssSelectorProductSecond = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(2) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
-		String cssSelectorProductThird = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(3) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
-		String cssSelectorProductFourth = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(4) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
-		String cssSelectorProductFifth = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(5) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
-		String cssSelectorPoductSixth = "div.page_wrapper div.inventory_container div.inventory_list div.inventory_item:nth-child(6) div.inventory_item_description div.inventory_item_label a:nth-child(1) > div.inventory_item_name";
+		String xpathProductFirst = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/div[1]";
+		String xpathProductSecond = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/a[1]/div[1]";
+		String xpathProductThird = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/a[1]/div[1]";
+		String xpathProductFourth = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/a[1]/div[1]";
+		String xpathProductFifth = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/a[1]/div[1]";
+		String xpathPoductSixth = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/a[1]/div[1]";
 		
 		WebElement element = null;
 		
-		WebDriverWait wait = new WebDriverWait(browser, 3);
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductFirst)));
-		String actualProductFirst = element.findElement(By.cssSelector(cssSelectorProductFirst)).getText();
+		WebDriverWait wait = new WebDriverWait(browser, 6);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFirst)));
+		String actualProductFirst = element.findElement(By.xpath(xpathProductFirst)).getText();
 		Assert.assertEquals("Verify if it is the same Product First", productFirst, actualProductFirst);
 		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductSecond)));
-		String actualProductSecond = element.findElement(By.cssSelector(cssSelectorProductSecond)).getText();
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductSecond)));
+		String actualProductSecond = element.findElement(By.xpath(xpathProductSecond)).getText();
 		Assert.assertEquals("Verify if it is the same Product Second", productSecond, actualProductSecond);
 		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductThird)));
-		String actualProductThird = element.findElement(By.cssSelector(cssSelectorProductThird)).getText();
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductThird)));
+		String actualProductThird = element.findElement(By.xpath(xpathProductThird)).getText();
 		Assert.assertEquals("Verify if it is the same Product Third", productThird, actualProductThird);
 		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductFourth)));
-		String actualProductFourth = element.findElement(By.cssSelector(cssSelectorProductFourth)).getText();
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFourth)));
+		String actualProductFourth = element.findElement(By.xpath(xpathProductFourth)).getText();
 		Assert.assertEquals("Verify if it is the same Product Fourth", productFourth, actualProductFourth);
 		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorProductFifth)));
-		String actualProductFifth = element.findElement(By.cssSelector(cssSelectorProductFifth)).getText();
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFifth)));
+		String actualProductFifth = element.findElement(By.xpath(xpathProductFifth)).getText();
 		Assert.assertEquals("Verify if it is the same Product Fifth", productFifth, actualProductFifth);
 		
-		element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelectorPoductSixth)));
-		String actualProductSixth = element.findElement(By.cssSelector(cssSelectorPoductSixth)).getText();
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathPoductSixth)));
+		String actualProductSixth = element.findElement(By.xpath(xpathPoductSixth)).getText();
 		Assert.assertEquals("Verify if it is the same Product Sixth", poductSixth, actualProductSixth);
 		
 	}
