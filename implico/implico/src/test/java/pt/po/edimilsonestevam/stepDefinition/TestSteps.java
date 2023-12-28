@@ -44,7 +44,7 @@ public class TestSteps {
 
 	@Given("^I am Inventory page \"([^\"]*)\"$")
 	public void i_am_Inventory_page(String url) throws Throwable {
-
+		
 	    new Inventory(browser).verifyCurrentPage(url);
 	    
 	}
@@ -58,11 +58,12 @@ public class TestSteps {
 	}
 
 	@Then("^Sauce Demo will show the quantity of products \"([^\"]*)\" in the cart$")
-	public void sauce_Demo_will_show_the_quantity_of_products_in_the_cart(String quantityProducts) throws Throwable {
+	public void sauce_Demo_will_show_the_quantity_of_products_in_the_cart(String quantityCurrentProduct) throws Throwable {
 
-		new Cart(browser).checkTotalProductsAddedCart(quantityProducts);
+		new Cart(browser).checkTotalProductsAddedCart(quantityCurrentProduct);
 		new Cart(browser).clickCart();
 		new Inventory(browser).removeProductCart(2);
+		new Cart(browser).checkTotalProductsAddedCart("1");
 		new Configuration().browserClose(browser);
 		
 	}
