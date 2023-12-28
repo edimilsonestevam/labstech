@@ -35,7 +35,7 @@ public class Login extends Base {
 		else if(txtStandardUser.equalsIgnoreCase(username)){
 			
 			browser.findElement(By.id(idUsername)).sendKeys(username);
-
+			
 		}
 		else if(txtLockedOutUser.equalsIgnoreCase(username)) {
 			
