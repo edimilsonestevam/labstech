@@ -39,12 +39,16 @@ public class TestSteps {
 	public void sauce_Demo_will_show_products_list(String productFirst, String productSecond, String productThird, String productFourth, String productFifth, String poductSixth) throws Throwable {
 
 		new Inventory(browser).verifyProductList(productFirst, productSecond, productThird, productFourth, productFifth, poductSixth);
+		new Configuration().browserClose(browser);
 
 	}
 
 	@Given("^I am Inventory page \"([^\"]*)\"$")
 	public void i_am_Inventory_page(String url) throws Throwable {
 		
+		browser = new Configuration().browserOpen("firefox", url, "no");
+		new Login(browser).doLogin("standard_user", "secret_sauce");
+		new Login(browser).confirmLogin();
 	    new Inventory(browser).verifyCurrentPage(url);
 	    
 	}

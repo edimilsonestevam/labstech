@@ -147,6 +147,6 @@ public class Inventory extends Base {
 
 		String currentUrl = browser.getCurrentUrl();
 		Assert.assertEquals("Checking Current URL", "https://" + expectedUrl, currentUrl);
-		
+
 	}
 }
