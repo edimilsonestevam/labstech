@@ -8,6 +8,7 @@ import cucumber.api.java.en.When;
 import pt.po.edimilsonestevam.page.Cart;
 import pt.po.edimilsonestevam.page.Inventory;
 import pt.po.edimilsonestevam.page.Login;
+import pt.po.edimilsonestevam.page.Menu;
 import pt.po.edimilsonestevam.setup.Configuration;
 
 public class TestSteps {
@@ -39,6 +40,7 @@ public class TestSteps {
 	public void sauce_Demo_will_show_products_list(String productFirst, String productSecond, String productThird, String productFourth, String productFifth, String poductSixth) throws Throwable {
 
 		new Inventory(browser).verifyProductList(productFirst, productSecond, productThird, productFourth, productFifth, poductSixth);
+		new Menu(browser).clickLogout();
 		new Configuration().browserClose(browser);
 
 	}
@@ -68,6 +70,7 @@ public class TestSteps {
 		new Cart(browser).clickCart();
 		new Inventory(browser).removeProductCart(2);
 		new Cart(browser).checkTotalProductsAddedCart("1");
+		new Menu(browser).clickLogout();
 		new Configuration().browserClose(browser);
 		
 	}
