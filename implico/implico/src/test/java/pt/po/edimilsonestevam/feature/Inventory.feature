@@ -1,7 +1,7 @@
 Feature: Inventory
   I want to add  two in the cart
 
-  @scenario-success-login
+  @scenario-success-buy
   Scenario Outline: User success buy
     Given I am Inventory page <url>
     When I add two products <productFirst>, <productSecond> in the cart
