@@ -17,7 +17,7 @@ public class TestSteps {
 	@Given("^I am Sauce Demo page \"([^\"]*)\"$")
 	public void i_am_Sauce_Demo_page(String url) throws Throwable {
 
-		browser = new Configuration().browserOpen("firefox", url);
+		browser = new Configuration().browserOpen("firefox", url, "yes");
 	
 	}
 
@@ -39,7 +39,7 @@ public class TestSteps {
 	public void sauce_Demo_will_show_products_list(String productFirst, String productSecond, String productThird, String productFourth, String productFifth, String poductSixth) throws Throwable {
 
 		new Inventory(browser).verifyProductList(productFirst, productSecond, productThird, productFourth, productFifth, poductSixth);
-		
+
 	}
 
 	@Given("^I am Inventory page \"([^\"]*)\"$")
