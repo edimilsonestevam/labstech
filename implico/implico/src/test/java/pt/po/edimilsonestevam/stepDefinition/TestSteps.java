@@ -45,10 +45,10 @@ public class TestSteps {
 	@Given("^I am Inventory page \"([^\"]*)\"$")
 	public void i_am_Inventory_page(String url) throws Throwable {
 
-		new Inventory(browser).verifyCurrentPage(url);
-		
+	    new Inventory(browser).verifyCurrentPage(url);
+	    
 	}
-
+	
 	@When("^I add two products \"([^\"]*)\", \"([^\"]*)\" in the cart$")
 	public void i_add_two_products_in_the_cart(String productFirst, String productSecond) throws Throwable {
 
@@ -61,6 +61,8 @@ public class TestSteps {
 	public void sauce_Demo_will_show_the_quantity_of_products_in_the_cart(String quantityProducts) throws Throwable {
 
 		new Cart(browser).checkTotalProductsAddedCart(quantityProducts);
+		new Cart(browser).clickCart();
+		new Inventory(browser).removeProductCart(2);
 		new Configuration().browserClose(browser);
 		
 	}
