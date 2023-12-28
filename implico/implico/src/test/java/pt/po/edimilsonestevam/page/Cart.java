@@ -26,7 +26,7 @@ public class Cart extends Base {
 		
 	}
 	
-	public void checkTotalProductsAddedCart (String productFirstAdded, String productSecondAdded, String productThirdAdded, String productFourthAdded, String productFifthAdded, String poductSixthAdded) {
+	public void checkTotalProductsAddedCart (String quantityProducts) {
 		
 		System.out.println("• Verifying Total Product Cart...");
 		
@@ -46,50 +46,47 @@ public class Cart extends Base {
 		
 		WebElement element = null;	
 		WebDriverWait wait = new WebDriverWait(browser, 3);
-	
-		if (productFirstAdded.isEmpty() || productSecondAdded.isEmpty() || productThirdAdded.isEmpty() || productFourthAdded.isEmpty() || productFifthAdded.isEmpty() || poductSixthAdded.isEmpty()) {
+		
 			
-			System.out.println("You should inform: 1, 2, 3, 4, 5 or 6!");
-			
-		}else if (productFirst.equalsIgnoreCase(productFirstAdded)) {
+		if (productFirst.equalsIgnoreCase(quantityProducts)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFirstAdded)));
 			String actualProductFirstAdded = element.findElement(By.xpath(xpathProductFirstAdded)).getText();
-			Assert.assertEquals("1 Product Added", productFirstAdded, actualProductFirstAdded);
+			Assert.assertEquals("1 Product Added", quantityProducts, actualProductFirstAdded);
 			
-		}else if (productSecond.equalsIgnoreCase(productSecondAdded)) {
+		}else if (productSecond.equalsIgnoreCase(quantityProducts)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductSecondAdded)));
 			String actualProductSecondAdded = element.findElement(By.xpath(xpathProductSecondAdded)).getText();
-			Assert.assertEquals("2 Products Added", productSecondAdded, actualProductSecondAdded);
+			Assert.assertEquals("2 Products Added", quantityProducts, actualProductSecondAdded);
 			
-		}else if (productThird.equalsIgnoreCase(productThirdAdded)) {
+		}else if (productThird.equalsIgnoreCase(quantityProducts)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductThirdAdded)));
 			String actualProductThirdAdded = element.findElement(By.xpath(xpathProductThirdAdded)).getText();
-			Assert.assertEquals("3 Products Added", productThirdAdded, actualProductThirdAdded);
+			Assert.assertEquals("3 Products Added", quantityProducts, actualProductThirdAdded);
 			
-		}else if (productFourth.equalsIgnoreCase(productFourthAdded)) {
+		}else if (productFourth.equalsIgnoreCase(quantityProducts)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFourthAdded)));
 			String actualProductFourthAdded = element.findElement(By.xpath(xpathProductFourthAdded)).getText();
-			Assert.assertEquals("4 Products Added", productFourthAdded, actualProductFourthAdded);
+			Assert.assertEquals("4 Products Added", quantityProducts, actualProductFourthAdded);
 			
-		}else if (productFifth.equalsIgnoreCase(productFifthAdded)) {
+		}else if (productFifth.equalsIgnoreCase(quantityProducts)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFifthAdded)));
 			String actualProductFifthAdded = element.findElement(By.xpath(xpathProductFifthAdded)).getText();
-			Assert.assertEquals("5 Products Added", productFifthAdded, actualProductFifthAdded);
+			Assert.assertEquals("5 Products Added", quantityProducts, actualProductFifthAdded);
 			
-		}else if (poductSixth.equalsIgnoreCase(poductSixthAdded)) {
+		}else if (poductSixth.equalsIgnoreCase(quantityProducts)) {
 			
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductSixthAdded)));
 			String actualProductSixthAdded = element.findElement(By.xpath(xpathProductSixthAdded)).getText();
-			Assert.assertEquals("6 Products Added", poductSixthAdded, actualProductSixthAdded);
+			Assert.assertEquals("6 Products Added", quantityProducts, actualProductSixthAdded);
 			
 		}else {
 			
-			System.out.println("You did not inform correct the Fields");
+			System.out.println("You should inform: 1, 2, 3, 4, 5 or 6!");
 			
 		}
 		

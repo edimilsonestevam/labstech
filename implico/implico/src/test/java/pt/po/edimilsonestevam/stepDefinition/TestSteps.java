@@ -60,7 +60,7 @@ public class TestSteps {
 	@Then("^Sauce Demo will show the quantity of products \"([^\"]*)\" in the cart$")
 	public void sauce_Demo_will_show_the_quantity_of_products_in_the_cart(String quantityProducts) throws Throwable {
 
-		new Cart(browser).checkTotalProductsAddedCart("", quantityProducts, "", "", "", "");
+		new Cart(browser).checkTotalProductsAddedCart(quantityProducts);
 		new Configuration().browserClose(browser);
 		
 	}
