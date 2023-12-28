@@ -38,6 +38,7 @@ public class TestSteps {
 	public void sauce_Demo_will_show_products_list(String productFirst, String productSecond, String productThird, String productFourth, String productFifth, String poductSixth) throws Throwable {
 
 		new Inventory(browser).verifyProductList(productFirst, productSecond, productThird, productFourth, productFifth, poductSixth);
+		new Configuration().browserClose(browser);
 		
 	}
 
