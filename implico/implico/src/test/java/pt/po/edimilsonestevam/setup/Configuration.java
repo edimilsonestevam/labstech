@@ -38,7 +38,7 @@ public class Configuration {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(chromeProperty, chromePropertyPath);
 				WebDriver browser = new ChromeDriver();	
-				Dimension size = new Dimension(88, 730);
+				Dimension size = new Dimension(360, 800);
 				browser.manage().window().setSize(size);	
 				browser.get(https + url);
 				return browser;
@@ -53,7 +53,7 @@ public class Configuration {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(firefoxProperty, firefoxPropertyPath);
 				WebDriver browser = new FirefoxDriver();	
-				Dimension size = new Dimension(88, 730);
+				Dimension size = new Dimension(360, 800);
 				browser.manage().window().setSize(size);	
 				browser.get(https + url);
 				return browser;
@@ -68,7 +68,7 @@ public class Configuration {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(safariProperty, safariPropertyPath);
 				WebDriver browser = new SafariDriver();	
-				Dimension size = new Dimension(88, 730);
+				Dimension size = new Dimension(360, 800);
 				browser.manage().window().setSize(size);	
 				browser.get(https + url);
 				return browser;

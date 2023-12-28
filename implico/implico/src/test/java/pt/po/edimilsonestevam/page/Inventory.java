@@ -145,8 +145,8 @@ public class Inventory extends Base {
 		
 		System.out.println("• Verifying Current Page...");
 
-			String currentUrl = browser.getCurrentUrl();			
-			Assert.assertEquals("Checking Current URL", "https://" + expectedUrl, currentUrl);
-
+		String currentUrl = browser.getCurrentUrl();
+		Assert.assertEquals("Checking Current URL", "https://" + expectedUrl, currentUrl);
+	
 	}
 }
