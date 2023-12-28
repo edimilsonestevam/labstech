@@ -114,8 +114,8 @@ public class Inventory extends Base {
 		String xpathPoductSixth = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/a[1]/div[1]";
 		
 		WebElement element = null;
-		
 		WebDriverWait wait = new WebDriverWait(browser, 6);
+		
 		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathProductFirst)));
 		String actualProductFirst = element.findElement(By.xpath(xpathProductFirst)).getText();
 		Assert.assertEquals("Verify if it is the same Product First", productFirst, actualProductFirst);
