@@ -1,4 +1,4 @@
-# Technical Challenge: Software Test Automation :robot:
+# Technical Challenge: Software Test Automation :computer:
 The increasing complexity of software systems demands innovative approaches to ensure their quality and reliability. In this context, test automation has become a fundamental practice for software development teams. Developing strong technical skills in this area is essential for professionals seeking to stand out in the current landscape.
 
 <p>The technical challenge proposed for software test automation aims to assess participants' ability to deal with various aspects of the development life cycle, from understanding requirements to the efficient implementation of automated tests.
