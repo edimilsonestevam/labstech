@@ -16,7 +16,7 @@ The increasing complexity of software systems demands innovative approaches to e
 * **Automation Efficiency:** Evaluation of test execution time and efficiency in detecting faults.<br>
 * **Maintainability:** Consideration of how easily tests can be updated to handle changes in the software.<br>
 
-# Authors Used
+# Based Authors
 * **Martin Fowler**
 * **Robert C. Martin (Uncle Bob)**
 * **Kent Beck**
