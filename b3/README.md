@@ -16,18 +16,18 @@
 | 4         | A test case to verify the fourth condition | C < B     |
 
 # Question Third
-| Description |
-| ----------- | 
-| In the first variable, you can be more specific and use the double type. |
-| In the second variable, you can be more specific and use the double type.|
-| In the third variable, you can be more specific and use the double type. |
-| You are performing a calculation that will always have the result zero.  |
+| Issue | Description                                                              |
+| ----- | ------------------------------------------------------------------------ | 
+| 1     | In the first variable, you can be more specific and use the double type. |
+| 2     | In the second variable, you can be more specific and use the double type.|
+| 3     | In the third variable, you can be more specific and use the double type. |
+| 4     | You are performing a calculation that will always have the result zero.  |
 
 # Question Fourth
 ```python
 public void FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd){
 
-	people db = new people(@”c:\people.mdf”);
+	people db = new people(@"c:\people.mdf");
 
 	db.ExecuteCommand(
 		SELECT Name
