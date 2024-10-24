@@ -5,7 +5,7 @@
 * Behaviour Driven Development <br>
 
 # Question First
-* 4 test cases
+* 4 Test Cases
 
 # Question Second
 | Test Case | Description                                | Condition | 
