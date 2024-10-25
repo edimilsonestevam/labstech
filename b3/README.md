@@ -25,16 +25,23 @@
 
 # Question Fourth
 ```python
-public void FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd){
+public List<Person> FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd)
+{
+    using (var db = new people(@"c:\people.mdf"))
+    {
+        string query = @"SELECT Name, DateBirth
+                         FROM people
+                         WHERE DateBirth BETWEEN @startDate AND @endDate
+                         ORDER BY DateBirth DESC";
 
-	people db = new people(@"c:\people.mdf");
+        var result = db.Database.SqlQuery<Person>(
+            query, 
+            new SqlParameter("@startDate", yearMonthDayStart),
+            new SqlParameter("@endDate", yearMonthDayEnd)
+        ).ToList();
 
-	db.ExecuteCommand(
-		SELECT Name
-		FROM people
-		WHERE DateBirth BETWEEN “yearMonthDayStart” AND “yearMonthDayEnd”
-		DESC DateBirth;
-	);
+        return result;
+    }
 }
 ```
 
