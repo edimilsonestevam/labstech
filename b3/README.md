@@ -47,9 +47,17 @@ public List<Person> FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd)
 
 # Question Fifth
 ```python
-git push --all
+git status
 ```
 
 ```python
-git commit –m"I am adding all project in the main repository."
+git add .
+```
+
+```python
+git commit –m "I am adding all project in the main repository."
+```
+
+```python
+git push origin main
 ```
