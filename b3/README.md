@@ -71,7 +71,7 @@ public List<Person> FindBornPeople(DateTime startDate)
 {
 	try
 	{
-		using (var db = new people(@"c:\people.mdf"))
+		using (var db = new People(@"c:\people.mdf"))
 		{
 			string query = @"SELECT Name, DateBirth
 							FROM people
