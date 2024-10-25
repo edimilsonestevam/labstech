@@ -58,6 +58,15 @@ catch (Exception ex)
 How do I obtain the names of all people born from 1980 onwards from the collection below?
 
 ```python
+var people = new[] {
+	new { Name = "José", DateBirth = new DateTime(1982,03,27), Active = true},
+	new { Name = "Leandro", DateBirth = new DateTime(1978,04,03), Active = false},
+	new { Name = "Pedro", DateBirth = new DateTime(1980,05,24), Active = true}
+	};
+}
+```
+
+```python
 public List<Person> FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd)
 {
     using (var db = new people(@"c:\people.mdf"))
