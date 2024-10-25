@@ -1,6 +1,22 @@
 # Questionnaire
 
 # First
+For the following code, how many test cases are needed to cover all conditions (True and False)?
+
+```python
+READ A
+READ B
+READ C
+	IF C > A THEN
+	IF C > B THEN
+		PRINT “C deve ser menor que pelo menos um número”
+	ELSE
+		PRINT “Vá para o próximo passo”
+	ENDIF
+	ELSE
+		PRINT “B pode ser menor do que C”
+END IF
+```
 * 3 Test Cases
 
 # Second
