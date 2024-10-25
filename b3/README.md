@@ -9,12 +9,12 @@ READ B
 READ C
 	IF C > A THEN
 	IF C > B THEN
-		PRINT “C deve ser menor que pelo menos um número”
+		PRINT “C must be smaller than at least one number”
 	ELSE
-		PRINT “Vá para o próximo passo”
+		PRINT “Proceed to the next step”
 	ENDIF
 	ELSE
-		PRINT “B pode ser menor do que C”
+		PRINT “B might be smaller than C”
 END IF
 ```
 * 3 Test Cases
