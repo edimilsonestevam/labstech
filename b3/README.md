@@ -20,6 +20,8 @@ END IF
 * 3 Test Cases
 
 # Second
+Based on the above question, describe the tests you considered regarding it.
+
 | Test Case | Description                                                   | Condition                          | Message                                   |
 | --------- | ------------------------------------------------------------- |------------------------------------| ----------------------------------------- |
 | 1         | In this case, C is greater than both A and B.                 | C > A and C > B  | "C must be smaller than at least one number"                |
@@ -27,6 +29,24 @@ END IF
 | 3         | In this case, C is less than or equal to A.                   | C <= A           | "B might be smaller than C" (does not check the second if)" |
 
 # Third
+Do you see any problems in the code below?
+
+```python
+try
+{
+	var quantityBuyers = 0;
+	var totalPrice = 1475.89;
+
+	var priceForBuyer = totalPrice / quantityBuyers;
+
+		return priceForBuyer;
+}
+catch (Exception ex)
+{
+		throw ex;
+}
+```
+
 | Issue | Description                                                              |
 | ----- | ------------------------------------------------------------------------ | 
 | 1     | In the first variable, you can be more specific and use the double type. |
@@ -35,6 +55,8 @@ END IF
 | 4     | You are performing a calculation that will always have the result zero.  |
 
 # Fourth
+How do I obtain the names of all people born from 1980 onwards from the collection below?
+
 ```python
 public List<Person> FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd)
 {
@@ -57,6 +79,8 @@ public List<Person> FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd)
 ```
 
 # Fifth
+What are the GIT commands to submit the new code to the version control repository?
+
 ```python
 git status
 ```
