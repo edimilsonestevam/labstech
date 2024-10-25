@@ -5,15 +5,14 @@
 * Behaviour Driven Development <br>
 
 # Question First
-* 4 Test Cases
+* 3 Test Cases
 
 # Question Second
-| Test Case | Description                                | Condition | 
-| --------- | ------------------------------------------ |---------- |
-| 1         | A test case to verify the first condition  | C > A     |
-| 2         | A test case to verify the second condition | C > B     |
-| 3         | A test case to verify the third condition  | C < A     |
-| 4         | A test case to verify the fourth condition | C < B     |
+| Test Case | Description                                                   | Condition                          | Message                                   |
+| --------- | ------------------------------------------------------------- |------------------------------------| ----------------------------------------- |
+| 1         | In this case, C is greater than both A and B.                 | C > A and C > B  | "C must be smaller than at least one number"                |
+| 2         | In this case, C is greater than A but less than or equal to B.| C > A and C <= B | "Proceed to the next step"                                  |
+| 3         | In this case, C is less than or equal to A.                   | C <= A           | "B might be smaller than C" (does not check the second if)" |
 
 # Question Third
 | Issue | Description                                                              |
