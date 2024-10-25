@@ -67,24 +67,25 @@ var people = new[] {
 ```
 
 ```python
-public List<Person> FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd)
+public List<Person> FindBornPeople(DateTime startDate)
 {
     using (var db = new people(@"c:\people.mdf"))
     {
         string query = @"SELECT Name, DateBirth
                          FROM people
-                         WHERE DateBirth BETWEEN @startDate AND @endDate
+                         WHERE DateBirth >= @startDate
                          ORDER BY DateBirth DESC";
 
         var result = db.Database.SqlQuery<Person>(
             query, 
-            new SqlParameter("@startDate", yearMonthDayStart),
-            new SqlParameter("@endDate", yearMonthDayEnd)
+            new SqlParameter("@startDate", startDate)
         ).ToList();
 
         return result;
     }
 }
+
+var peopleBornFrom1980 = FindBornPeople(new DateTime(1980, 1, 1));
 ```
 
 # Fifth
