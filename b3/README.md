@@ -1,20 +1,16 @@
-# Best Practices Used
-* Object Orientation <br>
-* Design Pattern <br>
-* Clean Code <br>
-* Behaviour Driven Development <br>
+# Questionnaire
 
-# Question First
+# First
 * 3 Test Cases
 
-# Question Second
+# Second
 | Test Case | Description                                                   | Condition                          | Message                                   |
 | --------- | ------------------------------------------------------------- |------------------------------------| ----------------------------------------- |
 | 1         | In this case, C is greater than both A and B.                 | C > A and C > B  | "C must be smaller than at least one number"                |
 | 2         | In this case, C is greater than A but less than or equal to B.| C > A and C <= B | "Proceed to the next step"                                  |
 | 3         | In this case, C is less than or equal to A.                   | C <= A           | "B might be smaller than C" (does not check the second if)" |
 
-# Question Third
+# Third
 | Issue | Description                                                              |
 | ----- | ------------------------------------------------------------------------ | 
 | 1     | In the first variable, you can be more specific and use the double type. |
@@ -22,7 +18,7 @@
 | 3     | In the third variable, you can be more specific and use the double type. |
 | 4     | You are performing a calculation that will always have the result zero.  |
 
-# Question Fourth
+# Fourth
 ```python
 public List<Person> FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd)
 {
@@ -44,7 +40,7 @@ public List<Person> FindBornPeople(int yearMonthDayStart, int yearMonthDayEnd)
 }
 ```
 
-# Question Fifth
+# Fifth
 ```python
 git status
 ```
