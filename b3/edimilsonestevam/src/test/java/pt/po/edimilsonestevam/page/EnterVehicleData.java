@@ -14,7 +14,7 @@ public class EnterVehicleData extends Base {
 		
 	}
 
-	public void fillEnterVehicleDataRegister(String informCarName, double informEnginePerformance, Date informDateManufacture, double informListPrice, int informSeatsNumber, String informFuelType) {
+	public void fillEnterVehicleDataRegister(String informCarName, double informEnginePerformance, Date informDateManufacture, double informListPrice, int informSeatsNumber, String informFuelType, int informLicensePlateNumber, int informAnnualMileage) {
 		
 		System.out.println("Enter Vehicle Data");
 		
@@ -216,7 +216,14 @@ public class EnterVehicleData extends Base {
 		
 		System.out.println("• Filling License Plate Number Field...");
 		
+		browser.findElement(By.id(idLicensePlateNumberField)).click();
+		browser.findElement(By.id(idLicensePlateNumberField)).sendKeys("informLicensePlateNumber");
+		
+		
 		System.out.println("• Filling Annual Mileage [mi] Field...");
+		
+		browser.findElement(By.id(idAnnualMileageField)).click();
+		browser.findElement(By.id(idAnnualMileageField)).sendKeys("informAnnualMileage");
 		
 	}
 	
