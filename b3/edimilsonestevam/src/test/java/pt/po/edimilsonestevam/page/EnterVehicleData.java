@@ -1,8 +1,5 @@
 package pt.po.edimilsonestevam.page;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -49,6 +46,9 @@ public class EnterVehicleData extends Base {
 		String fuelTypeOptionThird = "Electric Power";
 		String fuelTypeOptionFourth = "Gas";
 		String fuelTypeOptionFifth = "Other";
+		
+		Object seatsNumber = (Object)informSeatsNumber;
+		
 		
 		System.out.println("• Filling Make Field...");
 		
@@ -116,53 +116,64 @@ public class EnterVehicleData extends Base {
 			System.out.println("You should inform: Audi, BMW, Ford, Honda, Mazda, Mercedes Benz, Nissan, Opel, Porsche, Renault, Skoda, Suzuki, Toyota, Volkswagen or Volvo!");
 		}
 		
+		
 		System.out.println("• Filling Engine Performance [kW] Field...");
 		
 		System.out.println("• Filling Date of Manufacture Field...");
+		
 		
 		System.out.println("• Filling Number of Seats Field...");
 		
 		switch (informSeatsNumber) {
 		case 1:
-			browser.findElement(By.id(idNumberSeatsField)).click();	
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionFirst)).click();	
 			break;
 		
 		case 2:
-			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionSecond)).click();
 			break;
 		
 		case 3:
-			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionThird)).click();
 			break;
 		
 		case 4:
-			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionFourth)).click();
 			break;
 		
 		case 5:
-			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionFifth)).click();
 			break;
 			
 		case 6:
-			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionSixth)).click();
 			break;
 	
 		case 7:
-			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionSeventh)).click();
 			break;
 		
 		case 8:
-			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionEighth)).click();
 			break;
 		
 		case 9:
-			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionNinth)).click();
 			break;
 			
 		default:
 			System.out.println("You should inform: 1, 2, 3, 4, 5, 6, 7, 8 or 9!");
 		}
-		
+	
 		
 		System.out.println("• Filling Fuel Type Field...");
 		
