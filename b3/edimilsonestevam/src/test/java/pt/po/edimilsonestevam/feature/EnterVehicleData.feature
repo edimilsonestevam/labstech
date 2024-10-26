@@ -3,7 +3,7 @@ Feature: Enter Vehicle Data
 
   @scenario-success-car-registered
   Scenario Outline: Car Registered Success
-    Given I want to register my car in the Enter Vehicle Data
+    Given I want to register my car in the Enter Vehicle Data <url>
     When I fill all fields <carName>, <enginePerformance>, <dateManufacture>, <listPrice>, <seatsNumber>, <fuelType>, <licensePlateNumber>, <annualMileage>
     And I confirm action
     Then the system will show the success message <successMessage>

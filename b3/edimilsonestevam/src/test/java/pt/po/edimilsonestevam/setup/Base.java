@@ -13,7 +13,7 @@ public class Base {
 		
 	}
 	
-	public void previewButton() {
+	public void clickPreviewButton() {
 		
 		System.out.println("• Clicking Preview Button...");
 		
@@ -22,7 +22,7 @@ public class Base {
 		
 	}
 	
-	public void nextButton() {
+	public void clickNextButton() {
 		
 		System.out.println("• Clicking Next Button...");
 		
@@ -31,7 +31,7 @@ public class Base {
 		
 	}
 	
-	public void openButton() {
+	public void clickOpenButton() {
 		
 		System.out.println("• Clicking Open Button...");
 		
