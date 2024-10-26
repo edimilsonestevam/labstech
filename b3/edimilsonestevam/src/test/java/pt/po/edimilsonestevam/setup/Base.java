@@ -1,5 +1,6 @@
 package pt.po.edimilsonestevam.setup;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Base {
@@ -17,6 +18,7 @@ public class Base {
 		System.out.println("• Clicking Preview Button...");
 		
 		String idPreviewButton = "preventervehicledata";
+		browser.findElement(By.id(idPreviewButton)).click();
 		
 	}
 	
@@ -25,6 +27,7 @@ public class Base {
 		System.out.println("• Clicking Next Button...");
 		
 		String idNextButton = "nextenterinsurantdata";
+		browser.findElement(By.id(idNextButton)).click();
 		
 	}
 	
@@ -33,6 +36,7 @@ public class Base {
 		System.out.println("• Clicking Open Button...");
 		
 		String idOpenButton = "open";
+		browser.findElement(By.id(idOpenButton)).click();
 		
 	}
 	
