@@ -44,6 +44,12 @@ public class EnterVehicleData extends Base {
 		String carOptionFourteenth = "Volkswagen";
 		String carOptionFifteenth = "Volvo";
 		
+		String fuelTypeOptionFirst = "Petrol";
+		String fuelTypeOptionSecond = "Diesel";
+		String fuelTypeOptionThird = "Electric Power";
+		String fuelTypeOptionFourth = "Gas";
+		String fuelTypeOptionFifth = "Other";
+		
 		System.out.println("• Filling Make Field...");
 		
 		if (informCarName.equalsIgnoreCase(carOptionFirst)) {
@@ -158,9 +164,6 @@ public class EnterVehicleData extends Base {
 		}
 		
 		System.out.println("• Filling Fuel Type Field...");
-		
-		List<String> fuelType = Arrays.asList("Petrol", "Diesel", "Electric Power", "Gas", "Other");
-		
 		
 		System.out.println("• Filling List Price [$] Field...");
 		
