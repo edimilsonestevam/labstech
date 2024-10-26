@@ -15,7 +15,7 @@ public class EnterVehicleData extends Base {
 		
 	}
 
-	public void fillEnterVehicleDataRegister(int informSeatsNumber) {
+	public void fillEnterVehicleDataRegister(String informCarName, int informSeatsNumber) {
 		
 		System.out.println("Enter Vehicle Data");
 		
@@ -28,11 +28,84 @@ public class EnterVehicleData extends Base {
 		String idLicensePlateNumberField = "licenseplatenumber";
 		String idAnnualMileageField = "annualmileage";
 		
+		String carOptionFirst = "Audi";
+		String carOptionSecond = "BMW"; 
+		String carOptionThird = "Ford"; 
+		String carOptionFourth = "Honda";
+		String carOptionFifth = "Mazda";
+		String carOptionSixth = "Mercedes Benz";
+		String carOptionSeventh = "Nissan";
+		String carOptionEighth = "Opel";
+		String carOptionNinth = "Porsche";
+		String carOptionTenth = "Renault";
+		String carOptionEleventh = "Skoda";
+		String carOptionTwelfth = "Suzuki";
+		String carOptionThirteenth = "Toyota";
+		String carOptionFourteenth = "Volkswagen";
+		String carOptionFifteenth = "Volvo";
 		
 		System.out.println("• Filling Make Field...");
 		
-		List<String> cars = Arrays.asList("Audi", "BMW", "Ford", "Honda", "Mazda", "Mercedes Benz", "Nissan", "Opel", "Porsche", "Renault", "Skoda", "Suzuki", "Toyota", "Volkswagen", "Volvo");
-		
+		if (informCarName.equalsIgnoreCase(carOptionFirst)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionFirst)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionSecond)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionSecond)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionThird)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionThird)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionFourth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionFourth)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionFifth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionFifth)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionSixth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionSixth)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionSeventh)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionSeventh)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionEighth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionEighth)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionNinth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionNinth)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionTenth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionTenth)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionEleventh)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionEleventh)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionTwelfth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionTwelfth)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionThirteenth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionThirteenth)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionFourteenth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionFourteenth)).click();
+		}
+		else if (informCarName.equalsIgnoreCase(carOptionFifteenth)) {
+			browser.findElement(By.id(idMakeField)).click();
+			browser.findElement(By.name(carOptionFifteenth)).click();
+		}
 		
 		System.out.println("• Filling Engine Performance [kW] Field...");
 		
