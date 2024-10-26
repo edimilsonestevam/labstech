@@ -1,7 +1,12 @@
 package pt.po.edimilsonestevam.setup;
 
+import static org.junit.Assert.assertEquals;
+
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class Base {
 
@@ -37,6 +42,23 @@ public class Base {
 		
 		String idOpenButton = "open";
 		browser.findElement(By.id(idOpenButton)).click();
+		
+	}
+	
+	public void verifyMessage(String successMessage) throws Exception {
+		
+		try {
+           
+            WebElement messageElement = browser.findElement(By.id("success-message"));
+            String actualMessage = messageElement.getText();
+            assertEquals("Verifying the success message", successMessage, actualMessage);
+            
+        } 
+		catch (NoSuchElementException e) {
+			
+            throw new Exception("Success message element not found.", e);
+            
+        }
 		
 	}
 	

@@ -37,6 +37,9 @@ public class TestSteps {
 	@Then("^the system will show the success message \"([^\"]*)\"$")
 	public void the_system_will_show_the_success_message(String successMessage) throws Throwable {
 
+		new Base(browser).verifyMessage("");
+		new Configuration().browserClose(browser);
+	
 	}
 
 }	
