@@ -51,7 +51,7 @@ public class Base {
            
             WebElement messageElement = browser.findElement(By.id("success-message"));
             String actualMessage = messageElement.getText();
-            assertEquals("Verifying the success message", successMessage, actualMessage);
+            assertEquals("Verifying the Success Message", successMessage, actualMessage);
             
         } 
 		catch (NoSuchElementException e) {
