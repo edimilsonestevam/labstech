@@ -12,4 +12,28 @@ public class Base {
 		
 	}
 	
+	public void previewButton() {
+		
+		System.out.println("• Clicking Preview Button...");
+		
+		String idPreviewButton = "preventervehicledata";
+		
+	}
+	
+	public void nextButton() {
+		
+		System.out.println("• Clicking Next Button...");
+		
+		String idNextButton = "nextenterinsurantdata";
+		
+	}
+	
+	public void openButton() {
+		
+		System.out.println("• Clicking Open Button...");
+		
+		String idOpenButton = "open";
+		
+	}
+	
 }
