@@ -6,8 +6,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pt.po.edimilsonestevam.page.EnterVehicleData;
-import pt.po.edimilsonestevam.setup.Base;
 import pt.po.edimilsonestevam.setup.Configuration;
+import pt.po.edimilsonestevam.setup.Core;
 
 public class TestSteps {
 
@@ -30,14 +30,14 @@ public class TestSteps {
 	@When("^I confirm action$")
 	public void i_confirm_action() throws Throwable {
 		
-		new Base(browser).clickNextButton();
+		new Core(browser).clickNextButton();
 		
 	}
 
 	@Then("^the system will show the success message \"([^\"]*)\"$")
 	public void the_system_will_show_the_success_message(String successMessage) throws Throwable {
 
-		new Base(browser).verifyMessage("");
+		new Core(browser).verifyMessage("");
 		new Configuration().browserClose(browser);
 	
 	}
