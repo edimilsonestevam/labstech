@@ -1,5 +1,7 @@
 package pt.po.edimilsonestevam.page;
 
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -12,7 +14,7 @@ public class EnterVehicleData extends Base {
 		
 	}
 
-	public void fillEnterVehicleDataRegister(String informCarName, int informSeatsNumber, String informFuelType) {
+	public void fillEnterVehicleDataRegister(String informCarName, double informEnginePerformance, Date informDateManufacture, double informListPrice, int informSeatsNumber, String informFuelType) {
 		
 		System.out.println("Enter Vehicle Data");
 		
@@ -116,7 +118,14 @@ public class EnterVehicleData extends Base {
 		
 		System.out.println("• Filling Engine Performance [kW] Field...");
 		
+		browser.findElement(By.id(idEnginePerformanceField)).click();
+		browser.findElement(By.id(idEnginePerformanceField)).sendKeys("informEnginePerformance");
+		
+		
 		System.out.println("• Filling Date of Manufacture Field...");
+		
+		browser.findElement(By.id(idDateManufactureField)).click();
+		browser.findElement(By.id(idDateManufactureField)).sendKeys("informDateManufacture");
 		
 		
 		System.out.println("• Filling Number of Seats Field...");
@@ -200,6 +209,10 @@ public class EnterVehicleData extends Base {
 		
 		
 		System.out.println("• Filling List Price [$] Field...");
+		
+		browser.findElement(By.id(idListPriceField)).click();
+		browser.findElement(By.id(idListPriceField)).sendKeys("informListPrice");
+		
 		
 		System.out.println("• Filling License Plate Number Field...");
 		
