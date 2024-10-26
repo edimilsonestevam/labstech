@@ -8,7 +8,7 @@ public class SelectPriceOption extends Base{
 
 	public SelectPriceOption(WebDriver browser) {
 		super(browser);
-		// TODO Auto-generated constructor stub
+
 	}
 
 }

@@ -10,5 +10,5 @@ Feature: Enter Vehicle Data
 
     Examples: 
       | url                                       | carName | enginePerformance | dateManufacture | listPrice | seatsNumber | fuelType | licensePlateNumber | annualMileage | successMessage |
-      | "www.sampleapp.tricentis.com/101/app.php" | "audi"  | 300               | 10262024        | 40000     | 6           | "petrol" | "BOND-007"         | 0             | ""            |
+      | "www.sampleapp.tricentis.com/101/app.php" | "audi"  | 300               | 10262024        | 40000     | 6           | "petrol" | "BOND-007"         | 0             | ""             |
         

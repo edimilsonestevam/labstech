@@ -8,7 +8,7 @@ public class SendQuote extends Base{
 
 	public SendQuote(WebDriver browser) {
 		super(browser);
-		// TODO Auto-generated constructor stub
+
 	}
 
 }

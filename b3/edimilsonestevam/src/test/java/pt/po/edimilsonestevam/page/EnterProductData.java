@@ -8,7 +8,7 @@ public class EnterProductData extends Base{
 
 	public EnterProductData(WebDriver browser) {
 		super(browser);
-		// TODO Auto-generated constructor stub
+
 	}
 
 }

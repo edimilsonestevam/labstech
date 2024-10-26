@@ -8,7 +8,7 @@ public class EnterInsurantData extends Base{
 
 	public EnterInsurantData(WebDriver browser) {
 		super(browser);
-		// TODO Auto-generated constructor stub
+
 	}
 
 }
