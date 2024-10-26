@@ -2,7 +2,7 @@ Feature: Enter Vehicle Data
   I want to register my car in the Enter Vehicle Data
 
   @scenario-success-car-registered
-  Scenario Outline: Car registered Success
+  Scenario Outline: Car Registered Success
     Given I want to register my car in the Enter Vehicle Data
     When I fill all fields <carName>, <enginePerformance>, <dateManufacture>, <listPrice>, <seatsNumber>, <fuelType>, <licensePlateNumber>, <annualMileage>
     And I confirm action
