@@ -15,7 +15,7 @@ public class EnterVehicleData extends Base {
 		
 	}
 
-	public void fillEnterVehicleDataRegister(String informCarName, int informSeatsNumber) {
+	public void fillEnterVehicleDataRegister(String informCarName, int informSeatsNumber, String informFuelType) {
 		
 		System.out.println("Enter Vehicle Data");
 		
@@ -163,7 +163,33 @@ public class EnterVehicleData extends Base {
 			System.out.println("You should inform: 1, 2, 3, 4, 5, 6, 7, 8 or 9!");
 		}
 		
+		
 		System.out.println("• Filling Fuel Type Field...");
+		
+		if (informFuelType.equalsIgnoreCase(fuelTypeOptionFirst)) {
+			browser.findElement(By.id(idFuelTypeField)).click();
+			browser.findElement(By.name(fuelTypeOptionFirst)).click();
+		}
+		else if (informFuelType.equalsIgnoreCase(fuelTypeOptionSecond)) {
+			browser.findElement(By.id(idFuelTypeField)).click();
+			browser.findElement(By.name(fuelTypeOptionSecond)).click();
+		}
+		else if (informFuelType.equalsIgnoreCase(fuelTypeOptionThird)) {
+			browser.findElement(By.id(idFuelTypeField)).click();
+			browser.findElement(By.name(fuelTypeOptionThird)).click();
+		}
+		else if (informFuelType.equalsIgnoreCase(fuelTypeOptionFourth)) {
+			browser.findElement(By.id(idFuelTypeField)).click();
+			browser.findElement(By.name(fuelTypeOptionFourth)).click();
+		}
+		else if (informFuelType.equalsIgnoreCase(fuelTypeOptionFifth)) {
+			browser.findElement(By.id(idFuelTypeField)).click();
+			browser.findElement(By.name(fuelTypeOptionFifth)).click();
+		}
+		else {
+			System.out.println("You should inform: Petrol, Diesel, Electric Power, Gas or Other!");
+		}
+		
 		
 		System.out.println("• Filling List Price [$] Field...");
 		
