@@ -106,6 +106,9 @@ public class EnterVehicleData extends Base {
 			browser.findElement(By.id(idMakeField)).click();
 			browser.findElement(By.name(carOptionFifteenth)).click();
 		}
+		else {
+			System.out.println("You should inform: Audi, BMW, Ford, Honda, Mazda, Mercedes Benz, Nissan, Opel, Porsche, Renault, Skoda, Suzuki, Toyota, Volkswagen or Volvo");
+		}
 		
 		System.out.println("• Filling Engine Performance [kW] Field...");
 		
