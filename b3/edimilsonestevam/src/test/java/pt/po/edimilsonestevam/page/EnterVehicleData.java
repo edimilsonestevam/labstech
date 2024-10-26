@@ -1,7 +1,5 @@
 package pt.po.edimilsonestevam.page;
 
-import java.util.Date;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -14,7 +12,7 @@ public class EnterVehicleData extends Base {
 		
 	}
 
-	public void fillEnterVehicleDataRegister(String informCarName, double informEnginePerformance, Date informDateManufacture, double informListPrice, int informSeatsNumber, String informFuelType, int informLicensePlateNumber, int informAnnualMileage) {
+	public void fillEnterVehicleDataRegister(String informCarName, int informEnginePerformance, int informDateManufacture, int informListPrice, int informSeatsNumber, String informFuelType, String informLicensePlateNumber, int informAnnualMileage) {
 		
 		System.out.println("Enter Vehicle Data");
 		
@@ -217,7 +215,7 @@ public class EnterVehicleData extends Base {
 		System.out.println("• Filling License Plate Number Field...");
 		
 		browser.findElement(By.id(idLicensePlateNumberField)).click();
-		browser.findElement(By.id(idLicensePlateNumberField)).sendKeys("informLicensePlateNumber");
+		browser.findElement(By.id(idLicensePlateNumberField)).sendKeys(informLicensePlateNumber);
 		
 		
 		System.out.println("• Filling Annual Mileage [mi] Field...");
