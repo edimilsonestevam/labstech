@@ -47,9 +47,6 @@ public class EnterVehicleData extends Base {
 		String fuelTypeOptionFourth = "Gas";
 		String fuelTypeOptionFifth = "Other";
 		
-		Object seatsNumber = (Object)informSeatsNumber;
-		
-		
 		System.out.println("• Filling Make Field...");
 		
 		if (informCarName.equalsIgnoreCase(carOptionFirst)) {
