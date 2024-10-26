@@ -19,7 +19,7 @@ public class TestSteps {
 		browser = new Configuration().browserOpen("firefox", url, "yes");
 		
 	}
-	
+
 	@When("^I fill all fields \"([^\"]*)\", (\\d+), (\\d+), (\\d+), (\\d+), \"([^\"]*)\", \"([^\"]*)\", (\\d+)$")
 	public void i_fill_all_fields(String carName, int enginePerformance, int dateManufacture, int listPrice, int seatsNumber, String fuelType, String licensePlateNumber, int annualMileage) throws Throwable {
 
@@ -37,5 +37,5 @@ public class TestSteps {
 	@Then("^the system will show the success message \"([^\"]*)\"$")
 	public void the_system_will_show_the_success_message(String arg1) throws Throwable {
 
-	}	
+	}
 }	
