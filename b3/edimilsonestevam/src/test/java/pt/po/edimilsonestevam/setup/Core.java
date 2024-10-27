@@ -42,15 +42,15 @@ public class Core extends Base {
 		
 	}
 	
-	public void verifyTab(String informTabName) throws Exception {
+	public void verifyTab(String verifyTabName) throws Exception {
 		
 		try {
            
-			String idEnterInsurantData = "enterinsurantdata";
+			String idEnterInsurantDataTabName = "enterinsurantdata";
 			
-            WebElement tabName = browser.findElement(By.id(idEnterInsurantData));
-            String actualtabName = tabName.getText();
-            assertEquals("Verifying the Tab Name", informTabName, actualtabName);
+            WebElement tabName = browser.findElement(By.id(idEnterInsurantDataTabName));
+            String actualTabName = tabName.getText();
+            assertEquals("Verifying the Tab Name", verifyTabName, actualTabName);
             
         } 
 		catch (NoSuchElementException e) {
