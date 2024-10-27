@@ -109,10 +109,19 @@ public class EnterVehicleData extends Base {
 		String xpathNumberSeatsOptionNinth = "//option[@value='9']";
 		
 		String fuelTypeOptionFirst = "Petrol";
+		String xpathFuelOptionFirst = "//option[@value='Petrol']";
+		
 		String fuelTypeOptionSecond = "Diesel";
+		String xpathFuelTypeOptionSecond = "//option[@value='Diesel']";
+		
 		String fuelTypeOptionThird = "Electric Power";
+		String xpathFuelTypeOptionThird = "//option[@value='Electric Power']";
+		
 		String fuelTypeOptionFourth = "Gas";
+		String xpathFuelTypeOptionFourth = "//option[@value='Gas']";
+		
 		String fuelTypeOptionFifth = "Other";
+		String xpathFuelTypeOptionFifth = "//option[@value='Other']";
 		
 		WebElement element = null;	
 		WebDriverWait wait = new WebDriverWait(browser, 3);
@@ -352,23 +361,28 @@ public class EnterVehicleData extends Base {
 		
 		if (informFuelType.equalsIgnoreCase(fuelTypeOptionFirst)) {
 			browser.findElement(By.id(idFuelTypeField)).click();
-			browser.findElement(By.name(fuelTypeOptionFirst)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathFuelOptionFirst)));
+			element.click();
 		}
 		else if (informFuelType.equalsIgnoreCase(fuelTypeOptionSecond)) {
 			browser.findElement(By.id(idFuelTypeField)).click();
-			browser.findElement(By.name(fuelTypeOptionSecond)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathFuelTypeOptionSecond)));
+			element.click();
 		}
 		else if (informFuelType.equalsIgnoreCase(fuelTypeOptionThird)) {
 			browser.findElement(By.id(idFuelTypeField)).click();
-			browser.findElement(By.name(fuelTypeOptionThird)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathFuelTypeOptionThird)));
+			element.click();
 		}
 		else if (informFuelType.equalsIgnoreCase(fuelTypeOptionFourth)) {
 			browser.findElement(By.id(idFuelTypeField)).click();
-			browser.findElement(By.name(fuelTypeOptionFourth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathFuelTypeOptionFourth)));
+			element.click();
 		}
 		else if (informFuelType.equalsIgnoreCase(fuelTypeOptionFifth)) {
 			browser.findElement(By.id(idFuelTypeField)).click();
-			browser.findElement(By.name(fuelTypeOptionFifth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathFuelTypeOptionFifth)));
+			element.click();
 		}
 		else {
 			System.out.println("You should inform: Petrol, Diesel, Electric Power, Gas or Other!");
