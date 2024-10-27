@@ -160,10 +160,10 @@ public class EnterVehicleData extends Base {
 		}
 		
 		
-		System.out.println("• Filling Engine Performance [kW] Field...");//CHANGE NAME
+		System.out.println("• Filling Cylinder Capacity Field...");
 		
-		browser.findElement(By.id(idEnginePerformanceField)).click();
-		browser.findElement(By.id(idEnginePerformanceField)).sendKeys("informEnginePerformance");
+		browser.findElement(By.id(idCylinderCapacityField)).click();
+		browser.findElement(By.id(idCylinderCapacityField)).sendKeys("informCylinderCapacity");
 		
 		
 		System.out.println("• Filling Engine Performance [kW] Field...");
