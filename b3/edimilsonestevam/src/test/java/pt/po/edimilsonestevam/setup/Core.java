@@ -49,8 +49,11 @@ public class Core extends Base {
 			String idEnterInsurantDataTabName = "enterinsurantdata";
 			
             WebElement tabName = browser.findElement(By.id(idEnterInsurantDataTabName));
-            String actualTabName = tabName.getText();
-            actualTabName.substring(-3);
+            String actualTabName = tabName.getText()
+            										.replaceAll("\\s+", " ")
+            										.replaceAll("\\[\\s+", "[")
+            										.replaceAll("\\s+\\]", "]")
+            										.trim();
             assertEquals("Verifying the Tab Name", verifyTabName, actualTabName);
             
         } 
