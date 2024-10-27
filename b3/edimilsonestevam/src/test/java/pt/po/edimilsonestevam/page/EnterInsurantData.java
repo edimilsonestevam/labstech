@@ -2,6 +2,9 @@ package pt.po.edimilsonestevam.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
@@ -12,15 +15,20 @@ public class EnterInsurantData extends Base{
 
 	}
 
-	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth) {
+	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress) {
 		
 		System.out.println("Enter Insurant Data");
 		
 		String idFirstName = "firstname";
 		String idLastName = "lastname";
 		String idDateBirth = "birthdate";
+		
+		String genderMale = "Male";
 		String idGenderMale = "gendermale";
+		
+		String genderFemale = "Female";
 		String idGenderFemale = "genderfemale";
+		
 		String idStreetAddress = "streetaddress";
 		String idCountry = "country";
 		
@@ -65,6 +73,9 @@ public class EnterInsurantData extends Base{
 		String idWebsite = "website";
 		String idPicture = "picture";
 		
+		WebElement element = null;	
+		WebDriverWait wait = new WebDriverWait(browser, 3);
+		
 		
 		System.out.println("• Filling First Name Field...");
 		
@@ -86,7 +97,24 @@ public class EnterInsurantData extends Base{
 		
 		System.out.println("• Filling Gender Field...");
 		
+		if (genderMale.equalsIgnoreCase(informGender)) {
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idGenderMale)));
+			element.click();
+		}
+		else if (genderFemale.equalsIgnoreCase(informGender)) {
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idGenderFemale)));
+			element.click();
+		}
+		else {
+			System.out.println("You should inform: Male or Female!");
+		}
+		
+		
 		System.out.println("• Filling Street Address Field...");
+		
+		browser.findElement(By.id(idStreetAddress)).click();
+		browser.findElement(By.id(idStreetAddress)).sendKeys(informStreetAddress);
+		
 		
 		System.out.println("• Filling Country Field...");
 		
