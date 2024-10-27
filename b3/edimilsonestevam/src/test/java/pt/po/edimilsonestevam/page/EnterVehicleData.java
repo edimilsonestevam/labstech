@@ -310,10 +310,12 @@ public class EnterVehicleData extends Base {
 		System.out.println("• Filling Right Hand Drive Field...");
 		
 		if (rightHandDriveYes.equalsIgnoreCase(informRightHandDriveYesNo)) {
-			browser.findElement(By.xpath(xPathRightHandDriveYes)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xPathRightHandDriveYes)));
+			element.click();
 		}
 		else if (rightHandDriveNo.equalsIgnoreCase(informRightHandDriveYesNo)) {
-			browser.findElement(By.xpath(xPathRightHandDriveNo)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xPathRightHandDriveNo)));
+			element.click();
 		}
 		else {
 			System.out.println("You should inform: Yes or No!");
