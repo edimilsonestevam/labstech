@@ -169,7 +169,7 @@ public class EnterVehicleData extends Base {
 		browser.findElement(By.id(idCylinderCapacityField)).sendKeys("informCylinderCapacity");
 		
 		
-		System.out.println("• Filling Engine Performance [kW] Field...");
+		System.out.println("• Filling Engine Performance Field...");
 		
 		browser.findElement(By.id(idEnginePerformanceField)).click();
 		browser.findElement(By.id(idEnginePerformanceField)).sendKeys("informEnginePerformance");
@@ -297,7 +297,7 @@ public class EnterVehicleData extends Base {
 		}
 		
 		
-		System.out.println("• Filling List Price [$] Field...");
+		System.out.println("• Filling List Price Field...");
 		
 		browser.findElement(By.id(idListPriceField)).click();
 		browser.findElement(By.id(idListPriceField)).sendKeys("informListPrice");
@@ -309,7 +309,7 @@ public class EnterVehicleData extends Base {
 		browser.findElement(By.id(idLicensePlateNumberField)).sendKeys(informLicensePlateNumber);
 		
 		
-		System.out.println("• Filling Annual Mileage [mi] Field...");
+		System.out.println("• Filling Annual Mileage Field...");
 		
 		browser.findElement(By.id(idAnnualMileageField)).click();
 		browser.findElement(By.id(idAnnualMileageField)).sendKeys("informAnnualMileage");
