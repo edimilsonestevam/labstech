@@ -95,15 +95,15 @@ public class EnterVehicleData extends Base {
 		String rightHandDriveYes = "Yes";
 		String rightHandDriveNo = "No";
 		
-		String numberSeatsOptionFirst = "1";
-		String numberSeatsOptionSecond = "2"; 
-		String numberSeatsOptionThird = "3"; 
-		String numberSeatsOptionFourth = "4";
-		String numberSeatsOptionFifth = "5";
-		String numberSeatsOptionSixth = "6";
-		String numberSeatsOptionSeventh = "7";
-		String numberSeatsOptionEighth = "8";
-		String numberSeatsOptionNinth = "9";
+		String xpathNumberSeatsOptionFirst = "//option[@value='1']";;
+		String xpathNumberSeatsOptionSecond = "//option[@value='2']"; 
+		String xpathNumberSeatsOptionThird = "//option[@value='3']"; 
+		String xpathNumberSeatsOptionFourth = "//option[@value='4']";
+		String xpathNumberSeatsOptionFifth = "//option[@value='5']";
+		String xpathNumberSeatsOptionSixth = "//option[@value='6']";
+		String xpathNumberSeatsOptionSeventh = "//option[@value='7']";
+		String xpathNumberSeatsOptionEighth = "//option[@value='8']";
+		String xpathNumberSeatsOptionNinth = "//option[@value='9']";
 		
 		String fuelTypeOptionFirst = "Petrol";
 		String fuelTypeOptionSecond = "Diesel";
@@ -247,47 +247,56 @@ public class EnterVehicleData extends Base {
 		switch (informNumberSeats) {
 		case 1:
 			browser.findElement(By.id(idNumberSeatsField)).click();
-			browser.findElement(By.name(numberSeatsOptionFirst)).click();	
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionFirst)));
+			element.click();
 			break;
 		
 		case 2:
 			browser.findElement(By.id(idNumberSeatsField)).click();
-			browser.findElement(By.name(numberSeatsOptionSecond)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionSecond)));
+			element.click();
 			break;
 		
 		case 3:
 			browser.findElement(By.id(idNumberSeatsField)).click();
-			browser.findElement(By.name(numberSeatsOptionThird)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionThird)));
+			element.click();
 			break;
 		
 		case 4:
 			browser.findElement(By.id(idNumberSeatsField)).click();
-			browser.findElement(By.name(numberSeatsOptionFourth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionFourth)));
+			element.click();
 			break;
 		
 		case 5:
 			browser.findElement(By.id(idNumberSeatsField)).click();
-			browser.findElement(By.name(numberSeatsOptionFifth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionFifth)));
+			element.click();
 			break;
 			
 		case 6:
 			browser.findElement(By.id(idNumberSeatsField)).click();
-			browser.findElement(By.name(numberSeatsOptionSixth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionSixth)));
+			element.click();
 			break;
 	
 		case 7:
 			browser.findElement(By.id(idNumberSeatsField)).click();
-			browser.findElement(By.name(numberSeatsOptionSeventh)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionSeventh)));
+			element.click();
 			break;
 		
 		case 8:
 			browser.findElement(By.id(idNumberSeatsField)).click();
-			browser.findElement(By.name(numberSeatsOptionEighth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionEighth)));
+			element.click();
 			break;
 		
 		case 9:
 			browser.findElement(By.id(idNumberSeatsField)).click();
-			browser.findElement(By.name(numberSeatsOptionNinth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionNinth)));
+			element.click();
 			break;
 			
 		default:
