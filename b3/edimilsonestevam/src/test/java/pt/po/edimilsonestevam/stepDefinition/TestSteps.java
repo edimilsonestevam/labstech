@@ -34,12 +34,12 @@ public class TestSteps {
 		
 	}
 
-	@Then("^the system will show the success message \"([^\"]*)\"$")
-	public void the_system_will_show_the_success_message(String successMessage) throws Throwable {
+	@Then("^the system will show \"([^\"]*)\" tab$")
+	public void the_system_will_show_tab(String tabName) throws Throwable {
 
-		new Core(browser).verifyMessage(successMessage);
+		new Core(browser).verifyTab(tabName);
 		new Configuration().browserClose(browser);
-	
+		
 	}
 
 }	
