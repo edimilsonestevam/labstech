@@ -118,7 +118,7 @@ git push origin main
 ```
 
 # Observation
-You must add these three commands in Arguments tab in eclipse IDE:
+In the Eclipse IDE, add the three commands below from the "Run" menu.
 
 ```python
 --add-opens java.desktop/java.awt.font=ALL-UNNAMED
