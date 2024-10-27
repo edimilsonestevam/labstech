@@ -19,9 +19,9 @@ public class TestSteps {
 		browser = new Configuration().browserOpen("firefox", url, "no");
 		
 	}
-	
-	@When("^I fill all fields \"([^\"]*)\", \"([^\"]*)\", (\\d+), (\\d+), (\\d+), (\\d+), \"([^\"]*)\", (\\d+), \"([^\"]*)\", (\\d+), (\\d+), (\\d+), \"([^\"]*)\", (\\d+)$")
-	public void i_fill_all_fields(String carName, String model, int mumberSeats, int enginePerformance, int dateManufacture, int numberSeats, String rightHandDrive, int numberSeatsMotor, String fuelType, int payload, int totalWeight, int listPrice, String licensePlateNumber, int annualMileage) throws Throwable {
+
+	@When("^I fill all fields \"([^\"]*)\", \"([^\"]*)\", (\\d+), (\\d+), \"([^\"]*)\", (\\d+), \"([^\"]*)\", (\\d+), \"([^\"]*)\", (\\d+), (\\d+), (\\d+), \"([^\"]*)\", (\\d+)$")
+	public void i_fill_all_fields(String carName, String model, int mumberSeats, int enginePerformance, String dateManufacture, int numberSeats, String rightHandDrive, int numberSeatsMotor, String fuelType, int payload, int totalWeight, int listPrice, String licensePlateNumber, int annualMileage) throws Throwable {
 
 		new EnterVehicleData(browser).fillEnterVehicleDataRegister(carName, model, mumberSeats, enginePerformance, dateManufacture, numberSeats, rightHandDrive, numberSeatsMotor, fuelType, payload, totalWeight, listPrice, licensePlateNumber, annualMileage);
 		

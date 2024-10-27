@@ -15,7 +15,7 @@ public class EnterVehicleData extends Base {
 		
 	}
 
-	public void fillEnterVehicleDataRegister(String informCarName, String informModel, int informCylinderCapacity, int informEnginePerformance, int informDateManufacture, int informNumberSeats, String informRightHandDriveYesNo, int informNumberSeatsMotor, String informFuelType, int informPayload, int informTotalWeight, int informListPrice, String informLicensePlateNumber, int informAnnualMileage) {
+	public void fillEnterVehicleDataRegister(String informCarName, String informModel, int informCylinderCapacity, int informEnginePerformance, String informDateManufacture, int informNumberSeats, String informRightHandDriveYesNo, int informNumberSeatsMotor, String informFuelType, int informPayload, int informTotalWeight, int informListPrice, String informLicensePlateNumber, int informAnnualMileage) {
 		
 		System.out.println("Enter Vehicle Data");
 		
@@ -255,7 +255,7 @@ public class EnterVehicleData extends Base {
 		System.out.println("• Filling Date of Manufacture Field...");
 		
 		browser.findElement(By.id(idDateManufactureField)).click();
-		browser.findElement(By.id(idDateManufactureField)).sendKeys("informDateManufacture");
+		browser.findElement(By.id(idDateManufactureField)).sendKeys(informDateManufacture);
 		
 		
 		System.out.println("• Filling Number of Seats Field...");
