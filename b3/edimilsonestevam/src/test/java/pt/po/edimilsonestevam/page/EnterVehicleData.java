@@ -12,17 +12,22 @@ public class EnterVehicleData extends Base {
 		
 	}
 
-	public void fillEnterVehicleDataRegister(String informCarName, String informModel, int cylinderCapacity, int informEnginePerformance, int informDateManufacture, int informListPrice, int informSeatsNumber, String informFuelType, String informLicensePlateNumber, int informAnnualMileage) {
+	public void fillEnterVehicleDataRegister(String informCarName, String informModel, int informCylinderCapacity, int informEnginePerformance, int informDateManufacture, int informNumberSeats, String informRightHandDriveYesNo, int informNumberSeatsMotor, int informeFuelType, int informPayload, int informTotalWeight, int informListPrice, String informLicensePlateNumber, int informAnnualMileage) {
 		
 		System.out.println("Enter Vehicle Data");
 		
 		String idMakeField = "make";
-		String idModel = "model";
-		String idCylinderCapacity = "cylindercapacity";
+		String idModelField = "model";
+		String idCylinderCapacityField = "cylindercapacity";
 		String idEnginePerformanceField = "engineperformance";
 		String idDateManufactureField = "dateofmanufacture";
 		String idNumberSeatsField = "numberofseats";
+		String idRightHandDriveYesIcon = "righthanddriveyes";
+		String idRightHandDriveNoIcon = "righthanddriveno";
+		String idNumbersSeatsMotorField = "numberofseatsmotorcycle";
 		String idFuelTypeField = "fuel";
+		String idPayloadField = "payload";
+		String idTotalWeightField = "totalweight";
 		String idListPriceField = "listprice";
 		String idLicensePlateNumberField = "licenseplatenumber";
 		String idAnnualMileageField = "annualmileage";
@@ -42,6 +47,11 @@ public class EnterVehicleData extends Base {
 		String carOptionThirteenth = "Toyota";
 		String carOptionFourteenth = "Volkswagen";
 		String carOptionFifteenth = "Volvo";
+		
+		String modelOptionFirst = "Scooter";
+		String modelOptionSecond = "Three-Wheeler"; 
+		String modelOptionThird = "Moped"; 
+		String modelOptionFourth = "Motorcycle";
 		
 		String fuelTypeOptionFirst = "Petrol";
 		String fuelTypeOptionSecond = "Diesel";
@@ -113,6 +123,29 @@ public class EnterVehicleData extends Base {
 		}
 		else {
 			System.out.println("You should inform: Audi, BMW, Ford, Honda, Mazda, Mercedes Benz, Nissan, Opel, Porsche, Renault, Skoda, Suzuki, Toyota, Volkswagen or Volvo!");
+		}
+		
+		
+		System.out.println("• Filling Model Field...");
+		
+		if (informModel.equalsIgnoreCase(modelOptionFirst)) {
+			browser.findElement(By.id(idModelField)).click();
+			browser.findElement(By.name(modelOptionFirst)).click();
+		}
+		else if (informModel.equalsIgnoreCase(modelOptionSecond)) {
+			browser.findElement(By.id(idModelField)).click();
+			browser.findElement(By.name(modelOptionSecond)).click();
+		}
+		else if (informModel.equalsIgnoreCase(modelOptionThird)) {
+			browser.findElement(By.id(idModelField)).click();
+			browser.findElement(By.name(modelOptionThird)).click();
+		}
+		else if (informModel.equalsIgnoreCase(modelOptionFourth)) {
+			browser.findElement(By.id(idModelField)).click();
+			browser.findElement(By.name(modelOptionFourth)).click();
+		}
+		else {
+			System.out.println("You should inform: Scooter, Three-Wheeler, Moped or Motorcycle!");
 		}
 		
 		

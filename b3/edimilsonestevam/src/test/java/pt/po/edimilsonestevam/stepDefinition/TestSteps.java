@@ -20,13 +20,12 @@ public class TestSteps {
 		
 	}
 
-	@When("^I fill all fields \"([^\"]*)\", (\\d+), (\\d+), (\\d+), (\\d+), \"([^\"]*)\", \"([^\"]*)\", (\\d+)$")
-	public void i_fill_all_fields(String carName, int enginePerformance, int dateManufacture, int listPrice, int seatsNumber, String fuelType, String licensePlateNumber, int annualMileage) throws Throwable {
-		
-		new EnterVehicleData(browser).fillEnterVehicleDataRegister(carName, enginePerformance, dateManufacture, listPrice, seatsNumber, fuelType, licensePlateNumber, annualMileage);
-		
-	}
+	@When("^I fill all fields \"([^\"]*)\", \"([^\"]*)\", (\\d+), (\\d+), (\\d+), (\\d+), \"([^\"]*)\", (\\d+), \"([^\"]*)\", (\\d+), (\\d+), (\\d+), \"([^\"]*)\", (\\d+)$")
+	public void i_fill_all_fields(String arg1, String arg2, int arg3, int arg4, int arg5, int arg6, String arg7, int arg8, String arg9, int arg10, int arg11, int arg12, String arg13, int arg14) throws Throwable {
 
+		new EnterVehicleData(browser)
+	}
+	
 	@When("^I confirm action$")
 	public void i_confirm_action() throws Throwable {
 		
