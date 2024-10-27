@@ -118,7 +118,7 @@ git push origin main
 ```
 
 # Observation
-You must add these three commands in Arguments tab in eclipse IDE.
+* You must add these three commands in Arguments tab in eclipse IDE.
 
 --add-opens java.desktop/java.awt.font=ALL-UNNAMED
 
