@@ -303,6 +303,12 @@ public class EnterVehicleData extends Base {
 		browser.findElement(By.id(idPayloadField)).sendKeys("informPayload");
 		
 		
+		System.out.println("• Filling Total Weight Field...");
+		
+		browser.findElement(By.id(idTotalWeightField)).click();
+		browser.findElement(By.id(idTotalWeightField)).sendKeys("informTotalWeight");
+		
+		
 		System.out.println("• Filling List Price Field...");
 		
 		browser.findElement(By.id(idListPriceField)).click();
