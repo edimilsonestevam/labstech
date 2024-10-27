@@ -45,6 +45,25 @@ public class EnterInsurantData extends Base{
 		String xpathCountryTwentieth = "//option[@value='Germany']";
 		String xpathCountryTwentyFirst = "//option[@value='Hong Kong']";
 		
-				
+		String idZipCode = "zipcode";
+		String idCity = "city";
+		
+		String idOccupation = "occupation";
+		String xpathOccupationFirst = "//option[@value='Employee']";
+		String xpathOccupationSecond = "//option[@value='Public Official']";
+		String xpathOccupationThird = "//option[@value='Farmer']";
+		String xpathOccupationFourth = "//option[@value='Unemployed']";
+		String xpathOccupationFifth = "//option[@value='Selfemployed']";
+		
+		String idHobbiesSpeeding = "speeding";
+		String idHobbiesBungeejumping = "bungeejumping";
+		String idHobbiesCliffdiving = "cliffdiving";
+		String idHobbiesSkydiving = "skydiving";
+		String idHobbiesOther = "other";
+		
+		String idWebsite = "website";
+		String idPicture = "picture";
+		
+		
 	}
 }
