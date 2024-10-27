@@ -12,11 +12,13 @@ public class EnterVehicleData extends Base {
 		
 	}
 
-	public void fillEnterVehicleDataRegister(String informCarName, int informEnginePerformance, int informDateManufacture, int informListPrice, int informSeatsNumber, String informFuelType, String informLicensePlateNumber, int informAnnualMileage) {
+	public void fillEnterVehicleDataRegister(String informCarName, String informModel, int cylinderCapacity, int informEnginePerformance, int informDateManufacture, int informListPrice, int informSeatsNumber, String informFuelType, String informLicensePlateNumber, int informAnnualMileage) {
 		
 		System.out.println("Enter Vehicle Data");
 		
 		String idMakeField = "make";
+		String idModel = "model";
+		String idCylinderCapacity = "cylindercapacity";
 		String idEnginePerformanceField = "engineperformance";
 		String idDateManufactureField = "dateofmanufacture";
 		String idNumberSeatsField = "numberofseats";
