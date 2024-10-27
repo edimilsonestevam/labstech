@@ -53,6 +53,16 @@ public class EnterVehicleData extends Base {
 		String modelOptionThird = "Moped"; 
 		String modelOptionFourth = "Motorcycle";
 		
+		String numberSeatsOptionFirst = "1";
+		String numberSeatsOptionSecond = "2"; 
+		String numberSeatsOptionThird = "3"; 
+		String numberSeatsOptionFourth = "4";
+		String numberSeatsOptionFifth = "5";
+		String numberSeatsOptionSixth = "6";
+		String numberSeatsOptionSeventh = "7";
+		String numberSeatsOptionEighth = "8";
+		String numberSeatsOptionNinth = "9";
+		
 		String fuelTypeOptionFirst = "Petrol";
 		String fuelTypeOptionSecond = "Diesel";
 		String fuelTypeOptionThird = "Electric Power";
@@ -150,6 +160,12 @@ public class EnterVehicleData extends Base {
 		}
 		
 		
+		System.out.println("• Filling Engine Performance [kW] Field...");//CHANGE NAME
+		
+		browser.findElement(By.id(idEnginePerformanceField)).click();
+		browser.findElement(By.id(idEnginePerformanceField)).sendKeys("informEnginePerformance");
+		
+		
 		System.out.println("• Filling Engine Performance [kW] Field...");
 		
 		browser.findElement(By.id(idEnginePerformanceField)).click();
@@ -164,50 +180,50 @@ public class EnterVehicleData extends Base {
 		
 		System.out.println("• Filling Number of Seats Field...");
 		
-		switch (informSeatsNumber) {
+		switch (informNumberSeats) {
 		case 1:
-			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionFirst)).click();	
+			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.name(numberSeatsOptionFirst)).click();	
 			break;
 		
 		case 2:
-			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionSecond)).click();
+			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.name(numberSeatsOptionSecond)).click();
 			break;
 		
 		case 3:
-			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionThird)).click();
+			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.name(numberSeatsOptionThird)).click();
 			break;
 		
 		case 4:
-			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionFourth)).click();
+			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.name(numberSeatsOptionFourth)).click();
 			break;
 		
 		case 5:
-			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionFifth)).click();
+			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.name(numberSeatsOptionFifth)).click();
 			break;
 			
 		case 6:
-			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionSixth)).click();
+			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.name(numberSeatsOptionSixth)).click();
 			break;
 	
 		case 7:
-			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionSeventh)).click();
+			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.name(numberSeatsOptionSeventh)).click();
 			break;
 		
 		case 8:
-			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionEighth)).click();
+			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.name(numberSeatsOptionEighth)).click();
 			break;
 		
 		case 9:
-			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionNinth)).click();
+			browser.findElement(By.id(idNumberSeatsField)).click();
+			browser.findElement(By.name(numberSeatsOptionNinth)).click();
 			break;
 			
 		default:
