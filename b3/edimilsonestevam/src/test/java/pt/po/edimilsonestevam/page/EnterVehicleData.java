@@ -322,17 +322,20 @@ public class EnterVehicleData extends Base {
 		switch (informNumberSeatsMotor) {
 		case 1:
 			browser.findElement(By.id(idNumbersSeatsMotorField)).click();
-			browser.findElement(By.name(numberSeatsOptionFirst)).click();	
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionFirst)));
+			element.click();	
 			break;
 		
 		case 2:
 			browser.findElement(By.id(idNumbersSeatsMotorField)).click();
-			browser.findElement(By.name(numberSeatsOptionSecond)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionSecond)));
+			element.click();
 			break;
 		
 		case 3:
 			browser.findElement(By.id(idNumbersSeatsMotorField)).click();
-			browser.findElement(By.name(numberSeatsOptionThird)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionThird)));
+			element.click();
 			break;
 			
 		default:
