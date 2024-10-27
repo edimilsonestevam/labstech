@@ -81,9 +81,16 @@ public class EnterVehicleData extends Base {
 		String xpathCarOptionFifteenth = "//option[@value='Volvo']";
 		
 		String modelOptionFirst = "Scooter";
+		String xpathModelOptionFirst = "//option[@value='Scooter']";
+		
 		String modelOptionSecond = "Three-Wheeler"; 
+		String xpathModelOptionSecond = "//option[@value='Three-Wheeler']";
+		
 		String modelOptionThird = "Moped"; 
+		String xpathModelOptionThird = "//option[@value='Moped']";
+		
 		String modelOptionFourth = "Motorcycle";
+		String xpathModelOptionFourth = "//option[@value='Motorcycle']";
 		
 		String rightHandDriveYes = "Yes";
 		String rightHandDriveNo = "No";
@@ -194,19 +201,23 @@ public class EnterVehicleData extends Base {
 		
 		if (informModel.equalsIgnoreCase(modelOptionFirst)) {
 			browser.findElement(By.id(idModelField)).click();
-			browser.findElement(By.name(modelOptionFirst)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathModelOptionFirst)));
+			element.click();
 		}
 		else if (informModel.equalsIgnoreCase(modelOptionSecond)) {
 			browser.findElement(By.id(idModelField)).click();
-			browser.findElement(By.name(modelOptionSecond)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathModelOptionSecond)));
+			element.click();
 		}
 		else if (informModel.equalsIgnoreCase(modelOptionThird)) {
 			browser.findElement(By.id(idModelField)).click();
-			browser.findElement(By.name(modelOptionThird)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathModelOptionThird)));
+			element.click();
 		}
 		else if (informModel.equalsIgnoreCase(modelOptionFourth)) {
 			browser.findElement(By.id(idModelField)).click();
-			browser.findElement(By.name(modelOptionFourth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathModelOptionFourth)));
+			element.click();
 		}
 		else {
 			System.out.println("You should inform: Scooter, Three-Wheeler, Moped or Motorcycle!");
