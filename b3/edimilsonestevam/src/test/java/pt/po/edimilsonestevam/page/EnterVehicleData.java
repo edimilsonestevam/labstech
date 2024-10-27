@@ -53,6 +53,9 @@ public class EnterVehicleData extends Base {
 		String modelOptionThird = "Moped"; 
 		String modelOptionFourth = "Motorcycle";
 		
+		String rightHandDriveYes = "Yes";
+		String rightHandDriveNo = "No";
+		
 		String numberSeatsOptionFirst = "1";
 		String numberSeatsOptionSecond = "2"; 
 		String numberSeatsOptionThird = "3"; 
@@ -230,6 +233,19 @@ public class EnterVehicleData extends Base {
 			System.out.println("You should inform: 1, 2, 3, 4, 5, 6, 7, 8 or 9!");
 		}
 	
+		
+		System.out.println("• Filling Right Hand Drive Field...");
+		
+		if (rightHandDriveYes.equalsIgnoreCase(informRightHandDriveYesNo)) {
+			browser.findElement(By.id(idRightHandDriveYesIcon)).click();
+		}
+		else if (rightHandDriveNo.equalsIgnoreCase(informRightHandDriveYesNo)) {
+			browser.findElement(By.id(idRightHandDriveNoIcon)).click();
+		}
+		else {
+			System.out.println("You should inform: Yes or No!");
+		}
+		
 		
 		System.out.println("• Filling Fuel Type Field...");
 		
