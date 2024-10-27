@@ -4,11 +4,11 @@ Feature: Enter Vehicle Data
   @scenario-success-car-registered
   Scenario Outline: Car Registered Success
     Given I want to register my car in the Enter Vehicle Data <url>
-    When I fill all fields <carName>, <carModel>, <cylinderCapacity>, <enginePerformance>, <dateManufacture>, <seatsNumber>, <rightDrive>, <numberSeats>, <fuelType>, <payload>, <totalWeight>, <listPrice>, <licensePlateNumber>, <annualMileage>
+    When I fill all fields <carName>, <model>, <cylinderCapacity>, <enginePerformance>, <dateManufacture>, <mumberSeats>, <rightHandDrive>, <numberSeatsMotor>, <fuelType>, <payload>, <totalWeight>, <listPrice>, <licensePlateNumber>, <annualMileage>
     And I confirm action
     Then the system will show the success message <successMessage>
 
     Examples: 
-      | url                                       | carName | carModel | cylinderCapacity | enginePerformance | dateManufacture | seatsNumber | rightDrive | numberSeats | fuelType | payload | totalWeight | listPrice | licensePlateNumber | annualMileage | successMessage |
-      | "www.sampleapp.tricentis.com/101/app.php" | "audi"  | "moped"  | 700              | 300               | 10262024        | 6           | "yes"      | 3           | "petrol" | 500     | 600         | 4000      | "BOND-007"         | 0             | ""             |
+      | url                                       | carName | model    | cylinderCapacity | enginePerformance | dateManufacture | mumberSeats | rightHandDrive | numberSeatsMotor | fuelType | payload | totalWeight | listPrice | licensePlateNumber | annualMileage | successMessage |
+      | "www.sampleapp.tricentis.com/101/app.php" | "audi"  | "moped"  | 700              | 300               | 10262024        | 6           | "yes"          | 3                | "petrol" | 500     | 600         | 4000      | "BOND-007"         | 0             | ""             |
         
