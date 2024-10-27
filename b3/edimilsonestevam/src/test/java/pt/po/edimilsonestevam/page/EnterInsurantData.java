@@ -1,5 +1,6 @@
 package pt.po.edimilsonestevam.page;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import pt.po.edimilsonestevam.setup.Base;
@@ -11,14 +12,14 @@ public class EnterInsurantData extends Base{
 
 	}
 
-	public void fillEnterInsurantData() {
+	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth) {
 		
 		System.out.println("Enter Insurant Data");
 		
 		String idFirstName = "firstname";
 		String idLastName = "lastname";
 		String idDateBirth = "birthdate";
-		String idGenderMaale = "gendermale";
+		String idGenderMale = "gendermale";
 		String idGenderFemale = "genderfemale";
 		String idStreetAddress = "streetaddress";
 		String idCountry = "country";
@@ -64,6 +65,42 @@ public class EnterInsurantData extends Base{
 		String idWebsite = "website";
 		String idPicture = "picture";
 		
+		
+		System.out.println("• Filling First Name Field...");
+		
+		browser.findElement(By.id(idFirstName)).click();
+		browser.findElement(By.id(idFirstName)).sendKeys(informFirstName);
+		
+		
+		System.out.println("• Filling Last Name Field...");
+		
+		browser.findElement(By.id(idLastName)).click();
+		browser.findElement(By.id(idLastName)).sendKeys(informLastName);
+		
+		
+		System.out.println("• Filling Date Birth Field...");
+		
+		browser.findElement(By.id(idDateBirth)).click();
+		browser.findElement(By.id(idDateBirth)).sendKeys(informDateBirth);
+		
+		
+		System.out.println("• Filling Gender Field...");
+		
+		System.out.println("• Filling Street Address Field...");
+		
+		System.out.println("• Filling Country Field...");
+		
+		System.out.println("• Filling Zip Code Field...");
+		
+		System.out.println("• Filling City Field...");
+		
+		System.out.println("• Filling Occupation Field...");
+		
+		System.out.println("• Filling Hobbies Field...");
+		
+		System.out.println("• Filling Website Field...");
+		
+		System.out.println("• Filling Picture Field...");
 		
 	}
 }
