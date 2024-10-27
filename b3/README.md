@@ -120,10 +120,18 @@ git push origin main
 # Observation
 You must add these three commands in Arguments tab in eclipse IDE:
 
+```python
 --add-opens java.desktop/java.awt.font=ALL-UNNAMED
+```
 
+```python
 --add-opens java.base/java.text=ALL-UNNAMED
+```
 
+```python
 --add-opens java.base/java.lang.reflect=ALL-UNNAMED
+```
 
+```python
 --add-opens java.base/java.util=ALL-UNNAMED
+```
