@@ -247,6 +247,29 @@ public class EnterVehicleData extends Base {
 		}
 		
 		
+		System.out.println("• Filling Number of Seats Motor Field...");
+		
+		switch (informNumberSeatsMotor) {
+		case 1:
+			browser.findElement(By.id(idNumbersSeatsMotorField)).click();
+			browser.findElement(By.name(numberSeatsOptionFirst)).click();	
+			break;
+		
+		case 2:
+			browser.findElement(By.id(idNumbersSeatsMotorField)).click();
+			browser.findElement(By.name(numberSeatsOptionSecond)).click();
+			break;
+		
+		case 3:
+			browser.findElement(By.id(idNumbersSeatsMotorField)).click();
+			browser.findElement(By.name(numberSeatsOptionThird)).click();
+			break;
+			
+		default:
+			System.out.println("You should inform: 1, 2 or 3!");
+		}
+		
+		
 		System.out.println("• Filling Fuel Type Field...");
 		
 		if (informFuelType.equalsIgnoreCase(fuelTypeOptionFirst)) {
