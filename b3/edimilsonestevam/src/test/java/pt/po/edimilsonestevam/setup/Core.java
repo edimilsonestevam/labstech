@@ -50,7 +50,7 @@ public class Core extends Base {
 			
             WebElement tabName = browser.findElement(By.id(idEnterInsurantDataTabName));
             String actualTabName = tabName.getText();
-            actualTabName.substring(0, 19);
+            actualTabName.substring(-3);
             assertEquals("Verifying the Tab Name", verifyTabName, actualTabName);
             
         } 

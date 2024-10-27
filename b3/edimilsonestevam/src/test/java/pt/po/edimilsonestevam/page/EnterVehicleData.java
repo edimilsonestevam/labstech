@@ -108,6 +108,10 @@ public class EnterVehicleData extends Base {
 		String xpathNumberSeatsOptionEighth = "//option[@value='8']";
 		String xpathNumberSeatsOptionNinth = "//option[@value='9']";
 		
+		String xpathNumberSeatsMotorOptionFirst = "//select[@id='numberofseatsmotorcycle']/option[@value='1']";
+		String xpathNumberSeatsMotorOptionSecond = "//select[@id='numberofseatsmotorcycle']/option[@value='2']";
+		String xpathNumberSeatsMotorOptionThird = "//select[@id='numberofseatsmotorcycle']/option[@value='3']";
+		
 		String fuelTypeOptionFirst = "Petrol";
 		String xpathFuelOptionFirst = "//option[@value='Petrol']";
 		
@@ -336,19 +340,19 @@ public class EnterVehicleData extends Base {
 		switch (informNumberSeatsMotor) {
 		case 1:
 			browser.findElement(By.id(idNumbersSeatsMotorField)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionFirst)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsMotorOptionFirst)));
 			element.click();	
 			break;
 		
 		case 2:
 			browser.findElement(By.id(idNumbersSeatsMotorField)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionSecond)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsMotorOptionSecond)));
 			element.click();
 			break;
 		
 		case 3:
 			browser.findElement(By.id(idNumbersSeatsMotorField)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsOptionThird)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathNumberSeatsMotorOptionThird)));
 			element.click();
 			break;
 			
