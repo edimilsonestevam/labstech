@@ -93,10 +93,10 @@ public class EnterVehicleData extends Base {
 		String xpathModelOptionFourth = "//option[@value='Motorcycle']";
 		
 		String rightHandDriveYes = "Yes";
-		String xPathRightHandDriveYes = "//option[@value='Yes']";
+		String xPathRightHandDriveYes = "//label[text()='Yes']";
 		
 		String rightHandDriveNo = "No";
-		String xPathRightHandDriveNo = "//option[@value='No']";
+		String xPathRightHandDriveNo = "//label[text()='No']";
 		
 		String xpathNumberSeatsOptionFirst = "//option[@value='1']";;
 		String xpathNumberSeatsOptionSecond = "//option[@value='2']"; 
