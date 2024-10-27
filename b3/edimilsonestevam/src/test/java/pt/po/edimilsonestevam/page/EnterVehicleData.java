@@ -2,6 +2,9 @@ package pt.po.edimilsonestevam.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pt.po.edimilsonestevam.setup.Base;
 
@@ -33,20 +36,49 @@ public class EnterVehicleData extends Base {
 		String idAnnualMileageField = "annualmileage";
 		
 		String carOptionFirst = "Audi";
-		String carOptionSecond = "BMW"; 
-		String carOptionThird = "Ford"; 
+		String xpathCarOptionFirst = "//option[@value='Audi']";
+		
+		String carOptionSecond = "BMW";
+		String xpathCarOptionSecond = "//option[@value='BWM']";
+		
+		String carOptionThird = "Ford";
+		String xpathCarOptionThird = "//option[@value='Ford']";
+		
 		String carOptionFourth = "Honda";
+		String xpathCarOptionFourth = "//option[@value='Honda']";
+		
 		String carOptionFifth = "Mazda";
+		String xpathCarOptionFifth = "//option[@value='Mazda']";
+		
 		String carOptionSixth = "Mercedes Benz";
+		String xpathCarOptionSixth = "//option[@value='Mercedes Benz']";
+		
 		String carOptionSeventh = "Nissan";
+		String xpathCarOptionSeventh = "//option[@value='Nissan']";
+		
 		String carOptionEighth = "Opel";
+		String xpathCarOptionEighth = "//option[@value='Opel']";
+		
 		String carOptionNinth = "Porsche";
+		String xpathCarOptionNinth = "//option[@value='Porsche']";
+		
 		String carOptionTenth = "Renault";
+		String xpathCarOptionTenth = "//option[@value='Renault']";
+		
 		String carOptionEleventh = "Skoda";
+		String xpathCarOptionEleventh = "//option[@value='Skoda']";
+		
 		String carOptionTwelfth = "Suzuki";
+		String xpathCarOptionTwelfth = "//option[@value='Suzuki']";
+		
 		String carOptionThirteenth = "Toyota";
+		String xpathCarOptionThirteenth = "//option[@value='Toyota']";
+		
 		String carOptionFourteenth = "Volkswagen";
+		String xpathCarOptionFourteenth = "//option[@value='Volkswagen']";
+		
 		String carOptionFifteenth = "Volvo";
+		String xpathCarOptionFifteenth = "//option[@value='Volvo']";
 		
 		String modelOptionFirst = "Scooter";
 		String modelOptionSecond = "Three-Wheeler"; 
@@ -72,68 +104,86 @@ public class EnterVehicleData extends Base {
 		String fuelTypeOptionFourth = "Gas";
 		String fuelTypeOptionFifth = "Other";
 		
+		WebElement element = null;	
+		WebDriverWait wait = new WebDriverWait(browser, 3);
+		
 		
 		System.out.println("• Filling Make Field...");
 		
 		if (informCarName.equalsIgnoreCase(carOptionFirst)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionFirst)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFirst)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionSecond)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionSecond)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionSecond)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionThird)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionThird)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionThird)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionFourth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionFourth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFourth)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionFifth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionFifth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFifth)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionSixth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionSixth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionSixth)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionSeventh)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionSeventh)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionSeventh)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionEighth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionEighth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionEighth)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionNinth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionNinth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionNinth)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionTenth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionTenth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionTenth)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionEleventh)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionEleventh)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionEleventh)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionTwelfth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionTwelfth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionTwelfth)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionThirteenth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionThirteenth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionThirteenth)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionFourteenth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionFourteenth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFourteenth)));
+			element.click();
 		}
 		else if (informCarName.equalsIgnoreCase(carOptionFifteenth)) {
 			browser.findElement(By.id(idMakeField)).click();
-			browser.findElement(By.name(carOptionFifteenth)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFifteenth)));
+			element.click();
 		}
 		else {
 			System.out.println("You should inform: Audi, BMW, Ford, Honda, Mazda, Mercedes Benz, Nissan, Opel, Porsche, Renault, Skoda, Suzuki, Toyota, Volkswagen or Volvo!");
