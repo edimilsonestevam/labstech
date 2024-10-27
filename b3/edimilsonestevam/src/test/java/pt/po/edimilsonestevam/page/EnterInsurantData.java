@@ -23,26 +23,28 @@ public class EnterInsurantData extends Base{
 		String idStreetAddress = "streetaddress";
 		String idCountry = "country";
 		
-		String xpathCountryFirst = "//option[@value='Afghanistan']";
-		String xpathCountrySecond = "//option[@value='Albania']";
-		String xpathCountryThird = "//option[@value='Algeria']";
-		String xpathCountryFourth = "//option[@value='American Samoa']";
-		String xpathCountryFifth = "//option[@value='Andorra']";
-		String xpathCountrySixth = "//option[@value='Angola']";
-		String xpathCountrySeventh = "//option[@value='Anguilla']";
-		String xpathCountryEighth = "//option[@value='Antarctica']";
-		String xpathCountryNineth = "//option[@value='Antigua and Barbuda']";
-		String xpathCountryTenth = "//option[@value='Argentina']";
-		String xpathCountryEleventh = "//option[@value='Armenia']";
-		String xpathCountryTwelfth = "//option[@value='Aruba']";
-		String xpathCountryThirteenth = "//option[@value='Australia']";
-		String xpathCountryFourteenth = "//option[@value='Austria']";
-		String xpathCountryFifteenth = "//option[@value='Azerbaijan']";
-		String xpathCountrySixteenth = "//option[@value='Bahamas']";
-		String xpathCountrySeventeenth = "//option[@value='Bahrain']";
-		String xpathCountryEighteenth = "//option[@value='Bangladesh']";
-		String xpathCountryNineteenth = "//option[@value='Barbados']";
-		String xpathCountryTwentieth = "//option[@value='Belarus']";
+		String xpathCountryFirst = "//option[@value='Angola']";
+		String xpathCountrySecond = "//option[@value='Argentina']";
+		String xpathCountryThird = "//option[@value='Australia']";
+		String xpathCountryFourth = "//option[@value='Austria']";
+		String xpathCountryFifth = "//option[@value='Belgium']";
+		String xpathCountrySixth = "//option[@value='Brazil']";
+		String xpathCountrySeventh = "//option[@value='Canada']";
+		String xpathCountryEighth = "//option[@value='Chile']";
+		String xpathCountryNineth = "//option[@value='China']";
+		String xpathCountryTenth = "//option[@value='Colombia']";
+		String xpathCountryEleventh = "//option[@value='Costa Rica']";
+		String xpathCountryTwelfth = "//option[@value='Croatia']";
+		String xpathCountryThirteenth = "//option[@value='Czech Republic']";
+		String xpathCountryFourteenth = "//option[@value='Denmark']";
+		String xpathCountryFifteenth = "//option[@value='Ecuador']";
+		String xpathCountrySixteenth = "//option[@value='Estonia']";
+		String xpathCountrySeventeenth = "//option[@value='Finland']";
+		String xpathCountryEighteenth = "//option[@value='France']";
+		String xpathCountryNineteenth = "//option[@value='Georgia']";
+		String xpathCountryTwentieth = "//option[@value='Germany']";
+		String xpathCountryTwentyFirst = "//option[@value='Hong Kong']";
 		
+				
 	}
 }
