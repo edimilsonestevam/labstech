@@ -15,7 +15,7 @@ public class EnterVehicleData extends Base {
 		
 	}
 
-	public void fillEnterVehicleDataRegister(String informCarName, String informModel, int informCylinderCapacity, int informEnginePerformance, String informDateManufacture, int informNumberSeats, String informRightHandDriveYesNo, int informNumberSeatsMotor, String informFuelType, int informPayload, int informTotalWeight, int informListPrice, String informLicensePlateNumber, int informAnnualMileage) {
+	public void fillEnterVehicleDataRegister(String informCarName, String informModel, String informCylinderCapacity, String informEnginePerformance, String informDateManufacture, int informNumberSeats, String informRightHandDriveYesNo, int informNumberSeatsMotor, String informFuelType, String informPayload, String informTotalWeight, String informListPrice, String informLicensePlateNumber, String informAnnualMileage) {
 		
 		System.out.println("Enter Vehicle Data");
 		
@@ -243,13 +243,13 @@ public class EnterVehicleData extends Base {
 		System.out.println("• Filling Cylinder Capacity Field...");
 		
 		browser.findElement(By.id(idCylinderCapacityField)).click();
-		browser.findElement(By.id(idCylinderCapacityField)).sendKeys("informCylinderCapacity");
+		browser.findElement(By.id(idCylinderCapacityField)).sendKeys(informCylinderCapacity);
 		
 		
 		System.out.println("• Filling Engine Performance Field...");
 		
 		browser.findElement(By.id(idEnginePerformanceField)).click();
-		browser.findElement(By.id(idEnginePerformanceField)).sendKeys("informEnginePerformance");
+		browser.findElement(By.id(idEnginePerformanceField)).sendKeys(informEnginePerformance);
 		
 		
 		System.out.println("• Filling Date of Manufacture Field...");
@@ -396,19 +396,19 @@ public class EnterVehicleData extends Base {
 		System.out.println("• Filling Payload Field...");
 		
 		browser.findElement(By.id(idPayloadField)).click();
-		browser.findElement(By.id(idPayloadField)).sendKeys("informPayload");
+		browser.findElement(By.id(idPayloadField)).sendKeys(informPayload);
 		
 		
 		System.out.println("• Filling Total Weight Field...");
 		
 		browser.findElement(By.id(idTotalWeightField)).click();
-		browser.findElement(By.id(idTotalWeightField)).sendKeys("informTotalWeight");
+		browser.findElement(By.id(idTotalWeightField)).sendKeys(informTotalWeight);
 		
 		
 		System.out.println("• Filling List Price Field...");
 		
 		browser.findElement(By.id(idListPriceField)).click();
-		browser.findElement(By.id(idListPriceField)).sendKeys("informListPrice");
+		browser.findElement(By.id(idListPriceField)).sendKeys(informListPrice);
 		
 		
 		System.out.println("• Filling License Plate Number Field...");
@@ -420,7 +420,7 @@ public class EnterVehicleData extends Base {
 		System.out.println("• Filling Annual Mileage Field...");
 		
 		browser.findElement(By.id(idAnnualMileageField)).click();
-		browser.findElement(By.id(idAnnualMileageField)).sendKeys("informAnnualMileage");
+		browser.findElement(By.id(idAnnualMileageField)).sendKeys(informAnnualMileage);
 		
 	}
 	

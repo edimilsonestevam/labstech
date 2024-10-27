@@ -20,10 +20,10 @@ public class TestSteps {
 		
 	}
 
-	@When("^I fill all fields \"([^\"]*)\", \"([^\"]*)\", (\\d+), (\\d+), \"([^\"]*)\", (\\d+), \"([^\"]*)\", (\\d+), \"([^\"]*)\", (\\d+), (\\d+), (\\d+), \"([^\"]*)\", (\\d+)$")
-	public void i_fill_all_fields(String carName, String model, int mumberSeats, int enginePerformance, String dateManufacture, int numberSeats, String rightHandDrive, int numberSeatsMotor, String fuelType, int payload, int totalWeight, int listPrice, String licensePlateNumber, int annualMileage) throws Throwable {
+	@When("^I fill all fields \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", (\\d+), \"([^\"]*)\", (\\d+), \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
+	public void i_fill_all_fields(String carName, String model, String cylinderCapacity, String enginePerformance, String dateManufacture, int mumberSeats, String rightHandDrive, int numberSeatsMotor, String fuelType, String payload, String totalWeight, String listPrice, String annualMileage, String tabName) throws Throwable {
 
-		new EnterVehicleData(browser).fillEnterVehicleDataRegister(carName, model, mumberSeats, enginePerformance, dateManufacture, numberSeats, rightHandDrive, numberSeatsMotor, fuelType, payload, totalWeight, listPrice, licensePlateNumber, annualMileage);
+		new EnterVehicleData(browser).fillEnterVehicleDataRegister(carName, model, cylinderCapacity, enginePerformance, dateManufacture, mumberSeats, rightHandDrive, numberSeatsMotor, fuelType, payload, totalWeight, listPrice, annualMileage, tabName);
 		
 	}
 	
