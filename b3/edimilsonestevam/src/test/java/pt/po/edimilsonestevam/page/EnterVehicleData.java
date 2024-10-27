@@ -25,8 +25,8 @@ public class EnterVehicleData extends Base {
 		String idEnginePerformanceField = "engineperformance";
 		String idDateManufactureField = "dateofmanufacture";
 		String idNumberSeatsField = "numberofseats";
-		String idRightHandDriveYesIcon = "righthanddriveyes";
-		String idRightHandDriveNoIcon = "righthanddriveno";
+		String idRightHandDriveYesRadio = "righthanddriveyes";
+		String idRightHandDriveNoRadio = "righthanddriveno";
 		String idNumbersSeatsMotorField = "numberofseatsmotorcycle";
 		String idFuelTypeField = "fuel";
 		String idPayloadField = "payload";
@@ -93,7 +93,10 @@ public class EnterVehicleData extends Base {
 		String xpathModelOptionFourth = "//option[@value='Motorcycle']";
 		
 		String rightHandDriveYes = "Yes";
+		String xPathRightHandDriveYes = "//option[@value='Yes']";
+		
 		String rightHandDriveNo = "No";
+		String xPathRightHandDriveNo = "//option[@value='No']";
 		
 		String xpathNumberSeatsOptionFirst = "//option[@value='1']";;
 		String xpathNumberSeatsOptionSecond = "//option[@value='2']"; 
@@ -307,10 +310,10 @@ public class EnterVehicleData extends Base {
 		System.out.println("• Filling Right Hand Drive Field...");
 		
 		if (rightHandDriveYes.equalsIgnoreCase(informRightHandDriveYesNo)) {
-			browser.findElement(By.id(idRightHandDriveYesIcon)).click();
+			browser.findElement(By.xpath(xPathRightHandDriveYes)).click();
 		}
 		else if (rightHandDriveNo.equalsIgnoreCase(informRightHandDriveYesNo)) {
-			browser.findElement(By.id(idRightHandDriveNoIcon)).click();
+			browser.findElement(By.xpath(xPathRightHandDriveNo)).click();
 		}
 		else {
 			System.out.println("You should inform: Yes or No!");
