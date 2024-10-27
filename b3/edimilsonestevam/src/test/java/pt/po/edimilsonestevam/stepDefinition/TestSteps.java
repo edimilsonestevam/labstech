@@ -16,7 +16,7 @@ public class TestSteps {
 	@Given("^I want to register my car in the Enter Vehicle Data \"([^\"]*)\"$")
 	public void i_want_to_register_my_car_in_the_Enter_Vehicle_Data(String url) throws Throwable {
 		
-		browser = new Configuration().browserOpen("firefox", url, "yes");
+		browser = new Configuration().browserOpen("firefox", url, "no");
 		
 	}
 

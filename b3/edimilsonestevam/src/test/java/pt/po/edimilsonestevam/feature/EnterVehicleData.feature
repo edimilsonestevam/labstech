@@ -9,6 +9,6 @@ Feature: Enter Vehicle Data
     Then the system will show <tabName> tab
 
     Examples: 
-      | url                                       | carName | model    | cylinderCapacity | enginePerformance | dateManufacture | mumberSeats | rightHandDrive | numberSeatsMotor | fuelType | payload | totalWeight | listPrice | licensePlateNumber | annualMileage | tabName               |
-      | "www.sampleapp.tricentis.com/101/app.php" | "audi"  | "moped"  | 700              | 300               | 10262024        | 6           | "yes"          | 3                | "petrol" | 500     | 600         | 4000      | "BOND-007"         | 100           | "Enter Insurant Data" |
+      | url                                   | carName | model    | cylinderCapacity | enginePerformance | dateManufacture | mumberSeats | rightHandDrive | numberSeatsMotor | fuelType | payload | totalWeight | listPrice | licensePlateNumber | annualMileage | tabName               |
+      | "sampleapp.tricentis.com/101/app.php" | "audi"  | "moped"  | 700              | 300               | 10262024        | 6           | "yes"          | 3                | "petrol" | 500     | 600         | 4000      | "BOND-007"         | 100           | "Enter Insurant Data" |
         
