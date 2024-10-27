@@ -116,3 +116,14 @@ git commit –m "I am adding all project in the main repository."
 ```python
 git push origin main
 ```
+
+# Observation
+You must add these three commands in Arguments tab in eclipse IDE.
+
+--add-opens java.desktop/java.awt.font=ALL-UNNAMED
+
+--add-opens java.base/java.text=ALL-UNNAMED
+
+--add-opens java.base/java.lang.reflect=ALL-UNNAMED
+
+--add-opens java.base/java.util=ALL-UNNAMED
