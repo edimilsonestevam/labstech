@@ -31,14 +31,14 @@ public class TestSteps {
 	@When("^I confirm register action$")
 	public void i_confirm_register_action() throws Throwable {
 
-		new Core(browser).clickNextButton();
+		new Core(browser).clickInsurantDataNextButton();
 		
 	}
 	
 	@Then("^the system will show \"([^\"]*)\" Enter Insurant Data tab$")
 	public void the_system_will_show_Enter_Insurant_Data_tab(String tabName) throws Throwable {
 
-		new Core(browser).verifyTab(tabName);
+		new Core(browser).verifyInsurantDataTab(tabName);
 		new Configuration().browserClose(browser);
 		
 	}
@@ -61,14 +61,14 @@ public class TestSteps {
 	@When("^I confirm insurance action$")
 	public void i_confirm_insurance_action() throws Throwable {
 		
-		new Core(browser).clickNextButton();
+		new Core(browser).clickProductDataNextButton();
 		
 	}
 	
 	@Then("^the system will show \"([^\"]*)\" Enter Product Data tab$")
 	public void the_system_will_show_Enter_Product_Data_tab(String tabName) throws Throwable {
 
-		new Core(browser).verifyTab(tabName);
+		new Core(browser).verifyProductDataTab(tabName);
 		new Configuration().browserClose(browser);
 		
 	}

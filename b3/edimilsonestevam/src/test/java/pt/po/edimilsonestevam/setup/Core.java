@@ -26,12 +26,21 @@ public class Core extends Base {
 		
 	}
 	
-	public void clickNextButton() {
+	public void clickInsurantDataNextButton() {
 		
-		System.out.println("• Clicking Next Button...");
+		System.out.println("• Clicking Insurant Data Next Button...");
 		
-		String idNextButton = "nextenterinsurantdata";
-		browser.findElement(By.id(idNextButton)).click();
+		String idInsurantDataNextButton = "nextenterinsurantdata";
+		browser.findElement(By.id(idInsurantDataNextButton)).click();
+		
+	}
+	
+	public void clickProductDataNextButton() {
+		
+		System.out.println("• Clicking Product Data Next Button...");
+		
+		String idProductDataNextButton = "nextenterproductdata";
+		browser.findElement(By.id(idProductDataNextButton)).click();
 		
 	}
 	
@@ -44,15 +53,40 @@ public class Core extends Base {
 		
 	}
 	
-	public void verifyTab(String verifyTabName) throws Exception {
+	public void verifyInsurantDataTab(String verifyTabName) throws Exception {
 		
-		System.out.println("• Verifying Tab Name...");
+		System.out.println("• Verifying Insurant Data Tab Name...");
 		
 		try {
            
 			String idEnterInsurantDataTabName = "enterinsurantdata";
 			
             WebElement tabName = browser.findElement(By.id(idEnterInsurantDataTabName));
+            String actualTabName = tabName.getText()
+            										.replaceAll("\\s+", " ")
+            										.replaceAll("\\[\\s+", "[")
+            										.replaceAll("\\s+\\]", "]")
+            										.trim();
+            assertEquals("Verifying the Tab Name", verifyTabName, actualTabName);
+            
+        } 
+		catch (NoSuchElementException e) {
+			
+            throw new Exception("Success message element not found.", e);
+            
+        }
+		
+	}
+	
+	public void verifyProductDataTab(String verifyTabName) throws Exception {
+		
+		System.out.println("• Verifying Product Data Tab Name...");
+		
+		try {
+           
+			String idEnterProductDataTabName = "enterproductdata";
+			
+            WebElement tabName = browser.findElement(By.id(idEnterProductDataTabName));
             String actualTabName = tabName.getText()
             										.replaceAll("\\s+", " ")
             										.replaceAll("\\[\\s+", "[")
