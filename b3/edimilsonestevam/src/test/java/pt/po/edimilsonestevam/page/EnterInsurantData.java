@@ -15,7 +15,7 @@ public class EnterInsurantData extends Base{
 
 	}
 
-	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress, String informCountry, String informZipCode, String informCity) {
+	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress, String informCountry, String informZipCode, String informCity, String informOccupation) {
 		
 		System.out.println("Enter Insurant Data");
 		
@@ -100,10 +100,20 @@ public class EnterInsurantData extends Base{
 		String idCity = "city";
 		
 		String idOccupation = "occupation";
+		
+		String occupationFirst = "Employee";
 		String xpathOccupationFirst = "//option[@value='Employee']";
+		
+		String occupationSecond = "Public Official";
 		String xpathOccupationSecond = "//option[@value='Public Official']";
+		
+		String occupationThird = "Public Official";
 		String xpathOccupationThird = "//option[@value='Farmer']";
+		
+		String occupationFourth = "Unemployed";
 		String xpathOccupationFourth = "//option[@value='Unemployed']";
+		
+		String occupationFifth = "Selfemployed";
 		String xpathOccupationFifth = "//option[@value='Selfemployed']";
 		
 		String idHobbiesSpeeding = "speeding";
@@ -158,7 +168,7 @@ public class EnterInsurantData extends Base{
 		browser.findElement(By.id(idStreetAddress)).sendKeys(informStreetAddress);
 		
 		
-		System.out.println("• Filling Country Field..."); //HERE
+		System.out.println("• Filling Country Field...");
 		
 		if (informCountry.equalsIgnoreCase(countryFirst)) {
 			browser.findElement(By.id(idCountry)).click();
@@ -282,7 +292,37 @@ public class EnterInsurantData extends Base{
 		browser.findElement(By.id(idCity)).sendKeys(informCity);
 		
 		
-		System.out.println("• Filling Occupation Field...");
+		System.out.println("• Filling Occupation Field..."); //HERE
+		
+		if (informOccupation.equalsIgnoreCase(occupationFirst)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFirst)));
+			element.click();
+		}
+		else if (informOccupation.equalsIgnoreCase(occupationSecond)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationSecond)));
+			element.click();
+		}
+		else if (informOccupation.equalsIgnoreCase(occupationThird)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationThird)));
+			element.click();
+		}
+		else if (informOccupation.equalsIgnoreCase(occupationFourth)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFourth)));
+			element.click();
+		}
+		else if (informOccupation.equalsIgnoreCase(occupationFifth)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFifth)));
+			element.click();
+		}
+		else {
+			System.out.println("You should inform: Employee, Public Official, Farmer, Unemployed or Selfemployed!");
+		}
+		
 		
 		System.out.println("• Filling Hobbies Field...");
 		
