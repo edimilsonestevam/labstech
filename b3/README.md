@@ -54,6 +54,8 @@ catch (Exception ex)
 | 3     | In the third variable, you can be more specific and use the double type. |
 | 4     | You are performing a calculation that will always have the result zero.  |
 
+"Note: when you try to use this method, the following error message will be displayed: `Java.lang.ExceptionInInitializerError`."
+
 # Fourth
 How do I obtain the names of all people born from 1980 onwards from the collection below?
 
