@@ -126,19 +126,19 @@ public class EnterInsurantData extends Base{
 		String xpathOccupationFifth = "//option[@value='Selfemployed']";
 		
 		String hobbiesSpeeding = "Speeding";
-		String xpathHobbiesSpeeding = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[1]";
+		String xpathHobbiesSpeeding = "//form[@id='insurance-form']//section[contains(@class, 'idealsteps-step')]//label[1]";
 		
 		String hobbiesBungeeJumping = "Bungee Jumping";
-		String xpathHobbiesBungeeJumping = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[2]";
+		String xpathHobbiesBungeeJumping = "//form[@id='insurance-form']//section[contains(@class, 'idealsteps-step')]//label[2]";
 		
 		String hobbiesCliffDiving = "Cliff Diving";
-		String xpathHobbiesCliffDiving = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[3]";
+		String xpathHobbiesCliffDiving = "//form[@id='insurance-form']//section[contains(@class, 'idealsteps-step')]//label[3]";
 		
 		String hobbiesSkydiving = "Skydiving";
-		String xpathHobbiesSkydiving = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[4]";
+		String xpathHobbiesSkydiving = "//form[@id='insurance-form']//section[contains(@class, 'idealsteps-step')]//label[4]";
 		
 		String hobbiesOther = "Other";
-		String xpathHobbiesOther = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[5]";
+		String xpathHobbiesOther = "//form[@id='insurance-form']//section[contains(@class, 'idealsteps-step')]//label[5]";
 		
 		String idWebsite = "website";
 		
@@ -342,7 +342,7 @@ public class EnterInsurantData extends Base{
 		}
 		
 		
-		System.out.println("• Filling Hobbies Field..."); //HERE
+		System.out.println("• Filling Hobbies Field...");
 		
 		if (informHobbies.equalsIgnoreCase(hobbiesSpeeding)) {
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathHobbiesSpeeding)));
