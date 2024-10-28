@@ -9,5 +9,5 @@ Feature: Enter Insurant Data
     Then the system will show <tabName> Enter Product Data tab
 
     Examples: 
-      | url                                   | firstName | lastName   | dateBirth    | gender   | streetAddress   | country  | zipCode  | city      | occupation   | hobbies     | website               | tabName                | 
-      | "sampleapp.tricentis.com/101/app.php" | "Eduarda" | "Mendonca" | "10/28/2006" | "Female" | "2236 31 St SW" | "Canada" | "T3E2N4" | "Calgary" | "Unemployed" | "Skydiving" | "www.duda-alegria.ca" | "Enter Product Data 6" |
+      | url                                   | firstName | lastName   | dateBirth    | gender   | streetAddress   | country  | zipCode  | city      | occupation   | hobbies     | website       | tabName                | 
+      | "sampleapp.tricentis.com/101/app.php" | "Eduarda" | "Mendonca" | "10/28/2006" | "Female" | "2236 31 St SW" | "Canada" | "T3E2N4" | "Calgary" | "Unemployed" | "Skydiving" | "www.duda.ca" | "Enter Product Data 6" |
