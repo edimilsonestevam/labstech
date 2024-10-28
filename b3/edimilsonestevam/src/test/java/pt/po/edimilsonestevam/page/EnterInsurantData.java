@@ -126,19 +126,19 @@ public class EnterInsurantData extends Base{
 		String xpathOccupationFifth = "//option[@value='Selfemployed']";
 		
 		String hobbiesSpeeding = "Speeding";
-		String idHobbiesSpeeding = "speeding";
+		String xpathHobbiesSpeeding = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[1]";
 		
-		String hobbiesBungeejumping = "Bungee Jumping";
-		String idHobbiesBungeejumping = "bungeejumping";
+		String hobbiesBungeeJumping = "Bungee Jumping";
+		String xpathHobbiesBungeeJumping = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[2]";
 		
-		String hobbiesCliffdiving = "Cliff Diving";
-		String idHobbiesCliffdiving = "cliffdiving";
+		String hobbiesCliffDiving = "Cliff Diving";
+		String xpathHobbiesCliffDiving = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[3]";
 		
 		String hobbiesSkydiving = "Skydiving";
-		String idHobbiesSkydiving = "skydiving";
+		String xpathHobbiesSkydiving = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[4]";
 		
 		String hobbiesOther = "Other";
-		String idHobbiesOther = "other";
+		String xpathHobbiesOther = "//body[@data-new-gr-c-s-check-loaded='8.912.0']/div[@id='site-content']/div[@class='page']/div[@class='fullwidth-block']/div[@class='container']/div[@class='idealsteps-container']/form[@id='insurance-form']/div[@class='idealsteps-wrap']/section[@class='idealsteps-step']/div[@class='field idealforms-field idealforms-field-checkbox invalid']/p[@class='group']/label[5]";
 		
 		String idWebsite = "website";
 		
@@ -345,23 +345,23 @@ public class EnterInsurantData extends Base{
 		System.out.println("• Filling Hobbies Field..."); //HERE
 		
 		if (informHobbies.equalsIgnoreCase(hobbiesSpeeding)) {
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesSpeeding)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathHobbiesSpeeding)));
 			element.click();
 		}
-		else if (informHobbies.equalsIgnoreCase(hobbiesBungeejumping)) {
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesBungeejumping)));
+		else if (informHobbies.equalsIgnoreCase(hobbiesBungeeJumping)) {
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathHobbiesBungeeJumping)));
 			element.click();
 		}
-		else if (informHobbies.equalsIgnoreCase(hobbiesCliffdiving)) {
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesCliffdiving)));
+		else if (informHobbies.equalsIgnoreCase(hobbiesCliffDiving)) {
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathHobbiesCliffDiving)));
 			element.click();
 		}
 		else if (informHobbies.equalsIgnoreCase(hobbiesSkydiving)) {
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesSkydiving)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathHobbiesSkydiving)));
 			element.click();
 		}
 		else if (informHobbies.equalsIgnoreCase(hobbiesOther)) {
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesOther)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathHobbiesOther)));
 			element.click();
 		}
 		else {
