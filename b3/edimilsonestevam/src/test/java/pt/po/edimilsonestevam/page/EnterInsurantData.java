@@ -57,8 +57,8 @@ public class EnterInsurantData extends Base{
 		String countryEighth = "Chile";
 		String xpathCountryEighth = "//option[@value='Chile']";
 		
-		String countryNineth = "China";
-		String xpathCountryNineth = "//option[@value='China']";
+		String countryNinth = "China";
+		String xpathCountryNinth = "//option[@value='China']";
 		
 		String countryTenth = "Colombia";
 		String xpathCountryTenth = "//option[@value='Colombia']";
@@ -158,81 +158,81 @@ public class EnterInsurantData extends Base{
 		browser.findElement(By.id(idStreetAddress)).sendKeys(informStreetAddress);
 		
 		
-		System.out.println("• Filling Country Field...");
+		System.out.println("• Filling Country Field..."); //HERE
 		
-		if (informCountry.equalsIgnoreCase(carOptionFirst)) {
+		if (informCountry.equalsIgnoreCase(countryFirst)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFirst)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryFirst)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionSecond)) {
+		else if (informCountry.equalsIgnoreCase(countrySecond)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionSecond)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountrySecond)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionThird)) {
+		else if (informCountry.equalsIgnoreCase(countryThird)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionThird)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryThird)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionFourth)) {
+		else if (informCountry.equalsIgnoreCase(countryFourth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFourth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryFourth)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionFifth)) {
+		else if (informCountry.equalsIgnoreCase(countryFifth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFifth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryFifth)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionSixth)) {
+		else if (informCountry.equalsIgnoreCase(countrySixth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionSixth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountrySixth)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionSeventh)) {
+		else if (informCountry.equalsIgnoreCase(countrySeventh)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionSeventh)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountrySeventh)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionEighth)) {
+		else if (informCountry.equalsIgnoreCase(countryEighth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionEighth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryEighth)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionNinth)) {
+		else if (informCountry.equalsIgnoreCase(countryNinth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionNinth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryNinth)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionTenth)) {
+		else if (informCountry.equalsIgnoreCase(countryTenth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionTenth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryTenth)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionEleventh)) {
+		else if (informCountry.equalsIgnoreCase(countryEleventh)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionEleventh)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryEleventh)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionTwelfth)) {
+		else if (informCountry.equalsIgnoreCase(countryTwelfth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionTwelfth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryTwelfth)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionThirteenth)) {
+		else if (informCountry.equalsIgnoreCase(countryThirteenth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionThirteenth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryThirteenth)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionFourteenth)) {
+		else if (informCountry.equalsIgnoreCase(countryFourteenth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFourteenth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryFourteenth)));
 			element.click();
 		}
-		else if (informCountry.equalsIgnoreCase(carOptionFifteenth)) {
+		else if (informCountry.equalsIgnoreCase(countryFifteenth)) {
 			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCarOptionFifteenth)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryFifteenth)));
 			element.click();
 		}
 		else {
