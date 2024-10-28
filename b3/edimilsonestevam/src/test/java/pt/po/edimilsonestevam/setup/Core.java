@@ -110,7 +110,7 @@ public class Core extends Base {
 	
 	public void takeScreenShot(String featureName) {
 		
-		System.out.println("• Taking Screenshot...");
+		System.out.println("• Taking ScreenShot...");
 		
 		String EnterInsurantData = "Enter Insurant Data";
 		String EnterProductData = "Enter Product Data";
