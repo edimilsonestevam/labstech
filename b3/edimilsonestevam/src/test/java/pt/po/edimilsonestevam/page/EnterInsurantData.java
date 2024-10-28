@@ -235,6 +235,36 @@ public class EnterInsurantData extends Base{
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryFifteenth)));
 			element.click();
 		}
+		else if (informCountry.equalsIgnoreCase(countrySixteenth)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountrySixteenth)));
+			element.click();
+		}
+		else if (informCountry.equalsIgnoreCase(countrySeventeenth)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountrySeventeenth)));
+			element.click();
+		}
+		else if (informCountry.equalsIgnoreCase(countryEighteenth)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryEighteenth)));
+			element.click();
+		}
+		else if (informCountry.equalsIgnoreCase(countryNineteenth)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryNineteenth)));
+			element.click();
+		}
+		else if (informCountry.equalsIgnoreCase(countryTwentieth)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryTwentieth)));
+			element.click();
+		}
+		else if (informCountry.equalsIgnoreCase(countryTwentyFirst)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathCountryTwentyFirst)));
+			element.click();
+		}
 		else {
 			System.out.println("You should inform: Angola, Argentina, Australia, Austria, Belgium, Brazil, Canada, Chile, China, Colombia, Costa Rica, Croatia, Czech Republic, Denmark, Ecuador, Estonia, Finland, France, Georgia, Germany or Hong Kong!");
 		}
