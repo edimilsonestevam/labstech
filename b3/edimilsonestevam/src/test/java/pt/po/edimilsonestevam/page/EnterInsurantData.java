@@ -335,29 +335,24 @@ public class EnterInsurantData extends Base{
 		
 		System.out.println("• Filling Hobbies Field..."); //HERE
 		
-		if (informHobbies.equalsIgnoreCase(occupationFirst)) {
-			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFirst)));
+		if (informHobbies.equalsIgnoreCase(hobbiesSpeeding)) {
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesSpeeding)));
 			element.click();
 		}
-		else if (informHobbies.equalsIgnoreCase(occupationSecond)) {
-			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationSecond)));
+		else if (informHobbies.equalsIgnoreCase(hobbiesBungeejumping)) {
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesBungeejumping)));
 			element.click();
 		}
-		else if (informHobbies.equalsIgnoreCase(occupationThird)) {
-			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationThird)));
+		else if (informHobbies.equalsIgnoreCase(hobbiesCliffdiving)) {
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesCliffdiving)));
 			element.click();
 		}
-		else if (informHobbies.equalsIgnoreCase(occupationFourth)) {
-			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFourth)));
+		else if (informHobbies.equalsIgnoreCase(hobbiesSkydiving)) {
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesSkydiving)));
 			element.click();
 		}
-		else if (informHobbies.equalsIgnoreCase(occupationFifth)) {
-			browser.findElement(By.id(idCountry)).click();
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFifth)));
+		else if (informHobbies.equalsIgnoreCase(hobbiesOther)) {
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idHobbiesOther)));
 			element.click();
 		}
 		else {
