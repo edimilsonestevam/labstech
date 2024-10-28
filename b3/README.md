@@ -70,33 +70,20 @@ var people = new[] {
 ```
 
 ```python
-public List<Person> FindBornPeople(DateTime startDate)
+public List<dynamic> FindBornPeople(DateTime startDate)
 {
-	try
-	{
-		using (var db = new People(@"c:\people.mdf"))
-		{
-			string query = @"SELECT Name, DateBirth
-							FROM people
-							WHERE DateBirth >= @startDate
-							ORDER BY DateBirth DESC";
+    var people = new[] {
+        new { Name = "José", DateBirth = new DateTime(1982,03,27), Active = true},
+        new { Name = "Leandro", DateBirth = new DateTime(1978,04,03), Active = false},
+        new { Name = "Pedro", DateBirth = new DateTime(1980,05,24), Active = true}
+    };
 
-			var result = db.Database.SqlQuery<Person>(
-				query, 
-				new SqlParameter("@startDate", startDate)
-			).ToList();
-
-			return result;
-			
-		}	
-	}
-	catch (Exception ex)
-	{
-	
-		throw new Exception("Error while querying people in the database", ex);
-		
-	}
+    return people
+        .Where(p => p.DateBirth >= startDate)
+        .OrderByDescending(p => p.DateBirth)
+        .ToList<dynamic>();
 }
+
 
 var peopleBornFrom1980 = FindBornPeople(new DateTime(1980, 1, 1));
 ```
