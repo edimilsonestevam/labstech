@@ -15,7 +15,7 @@ public class EnterInsurantData extends Base{
 
 	}
 
-	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress, String informCountry, String informZipCode, String informCity, String informOccupation, String informHobbies) {
+	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress, String informCountry, String informZipCode, String informCity, String informOccupation, String informHobbies, String informWebsite) {
 		
 		System.out.println("Enter Insurant Data");
 		
@@ -132,7 +132,7 @@ public class EnterInsurantData extends Base{
 		String idHobbiesOther = "other";
 		
 		String idWebsite = "website";
-		String idPicture = "picture";
+		
 		
 		WebElement element = null;	
 		WebDriverWait wait = new WebDriverWait(browser, 3);
@@ -362,7 +362,8 @@ public class EnterInsurantData extends Base{
 		
 		System.out.println("• Filling Website Field...");
 		
-		System.out.println("• Filling Picture Field...");
+		browser.findElement(By.id(idWebsite)).click();
+		browser.findElement(By.id(idWebsite)).sendKeys(informWebsite);
 		
 	}
 }

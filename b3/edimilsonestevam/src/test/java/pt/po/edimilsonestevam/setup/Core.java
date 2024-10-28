@@ -46,6 +46,8 @@ public class Core extends Base {
 	
 	public void verifyTab(String verifyTabName) throws Exception {
 		
+		System.out.println("• Verifying Tab Name...");
+		
 		try {
            
 			String idEnterInsurantDataTabName = "enterinsurantdata";
