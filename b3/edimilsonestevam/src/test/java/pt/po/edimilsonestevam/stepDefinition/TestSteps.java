@@ -31,6 +31,7 @@ public class TestSteps {
 	@When("^I confirm register action$")
 	public void i_confirm_register_action() throws Throwable {
 
+		new Core(browser).takeScreenShot("Enter Vehicle Data");
 		new Core(browser).clickInsurantDataNextButton();
 		
 	}
@@ -61,6 +62,7 @@ public class TestSteps {
 	@When("^I confirm insurance action$")
 	public void i_confirm_insurance_action() throws Throwable {
 		
+		new Core(browser).takeScreenShot("Enter Insurant Data");
 		new Core(browser).clickProductDataNextButton();
 		
 	}
