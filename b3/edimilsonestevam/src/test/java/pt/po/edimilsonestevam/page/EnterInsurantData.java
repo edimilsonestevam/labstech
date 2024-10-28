@@ -15,7 +15,7 @@ public class EnterInsurantData extends Base{
 
 	}
 
-	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress, String informCountry, String informZipCode, String informCity, String informOccupation) {
+	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress, String informCountry, String informZipCode, String informCity, String informOccupation, String informHobbies) {
 		
 		System.out.println("Enter Insurant Data");
 		
@@ -116,10 +116,19 @@ public class EnterInsurantData extends Base{
 		String occupationFifth = "Selfemployed";
 		String xpathOccupationFifth = "//option[@value='Selfemployed']";
 		
+		String hobbiesSpeeding = "Speeding";
 		String idHobbiesSpeeding = "speeding";
+		
+		String hobbiesBungeejumping = "Bungee Jumping";
 		String idHobbiesBungeejumping = "bungeejumping";
+		
+		String hobbiesCliffdiving = "Cliff Diving";
 		String idHobbiesCliffdiving = "cliffdiving";
+		
+		String hobbiesSkydiving = "Skydiving";
 		String idHobbiesSkydiving = "skydiving";
+		
+		String hobbiesOther = "Other";
 		String idHobbiesOther = "other";
 		
 		String idWebsite = "website";
@@ -292,30 +301,30 @@ public class EnterInsurantData extends Base{
 		browser.findElement(By.id(idCity)).sendKeys(informCity);
 		
 		
-		System.out.println("• Filling Occupation Field..."); //HERE
+		System.out.println("• Filling Occupation Field...");
 		
 		if (informOccupation.equalsIgnoreCase(occupationFirst)) {
-			browser.findElement(By.id(idCountry)).click();
+			browser.findElement(By.id(idOccupation)).click();
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFirst)));
 			element.click();
 		}
 		else if (informOccupation.equalsIgnoreCase(occupationSecond)) {
-			browser.findElement(By.id(idCountry)).click();
+			browser.findElement(By.id(idOccupation)).click();
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationSecond)));
 			element.click();
 		}
 		else if (informOccupation.equalsIgnoreCase(occupationThird)) {
-			browser.findElement(By.id(idCountry)).click();
+			browser.findElement(By.id(idOccupation)).click();
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationThird)));
 			element.click();
 		}
 		else if (informOccupation.equalsIgnoreCase(occupationFourth)) {
-			browser.findElement(By.id(idCountry)).click();
+			browser.findElement(By.id(idOccupation)).click();
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFourth)));
 			element.click();
 		}
 		else if (informOccupation.equalsIgnoreCase(occupationFifth)) {
-			browser.findElement(By.id(idCountry)).click();
+			browser.findElement(By.id(idOccupation)).click();
 			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFifth)));
 			element.click();
 		}
@@ -324,7 +333,37 @@ public class EnterInsurantData extends Base{
 		}
 		
 		
-		System.out.println("• Filling Hobbies Field...");
+		System.out.println("• Filling Hobbies Field..."); //HERE
+		
+		if (informHobbies.equalsIgnoreCase(occupationFirst)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFirst)));
+			element.click();
+		}
+		else if (informHobbies.equalsIgnoreCase(occupationSecond)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationSecond)));
+			element.click();
+		}
+		else if (informHobbies.equalsIgnoreCase(occupationThird)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationThird)));
+			element.click();
+		}
+		else if (informHobbies.equalsIgnoreCase(occupationFourth)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFourth)));
+			element.click();
+		}
+		else if (informHobbies.equalsIgnoreCase(occupationFifth)) {
+			browser.findElement(By.id(idCountry)).click();
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathOccupationFifth)));
+			element.click();
+		}
+		else {
+			System.out.println("You should inform: Speeding, Bungee Jumping, Cliff Diving, Skydiving or Other!");
+		}
+		
 		
 		System.out.println("• Filling Website Field...");
 		
