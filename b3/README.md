@@ -54,7 +54,8 @@ catch (Exception ex)
 | 3     | In the third variable, you can be more specific and use the double type. |
 | 4     | You are performing a calculation that will always have the result zero.  |
 
-"Note: when you try to use this method, the following error message will be displayed: `Java.lang.ExceptionInInitializerError`."
+[!NOTE]
+When you try to use this method, the following error message will be displayed: `Java.lang.ExceptionInInitializerError`.
 
 # Fourth
 How do I obtain the names of all people born from 1980 onwards from the collection below?
@@ -119,7 +120,7 @@ git commit –m "I am adding all project in the main repository."
 git push origin main
 ```
 
-# Observation
+[!TIP]
 In the Eclipse IDE, you need to add the four commands below in the Arguments tab by accessing the 'Run' menu and selecting the 'Run Configurations' option.
 
 ```python
