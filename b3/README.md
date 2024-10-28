@@ -55,7 +55,7 @@ catch (Exception ex)
 | 4     | You are performing a calculation that will always have the result zero.  |
 
 > [!NOTE]
-> When you try to use this method, the following error message will be displayed: `Java.lang.ExceptionInInitializerError`.
+> When you try to use this method, the following error message will be displayed: `System.TypeInitializationException`.
 
 # Fourth
 How do I obtain the names of all people born from 1980 onwards from the collection below?
