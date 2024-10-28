@@ -53,6 +53,7 @@ public class TestSteps {
 	@When("^I fill all fields \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
 	public void i_fill_all_fields(String firstName, String lastName, String dateBirth, String gender, String streetAddress, String country, String zipCode, String city, String occupation, String hobbies, String website) throws Throwable {
 
+		new EnterInsurantData(browser).clickEnterInsurantDataTab();
 		new EnterInsurantData(browser).fillEnterInsurantData(firstName, lastName, dateBirth, gender, streetAddress, country, zipCode, city, occupation, hobbies, website);
 		
 	}

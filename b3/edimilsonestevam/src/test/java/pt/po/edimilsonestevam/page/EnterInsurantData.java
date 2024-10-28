@@ -15,6 +15,15 @@ public class EnterInsurantData extends Base{
 
 	}
 
+	public void clickEnterInsurantDataTab() {
+		
+		System.out.println("Clicking on Enter Insurant Data Tab");
+		
+		String idEnterInsurantData = "enterinsurantdata";
+		browser.findElement(By.id(idEnterInsurantData)).click();
+		
+	}
+	
 	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress, String informCountry, String informZipCode, String informCity, String informOccupation, String informHobbies, String informWebsite) {
 		
 		System.out.println("Enter Insurant Data");
@@ -24,10 +33,10 @@ public class EnterInsurantData extends Base{
 		String idDateBirth = "birthdate";
 		
 		String genderMale = "Male";
-		String idGenderMale = "gendermale";
+		String xpathGenderMale = "//label[text()='Male']";
 		
 		String genderFemale = "Female";
-		String idGenderFemale = "genderfemale";
+		String xpathGenderFemale = "//label[text()='Female']";
 		
 		String idStreetAddress = "streetaddress";
 		
@@ -159,11 +168,11 @@ public class EnterInsurantData extends Base{
 		System.out.println("• Filling Gender Field...");
 		
 		if (genderMale.equalsIgnoreCase(informGender)) {
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idGenderMale)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathGenderMale)));
 			element.click();
 		}
 		else if (genderFemale.equalsIgnoreCase(informGender)) {
-			element = wait.until(ExpectedConditions.elementToBeClickable(By.id(idGenderFemale)));
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpathGenderFemale)));
 			element.click();
 		}
 		else {
