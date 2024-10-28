@@ -5,8 +5,8 @@ Feature: Enter Vehicle Data
   Scenario Outline: Car Registered Success
     Given I want to register my car in the Enter Vehicle Data <url>
     When I fill all fields <carName>, <model>, <cylinderCapacity>, <enginePerformance>, <dateManufacture>, <mumberSeats>, <rightHandDrive>, <numberSeatsMotor>, <fuelType>, <payload>, <totalWeight>, <listPrice>, <licensePlateNumber>, <annualMileage>
-    And I confirm action
-    Then the system will show <tabName> tab
+    And I confirm register action
+    Then the system will show <tabName> Enter Insurant Data tab
 
     Examples: 
       | url                                   | carName | model    | cylinderCapacity | enginePerformance | dateManufacture | mumberSeats | rightHandDrive | numberSeatsMotor | fuelType | payload | totalWeight | listPrice | licensePlateNumber | annualMileage | tabName                 |

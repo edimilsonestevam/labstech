@@ -5,8 +5,8 @@ Feature: Enter Insurant Data
   Scenario Outline: Insurance Registered Success
     Given I want to register my insurance in the Enter Insurant Data <url>
     When I fill all fields <firstName>, <lastName>, <dateBirth>, <gender>, <streetAddress>, <country>, <zipCode>, <city>, <occupation>, <hobbies>, <website>
-    And I confirm action
-    Then the system will show <tabName> tab
+    And I confirm insurance action
+    Then the system will show <tabName> Enter Product Data tab
 
     Examples: 
       | url                                   | firstName | lastName   | dateBirth    | gender   | streetAddress   | country  | zipCode   | city      | occupation   | hobbies     | website               | tabName                | 
