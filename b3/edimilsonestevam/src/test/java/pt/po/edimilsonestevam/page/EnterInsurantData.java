@@ -15,7 +15,7 @@ public class EnterInsurantData extends Base{
 
 	}
 
-	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress, String informCountry) {
+	public void fillEnterInsurantData(String informFirstName, String informLastName, String informDateBirth, String informGender, String informStreetAddress, String informCountry, String informZipCode, String informCity) {
 		
 		System.out.println("Enter Insurant Data");
 		
@@ -272,7 +272,15 @@ public class EnterInsurantData extends Base{
 		
 		System.out.println("• Filling Zip Code Field...");
 		
+		browser.findElement(By.id(idZipCode)).click();
+		browser.findElement(By.id(idZipCode)).sendKeys(informZipCode);
+		
+		
 		System.out.println("• Filling City Field...");
+		
+		browser.findElement(By.id(idCity)).click();
+		browser.findElement(By.id(idCity)).sendKeys(informCity);
+		
 		
 		System.out.println("• Filling Occupation Field...");
 		
