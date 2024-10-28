@@ -54,7 +54,6 @@ catch (Exception ex)
 | 3     | In the third variable, you can be more specific and use the double type. |
 | 4     | You are performing a calculation that will always have the result zero.  |
 
-<br>
 > [!NOTE]
 > When you try to use this method, the following error message will be displayed: `System.TypeInitializationException`
 
@@ -121,7 +120,6 @@ git commit –m "I am adding all project in the main repository."
 git push origin main
 ```
 
-<br>
 > [!TIP]
 > In the Eclipse IDE, you need to add the four commands below in the Arguments tab by accessing the 'Run' menu and selecting the 'Run Configurations' option.
 
