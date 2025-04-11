@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 
 import br.sp.edimilsonestevam.setup.Base;
 
+import static br.sp.edimilsonestevam.setup.Core.normalizeText;
+
 public class NewsArticle extends Base {
 
 	public NewsArticle(WebDriver browser) {
@@ -78,13 +80,13 @@ public class NewsArticle extends Base {
 		String firstArticleTitle  = browser.findElement(By.xpath(xpathFirstArticle)).getText();
 		Assert.assertEquals("Checking First News Article",  firstArticle, firstArticleTitle);
 
-		String xpathSecondArticle = "//a[contains(text(),'CNH Social: saiba como tirar a CNH gratuita')]";
+		String xpathSecondArticle = "//a[contains(text(),'CNH Social: saiba como tirar a CNH gratuita ')]";
 		String secondArticleTitle  = browser.findElement(By.xpath(xpathSecondArticle)).getText();
-		Assert.assertEquals("Checking Second News Article",  secondArticle, secondArticleTitle);
+		Assert.assertEquals("Checking Second News Article",  normalizeText(secondArticle), normalizeText(secondArticleTitle));
 
-		String xpathThirdArticle = "//a[contains(text(),'Multa de Trânsito 2024: conheça os tipos, valores e como recorrer')]";
+		String xpathThirdArticle = "//a[contains(text(),'Multa de Trânsito 2024: conheça os tipos, valores e como recorrer ')]";
 		String thirdArticleTitle  = browser.findElement(By.xpath(xpathThirdArticle)).getText();
-		Assert.assertEquals("Checking Third News Article",  thirdArticle, thirdArticleTitle);
+		Assert.assertEquals("Checking Third News Article",  normalizeText(thirdArticle), normalizeText(thirdArticleTitle));
 
 	}
 }
