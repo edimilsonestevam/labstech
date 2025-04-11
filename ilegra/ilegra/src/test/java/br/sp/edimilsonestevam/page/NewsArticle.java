@@ -74,16 +74,16 @@ public class NewsArticle extends Base {
 
 		System.out.println("• Verifying News Article Footer...");
 
-		String idFirstArticle = "onde-fica-o-código-de-segurança-da-cnh-veja-onde-encontrar";
-		String firstArticleTitle  = browser.findElement(By.id(idFirstArticle)).getText();
+		String xpathFirstArticle = "//a[contains(text(),'Onde fica o código de segurança da CNH? Veja onde encontrar')]";
+		String firstArticleTitle  = browser.findElement(By.xpath(xpathFirstArticle)).getText();
 		Assert.assertEquals("Checking First News Article",  firstArticle, firstArticleTitle);
 
-		String idSecondArticle = "cnh-social-saiba-como-tirar-a-cnh-gratuita";
-		String secondArticleTitle  = browser.findElement(By.id(idSecondArticle)).getText();
+		String xpathSecondArticle = "//a[contains(text(),'CNH Social: saiba como tirar a CNH gratuita')]";
+		String secondArticleTitle  = browser.findElement(By.xpath(xpathSecondArticle)).getText();
 		Assert.assertEquals("Checking Second News Article",  secondArticle, secondArticleTitle);
 
-		String idThirdArticle = "multa-de-trânsito-2024-conheça-os-tipos-valores-e-como-recorrer";
-		String thirdArticleTitle  = browser.findElement(By.id(idThirdArticle)).getText();
+		String xpathThirdArticle = "//a[contains(text(),'Multa de Trânsito 2024: conheça os tipos, valores e como recorrer')]";
+		String thirdArticleTitle  = browser.findElement(By.xpath(xpathThirdArticle)).getText();
 		Assert.assertEquals("Checking Third News Article",  thirdArticle, thirdArticleTitle);
 
 	}
