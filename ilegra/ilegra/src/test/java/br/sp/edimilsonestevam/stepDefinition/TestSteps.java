@@ -42,4 +42,14 @@ public class TestSteps {
 
 	}
 
+	@When("I search a news {string} in the Field of Research")
+	public void i_search_a_news_in_the_field_of_research(String searchedWord) {
+
+	}
+
+	@Then("website will show a list with {string},  {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string} news articles")
+	public void website_will_show_a_list_with_news_articles(String firstArticle, String secondArticle, String thirdArticle, String fourthArticle, String fifthArticle, String sixthArticle, String seventhArticle, String eighthArticle, String ninthArticle) {
+
+	}
+
 }
