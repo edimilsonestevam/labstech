@@ -22,19 +22,24 @@ public class NewsArticle extends Base {
 		String txtThirdArticle = "Abono indenizatório: o que é, como funciona e regras";
 
 		if(chooseNewsArticle.equalsIgnoreCase("1")){
+
 			browser.findElement(By.linkText(txtFirstArticle)).click();
 
 		}
 		else if (chooseNewsArticle.equalsIgnoreCase("2")) {
+
 			browser.findElement(By.linkText(txtSecondArticle)).click();
 
 		}
 		else if (chooseNewsArticle.equalsIgnoreCase("3")) {
+
 			browser.findElement(By.linkText(txtThirdArticle)).click();
 
 		}
 		else {
+
 			System.out.println("You should inform: 1, 2 or 3!");
+			
 		}
 	}
 
@@ -55,6 +60,9 @@ public class NewsArticle extends Base {
 		String xpathAuthor = "//span[@class='author-name']";
 		String xpathDate = "//span[@class='updated']";
 
+		Assert.assertEquals("Checking News Article",  article, xpathArticle);
+		Assert.assertEquals("Checking Author",  author, xpathAuthor);
+		Assert.assertEquals("Checking Date",  date, xpathDate);
 
 	}
 
@@ -66,6 +74,9 @@ public class NewsArticle extends Base {
 		String xpathSecondArticle = "";
 		String xpathThirdArticle = "";
 
+		Assert.assertEquals("Checking First News Article",  firstArticle, xpathFirstArticle);
+		Assert.assertEquals("Checking Second News Article",  secondArticle, xpathSecondArticle);
+		Assert.assertEquals("Checking Third News Article",  thirdArticle, xpathThirdArticle);
 
 	}
 }
