@@ -15,7 +15,7 @@ public class TestSteps {
 	@Given("I am Agi Blog {string}")
 	public void i_am_agi_blog(String url) {
 
-		browser = new Configuration().browserOpen("firefox", url, "yes");
+		browser = new Configuration().browserOpen("firefox", url, "no");
 
 	}
 
@@ -38,6 +38,8 @@ public class TestSteps {
 
 	@Then("three pieces of news at the end of article {string}, {string}, {string}")
 	public void three_pieces_of_news_at_the_end_of_article(String string, String string2, String string3) {
+
+		new Configuration().browserClose(browser);
 
 	}
 

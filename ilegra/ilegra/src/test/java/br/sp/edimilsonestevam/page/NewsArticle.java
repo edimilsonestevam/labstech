@@ -17,7 +17,7 @@ public class NewsArticle extends Base {
 		System.out.println("• Read News Article...");
 
 		String txtFirstArticle = "Golpe da CNH: entenda funciona e como se proteger";
-		String txtSecondArticle = "Golpe dos Correios: entenda como funciona e como identificar ";
+		String txtSecondArticle = "Golpe dos Correios: entenda como funciona e como identificar";
 		String txtThirdArticle = "Abono indenizatório: o que é, como funciona e regras";
 
 		if(chooseNewsArticle.equalsIgnoreCase("1")){
@@ -35,6 +35,12 @@ public class NewsArticle extends Base {
 		else {
 			System.out.println("You should inform: 1, 2 or 3!");
 		}
+	}
+
+	public void verifyNewsArticle(){
+
+		System.out.println("• Verify News Article...");
+
 	}
 
 }
