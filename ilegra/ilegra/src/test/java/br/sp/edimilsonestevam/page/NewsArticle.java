@@ -39,7 +39,7 @@ public class NewsArticle extends Base {
 		else {
 
 			System.out.println("You should inform: 1, 2 or 3!");
-			
+
 		}
 	}
 
@@ -57,12 +57,16 @@ public class NewsArticle extends Base {
 		System.out.println("• Verifying News Article...");
 
 		String xpathArticle = "//h1[@class='entry-title']";
-		String xpathAuthor = "//span[@class='author-name']";
-		String xpathDate = "//span[@class='updated']";
+		String newsArticleTitle  = browser.findElement(By.xpath(xpathArticle)).getText();
+		Assert.assertEquals("Checking News Article",  article, newsArticleTitle);
 
-		Assert.assertEquals("Checking News Article",  article, xpathArticle);
-		Assert.assertEquals("Checking Author",  author, xpathAuthor);
-		Assert.assertEquals("Checking Date",  date, xpathDate);
+		String xpathAuthor = "//span[@class='author-name']";
+		String newsArticleAuthor  = browser.findElement(By.xpath(xpathAuthor)).getText();
+		Assert.assertEquals("Checking Author",  author, newsArticleAuthor);
+
+		String xpathDate = "//span[@class='updated']";
+		String newsArticleDate  = browser.findElement(By.xpath(xpathDate)).getText();
+		Assert.assertEquals("Checking Date",  date, newsArticleDate);
 
 	}
 
