@@ -74,13 +74,17 @@ public class NewsArticle extends Base {
 
 		System.out.println("• Verifying News Article Footer...");
 
-		String xpathFirstArticle = "";
-		String xpathSecondArticle = "";
-		String xpathThirdArticle = "";
+		String idFirstArticle = "onde-fica-o-código-de-segurança-da-cnh-veja-onde-encontrar";
+		String firstArticleTitle  = browser.findElement(By.id(idFirstArticle)).getText();
+		Assert.assertEquals("Checking First News Article",  firstArticle, firstArticleTitle);
 
-		Assert.assertEquals("Checking First News Article",  firstArticle, xpathFirstArticle);
-		Assert.assertEquals("Checking Second News Article",  secondArticle, xpathSecondArticle);
-		Assert.assertEquals("Checking Third News Article",  thirdArticle, xpathThirdArticle);
+		String idSecondArticle = "cnh-social-saiba-como-tirar-a-cnh-gratuita";
+		String secondArticleTitle  = browser.findElement(By.id(idSecondArticle)).getText();
+		Assert.assertEquals("Checking Second News Article",  secondArticle, secondArticleTitle);
+
+		String idThirdArticle = "multa-de-trânsito-2024-conheça-os-tipos-valores-e-como-recorrer";
+		String thirdArticleTitle  = browser.findElement(By.id(idThirdArticle)).getText();
+		Assert.assertEquals("Checking Third News Article",  thirdArticle, thirdArticleTitle);
 
 	}
 }
