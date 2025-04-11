@@ -20,25 +20,24 @@ public class TestSteps {
 	}
 
 	@When("I choose a news {string}")
-	public void i_choose_a_news(String string) {
+	public void i_choose_a_news(String article) {
 
 		new NewsArticle(browser).readNewsArticle("1");
 
 	}
 
-	@When("I confirm action")
-	public void i_confirm_action() {
-
-	}
-
 	@Then("website will show a news with {string}, {string}, {string}")
-	public void website_will_show_a_news_with(String string, String string2, String string3) {
+	public void website_will_show_a_news_with(String article, String author, String date) {
+
+		new NewsArticle(browser).verifyCurrentPage("blog.agibank.com.br/golpe-da-cnh/");
+		new NewsArticle(browser).verifyNewsArticle(article, author, date);
 
 	}
 
 	@Then("three pieces of news at the end of article {string}, {string}, {string}")
-	public void three_pieces_of_news_at_the_end_of_article(String string, String string2, String string3) {
+	public void three_pieces_of_news_at_the_end_of_article(String firstArticle, String secondArticle, String thirdArticle) {
 
+		new NewsArticle(browser).verifyNewsArticleFooter(firstArticle, secondArticle, thirdArticle);
 		new Configuration().browserClose(browser);
 
 	}

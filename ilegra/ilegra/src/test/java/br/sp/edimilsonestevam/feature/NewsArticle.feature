@@ -5,7 +5,6 @@ Feature: News
   Scenario Outline: User reads a news article
     Given I am Agi Blog <url>
     When I choose a news <article>
-    And I confirm action
     Then website will show a news with <article>, <author>, <date>
     And three pieces of news at the end of article <firstArticle>, <secondArticle>, <thirdArticle>
 
