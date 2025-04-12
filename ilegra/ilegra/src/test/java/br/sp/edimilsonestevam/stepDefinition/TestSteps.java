@@ -1,5 +1,7 @@
 package br.sp.edimilsonestevam.stepDefinition;
 
+import br.sp.edimilsonestevam.page.SearchNewsArticle;
+import br.sp.edimilsonestevam.setup.Core;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -29,7 +31,7 @@ public class TestSteps {
 	@Then("website will show a news with {string}, {string}, {string}")
 	public void website_will_show_a_news_with(String article, String author, String date) {
 
-		new NewsArticle(browser).verifyCurrentPage("blog.agibank.com.br/golpe-da-cnh/");
+		new Core(browser).verifyCurrentPage("blog.agibank.com.br/golpe-da-cnh/");
 		new NewsArticle(browser).verifyNewsArticle(article, author, date);
 
 	}
@@ -45,10 +47,15 @@ public class TestSteps {
 	@When("I search a news {string} in the Field of Research")
 	public void i_search_a_news_in_the_field_of_research(String searchedWord) {
 
+		new SearchNewsArticle(browser).findNewsArticle("trânsito");
+
 	}
 
 	@Then("website will show a list with {string},  {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string} news articles")
 	public void website_will_show_a_list_with_news_articles(String firstArticle, String secondArticle, String thirdArticle, String fourthArticle, String fifthArticle, String sixthArticle, String seventhArticle, String eighthArticle, String ninthArticle) {
+
+
+		new Configuration().browserClose(browser);
 
 	}
 

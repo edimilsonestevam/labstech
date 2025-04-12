@@ -45,15 +45,6 @@ public class NewsArticle extends Base {
 		}
 	}
 
-	public void verifyCurrentPage(String expectedUrl){
-
-		System.out.println("• Verifying Current Page...");
-
-		String currentUrl = browser.getCurrentUrl();
-		Assert.assertEquals("Checking Current URL", "https://" + expectedUrl, currentUrl);
-
-	}
-
 	public void verifyNewsArticle(String article, String author, String date){
 
 		System.out.println("• Verifying News Article...");
