@@ -22,7 +22,7 @@ public class SearchNewsArticle extends Base {
         String locator = "//button[contains(@class, 'icon-search')]";
 
         WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
-        
+
         try {
 
             WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
