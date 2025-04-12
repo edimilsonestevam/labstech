@@ -47,7 +47,7 @@ public class TestSteps {
 	}
 
 	@When("I search a news {string} in the Field of Research")
-	public void i_search_a_news_in_the_field_of_research(String searchedWord) throws AWTException {
+	public void i_search_a_news_in_the_field_of_research(String searchedWord) {
 
 		new SearchNewsArticle(browser).findNewsArticle(searchedWord);
 

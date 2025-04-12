@@ -15,7 +15,7 @@ public class SearchNewsArticle extends Base {
         super(browser);
     }
 
-    public void findNewsArticle(String searchNewsArticle) throws AWTException {
+    public void findNewsArticle(String searchNewsArticle) {
 
         System.out.println("• Searching News Article...");
 
