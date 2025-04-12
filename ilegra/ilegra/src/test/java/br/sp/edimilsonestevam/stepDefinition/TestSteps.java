@@ -9,6 +9,8 @@ import br.sp.edimilsonestevam.page.NewsArticle;
 import br.sp.edimilsonestevam.setup.Configuration;
 import org.openqa.selenium.WebDriver;
 
+import java.awt.*;
+
 
 public class TestSteps {
 
@@ -45,9 +47,9 @@ public class TestSteps {
 	}
 
 	@When("I search a news {string} in the Field of Research")
-	public void i_search_a_news_in_the_field_of_research(String searchedWord) {
+	public void i_search_a_news_in_the_field_of_research(String searchedWord) throws AWTException {
 
-		new SearchNewsArticle(browser).findNewsArticle("trânsito");
+		new SearchNewsArticle(browser).findNewsArticle(searchedWord);
 
 	}
 
