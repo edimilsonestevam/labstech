@@ -57,7 +57,7 @@ public class TestSteps {
 	public void website_will_show_a_list_with_news_articles(String firstArticle, String secondArticle, String thirdArticle, String fourthArticle, String fifthArticle, String sixthArticle, String seventhArticle, String eighthArticle, String ninthArticle) {
 
 
-		new Configuration().browserClose(browser);
+		//new Configuration().browserClose(browser);
 
 	}
 

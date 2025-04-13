@@ -19,7 +19,7 @@ public class SearchNewsArticle extends Base {
 
         System.out.println("• Searching News Article...");
 
-        String locator = "//button[contains(@class, 'icon-search')]";
+        String locator = "//span[contains(@class, 'icon-search')]//span[contains(@class, 'ahfb-svg-iconset')]";
 
         WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
 
