@@ -43,7 +43,7 @@ public class TestSteps {
 		new Configuration().browserClose(browser);
 
 	}
-
+	
 	@When("I access more story")
 	public void i_access_more_story() {
 
@@ -54,6 +54,7 @@ public class TestSteps {
 	public void website_will_show_a_list_with_stories(String firstStory, String secondStory, String thirdStory, String fourthStory, String fifthStory, String sixthStory, String seventhStory, String eighthStory, String ninthStory) {
 
 		new Stories(browser).chooseStory(thirdStory);
+		new Core(browser).verifyCurrentPage("blog.agibank.com.br/web-stories/calendario-bolsa-familia-de-setembro/");
 		new Configuration().browserClose(browser);
 
 	}
