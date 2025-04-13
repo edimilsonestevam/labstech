@@ -1,0 +1,3 @@
+[submodule "labstech/ilegra/ilegra"]
+  path = labstech/ilegra/ilegra
+  url = https://github.com/edimilsonestevam/ilegra.git

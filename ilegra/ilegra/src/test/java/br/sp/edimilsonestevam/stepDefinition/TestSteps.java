@@ -43,7 +43,7 @@ public class TestSteps {
 		new Configuration().browserClose(browser);
 
 	}
-	
+
 	@When("I access more story")
 	public void i_access_more_story() {
 
