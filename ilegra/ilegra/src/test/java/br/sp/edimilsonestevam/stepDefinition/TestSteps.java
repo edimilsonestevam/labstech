@@ -9,8 +9,6 @@ import br.sp.edimilsonestevam.page.NewsArticle;
 import br.sp.edimilsonestevam.setup.Configuration;
 import org.openqa.selenium.WebDriver;
 
-import java.awt.*;
-
 
 public class TestSteps {
 
@@ -55,9 +53,8 @@ public class TestSteps {
 
 	@Then("website will show a list with {string},  {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string} news articles")
 	public void website_will_show_a_list_with_news_articles(String firstArticle, String secondArticle, String thirdArticle, String fourthArticle, String fifthArticle, String sixthArticle, String seventhArticle, String eighthArticle, String ninthArticle) {
-
-
-		//new Configuration().browserClose(browser);
+		
+		new Configuration().browserClose(browser);
 
 	}
 

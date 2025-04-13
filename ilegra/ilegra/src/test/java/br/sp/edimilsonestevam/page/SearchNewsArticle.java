@@ -5,12 +5,10 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.awt.*;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
 import java.time.Duration;
 
 public class SearchNewsArticle extends Base {
+
     public SearchNewsArticle(WebDriver browser) {
         super(browser);
     }
