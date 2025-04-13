@@ -1,6 +1,6 @@
 package br.sp.edimilsonestevam.stepDefinition;
 
-import br.sp.edimilsonestevam.page.SearchNewsArticle;
+import br.sp.edimilsonestevam.page.Stories;
 import br.sp.edimilsonestevam.setup.Core;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -44,16 +44,16 @@ public class TestSteps {
 
 	}
 
-	@When("I search a news {string} in the Field of Research")
-	public void i_search_a_news_in_the_field_of_research(String searchedWord) {
+	@When("I access more story")
+	public void i_access_more_story() {
 
-		new SearchNewsArticle(browser).findNewsArticle(searchedWord);
+		new Stories(browser).accessVerMaisButton();
 
 	}
+	@Then("website will show a list with {string},  {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string} stories")
+	public void website_will_show_a_list_with_stories(String firstStory, String secondStory, String thirdStory, String fourthStory, String fifthStory, String sixthStory, String seventhStory, String eighthStory, String ninthStory) {
 
-	@Then("website will show a list with {string},  {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string} news articles")
-	public void website_will_show_a_list_with_news_articles(String firstArticle, String secondArticle, String thirdArticle, String fourthArticle, String fifthArticle, String sixthArticle, String seventhArticle, String eighthArticle, String ninthArticle) {
-		
+		new Stories(browser).chooseStory(thirdStory);
 		new Configuration().browserClose(browser);
 
 	}

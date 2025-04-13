@@ -41,7 +41,7 @@ public class SearchNewsArticle extends Base {
 
         } catch (TimeoutException e) {
 
-            throw new RuntimeException("Element can not be clicked: " + locator.toString(), e);
+            throw new RuntimeException("Element can not be clicked: " + locator, e);
 
         }
     }
