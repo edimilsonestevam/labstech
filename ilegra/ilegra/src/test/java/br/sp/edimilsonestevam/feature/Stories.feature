@@ -4,7 +4,7 @@ Feature: Stories
   @scenario-news-stories
   Scenario Outline: User access a story
     Given I am Agi Blog <url>
-    When I access a story
+    When I access more story
     Then website will show a list with <firstStory>,  <secondStory>, <thirdStory>, <fourthStory>, <fifthStory>, <sixthStory>, <seventhStory>, <eighthStory>, <ninthStory> stories
 
     Examples:
