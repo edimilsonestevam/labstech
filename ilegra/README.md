@@ -4,5 +4,8 @@
 * Clean Code <br>
 * Behaviour Driven Development <br>
 
+# Pipeline
+![Screenshot 2025-04-13 172451](https://github.com/edimilsonestevam/labstech/blob/master/ilegra/ilegra/Screenshot%202025-04-13%20172451.png)
+
 # Test Result
 ![Screenshot 2025-04-13 172451](https://github.com/edimilsonestevam/labstech/blob/master/ilegra/ilegra/Screenshot%202025-04-13%20172451.png)

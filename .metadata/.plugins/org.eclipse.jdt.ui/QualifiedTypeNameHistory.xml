@@ -12,4 +12,8 @@
     <fullyQualifiedTypeName name="cucumber.api.java.en.When"/>
     <fullyQualifiedTypeName name="cucumber.api.java.en.Then"/>
     <fullyQualifiedTypeName name="pt.po.edimilsonestevam.setup.Base"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+    <fullyQualifiedTypeName name="pt.po.edimilsonestevam.setup.Configuration"/>
+    <fullyQualifiedTypeName name="pt.po.edimilsonestevam.setup.Core"/>
 </qualifiedTypeNameHistroy>
