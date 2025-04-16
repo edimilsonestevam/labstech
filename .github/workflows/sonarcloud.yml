@@ -36,6 +36,18 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('ilegra/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven
 
+      - name: 📂 Verify if pom.xml is present
+        working-directory: ilegra
+        run: |
+          echo "Listing files in the current directory:"
+          ls -la
+          if [ ! -f pom.xml ]; then
+            echo "❌ pom.xml not found in the expected directory!"
+            exit 1
+          else
+            echo "✅ pom.xml found successfully!"
+          fi
+
       - name: Build with Maven
         working-directory: ilegra
         run: mvn clean install --batch-mode
