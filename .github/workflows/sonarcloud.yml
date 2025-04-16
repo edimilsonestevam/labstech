@@ -16,26 +16,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository (with submodules)
+      # Checkout the source code (with submodules)
+      - name: Checkout source code
         uses: actions/checkout@v4
         with:
           submodules: recursive
 
+      # Set up Java 17 using Temurin distribution
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Cache Maven dependencies
+      # Cache local Maven repository to speed up builds
+      - name: Cache Maven packages
         uses: actions/cache@v3
         with:
           path: |
             ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven
+          restore-keys: ${{ runner.os }}-maven
 
+      # Print directory contents to debug
+      - name: Debug - List project folders
+        run: ls -R
+
+      # Verify that the pom.xml file exists at the expected path
       - name: Verify if pom.xml exists
         run: |
           if [ ! -f labstech/ilegra/ilegra/pom.xml ]; then
@@ -45,23 +52,14 @@ jobs:
             echo "✅ pom.xml found in labstech/ilegra/ilegra"
           fi
 
-      - name: Install Firefox and GeckoDriver
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y firefox
-          GECKO_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
-          wget -q "https://github.com/mozilla/geckodriver/releases/download/v$GECKO_VERSION/geckodriver-v$GECKO_VERSION-linux64.tar.gz"
-          tar -xzf geckodriver-v$GECKO_VERSION-linux64.tar.gz
-          chmod +x geckodriver
-          sudo mv geckodriver /usr/local/bin/
-
-      - name: Build and test with Maven
+      # Run Maven build
+      - name: Build with Maven
         working-directory: labstech/ilegra/ilegra
         run: mvn clean install --batch-mode
 
-      - name: SonarCloud analysis
+      # Run SonarCloud analysis
+      - name: SonarCloud Scan
         working-directory: labstech/ilegra/ilegra
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
+        run: mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
