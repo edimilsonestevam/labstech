@@ -3,10 +3,10 @@ name: Java Maven CI with SonarCloud
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 permissions:
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code (with submodules)
+      - name: Checkout code (with submodules)
         uses: actions/checkout@v4
         with:
           submodules: recursive
@@ -33,13 +33,15 @@ jobs:
         with:
           path: |
             ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('ilegra/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven
 
       - name: Build with Maven
+        working-directory: ilegra
         run: mvn clean install --batch-mode
 
       - name: SonarCloud Scan
+        working-directory: ilegra
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
