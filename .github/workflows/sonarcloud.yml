@@ -3,10 +3,11 @@ name: Java Maven CI with SonarCloud
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -37,11 +38,8 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install --batch-mode
-        working-directory: ilegra
 
       - name: SonarCloud Scan
-        working-directory: ilegra
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn sonar:sonar \
-          -Dsonar.login=$SONAR_TOKEN
+        run: mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
