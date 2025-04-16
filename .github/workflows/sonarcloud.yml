@@ -33,11 +33,11 @@ jobs:
         with:
           path: |
             ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('ilegra/pom.xml') }}
+          key: ${{ runner.os }}-maven-${{ hashFiles('ilegra/ilegra/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven
 
       - name: 📂 Verify if pom.xml is present
-        working-directory: ilegra
+        working-directory: ilegra/ilegra
         run: |
           echo "Listing files in the current directory:"
           ls -la
@@ -49,11 +49,11 @@ jobs:
           fi
 
       - name: Build with Maven
-        working-directory: ilegra
+        working-directory: ilegra/ilegra
         run: mvn clean install --batch-mode
 
       - name: SonarCloud Scan
-        working-directory: ilegra
+        working-directory: ilegra/ilegra
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
