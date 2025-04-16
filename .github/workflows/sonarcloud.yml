@@ -42,24 +42,27 @@ jobs:
       - name: Debug - List project structure
         run: ls -R
 
-      # Verify that the pom.xml file exists at the expected path
-      - name: Verify if pom.xml exists
+      # Search for pom.xml in any subdirectory of labstech and set it as a variable
+      - name: Find pom.xml in labstech
+        id: find_pom
         run: |
-          if [ ! -f labstech/ilegra/ilegra/pom.xml ]; then
-            echo "❌ pom.xml not found in labstech/ilegra/ilegra/"
+          POM_PATH=$(find labstech -name pom.xml -print -quit)
+          if [ -z "$POM_PATH" ]; then
+            echo "❌ pom.xml not found in any subdirectory of labstech"
             exit 1
           else
-            echo "✅ pom.xml found in labstech/ilegra/ilegra/"
+            echo "✅ pom.xml found at $POM_PATH"
+            echo "POM_PATH=$POM_PATH" >> $GITHUB_ENV
           fi
 
-      # Build the project with Maven
+      # Build the project with Maven in the directory where pom.xml is found
       - name: Build with Maven
-        working-directory: labstech/ilegra/ilegra
+        working-directory: ${{ env.POM_PATH }}/..
         run: mvn clean install --batch-mode
 
       # Run SonarCloud analysis
       - name: SonarCloud Scan
-        working-directory: labstech/ilegra/ilegra
+        working-directory: ${{ env.POM_PATH }}/..
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
