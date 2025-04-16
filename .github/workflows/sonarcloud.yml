@@ -38,21 +38,21 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven
 
-      # Print directory contents to debug
-      - name: Debug - List project folders
+      # Debug: list all folders and files
+      - name: Debug - List project structure
         run: ls -R
 
       # Verify that the pom.xml file exists at the expected path
       - name: Verify if pom.xml exists
         run: |
           if [ ! -f labstech/ilegra/ilegra/pom.xml ]; then
-            echo "❌ pom.xml not found in labstech/ilegra/ilegra"
+            echo "❌ pom.xml not found in labstech/ilegra/ilegra/"
             exit 1
           else
-            echo "✅ pom.xml found in labstech/ilegra/ilegra"
+            echo "✅ pom.xml found in labstech/ilegra/ilegra/"
           fi
 
-      # Run Maven build
+      # Build the project with Maven
       - name: Build with Maven
         working-directory: labstech/ilegra/ilegra
         run: mvn clean install --batch-mode
