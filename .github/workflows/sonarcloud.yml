@@ -52,11 +52,19 @@ jobs:
             echo "✅ pom.xml found in ilegra/ilegra/"
           fi
 
-      # Install geckodriver for Selenium (Firefox Driver)
+      # Install geckodriver manually
       - name: Install geckodriver
         run: |
+          # Install dependencies for geckodriver and Firefox
           sudo apt-get update
-          sudo apt-get install -y firefox-geckodriver
+          sudo apt-get install -y wget tar firefox
+          
+          # Download the latest version of geckodriver
+          GECKODRIVER_VERSION=$(wget -qO- https://api.github.com/repos/mozilla/geckodriver/releases/latest | jq -r .tag_name)
+          wget https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
+          tar -xvzf geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
+          sudo mv geckodriver /usr/local/bin/
+          rm geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
 
       # Build the project with Maven from the correct directory
       - name: Build with Maven
