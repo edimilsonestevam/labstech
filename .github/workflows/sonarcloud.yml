@@ -52,6 +52,12 @@ jobs:
             echo "✅ pom.xml found in ilegra/ilegra/"
           fi
 
+      # Install geckodriver for Selenium (Firefox Driver)
+      - name: Install geckodriver
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y firefox-geckodriver
+
       # Build the project with Maven from the correct directory
       - name: Build with Maven
         working-directory: ./ilegra/ilegra
