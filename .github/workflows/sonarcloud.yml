@@ -63,10 +63,6 @@ jobs:
         run: mvn -B verify
         working-directory: ./ilegra/ilegra
 
-      - name: Build the project
-        run: mvn -B verify
-        working-directory: ./ilegra/ilegra
-
       - name: List target directory after build
         run: ls -la target || echo "target directory does not exist after build"
 
