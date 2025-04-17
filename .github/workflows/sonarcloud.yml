@@ -43,23 +43,23 @@ jobs:
         run: ls -R
 
       # Verify if the pom.xml file exists in the correct directory from the root
-      - name: Verify if pom.xml exists in labstech/ilegra/ilegra
+      - name: Verify if pom.xml exists in ilegra/ilegra
         run: |
-          if [ ! -f labstech/ilegra/ilegra/pom.xml ]; then
-            echo "❌ pom.xml not found in labstech/ilegra/ilegra/"
+          if [ ! -f ilegra/ilegra/pom.xml ]; then
+            echo "❌ pom.xml not found in ilegra/ilegra/"
             exit 1
           else
-            echo "✅ pom.xml found in labstech/ilegra/ilegra/"
+            echo "✅ pom.xml found in ilegra/ilegra/"
           fi
 
       # Build the project with Maven from the correct directory
       - name: Build with Maven
-        working-directory: ./labstech/ilegra/ilegra
+        working-directory: ./ilegra/ilegra
         run: mvn clean install --batch-mode
 
       # Run SonarCloud analysis from the correct directory
       - name: SonarCloud Scan
-        working-directory: ./labstech/ilegra/ilegra
+        working-directory: ./ilegra/ilegra
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
