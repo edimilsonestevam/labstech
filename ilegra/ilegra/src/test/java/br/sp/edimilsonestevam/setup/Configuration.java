@@ -29,7 +29,7 @@ public class Configuration {
         if(os.contains("win")) {
             return "C:\\Drivers\\" + driverName + ".exe";
         }
-        else if (os.contains("ubu")) {
+        else if (os.contains("linux")) {
             return  "/usr/local/bin/" + driverName;
         }
         else {
