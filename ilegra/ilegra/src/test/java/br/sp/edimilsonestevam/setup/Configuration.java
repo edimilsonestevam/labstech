@@ -33,7 +33,7 @@ public class Configuration {
             return  "/usr/local/bin/" + driverName;
         }
         else {
-			System.out.println("The Operating System is not defined!");
+			return null;
         }
 
     }
