@@ -29,11 +29,11 @@ public class Configuration {
         if(os.contains("win")) {
             return "C:\\Drivers\\" + driverName + ".exe";
         }
-        else if (os.contains("linux")) {
+        else if (os.contains("linux") || os.contains("osx")) {
             return  "/usr/local/bin/" + driverName;
         }
         else {
-            return  "/usr/local/bin/" + driverName;
+			System.out.println("The Operating System is not defined!");
         }
 
     }
