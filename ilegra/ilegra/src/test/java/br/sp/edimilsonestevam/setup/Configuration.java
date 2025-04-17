@@ -66,8 +66,8 @@ public class Configuration {
 				return browser;
 			  }
 				else {
-					ChromeOptions chromeOptions = new ChromeOptions();
-					chromeOptions.addArguments("--headless");
+					ChromeOptions options = new ChromeOptions();
+					options.addArguments("--headless");
 				}
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
