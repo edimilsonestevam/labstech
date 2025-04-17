@@ -50,6 +50,19 @@ jobs:
       - name: List target directory (if exists)
         run: ls -la target || echo "target directory does not exist"
 
+      - name: Install Firefox and GeckoDriver
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y firefox
+          wget https://github.com/mozilla/geckodriver/releases/latest/download/geckodriver-linux64.tar.gz
+          tar -xvzf geckodriver-linux64.tar.gz
+          chmod +x geckodriver
+          sudo mv geckodriver /usr/local/bin/
+
+      - name: Build the project
+        run: mvn -B verify
+        working-directory: ./ilegra/ilegra
+
       - name: Build the project
         run: mvn -B verify
         working-directory: ./ilegra/ilegra
