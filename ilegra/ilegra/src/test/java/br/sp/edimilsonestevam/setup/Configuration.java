@@ -22,7 +22,7 @@ public class Configuration {
 		
 	}
 
-    public String getDriverPath(String driverName) {
+    private String getDriverPath(String driverName) {
 
         String os = System.getProperty("os.name").toLowerCase();
 
