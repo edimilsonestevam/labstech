@@ -38,11 +38,11 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven
 
-      # Debug: list all folders and files in the root directory to help investigate the path
+      # Debug: list all folders and files in the root directory
       - name: Debug - List project structure
         run: ls -R
 
-      # Verify if the pom.xml file exists in the correct directory from the root
+      # Verify if the pom.xml file exists in the correct directory
       - name: Verify if pom.xml exists in ilegra/ilegra
         run: |
           if [ ! -f ilegra/ilegra/pom.xml ]; then
@@ -52,26 +52,28 @@ jobs:
             echo "✅ pom.xml found in ilegra/ilegra/"
           fi
 
-      # Install geckodriver manually
+      # Install geckodriver on Ubuntu
       - name: Install geckodriver
         run: |
-          # Install dependencies for geckodriver and Firefox
           sudo apt-get update
-          sudo apt-get install -y wget tar firefox
-          
-          # Download the latest version of geckodriver
+          sudo apt-get install -y wget tar firefox jq
+
           GECKODRIVER_VERSION=$(wget -qO- https://api.github.com/repos/mozilla/geckodriver/releases/latest | jq -r .tag_name)
           wget https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
           tar -xvzf geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
+          chmod +x geckodriver
           sudo mv geckodriver /usr/local/bin/
           rm geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
 
-      # Build the project with Maven from the correct directory
+          echo "✅ Geckodriver version:"
+          geckodriver --version
+
+      # Build the project with Maven
       - name: Build with Maven
         working-directory: ./ilegra/ilegra
         run: mvn clean install --batch-mode
 
-      # Run SonarCloud analysis from the correct directory
+      # Run SonarCloud analysis
       - name: SonarCloud Scan
         working-directory: ./ilegra/ilegra
         env:
