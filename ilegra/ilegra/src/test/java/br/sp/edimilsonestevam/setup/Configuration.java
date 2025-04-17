@@ -66,8 +66,15 @@ public class Configuration {
 				return browser;
 			  }
 				else {
+					System.setProperty(chromeProperty, getDriverPath("chromedriver"));
 					ChromeOptions options = new ChromeOptions();
 					options.addArguments("--headless");
+					options.addArguments("--disable-gpu");
+					options.addArguments("--window-size=1920,1080");
+					WebDriver browser = new ChromeDriver(options);
+					browser.manage().window().maximize();
+					browser.get(https + url);
+					return browser;
 				}
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
@@ -85,8 +92,15 @@ public class Configuration {
 				return browser;
 			  }
 				else {
+					System.setProperty(firefoxProperty, getDriverPath("geckodriver"));
 					FirefoxOptions options = new FirefoxOptions();
 					options.addArguments("--headless");
+					options.addArguments("--disable-gpu");
+					options.addArguments("--window-size=1920,1080");
+					WebDriver browser = new FirefoxDriver(options);
+					browser.manage().window().maximize();
+					browser.get(https + url);
+					return browser;
 				}
 		} else if (browserName.equalsIgnoreCase("safari")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
