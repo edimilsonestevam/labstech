@@ -1,12 +1,12 @@
 package br.sp.edimilsonestevam.stepDefinition;
 
+import br.sp.edimilsonestevam.page.NewsArticle;
 import br.sp.edimilsonestevam.page.Stories;
+import br.sp.edimilsonestevam.setup.Configuration;
 import br.sp.edimilsonestevam.setup.Core;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
-import br.sp.edimilsonestevam.page.NewsArticle;
-import br.sp.edimilsonestevam.setup.Configuration;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
 
@@ -17,7 +17,7 @@ public class TestSteps {
 	@Given("I am Agi Blog {string}")
 	public void i_am_agi_blog(String url) {
 
-		browser = new Configuration().browserOpen("firefox", url, "no");
+		browser = new Configuration().browserOpen("firefox", url, "no", "yes");
 
 	}
 

@@ -3,7 +3,9 @@ package br.sp.edimilsonestevam.setup;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Configuration {
@@ -29,16 +31,13 @@ public class Configuration {
         if(os.contains("win")) {
             return "C:\\Drivers\\" + driverName + ".exe";
         }
-        else if (os.contains("linux") || os.contains("osx")) {
+        else  {
             return  "/usr/local/bin/" + driverName;
-        }
-        else {
-			return null;
         }
 
     }
 
-	public WebDriver browserOpen(String browserName, String url, String responsiveYesNo) {
+	public WebDriver browserOpen(String browserName, String url, String responsiveYesNo, String headlessYesNo) {
 
 		System.out.println("-----------------------------------Testing Started-----------------------------------");
 		
@@ -50,6 +49,7 @@ public class Configuration {
 		//String safariPropertyPath = "C:\\Drivers\\safaridriver.exe";
 		String https = "https://";
 
+
 		if (browserName.equalsIgnoreCase("chrome")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(chromeProperty, getDriverPath("chromedriver")); //chromePropertyPath
@@ -58,13 +58,17 @@ public class Configuration {
 				browser.manage().window().setSize(size);	
 				browser.get(https + url);
 				return browser;
-			} else {
+			} else if (responsiveYesNo.equalsIgnoreCase("no") && (headlessYesNo.equalsIgnoreCase("no"))){
 				System.setProperty(chromeProperty, getDriverPath("chromedriver")); //chromePropertyPath
 				WebDriver browser = new ChromeDriver();
 				browser.manage().window().maximize();
 				browser.get(https + url);
 				return browser;
 			  }
+				else {
+					ChromeOptions chromeOptions = new ChromeOptions();
+					chromeOptions.addArguments("--headless");
+				}
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(firefoxProperty, getDriverPath("geckodriver")); //firefoxPropertyPath
@@ -73,13 +77,17 @@ public class Configuration {
 				browser.manage().window().setSize(size);	
 				browser.get(https + url);
 				return browser;
-			} else {
+			} else if (responsiveYesNo.equalsIgnoreCase("no") && (headlessYesNo.equalsIgnoreCase("no"))){
 				System.setProperty(firefoxProperty, getDriverPath("geckodriver")); //firefoxPropertyPath
 				WebDriver browser = new FirefoxDriver();
 				browser.manage().window().maximize();
 				browser.get(https + url);
 				return browser;
-			  }	
+			  }
+				else {
+					FirefoxOptions options = new FirefoxOptions();
+					options.addArguments("--headless");
+				}
 		} else if (browserName.equalsIgnoreCase("safari")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(safariProperty, getDriverPath("safaridriver")); //safariPropertyPath
