@@ -22,28 +22,50 @@ public class Configuration {
 		
 	}
 
+    private String getDriverPath(String driverName) {
+
+        String os = System.getProperty("os.name").toLowerCase();
+
+        if(os.contains("win")) {
+
+            return "C:\\Drivers\\" + driverName + ".exe";
+
+        }
+        else if (os.contains("linux")) {
+
+            return  "/usr/local/bin/" + driverName;
+
+        }
+        else {
+
+            return  "/usr/local/bin/" + driverName;
+
+        }
+
+    }
+
 	public WebDriver browserOpen(String browserName, String url, String responsiveYesNo) {
 
 		System.out.println("-----------------------------------Testing Started-----------------------------------");
 		
 		String chromeProperty = "webdriver.chrome.driver";
-		String chromePropertyPath = "C:\\Drivers\\chromedriver.exe";
+		//String chromePropertyPath = "C:\\Drivers\\chromedriver.exe";
 		String firefoxProperty = "webdriver.gecko.driver";
-		String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
+		//String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
 		String safariProperty = "webdriver.safari.driver";
-		String safariPropertyPath = "C:\\Drivers\\safaridriver.exe";
+		//String safariPropertyPath = "C:\\Drivers\\safaridriver.exe";
 		String https = "https://";
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
-				System.setProperty(chromeProperty, chromePropertyPath);
+				System.setProperty(chromeProperty, getDriverPath("chromedriver")); //chromePropertyPath
 				WebDriver browser = new ChromeDriver();	
 				Dimension size = new Dimension(360, 800);
 				browser.manage().window().setSize(size);	
 				browser.get(https + url);
 				return browser;
 			} else {
-				System.setProperty(chromeProperty, chromePropertyPath);
+				System.setProperty(chromeProperty, getDriverPath("chromedriver")); //chromePropertyPath
 				WebDriver browser = new ChromeDriver();
 				browser.manage().window().maximize();
 				browser.get(https + url);
@@ -51,14 +73,14 @@ public class Configuration {
 			  }
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
-				System.setProperty(firefoxProperty, firefoxPropertyPath);
+				System.setProperty(firefoxProperty, getDriverPath("geckodriver")); //firefoxPropertyPath
 				WebDriver browser = new FirefoxDriver();	
 				Dimension size = new Dimension(360, 800);
 				browser.manage().window().setSize(size);	
 				browser.get(https + url);
 				return browser;
 			} else {
-				System.setProperty(firefoxProperty, firefoxPropertyPath);
+				System.setProperty(firefoxProperty, getDriverPath("geckodriver")); //firefoxPropertyPath
 				WebDriver browser = new FirefoxDriver();
 				browser.manage().window().maximize();
 				browser.get(https + url);
@@ -66,14 +88,14 @@ public class Configuration {
 			  }	
 		} else if (browserName.equalsIgnoreCase("safari")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
-				System.setProperty(safariProperty, safariPropertyPath);
+				System.setProperty(safariProperty, getDriverPath("safaridriver")); //safariPropertyPath
 				WebDriver browser = new SafariDriver();	
 				Dimension size = new Dimension(360, 800);
 				browser.manage().window().setSize(size);	
 				browser.get(https + url);
 				return browser;
 			} else {
-				System.setProperty(safariProperty, safariPropertyPath);
+				System.setProperty(safariProperty, getDriverPath("safaridriver")); //safariPropertyPath
 				WebDriver browser = new SafariDriver();
 				browser.manage().window().maximize();
 				browser.get(https + url);
