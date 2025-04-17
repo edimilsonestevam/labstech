@@ -27,19 +27,13 @@ public class Configuration {
         String os = System.getProperty("os.name").toLowerCase();
 
         if(os.contains("win")) {
-
             return "C:\\Drivers\\" + driverName + ".exe";
-
         }
-        else if (os.contains("linux")) {
-
+        else if (os.contains("ubu")) {
             return  "/usr/local/bin/" + driverName;
-
         }
         else {
-
             return  "/usr/local/bin/" + driverName;
-
         }
 
     }
