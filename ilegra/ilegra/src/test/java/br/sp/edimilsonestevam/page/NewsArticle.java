@@ -1,10 +1,9 @@
 package br.sp.edimilsonestevam.page;
 
+import br.sp.edimilsonestevam.setup.Base;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import br.sp.edimilsonestevam.setup.Base;
 
 import static br.sp.edimilsonestevam.setup.Core.normalizeText;
 
@@ -19,9 +18,9 @@ public class NewsArticle extends Base {
 		
 		System.out.println("• Reading News Article...");
 
-		String txtFirstArticle = "Golpe da CNH: entenda funciona e como se proteger";
-		String txtSecondArticle = "Golpe dos Correios: entenda como funciona e como identificar";
-		String txtThirdArticle = "Abono indenizatório: o que é, como funciona e regras";
+		String txtFirstArticle = "Atividade Rural: entenda quais são e como comprovar trabalho";
+		String txtSecondArticle = "Planejamento previdenciário: o que é, para que serve e como fazer";
+		String txtThirdArticle = "Programa Destino Futuro: entenda como impacta o turismo brasileiro";
 
 		if(chooseNewsArticle.equalsIgnoreCase("1")){
 
@@ -45,7 +44,7 @@ public class NewsArticle extends Base {
 		}
 	}
 
-	public void verifyNewsArticle(String article, String author, String date){
+	public void verifyNewsArticleTop(String article, String author, String date){
 
 		System.out.println("• Verifying News Article...");
 
@@ -63,19 +62,19 @@ public class NewsArticle extends Base {
 
 	}
 
-	public void verifyNewsArticleFooter(String firstArticle, String secondArticle, String thirdArticle){
+	public void verifyNewsArticleDown(String firstArticle, String secondArticle, String thirdArticle){
 
 		System.out.println("• Verifying News Article Footer...");
 
-		String xpathFirstArticle = "//a[contains(text(),'Onde fica o código de segurança da CNH? Veja onde encontrar')]";
+		String xpathFirstArticle = "//a[contains(text(),'Autodeclaração Rural: o que é e como preencher em 2025')]";
 		String firstArticleTitle  = browser.findElement(By.xpath(xpathFirstArticle)).getText();
 		Assert.assertEquals("Checking First News Article",  firstArticle, firstArticleTitle);
 
-		String xpathSecondArticle = "//a[contains(text(),'CNH Social: saiba como tirar a CNH gratuita ')]";
+		String xpathSecondArticle = "//a[contains(text(),'Aposentadoria Rural: quais são os requisitos em 2024 ')]";
 		String secondArticleTitle  = browser.findElement(By.xpath(xpathSecondArticle)).getText();
 		Assert.assertEquals("Checking Second News Article",  normalizeText(secondArticle), normalizeText(secondArticleTitle));
 
-		String xpathThirdArticle = "//a[contains(text(),'Multa de Trânsito 2024: conheça os tipos, valores e como recorrer ')]";
+		String xpathThirdArticle = "//a[contains(text(),'Pensão por Morte Rural: como funciona e quem tem direito')]";
 		String thirdArticleTitle  = browser.findElement(By.xpath(xpathThirdArticle)).getText();
 		Assert.assertEquals("Checking Third News Article",  normalizeText(thirdArticle), normalizeText(thirdArticleTitle));
 

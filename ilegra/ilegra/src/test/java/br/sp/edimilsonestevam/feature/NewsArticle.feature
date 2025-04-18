@@ -9,5 +9,5 @@ Feature: News
     And three pieces of news at the end of article <firstArticle>, <secondArticle>, <thirdArticle>
 
     Examples: 
-      | url                    | article                                             | author            | date         | firstArticle                                                  | secondArticle                                 | thirdArticle                                                        |
-      | "www.blogdoagi.com.br" | "Golpe da CNH: entenda funciona e como se proteger" | "Redação Agibank" | "08/04/2025" | "Onde fica o código de segurança da CNH? Veja onde encontrar" | "CNH Social: saiba como tirar a CNH gratuita" | "Multa de Trânsito 2024: conheça os tipos, valores e como recorrer" |
+      | url                    | article                                                        | author            | date         | firstArticle                                             | secondArticle                                              | thirdArticle                                               |
+      | "www.blogdoagi.com.br" | "Atividade Rural: entenda quais são e como comprovar trabalho" | "Redação Agibank" | "15/04/2025" | "Autodeclaração Rural: o que é e como preencher em 2025" | "Aposentadoria Rural: quais são os requisitos em 2024 " | "Pensão por Morte Rural: como funciona e quem tem direito" |
