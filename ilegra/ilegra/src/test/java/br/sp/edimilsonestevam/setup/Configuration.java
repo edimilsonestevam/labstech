@@ -68,20 +68,18 @@ public class Configuration {
 				else {
 					System.setProperty(chromeProperty, getDriverPath("chromedriver"));
 					ChromeOptions options = new ChromeOptions();
-					options.addArguments("--headless");
-					options.addArguments("--disable-gpu");
-					options.addArguments("--window-size=1920,1080");
-					WebDriver browser = new ChromeDriver(options);
-					browser.manage().window().maximize();
-					browser.get(https + url);
-					return browser;
+					options.addArguments("--headless=new");
+
+					this.browser = new ChromeDriver(options);
+					this.browser.get("https://" + url);
+					return this.browser;
 				}
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			if(responsiveYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(firefoxProperty, getDriverPath("geckodriver")); //firefoxPropertyPath
-				WebDriver browser = new FirefoxDriver();	
+				WebDriver browser = new FirefoxDriver();
 				Dimension size = new Dimension(360, 800);
-				browser.manage().window().setSize(size);	
+				browser.manage().window().setSize(size);
 				browser.get(https + url);
 				return browser;
 			} else if (responsiveYesNo.equalsIgnoreCase("no") && (headlessYesNo.equalsIgnoreCase("no"))){
@@ -95,11 +93,7 @@ public class Configuration {
 					System.setProperty(firefoxProperty, getDriverPath("geckodriver"));
 					FirefoxOptions options = new FirefoxOptions();
 					options.addArguments("--headless");
-					options.addArguments("--disable-gpu");
-					options.addArguments("--window-size=1920,1080");
 					WebDriver browser = new FirefoxDriver(options);
-					browser.manage().window().maximize();
-					browser.get(https + url);
 					return browser;
 				}
 		} else if (browserName.equalsIgnoreCase("safari")) {
