@@ -64,8 +64,7 @@ public class Configuration {
 				browser.manage().window().maximize();
 				browser.get(https + url);
 				return browser;
-			  }
-				else {
+			  } else {
 					System.setProperty(chromeProperty, getDriverPath("chromedriver"));
 					ChromeOptions options = new ChromeOptions();
 					options.addArguments("--headless=new");
@@ -88,8 +87,7 @@ public class Configuration {
 				browser.manage().window().maximize();
 				browser.get(https + url);
 				return browser;
-			  }
-				else {
+			  } else {
 					System.setProperty(firefoxProperty, getDriverPath("geckodriver"));
 					FirefoxOptions options = new FirefoxOptions();
 					options.addArguments("--headless");
