@@ -59,6 +59,10 @@ jobs:
               chmod +x geckodriver
               sudo mv geckodriver /usr/local/bin/
 
+      - name: Install required dependencies for Firefox
+        run: |
+              sudo apt-get install -y libgtk-3-0 libdbus-glib-1-2 libasound2
+
       - name: Build the project
         run: mvn -B verify
         working-directory: ./ilegra/ilegra
