@@ -71,7 +71,7 @@ jobs:
               firefox --version
               geckodriver --version
 
-      - name: Prepare Display Environment (Xvfb)
+      - name: Prepare Display Environment
         run: |
               export DISPLAY=:99
               Xvfb :99 -ac -screen 0 1920x1080x24 > /dev/null 2>&1 &
@@ -81,6 +81,8 @@ jobs:
       - name: Build the Project
         run: mvn -B verify
         working-directory: ./ilegra/ilegra
+        env:
+              DISPLAY: :99
 
       - name: List Target Directory after Build
         run: ls -la target || echo "target directory does not exist after build"
@@ -88,6 +90,7 @@ jobs:
       - name: SonarCloud Scan
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
         env:
+          DISPLAY: :99
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         working-directory: ./ilegra/ilegra
