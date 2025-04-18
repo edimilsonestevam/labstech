@@ -70,7 +70,7 @@ public class Configuration {
 					options.addArguments("--headless=new");
 
 					this.browser = new ChromeDriver(options);
-					this.browser.get("https://" + url);
+					this.browser.get(https + url);
 					return this.browser;
 				}
 		} else if (browserName.equalsIgnoreCase("firefox")) {
