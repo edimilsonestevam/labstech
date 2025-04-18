@@ -59,9 +59,16 @@ jobs:
               chmod +x geckodriver
               sudo mv geckodriver /usr/local/bin/
 
-      - name: Install required dependencies for Firefox
+      - name: Install dependencies for Firefox
         run: |
-              sudo apt-get install -y libgtk-3-0 libdbus-glib-1-2 libasound2t64
+              sudo apt-get update
+              sudo apt-get install -y firefox libgtk-3-0 libdbus-glib-1-2 libasound2t64
+              wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
+              tar -xvzf geckodriver-v0.36.0-linux64.tar.gz
+              chmod +x geckodriver
+              sudo mv geckodriver /usr/local/bin/
+              firefox --version
+              geckodriver --version
 
       - name: Build the project
         run: mvn -B verify
