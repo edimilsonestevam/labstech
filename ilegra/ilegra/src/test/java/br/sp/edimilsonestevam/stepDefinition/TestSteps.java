@@ -17,7 +17,7 @@ public class TestSteps {
 	@Given("I am Agi Blog {string}")
 	public void i_am_agi_blog(String url) {
 
-		browser = new Configuration().browserOpen("firefox", url, "no", "yes");
+		browser = new Configuration().browserOpen("firefox", url, "no", "no");
 
 	}
 
