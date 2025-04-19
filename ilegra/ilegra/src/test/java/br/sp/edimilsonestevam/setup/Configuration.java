@@ -87,8 +87,7 @@ public class Configuration {
 			  } else {
 					System.setProperty(firefoxProperty, getDriverPath("geckodriver"));
 					FirefoxOptions options = new FirefoxOptions();
-					options.addArguments("--headless");
-					options.addPreference("remote.active-protocols", 3);
+					options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
 					options.setAcceptInsecureCerts(true);
 					WebDriver browser = new FirefoxDriver(options);
 					return browser;
