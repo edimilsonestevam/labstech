@@ -54,23 +54,16 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y firefox xvfb wget libgtk-3-0 libdbus-glib-1-2 libasound2t64
-          wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz
-          tar -xvzf geckodriver-v0.36.0-linux64.tar.gz
+          sudo apt-get install -y libxcomposite1 libxrandr2 libxi6 libxcursor1 libxdamage1 libxtst6 libnss3 libxss1 libglib2.0-0 libgtk-3-0
+          wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.36.0-linux64.tar.gz
+          tar -xvzf geckodriver-v0.33.0-linux64.tar.gz
           chmod +x geckodriver
           sudo mv geckodriver /usr/local/bin/
           echo "Installed Firefox and GeckoDriver"
 
-      - name: Prepare Display Environment
-        run: |
-          Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
-          sleep 3 
-          echo "Xvfb started"
-
       - name: Build the Project
-        run: mvn -B verify
+        run: xvfb-run -a mvn -B verify
         working-directory: ./ilegra/ilegra
-        env:
-          DISPLAY: :99
 
       - name: List Target Directory after Build
         run: ls -la target || echo "target directory does not exist after build"
@@ -78,7 +71,6 @@ jobs:
       - name: SonarCloud Scan
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
         env:
-          DISPLAY: :99
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         working-directory: ./ilegra/ilegra
