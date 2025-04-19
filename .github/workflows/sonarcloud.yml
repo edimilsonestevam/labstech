@@ -53,7 +53,7 @@ jobs:
       - name: Install Dependencies for Firefox
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgtk-3-0 libdbus-glib-1-2 libasound2 libxcomposite1 \
+          sudo apt-get install -y libgtk-3-0 libdbus-glib-1-2 libasound2t64 libxcomposite1 \
           libxrandr2 libxi6 libxcursor1 libxdamage1 libxtst6 libnss3 libxss1 libglib2.0-0
           
           sudo apt-get remove -y firefox
