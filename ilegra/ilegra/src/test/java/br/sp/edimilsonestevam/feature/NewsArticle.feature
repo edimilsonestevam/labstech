@@ -9,5 +9,5 @@ Feature: News
     And three pieces of news at the end of article <firstArticle>, <secondArticle>, <thirdArticle>
 
     Examples: 
-      | url                    | article                                                        | author            | date         | firstArticle                                             | secondArticle                                              | thirdArticle                                               |
-      | "www.blogdoagi.com.br" | "Atividade Rural: entenda quais são e como comprovar trabalho" | "Redação Agibank" | "15/04/2025" | "Autodeclaração Rural: o que é e como preencher em 2025" | "Aposentadoria Rural: quais são os requisitos em 2024 " | "Pensão por Morte Rural: como funciona e quem tem direito" |
+      | url                       | article                                                        | author            | date         | firstArticle                                             | secondArticle                                              | thirdArticle                                               |
+      | "www.blog.agibank.com.br" | "Atividade Rural: entenda quais são e como comprovar trabalho" | "Redação Agibank" | "15/04/2025" | "Autodeclaração Rural: o que é e como preencher em 2025" | "Aposentadoria Rural: quais são os requisitos em 2024 " | "Pensão por Morte Rural: como funciona e quem tem direito" |
