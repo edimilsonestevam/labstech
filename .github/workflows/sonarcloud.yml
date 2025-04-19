@@ -53,7 +53,7 @@ jobs:
       - name: Install Dependencies for Firefox
         run: |
           sudo apt-get update
-          sudo apt-get install -y firefox-esr xvfb wget libgtk-3-0 libdbus-glib-1-2 libasound2t64
+          sudo apt-get install -y firefox xvfb wget libgtk-3-0 libdbus-glib-1-2 libasound2t64
           wget https://github.com/mozilla/geckodriver/releases/latest/download/geckodriver-linux64.tar.gz
           tar -xvzf geckodriver-linux64.tar.gz
           chmod +x geckodriver
