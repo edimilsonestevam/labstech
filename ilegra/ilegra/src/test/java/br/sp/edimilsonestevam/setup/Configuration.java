@@ -88,6 +88,8 @@ public class Configuration {
 					System.setProperty(firefoxProperty, getDriverPath("geckodriver"));
 					FirefoxOptions options = new FirefoxOptions();
 					options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+					options.addArguments("--width=1920");
+					options.addArguments("--height=1080");
 					options.setAcceptInsecureCerts(true);
 					WebDriver browser = new FirefoxDriver(options);
 					return browser;
