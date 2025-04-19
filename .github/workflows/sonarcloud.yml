@@ -53,13 +53,19 @@ jobs:
       - name: Install Dependencies for Firefox
         run: |
           sudo apt-get update
-          sudo apt-get install -y firefox xvfb wget libgtk-3-0 libdbus-glib-1-2 libasound2t64
-          sudo apt-get install -y libxcomposite1 libxrandr2 libxi6 libxcursor1 libxdamage1 libxtst6 libnss3 libxss1 libglib2.0-0 libgtk-3-0
+          sudo apt-get remove -y firefox
+          
+          wget -O firefox-esr.tar.bz2 "https://ftp.mozilla.org/pub/firefox/releases/115.10.0esr/linux-x86_64/en-US/firefox-115.10.0esr.tar.bz2"
+          tar -xjf firefox-esr.tar.bz2
+          sudo mv firefox /opt/firefox115
+          sudo ln -sf /opt/firefox115/firefox /usr/bin/firefox
+          firefox --version
+          
           wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz
           tar -xvzf geckodriver-v0.33.0-linux64.tar.gz
           chmod +x geckodriver
           sudo mv geckodriver /usr/local/bin/
-          echo "Installed Firefox and GeckoDriver"
+          geckodriver --version
 
       - name: Build the Project
         run: xvfb-run -a mvn -B verify
