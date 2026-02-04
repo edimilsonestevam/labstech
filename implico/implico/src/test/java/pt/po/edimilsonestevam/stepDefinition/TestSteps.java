@@ -51,7 +51,7 @@ public class TestSteps {
 	@Given("^I am Inventory page \"([^\"]*)\"$")
 	public void i_am_Inventory_page(String url) throws Throwable {
 
-		browser = new Configuration().browserOpen("firefox", url, "no");
+		browser = new Configuration().browserOpen("chrome", "yes", url, "no");
 		new Login(browser).doLogin("standard_user", "secret_sauce");
 		new Login(browser).confirmLogin();
 		new Inventory(browser).verifyCurrentPage(url);

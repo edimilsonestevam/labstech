@@ -90,7 +90,7 @@ public class Configuration {
 				return browser;
 			}
 		} else {
-			System.out.println("Still to implement this browser, " + browserName);
+			System.out.println("Still to be implemented in this browser, " + browserName);
 		}
 		return null;
 	}
