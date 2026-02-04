@@ -3,6 +3,7 @@ package pt.po.edimilsonestevam.setup;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -11,21 +12,21 @@ public class Configuration {
 	protected WebDriver browser = null;
 
 	public WebDriver getDriver() {
-		
+
 		return browser;
-		
+
 	}
 
-	public void setDriver (WebDriver browser) {
-		
+	public void setDriver(WebDriver browser) {
+
 		this.browser = browser;
-		
+
 	}
 
-	public WebDriver browserOpen(String browserName, String url, String responsiveYesNo) {
+	public WebDriver browserOpen(String browserName, String headlessYesNo, String url, String responsiveYesNo) {
 
 		System.out.println("-----------------------------------Testing Started-----------------------------------");
-		
+
 		String chromeProperty = "webdriver.chrome.driver";
 		String chromePropertyPath = "C:\\Drivers\\chromedriver.exe";
 		String firefoxProperty = "webdriver.gecko.driver";
@@ -35,26 +36,35 @@ public class Configuration {
 		String https = "https://";
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			if(responsiveYesNo.equalsIgnoreCase("yes")) {
+			if (headlessYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(chromeProperty, chromePropertyPath);
-				WebDriver browser = new ChromeDriver();	
-				Dimension size = new Dimension(360, 800);
-				browser.manage().window().setSize(size);	
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless=new");
+				browser = new ChromeDriver(options);
 				browser.get(https + url);
 				return browser;
 			} else {
-				System.setProperty(chromeProperty, chromePropertyPath);
-				WebDriver browser = new ChromeDriver();
-				browser.manage().window().maximize();
-				browser.get(https + url);
-				return browser;
-			  }
+				if (responsiveYesNo.equalsIgnoreCase("yes")) {
+					System.setProperty(chromeProperty, chromePropertyPath);
+					WebDriver browser = new ChromeDriver();
+					Dimension size = new Dimension(360, 800);
+					browser.manage().window().setSize(size);
+					browser.get(https + url);
+					return browser;
+				} else {
+					System.setProperty(chromeProperty, chromePropertyPath);
+					WebDriver browser = new ChromeDriver();
+					browser.manage().window().maximize();
+					browser.get(https + url);
+					return browser;
+				}
+			}
 		} else if (browserName.equalsIgnoreCase("firefox")) {
-			if(responsiveYesNo.equalsIgnoreCase("yes")) {
+			if (responsiveYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(firefoxProperty, firefoxPropertyPath);
-				WebDriver browser = new FirefoxDriver();	
+				WebDriver browser = new FirefoxDriver();
 				Dimension size = new Dimension(360, 800);
-				browser.manage().window().setSize(size);	
+				browser.manage().window().setSize(size);
 				browser.get(https + url);
 				return browser;
 			} else {
@@ -63,13 +73,13 @@ public class Configuration {
 				browser.manage().window().maximize();
 				browser.get(https + url);
 				return browser;
-			  }	
+			}
 		} else if (browserName.equalsIgnoreCase("safari")) {
-			if(responsiveYesNo.equalsIgnoreCase("yes")) {
+			if (responsiveYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(safariProperty, safariPropertyPath);
-				WebDriver browser = new SafariDriver();	
+				WebDriver browser = new SafariDriver();
 				Dimension size = new Dimension(360, 800);
-				browser.manage().window().setSize(size);	
+				browser.manage().window().setSize(size);
 				browser.get(https + url);
 				return browser;
 			} else {
@@ -78,17 +88,17 @@ public class Configuration {
 				browser.manage().window().maximize();
 				browser.get(https + url);
 				return browser;
-			  }
+			}
 		} else {
 			System.out.println("Still to implement this browser, " + browserName);
-		  }
+		}
 		return null;
 	}
-	
+
 	public void browserClose(WebDriver browser) {
-		
+
 		System.out.println("-----------------------------------Testing Finished----------------------------------");
-		
+
 		this.browser = browser;
 		browser.close();
 	}
