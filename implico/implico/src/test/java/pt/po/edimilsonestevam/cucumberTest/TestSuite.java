@@ -5,9 +5,12 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/java/pt/po/edimilsonestevam/feature" }, glue = {
-		"pt/po/edimilsonestevam/stepDefinition" }, plugin = {
-				"html:target/cucumber-reports" }, dryRun = false, monochrome = true)
+@CucumberOptions(features = "src/test/java/pt/po/edimilsonestevam/feature", glue = "pt/po/edimilsonestevam/stepDefinition", plugin = {
+		"pretty",
+		"html:target/cucumber-reports/cucumber-pretty.html",
+		"json:target/cucumber-reports/cucumber.json",
+		"junit:target/cucumber-reports/cucumber.xml"
+}, dryRun = false, monochrome = true)
 
 public class TestSuite {
 
