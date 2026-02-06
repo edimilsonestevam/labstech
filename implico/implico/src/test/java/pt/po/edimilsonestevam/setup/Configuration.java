@@ -28,17 +28,19 @@ public class Configuration {
 		System.out.println("-----------------------------------Testing Started-----------------------------------");
 
 		String chromeProperty = "webdriver.chrome.driver";
-		//String chromePropertyPath = "C:\\Drivers\\chromedriver.exe";
+		ChromeOptions options = new ChromeOptions();
+		options.setBinary("/usr/bin/chromium");
+		// String chromePropertyPath = "C:\\Drivers\\chromedrive.exe";
 		String chromePropertyPath = "/var/jenkins_home/drivers/chromedriver";
 
 		String firefoxProperty = "webdriver.gecko.driver";
-		//String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
+		// String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
 		String firefoxPropertyPath = "/var/jenkins_home/drivers/geckodriver";
-		
+
 		String safariProperty = "webdriver.safari.driver";
-		//String safariPropertyPath = "C:\\Drivers\\safaridriver.exe";
+		// String safariPropertyPath = "C:\\Drivers\\safaridriver.exe";
 		String safariPropertyPath = "/var/jenkins_home/drivers/safaridriver";
-		
+
 		String https = "https://";
 
 		if (browserName.equalsIgnoreCase("chrome")) {
