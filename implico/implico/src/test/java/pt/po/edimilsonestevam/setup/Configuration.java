@@ -46,7 +46,7 @@ public class Configuration {
 				System.setProperty(chromeProperty, chromePropertyPath);
 				ChromeOptions options = new ChromeOptions();
 				options.setBinary("/usr/bin/chromium");
-				options.addArguments("--headless=new");
+				options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1920,1080");
 				browser = new ChromeDriver(options);
 				browser.get(https + url);
 				return browser;
