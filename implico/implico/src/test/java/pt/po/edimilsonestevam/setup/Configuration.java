@@ -28,8 +28,6 @@ public class Configuration {
 		System.out.println("-----------------------------------Testing Started-----------------------------------");
 
 		String chromeProperty = "webdriver.chrome.driver";
-		ChromeOptions options = new ChromeOptions();
-		options.setBinary("/usr/bin/chromium");
 		// String chromePropertyPath = "C:\\Drivers\\chromedrive.exe";
 		String chromePropertyPath = "/var/jenkins_home/drivers/chromedriver";
 
@@ -47,6 +45,7 @@ public class Configuration {
 			if (headlessYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(chromeProperty, chromePropertyPath);
 				ChromeOptions options = new ChromeOptions();
+				options.setBinary("/usr/bin/chromium");
 				options.addArguments("--headless=new");
 				browser = new ChromeDriver(options);
 				browser.get(https + url);
