@@ -32,6 +32,7 @@ public class Configuration {
 		String chromePropertyPath = "/var/jenkins_home/drivers/chromedriver";
 
 		String firefoxProperty = "webdriver.gecko.driver";
+		String chromeBinaryPath = "/opt/chromium/chrome-linux/chrome";
 		// String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
 		String firefoxPropertyPath = "/var/jenkins_home/drivers/geckodriver";
 
@@ -45,6 +46,7 @@ public class Configuration {
 			if (headlessYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(chromeProperty, chromePropertyPath);
 				ChromeOptions options = new ChromeOptions();
+				options.setBinary(chromeBinaryPath);
 				options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1920,1080");
 				browser = new ChromeDriver(options);
 				browser.get(https + url);
