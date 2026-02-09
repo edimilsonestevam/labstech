@@ -42,7 +42,7 @@ public class Configuration {
 			if (headlessYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(chromeProperty, chromePropertyPath);
 				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1920,1080");
+				options.addArguments("--headless=new", "--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--remote-debugging-port=9222", "--window-size=1920,1080");
 				browser = new ChromeDriver(options);
 				browser.get(https + url);
 				return browser;
