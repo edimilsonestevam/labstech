@@ -32,7 +32,7 @@ public class Configuration {
 		String chromePropertyPath = "/var/jenkins_home/drivers/chromedriver";
 
 		String firefoxProperty = "webdriver.gecko.driver";
-		String chromeBinaryPath = "/opt/chromium/chrome-linux/chrome";
+		String chromeBinaryPath = "/opt/chromium/chrome-linux/";
 		// String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
 		String firefoxPropertyPath = "/var/jenkins_home/drivers/geckodriver";
 
