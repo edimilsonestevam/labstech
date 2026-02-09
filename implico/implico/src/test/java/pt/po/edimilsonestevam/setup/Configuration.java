@@ -33,12 +33,14 @@ public class Configuration {
 		String chromePropertyPath = "/var/jenkins_home/drivers/chromedriver";
 
 		String firefoxProperty = "webdriver.gecko.driver";
-		// String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
-		String firefoxPropertyPath = "/var/jenkins_home/drivers/geckodriver";
+		String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
+		// String firefoxBinaryPath = "/opt/firefox/gecko/";
+		// String firefoxPropertyPath = "/var/jenkins_home/drivers/geckodriver";
 
 		String safariProperty = "webdriver.safari.driver";
-		// String safariPropertyPath = "C:\\Drivers\\safaridriver.exe";
-		String safariPropertyPath = "/var/jenkins_home/drivers/safaridriver";
+		String safariPropertyPath = "C:\\Drivers\\safaridriver.exe";
+		// String safariBinaryPath = "/opt/safari/safari/";
+		// String safariPropertyPath = "/var/jenkins_home/drivers/safaridriver";
 
 		String https = "https://";
 
