@@ -28,19 +28,13 @@ public class Configuration {
 		System.out.println("-----------------------------------Testing Started-----------------------------------");
 
 		String chromeProperty = "webdriver.chrome.driver";
-		// String chromePropertyPath = "C:\\Drivers\\chromedrive.exe";
-		String chromeBinaryPath = "/opt/chromium/chrome-linux/";
-		String chromePropertyPath = "/var/jenkins_home/drivers/chromedriver";
+		String chromePropertyPath = "/opt/chromium/chrome-linux/";   //"C:\\Drivers\\chromedrive.exe";
 
 		String firefoxProperty = "webdriver.gecko.driver";
 		String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
-		// String firefoxBinaryPath = "/opt/firefox/gecko/";
-		// String firefoxPropertyPath = "/var/jenkins_home/drivers/geckodriver";
 
 		String safariProperty = "webdriver.safari.driver";
 		String safariPropertyPath = "C:\\Drivers\\safaridriver.exe";
-		// String safariBinaryPath = "/opt/safari/safari/";
-		// String safariPropertyPath = "/var/jenkins_home/drivers/safaridriver";
 
 		String https = "https://";
 
@@ -48,7 +42,6 @@ public class Configuration {
 			if (headlessYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(chromeProperty, chromePropertyPath);
 				ChromeOptions options = new ChromeOptions();
-				options.setBinary(chromeBinaryPath);
 				options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1920,1080");
 				browser = new ChromeDriver(options);
 				browser.get(https + url);
