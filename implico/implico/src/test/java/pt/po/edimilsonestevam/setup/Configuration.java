@@ -44,11 +44,35 @@ public class Configuration {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			if (headlessYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(chromeProperty, chromePropertyPath);
+
 				options.setBinary(chromeBinaryPath);
-				options.addArguments("--headless=new", "--no-sandbox", "--disable-setuid-sandbox",
-						"--disable-dev-shm-usage", "--disable-gpu", "--disable-features=UseDBus",
-						"--remote-debugging-port=9222",
-						"--window-size=1920,1080");
+				options.addArguments("--headless=new");
+				options.addArguments("--no-sandbox");
+				options.addArguments("--disable-dev-shm-usage");
+				options.addArguments("--disable-gpu");
+				options.addArguments("--remote-allow-origins=*");
+				options.addArguments("--disable-software-rasterizer");
+				options.addArguments("--disable-extensions");
+				options.addArguments("--disable-background-networking");
+				options.addArguments("--disable-breakpad");
+				options.addArguments("--disable-client-side-phishing-detection");
+				options.addArguments("--disable-default-apps");
+				options.addArguments("--disable-hang-monitor");
+				options.addArguments("--disable-popup-blocking");
+				options.addArguments("--disable-prompt-on-repost");
+				options.addArguments("--disable-sync");
+				options.addArguments("--disable-translate");
+				options.addArguments("--disable-background-timer-throttling");
+				options.addArguments("--disable-infobars");
+				options.addArguments("--disable-notifications");
+				options.addArguments("--no-first-run");
+				options.addArguments("--no-zygote");
+				options.addArguments("--single-process");
+				options.addArguments("--user-data-dir=/tmp/user-data");
+				options.addArguments("--data-path=/tmp/data-path");
+				options.addArguments("--homedir=/tmp");
+				options.addArguments("--disk-cache-dir=/tmp/cache-dir");
+
 				browser = new ChromeDriver(options);
 				browser.get(https + url);
 				return browser;
