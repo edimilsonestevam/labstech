@@ -28,7 +28,8 @@ public class Configuration {
 		System.out.println("-----------------------------------Testing Started-----------------------------------");
 
 		String chromeProperty = "webdriver.chrome.driver";
-		String chromePropertyPath = "/opt/chromium/chrome-linux/chrome"; // "C:\\Drivers\\chromedrive.exe";
+		String chromePropertyPath = "/opt/chromium/chrome-linux"; // "C:\\Drivers\\chromedrive.exe";
+		String chromeBinaryPath = "/opt/chromium/chrome-linux/chrome";
 
 		String firefoxProperty = "webdriver.gecko.driver";
 		String firefoxPropertyPath = "C:\\Drivers\\geckodriver.exe";
@@ -38,10 +39,12 @@ public class Configuration {
 
 		String https = "https://";
 
+		ChromeOptions options = new ChromeOptions();
+
 		if (browserName.equalsIgnoreCase("chrome")) {
 			if (headlessYesNo.equalsIgnoreCase("yes")) {
 				System.setProperty(chromeProperty, chromePropertyPath);
-				ChromeOptions options = new ChromeOptions();
+				options.setBinary(chromeBinaryPath);
 				options.addArguments("--headless=new", "--no-sandbox", "--disable-setuid-sandbox",
 						"--disable-dev-shm-usage", "--disable-gpu", "--disable-features=UseDBus",
 						"--remote-debugging-port=9222",
