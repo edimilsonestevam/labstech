@@ -28,7 +28,7 @@ public class Configuration {
 		System.out.println("-----------------------------------Testing Started-----------------------------------");
 
 		String chromeProperty = "webdriver.chrome.driver";
-		String chromePropertyPath = "/var/jenkins_home/drivers/chromedriver-linux64/chromedriver"; // "C:\\Drivers\\chromedrive.exe";
+		String chromePropertyPath = "/var/jenkins_home/drivers/chromedriver-linux64/"; // "C:\\Drivers\\chromedrive.exe";
 		String chromeBinaryPath = "/opt/chrome/chrome-headless-shell-linux64";
 
 		String firefoxProperty = "webdriver.gecko.driver";
