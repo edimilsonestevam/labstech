@@ -1,14 +1,14 @@
-package pt.po.edimilsonestevam.stepDefinition;
+package stepDefinition;
 
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pt.po.edimilsonestevam.page.Cart;
-import pt.po.edimilsonestevam.page.Inventory;
-import pt.po.edimilsonestevam.page.Login;
-import pt.po.edimilsonestevam.page.Menu;
+import page.Cart;
+import page.Inventory;
+import page.Login;
+import page.Menu;
 import pt.po.edimilsonestevam.setup.Configuration;
 
 public class TestSteps {

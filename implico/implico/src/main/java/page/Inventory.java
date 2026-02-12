@@ -1,4 +1,4 @@
-package pt.po.edimilsonestevam.page;
+package page;
 
 import java.time.Duration;
 
