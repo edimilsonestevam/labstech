@@ -72,7 +72,6 @@ INDEX VERSION 1.134+C:\Users\edimi\Repositories\labstech\.metadata\.plugins\org.
 1992932539.index
 2506886657.index
 312961280.index
-2434150436.index
 4133664507.index
 378353728.index
 3347403427.index

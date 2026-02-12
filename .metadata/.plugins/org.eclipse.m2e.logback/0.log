@@ -4393,3 +4393,12 @@ Caused by: java.lang.Exception: Resource '/netsim/pom.xml' does not exist.
 2026-02-12 03:46:23,256 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\test\resources to target\test-classes
 2026-02-12 03:52:14,911 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\implico\implico\src\main\resources
 2026-02-12 03:52:14,922 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\test\resources to target\test-classes
+2026-02-12 03:59:44,847 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.9; built: 2024-05-03T13:03:17.262Z; git: efe8023327e67287f9bfd006700e6a71d45b5dd6; jvm 17.0.9+9
+2026-02-12 03:59:44,988 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@30e3caed{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@44dbe9ad{STARTED}}
+2026-02-12 03:59:44,989 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2026-02-12 03:59:45,053 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2985a898{HTTP/1.1, (http/1.1)}{127.0.0.1:54163}
+2026-02-12 03:59:45,065 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@350b69f1{STARTING}[12.0.9,sto=0] @1026887ms
+2026-02-12 04:02:33,515 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\implico\implico\src\main\resources
+2026-02-12 04:02:33,525 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\test\resources to target\test-classes
+2026-02-12 04:04:25,024 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\edimi\Repositories\labstech\implico\implico\src\main\resources
+2026-02-12 04:04:25,029 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\test\resources to target\test-classes
