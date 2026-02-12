@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import junit.framework.Assert;
-import pt.po.edimilsonestevam.setup.Base;
+import setup.Base;
 
 public class Cart extends Base {
 

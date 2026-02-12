@@ -3,7 +3,7 @@ package page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import pt.po.edimilsonestevam.setup.Base;
+import setup.Base;
 
 public class Login extends Base {
 

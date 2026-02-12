@@ -1,4 +1,4 @@
-package pt.po.edimilsonestevam.setup;
+package setup;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;

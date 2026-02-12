@@ -1,4 +1,4 @@
-package pt.po.edimilsonestevam.cucumberTest;
+package cucumberTest;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.CucumberOptions;

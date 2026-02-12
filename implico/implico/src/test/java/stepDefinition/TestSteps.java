@@ -9,7 +9,7 @@ import page.Cart;
 import page.Inventory;
 import page.Login;
 import page.Menu;
-import pt.po.edimilsonestevam.setup.Configuration;
+import setup.Configuration;
 
 public class TestSteps {
 
