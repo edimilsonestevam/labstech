@@ -46,9 +46,8 @@
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-devtools-v134</artifactId>
-			<version>4.32.0</version>
-			<scope>compile</scope>
+			<artifactId>selenium-devtools-v143</artifactId>
+			<version>4.40.0</version>
 		</dependency>
 
 		<dependency>
