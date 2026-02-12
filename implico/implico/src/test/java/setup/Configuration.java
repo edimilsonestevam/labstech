@@ -48,8 +48,9 @@ public class Configuration {
 				options.addArguments("--headless=new");
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-dev-shm-usage");
+				options.addArguments("--disable-gpu");
+				options.addArguments("--remote-allow-origins=*");
 				options.addArguments("--remote-debugging-port=9222");
-				options.addArguments("--window-size=1920,1080");
 				options.setBinary(chromeBinaryPath);
 
 				browser = new ChromeDriver(options);
