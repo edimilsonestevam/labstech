@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Do not ignore directories
+!*/
+
+# Allow .java files
+!*.java
+
+# Allow .feature files
+!*.feature
